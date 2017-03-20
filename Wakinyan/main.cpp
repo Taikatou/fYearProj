@@ -81,6 +81,7 @@ void close()
 {
 	SDL_DestroyRenderer(g_renderer);
 	SDL_DestroyWindow(g_window);
+	scene.free();
 	g_renderer = NULL;
 	g_renderer = NULL;
 

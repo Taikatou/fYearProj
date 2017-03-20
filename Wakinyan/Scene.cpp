@@ -40,7 +40,7 @@ bool Scene::loadFromFile(std::string path)
 void Scene::free()
 {
 	character.free();
-	if (!Sprites->empty())
+	if (Sprites != NULL)
 	{
 		Sprites->clear();
 		Sprites->erase(Sprites->begin(), Sprites->end());
