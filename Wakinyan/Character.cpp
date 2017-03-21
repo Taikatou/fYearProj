@@ -17,7 +17,7 @@ Character::~Character()
 
 void Character::free()
 {
-	_cSprite = NULL;
+	_cSprite->free();
 	_cPosX = 0;
 	_cPosY = 0;
 	_cVel = 0;
@@ -34,9 +34,9 @@ void Character::move()
 	}
 }
 
-void Character::render() const
+void Character::render(int camX, int camY)
 {
-	_cSprite->render(_cPosX, _cPosY);
+	_cSprite->render(_cPosX - camX, _cPosY - camY);
 }
 
 bool Character::setSprite(std::string path, bool animate) const
@@ -79,5 +79,21 @@ void Character::setCharacterPosition(int x, int y)
 void Character::animate()
 {
 	_cSprite->animate();
+}
+
+int Character::getXPos()
+{
+	return _cPosX;
+}
+
+int Character::getYPos()
+{
+	return _cPosY;
+}
+
+int Character::getWidth()
+{
+	//not implemented
+	return _cSprite->getWidth();
 }
 

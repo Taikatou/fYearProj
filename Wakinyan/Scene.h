@@ -8,8 +8,10 @@
 class Scene
 {
 public:
-	Character character;
-	std::vector<Sprite>* Sprites;
+	Character* character;
+	Sprite background;
+	SDL_Rect camera;
+	std::vector<Sprite*> sprites;
 	Scene();
 	~Scene();
 	bool loadFromFile(std::string path);
@@ -19,4 +21,6 @@ public:
 	std::string changeScene(Sprite* collisionTrigger);
 private:
 	bool _changeScene;
+	int sceneWidth;
+	int sceneHeight;
 };

@@ -5,7 +5,8 @@
 enum SpriteType
 {
 	SPRITE = 1,
-	COLLISION_TRIGGER = 2
+	COLLISION_TRIGGER = 2,
+	BACKGROUND = 3
 };
 
 int frameCount = 0;
@@ -13,7 +14,7 @@ int frameCount = 0;
 Sprite::Sprite()
 {
 	_spriteTexture = NULL;
-	_name = new std::string();
+	_name = "";
 	_sHeight = 0;
 	_sWidth = 0;
 	_animation = false;
@@ -24,33 +25,33 @@ Sprite::~Sprite()
 }
 
 //possibly depricated
-bool Sprite::loadFromFile(std::string path)
-{
-	bool success = false;
-	_animation = false;
-	//the texture that will become the sprite
-	SDL_Texture* tempTexture = NULL;
-
-	//load the file into memory
-	SDL_Surface* loadedSurface = IMG_Load(path.c_str());
-	if (loadedSurface != NULL)
-	{
-		//consider how to handle wanted transparancy
-		//SDL_SetColorKey()
-
-		//converting the surface to a texture
-		tempTexture = SDL_CreateTextureFromSurface(g_renderer, loadedSurface);
-		if (tempTexture != NULL)
-		{
-			_sHeight = loadedSurface->h;
-			_sWidth = loadedSurface->w;
-			success = true;
-		}
-	}
-	
-	_spriteTexture = tempTexture;
-	return success;
-}
+//bool Sprite::loadFromFile(std::string path)
+//{
+//	bool success = false;
+//	_animation = false;
+//	//the texture that will become the sprite
+//	SDL_Texture* tempTexture = NULL;
+//
+//	//load the file into memory
+//	SDL_Surface* loadedSurface = IMG_Load(path.c_str());
+//	if (loadedSurface != NULL)
+//	{
+//		//consider how to handle wanted transparancy
+//		//SDL_SetColorKey()
+//
+//		//converting the surface to a texture
+//		tempTexture = SDL_CreateTextureFromSurface(g_renderer, loadedSurface);
+//		if (tempTexture != NULL)
+//		{
+//			_sHeight = loadedSurface->h;
+//			_sWidth = loadedSurface->w;
+//			success = true;
+//		}
+//	}
+//	
+//	_spriteTexture = tempTexture;
+//	return success;
+//}
 
 bool Sprite::loadFromFile(std::string path, bool animate)
 {
@@ -106,7 +107,7 @@ bool Sprite::loadFromFile(std::string path, bool animate)
 
 void Sprite::free()
 {
-	_spriteTexture = NULL;
+	SDL_DestroyTexture(_spriteTexture);
 	_sHeight = 0;
 	_sWidth = 0;
 }
@@ -116,10 +117,15 @@ void Sprite::render(int x, int y, SDL_Rect* clip, double angle, SDL_Point* cente
 {
 	SDL_Rect renderQuad = { x, y, _sWidth, _sHeight };
 
-	if (&_gSpriteClips[frameCount] != NULL)
+	if (_animation)
 	{
 		renderQuad.w = _gSpriteClips[frameCount/WALKING_FRAMES].w;
 		renderQuad.h = _gSpriteClips[frameCount/WALKING_FRAMES].h;
+	}
+	else if (clip != NULL)
+	{
+		renderQuad.w = clip->w;
+		renderQuad.h = clip->h;
 	}
 
 	if (!_animation)
@@ -145,10 +151,25 @@ int Sprite::getHeight() const
 
 int Sprite::getWidth() const
 {
-	return _sWidth;
+	return _animation ? _sWidth / WALKING_FRAMES :_sWidth;
 }
 
-std::string* Sprite::getName()
+int Sprite::getXPos()
+{
+	return _xPos;
+}
+
+int Sprite::getYPos()
+{
+	return _yPos;
+}
+
+void Sprite::setName(std::string name)
+{
+	_name = name;
+}
+
+std::string Sprite::getName()
 {
 	return _name;
 }
