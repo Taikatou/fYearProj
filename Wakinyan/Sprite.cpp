@@ -79,25 +79,25 @@ bool Sprite::loadFromFile(std::string path, bool animate)
 		if ( animate)
 		{
 			//Set sprite clips
-			_gSpriteClips[0].x = 0;
+			_gSpriteClips[0].x = (_sWidth / WALKING_FRAMES )* 0;
 			_gSpriteClips[0].y = 0;
-			_gSpriteClips[0].w = 49;
-			_gSpriteClips[0].h = 80;
+			_gSpriteClips[0].w = (_sWidth / WALKING_FRAMES);
+			_gSpriteClips[0].h = _sHeight;
 
-			_gSpriteClips[1].x = 49;
+			_gSpriteClips[1].x = (_sWidth / WALKING_FRAMES) * 1;
 			_gSpriteClips[1].y = 0;
-			_gSpriteClips[1].w = 49;
-			_gSpriteClips[1].h = 80;
+			_gSpriteClips[1].w = (_sWidth / WALKING_FRAMES);
+			_gSpriteClips[1].h = _sHeight;
 
-			_gSpriteClips[2].x = 98;
+			_gSpriteClips[2].x = (_sWidth / WALKING_FRAMES) * 2;
 			_gSpriteClips[2].y = 0;
-			_gSpriteClips[2].w = 49;
-			_gSpriteClips[2].h = 80;
+			_gSpriteClips[2].w = (_sWidth / WALKING_FRAMES);
+			_gSpriteClips[2].h = _sHeight;
 
-			_gSpriteClips[3].x = 147;
+			_gSpriteClips[3].x = (_sWidth / WALKING_FRAMES) * 3;
 			_gSpriteClips[3].y = 0;
-			_gSpriteClips[3].w = 49;
-			_gSpriteClips[3].h = 80;
+			_gSpriteClips[3].w = (_sWidth / WALKING_FRAMES);
+			_gSpriteClips[3].h = _sHeight;
 		}
 	}
 

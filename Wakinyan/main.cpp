@@ -70,7 +70,7 @@ bool init()
 bool loadMedia()
 {
 	//here is where the first scene needs to be created
-	return scene.loadFromFile("Assets/Other/ryuIdlingSpritesheet.png");
+	return scene.loadFromFile("Assets/Characters/emilyWalking.png");
 }
 
 
