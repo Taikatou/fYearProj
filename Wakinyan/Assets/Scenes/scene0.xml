@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriteList>
+	<sprite>
+		<type>0</type>
+		<name>Emily</name>
+		<image>Assets/characters/emilyWalking.png</image>
+		<x>600</x>
+		<y>400</y>
+		<animation>true</animation>
+	</sprite>
+	<sprite>
+		<type>3</type>
+		<image>Assets/Backgrounds/backgroundBig.png</image>
+	</sprite>
+	<sprite>
+		<type>4</type>
+		<sceneWidth>720</sceneWidth>
+		<sceneHeight>480</sceneHeight>
+	</sprite>
+  <sprite>
+    <type>1</type>
+    <image>Assets/Sprites/redIdling.png</image>
+    <x>400</x>
+    <y>400</y>
+  </sprite>
+	</spriteList>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriteList>
+	<sprite>
+		<type>0</type>
+		<name>"Emily"</name>
+		<image>"Assets/Characters/emilyWalking.png"</image>
+		<x>600</x>
+		<y>400</y>
+		<animation>true</animation>
+	</sprite>
+	<sprite>
+		<type>3</type>
+		<image>"Assets/"
+	</sprite>
+	<sprite>
+		<type>4</type>
+		<sceneWidth>720</sceneWidth>
+		<sceneHeight>480</sceneWidth>
+	</sprite>
+	</spriteList>
