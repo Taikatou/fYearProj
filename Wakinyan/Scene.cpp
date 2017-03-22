@@ -217,7 +217,7 @@ void Scene::render()
 	background.render(0, 0, &camera);
 	for (std::vector<Sprite*>::iterator vSprite = sprites.begin(); vSprite != sprites.end(); ++vSprite)
 	{
-		(*vSprite)->render((*vSprite)->getXPos(), (*vSprite)->getYPos());
+		(*vSprite)->render((*vSprite)->getXPos() - camera.x, (*vSprite)->getYPos() - camera.y);
 	}
 	character->render(camera.x, camera.y);
 }
