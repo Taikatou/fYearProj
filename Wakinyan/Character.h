@@ -10,12 +10,13 @@ public:
 	~Character();
 	void free();
 	void move();
-	void render() const;
 	void render(int camX, int camY);
 	bool setSprite(std::string path, bool animate = false) const;
 	void handleEvent(SDL_Event &e);
-	void setCharacterPosition(int x, int y);
+	void setX(int x);
+	void setY(int y);
 	void animate();
+	void setName(std::string name);
 	int getXPos();
 	int getYPos();
 	int getWidth();

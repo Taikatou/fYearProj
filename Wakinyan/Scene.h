@@ -14,7 +14,7 @@ public:
 	std::vector<Sprite*> sprites;
 	Scene();
 	~Scene();
-	bool loadFromFile(std::string path);
+	bool loadFromFile(const char* path);
 	void free();
 	void update(SDL_Event& e);
 	void render();

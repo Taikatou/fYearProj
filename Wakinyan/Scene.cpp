@@ -1,22 +1,22 @@
 #include "Scene.h"
-#include <SDL.h>
-#include <SDL_image.h>
 #include "main.h"
-#include "Character.h"
-#include "Sprite.h"
+#include "tinyxml.h"
 
 enum SceneElements
 {
 	CHARACTER = 0,
 	SPRITE = 1,
 	COLLISION_TRIGGER = 2,
-	BACKGROUND = 3
+	BACKGROUND = 3,
+	CAMERA = 4
 };
 
 Scene::Scene()
 {
 	character = new Character;
 	_changeScene = false;
+	sceneWidth = 0;
+	sceneHeight = 0;
 }
 
 Scene::~Scene()
@@ -24,39 +24,138 @@ Scene::~Scene()
 	free();
 }
 
-bool Scene::loadFromFile(std::string path)
+bool Scene::loadFromFile(const char * path)
 {
-	bool success = false;
+	bool success = true;
+
 	//load file that defines a scene
-	//the file contains what sprites and characters are in the scene
-	//function returns true if it successfully loads the scene
-	if (character->setSprite(path, true))
+	TiXmlDocument sceneFile(path);
+	if (sceneFile.LoadFile())
 	{
-		success = true;
+		TiXmlElement* sceneRoot = sceneFile.RootElement();
+		if (strcmp(sceneRoot->Value(), "spriteList") == 0)
+		{
+			//loop through elements in the file, checking type and adding to:
+			// collider list, sprite list, camera, character, background
+			for (TiXmlElement* sprite = sceneRoot->FirstChildElement(); sprite; sprite = sprite->NextSiblingElement())
+			{
+				TiXmlElement* temp = sprite->FirstChildElement();
+				// extract the sprite type from the XML element
+				const char* t = (temp->FirstChild()->Value());
+				int type = std::atoi(t);
+				std::string spriteImagePath;
+				bool animate = false;
+
+				if (type == CHARACTER)
+				{
+					temp = temp->NextSiblingElement();
+					if (strcmp(temp->Value(), "name") == 0)
+					{
+						character->setName(temp->FirstChild()->Value());
+					}
+
+					temp = temp->NextSiblingElement();
+					if (strcmp(temp->Value(), "image") == 0)
+					{
+						spriteImagePath = temp->FirstChild()->Value();
+					}
+
+					temp = temp->NextSiblingElement();
+					if (strcmp(temp->Value(), "x") == 0)
+					{
+						character->setX( std::stoi(temp->FirstChild()->Value()));
+					}
+
+					temp = temp->NextSiblingElement();
+					if (strcmp(temp->Value(), "y") == 0)
+					{
+						character->setY( std::stoi(temp->FirstChild()->Value()));
+					}
+
+					temp = temp->NextSiblingElement();
+					if (strcmp(temp->Value(), "animation") == 0)
+					{
+						if (strcmp(temp->FirstChild()->Value(), "true") == 0)
+						{
+							animate = true;
+						}
+						if (!character->setSprite(std::string(spriteImagePath), animate))
+						{
+							success = false;
+						}
+					}
+				}
+				else if (type == SPRITE)
+				{
+					//load a sprite
+					int x = 0, y = 0;
+					temp = temp->NextSiblingElement();
+					if (strcmp(temp->Value(), "image") == 0)
+					{
+						spriteImagePath = temp->FirstChild()->Value();
+					}
+					temp = temp->NextSiblingElement();
+					if (strcmp(temp->Value(), "x") == 0)
+					{
+						x = std::stoi(temp->FirstChild()->Value());
+					}
+					temp = temp->NextSiblingElement();
+					if (strcmp(temp->Value(), "y") == 0)
+					{
+						y = std::stoi(temp->FirstChild()->Value());
+					}
+					Sprite* tempSprite = new Sprite;
+					if (!tempSprite->loadFromFile(spriteImagePath))
+					{
+						success = false;
+					}
+					tempSprite->setXPos(x);
+					tempSprite->setYPos(y);
+					sprites.push_back(tempSprite);
+
+				}
+				else if (type == COLLISION_TRIGGER)
+				{
+					//load a collider
+					// itterate to the next sibling ot the sceneRoot
+				}
+				else if (type == BACKGROUND)
+				{
+					temp = temp->NextSiblingElement();
+					if (strcmp(temp->Value(), "image") == 0)
+					{
+						spriteImagePath = temp->FirstChild()->Value();
+					}
+					if (!background.loadFromFile(std::string(spriteImagePath)))
+					{
+						success = false;
+					}
+				}
+				else if (type == CAMERA)
+				{
+					temp = temp->NextSiblingElement();
+					if (strcmp(temp->Value(), "sceneWidth") == 0)
+					{
+						sceneWidth = std::stoi(temp->FirstChild()->Value());
+					}
+					temp = temp->NextSiblingElement();
+					if (strcmp(temp->Value(), "sceneHeight") == 0)
+					{
+						sceneHeight = std::stoi(temp->FirstChild()->Value());
+					}
+
+					camera = { 0, 0, sceneWidth, sceneHeight };
+				}
+			}
+		}
 	}
 
-	if (background.loadFromFile("Assets/Other/backgroundBig.png"))
-	{
-		success = true;
-	}
-
-	character->setCharacterPosition(200, 200);
-
-	//will read in renderer size for the scene
-	sceneWidth = 800;
-	sceneHeight = 600;
-
-	//sets up camera
-	camera = { 0, 0, sceneWidth, sceneHeight };
-
-	//sets the renderer size
 	if (SDL_RenderSetLogicalSize(g_renderer, sceneWidth, sceneHeight) < 0)
 	{
 		success = false;
 	}
-
+		
 	return success;
-
 }
 void Scene::free()
 {
@@ -83,8 +182,6 @@ void Scene::update(SDL_Event& e)
 	{
 		character->move();
 	}
-
-	
 
 	//check for collisions
 	//if there is a scene trigger it will flip the _changeScene boolean

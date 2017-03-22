@@ -1,7 +1,6 @@
 #include "Character.h"
 #include "main.h"
 
-
 Character::Character()
 {
 	_cSprite = new Sprite;
@@ -52,8 +51,8 @@ void Character::handleEvent(SDL_Event& e)
 		//adjust velocity of charcter
 		switch (e.key.keysym.sym)
 		{
-		case SDLK_LEFT: _cVel -= vLimit; break;
-		case SDLK_RIGHT: _cVel += vLimit; break;
+		case SDLK_LEFT: _cVel -= vLimit; _cSprite->sFlip(true); break;
+		case SDLK_RIGHT: _cVel += vLimit; _cSprite->sFlip(false);  break;
 		default:; 
 		}
 	}
@@ -70,15 +69,24 @@ void Character::handleEvent(SDL_Event& e)
 	}
 }
 
-void Character::setCharacterPosition(int x, int y)
+void Character::setX(int x)
 {
 	_cPosX = x;
+}
+
+void Character::setY(int y)
+{
 	_cPosY = y;
 }
 
 void Character::animate()
 {
 	_cSprite->animate();
+}
+
+void Character::setName(std::string name)
+{
+	_cSprite->setName(name);
 }
 
 int Character::getXPos()
@@ -96,4 +104,3 @@ int Character::getWidth()
 	//not implemented
 	return _cSprite->getWidth();
 }
-

@@ -13,8 +13,10 @@ int frameCount = 0;
 
 Sprite::Sprite()
 {
-	_spriteTexture = NULL;
+	_spriteTexture = nullptr;
 	_name = "";
+	_xPos = 0;
+	_yPos = 0;
 	_sHeight = 0;
 	_sWidth = 0;
 	_animation = false;
@@ -59,24 +61,24 @@ bool Sprite::loadFromFile(std::string path, bool animate)
 	_animation = animate;
 	
 	//the texture that will become the sprite
-	SDL_Texture* tempTexture = NULL;
+	SDL_Texture* tempTexture = nullptr;
 
 	//load the file into memory
 	SDL_Surface* loadedSurface = IMG_Load(path.c_str());
-	if (loadedSurface != NULL)
+	if (loadedSurface != nullptr)
 	{
 		//consider handling transperancy here
 		//SDL_SetColorKey()
 
 		//converting the surface to a texture
 		tempTexture = SDL_CreateTextureFromSurface(g_renderer, loadedSurface);
-		if (tempTexture != NULL)
+		if (tempTexture != nullptr)
 		{
 			_sHeight = loadedSurface->h;
 			_sWidth = loadedSurface->w;
 			success = true;
 		}
-		if ( animate)
+		if (animate)
 		{
 			//Set sprite clips
 			_gSpriteClips[0].x = (_sWidth / WALKING_FRAMES )* 0;
@@ -122,7 +124,7 @@ void Sprite::render(int x, int y, SDL_Rect* clip, double angle, SDL_Point* cente
 		renderQuad.w = _gSpriteClips[frameCount/WALKING_FRAMES].w;
 		renderQuad.h = _gSpriteClips[frameCount/WALKING_FRAMES].h;
 	}
-	else if (clip != NULL)
+	else if (clip != nullptr)
 	{
 		renderQuad.w = clip->w;
 		renderQuad.h = clip->h;
@@ -134,7 +136,14 @@ void Sprite::render(int x, int y, SDL_Rect* clip, double angle, SDL_Point* cente
 	}
 	else
 	{
-		SDL_RenderCopyEx(g_renderer, _spriteTexture, &_gSpriteClips[frameCount/WALKING_FRAMES], &renderQuad, angle, center, flip);
+		if (_flip)
+		{
+			SDL_RenderCopyEx(g_renderer, _spriteTexture, &_gSpriteClips[frameCount / WALKING_FRAMES], &renderQuad, angle, center, _sFlip);
+		}
+		else
+		{
+			SDL_RenderCopyEx(g_renderer, _spriteTexture, &_gSpriteClips[frameCount / WALKING_FRAMES], &renderQuad, angle, center, flip);
+		}
 		frameCount++;
 
 		if (frameCount / WALKING_FRAMES >= WALKING_FRAMES)
@@ -142,6 +151,16 @@ void Sprite::render(int x, int y, SDL_Rect* clip, double angle, SDL_Point* cente
 			frameCount = 0;
 		}
 	}
+}
+
+void Sprite::setXPos(int x)
+{
+	_xPos = x;
+}
+
+void Sprite::setYPos(int y)
+{
+	_yPos = y;
 }
 
 int Sprite::getHeight() const
@@ -162,6 +181,11 @@ int Sprite::getXPos()
 int Sprite::getYPos()
 {
 	return _yPos;
+}
+
+void Sprite::sFlip(bool flip)
+{
+	_flip = flip;
 }
 
 void Sprite::setName(std::string name)
