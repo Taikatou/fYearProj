@@ -206,7 +206,7 @@ bool Scene::loadFromFile(const char * path)
 						tempInteraction.setPath(temp->FirstChild()->Value());
 					}
 
-					interactions.push_back(tempInteraction);
+					sInteractions.push_back(tempInteraction);
 				}
 			}
 		}
@@ -259,7 +259,7 @@ bool Scene::checkCollision()
 	return false;
 }
 
-bool Scene::checkSceneChange()
+bool Scene::checkSceneChange() const
 {
 	return _changeScene;
 }
@@ -267,7 +267,7 @@ bool Scene::checkSceneChange()
 void Scene::checkInteractions()
 {
 	// check for all forms of collision at once
-	for (std::vector<Interaction>::iterator sInteraction = interactions.begin(); sInteraction != interactions.end(); ++sInteraction)
+	for (std::vector<Interaction>::iterator sInteraction = sInteractions.begin(); sInteraction != sInteractions.end(); ++sInteraction)
 	{
 		if ((character->getXPos() == (sInteraction->collider.x + sInteraction->collider.w)) || ((character->getWidth() + character->getXPos()) == sInteraction->collider.w) || (((character->getXPos() + character->getWidth()) > (sInteraction->collider.x)) && ((character->getXPos() + character->getWidth()) < (sInteraction->collider.x + sInteraction->collider.w))) || ((character->getXPos() < (sInteraction->collider.x + sInteraction->collider.w)) && (character->getXPos() > sInteraction->collider.x)))
 		{
@@ -294,11 +294,11 @@ void Scene::free()
 	//!---- need to free memory for elements in the sprites vector before clearing it
 
 	colliders.clear();
-	interactions.clear();
+	sInteractions.clear();
 	sprites.clear();
 
 	colliders.erase(colliders.begin(), colliders.end());
-	interactions.erase(interactions.begin(), interactions.end());
+	sInteractions.erase(sInteractions.begin(), sInteractions.end());
 	sprites.erase(sprites.begin(), sprites.end());
 }
 

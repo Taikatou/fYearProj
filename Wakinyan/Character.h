@@ -11,7 +11,7 @@ public:
 	~Character();
 	void free();
 	void move(bool collision);
-	void render(int camX, int camY);
+	void render(int camX, int camY) const;
 	bool setSprite(std::string path, bool animate = false) const;
 	void handleEvent(SDL_Event &e);
 	void setX(int x);
@@ -19,12 +19,12 @@ public:
 	void setLastMoveLeft();
 	void setLastMoveRight();
 	void resetLastTouch();
-	void setType(int type);
-	void animate();
-	void setName(std::string name);
-	int getXPos();
-	int getYPos();
-	int getWidth();
+	void setType(int type) const;
+	void animate() const;
+	void setName(std::string name) const;
+	int getXPos() const;
+	int getYPos() const;
+	int getWidth() const;
 private:
 	// Character position on x & y and their velocity
 	bool lastMoveRight, lastMoveLeft;

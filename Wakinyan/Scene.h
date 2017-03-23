@@ -14,12 +14,12 @@ public:
 	SDL_Rect camera;
 	std::vector<Sprite*> sprites;
 	std::vector<SDL_Rect> colliders;
-	std::vector<Interaction> interactions;
+	std::vector<Interaction> sInteractions;
 	Scene();
 	~Scene();
 	bool loadFromFile(const char* path);
 	bool checkCollision();
-	bool checkSceneChange();
+	bool checkSceneChange() const;
 	void checkInteractions();
 	void free();
 	void update(SDL_Event& e);

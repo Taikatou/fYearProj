@@ -40,7 +40,7 @@ void Character::move(bool collision)
 	}
 }
 
-void Character::render(int camX, int camY)
+void Character::render(int camX, int camY) const
 {
 	_cSprite->render(_cPosX - camX, _cPosY - camY);
 }
@@ -104,32 +104,32 @@ void Character::resetLastTouch()
 	lastMoveRight = false;
 }
 
-void Character::setType(int type)
+void Character::setType(int type) const
 {
 	_cSprite->type = type;
 }
 
-void Character::animate()
+void Character::animate() const
 {
 	_cSprite->animate();
 }
 
-void Character::setName(std::string name)
+void Character::setName(std::string name) const
 {
 	_cSprite->setName(name);
 }
 
-int Character::getXPos()
+int Character::getXPos() const
 {
 	return _cPosX;
 }
 
-int Character::getYPos()
+int Character::getYPos() const
 {
 	return _cPosY;
 }
 
-int Character::getWidth()
+int Character::getWidth() const
 {
 	return _cSprite->getWidth();
 }

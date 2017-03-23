@@ -12,7 +12,7 @@ public:
 	Sprite();
 	~Sprite();
 	void free();
-	void animate();
+	void animate() const;
 	void render(int x, int y, SDL_Rect* clip = NULL, double angle = 0.0, SDL_Point* center = NULL, SDL_RendererFlip flip = SDL_FLIP_NONE) const;
 	void setXPos(int x);
 	void setYPos(int y);
@@ -21,11 +21,11 @@ public:
 	void setSpriteSheetOffset(int offset);
 	//bool loadFromFile(std::string path);
 	bool loadFromFile(std::string path, bool animiate = false);
-	std::string getName();
+	std::string getName() const;
 	int getHeight() const;
 	int getWidth() const;
-	int getXPos();
-	int getYPos();
+	int getXPos() const;
+	int getYPos() const;
 private:
 	bool _flip;
 	SDL_Rect _gSpriteClips[WALKING_FRAMES * SPRITE_SHEET_COUNT];

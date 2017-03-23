@@ -34,6 +34,15 @@
     <path>Assets/Scenes/scene1.xml</path>
   </sprite>
   <sprite>
+    <type>5</type>
+    <x>400</x>
+    <y>400</y>
+    <w>20</w>
+    <h>30</h>
+    <interaction>1</interaction>
+    <path>Hi, my name is Red</path>
+  </sprite>
+  <sprite>
     <type>2</type>
     <x>200</x>
     <y>0</y>

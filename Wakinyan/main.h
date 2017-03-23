@@ -23,7 +23,7 @@ enum SpriteSheetOffset
 	JUMP = 20,
 	BACK = 24
 };
-enum Interactions
+enum InteractionType
 {
 	CHANGESCENE,
 	CONVERSATION

@@ -171,12 +171,12 @@ int Sprite::getWidth() const
 	return (type == 0) ? _sWidth / WALKING_FRAMES :_sWidth;
 }
 
-int Sprite::getXPos()
+int Sprite::getXPos() const
 {
 	return _xPos;
 }
 
-int Sprite::getYPos()
+int Sprite::getYPos() const
 {
 	return _yPos;
 }
@@ -196,11 +196,11 @@ void Sprite::setSpriteSheetOffset(int offset)
 	_spriteSheetOffset = offset;
 }
 
-std::string Sprite::getName()
+std::string Sprite::getName() const
 {
 	return _name;
 }
 
-void Sprite::animate()
+void Sprite::animate() const
 {
 }
