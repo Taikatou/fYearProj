@@ -12,9 +12,11 @@ public:
 	Sprite background;
 	SDL_Rect camera;
 	std::vector<Sprite*> sprites;
+	std::vector<SDL_Rect> colliders;
 	Scene();
 	~Scene();
 	bool loadFromFile(const char* path);
+	bool checkCollision();
 	void free();
 	void update(SDL_Event& e);
 	void render();

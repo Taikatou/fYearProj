@@ -39,6 +39,7 @@ bool Scene::loadFromFile(const char * path)
 
 				if (type == CHARACTER)
 				{
+					character->setType(type);
 					temp = temp->NextSiblingElement();
 					if (strcmp(temp->Value(), "name") == 0)
 					{
@@ -78,8 +79,8 @@ bool Scene::loadFromFile(const char * path)
 				}
 				else if (type == SPRITE)
 				{
-					//load a sprite
 					int x = 0, y = 0;
+
 					temp = temp->NextSiblingElement();
 					if (strcmp(temp->Value(), "image") == 0)
 					{
@@ -95,20 +96,44 @@ bool Scene::loadFromFile(const char * path)
 					{
 						y = std::stoi(temp->FirstChild()->Value());
 					}
+
 					Sprite* tempSprite = new Sprite;
+
 					if (!tempSprite->loadFromFile(spriteImagePath))
 					{
 						success = false;
 					}
+
 					tempSprite->setXPos(x);
 					tempSprite->setYPos(y);
 					sprites.push_back(tempSprite);
-
 				}
 				else if (type == COLLISION_TRIGGER)
 				{
-					//load a collider
-					// itterate to the next sibling ot the sceneRoot
+					SDL_Rect collider;
+
+					temp = temp->NextSiblingElement();
+					if (strcmp(temp->Value(), "x") == 0)
+					{
+						collider.x = std::stoi(temp->FirstChild()->Value());
+					}
+					temp = temp->NextSiblingElement();
+					if (strcmp(temp->Value(), "y") == 0)
+					{
+						collider.y = std::stoi(temp->FirstChild()->Value());
+					}
+					temp = temp->NextSiblingElement();
+					if (strcmp(temp->Value(), "w") == 0)
+					{
+						collider.w = std::stoi(temp->FirstChild()->Value());
+					}
+					temp = temp->NextSiblingElement();
+					if (strcmp(temp->Value(), "h") == 0)
+					{
+						collider.h = std::stoi(temp->FirstChild()->Value());
+					}
+
+					colliders.push_back(collider);
 				}
 				else if (type == BACKGROUND)
 				{
@@ -148,11 +173,48 @@ bool Scene::loadFromFile(const char * path)
 		
 	return success;
 }
+
+bool Scene::checkCollision()
+{
+	// loop through colliders vector
+	// check if the character is colliding with any of the colliders
+	for (std::vector<SDL_Rect>::iterator sCollider = colliders.begin(); sCollider != colliders.end(); ++sCollider)
+	{
+		if (character->getXPos() == (sCollider->x + sCollider->w))
+		{
+			SDL_free(&sCollider);
+			character->setLastMoveLeft(true);
+			return true;
+		}
+		else if ((character->getWidth() + character->getXPos()) == sCollider->w)
+		{
+			SDL_free(&sCollider);
+			character->setLastMoveRight(true);
+			return true;
+		}
+		else if (((character->getXPos() + character->getWidth()) > (sCollider->x)) && ((character->getXPos() + character->getWidth()) < (sCollider->x + sCollider->w)))
+		{
+			character->setLastMoveRight(true);
+			SDL_free(&sCollider);
+			return true;
+		}
+		else if ((character->getXPos() < (sCollider->x + sCollider->w)) && (character->getXPos() > sCollider->x))
+		{
+			character->setLastMoveLeft(true);
+			SDL_free(&sCollider);
+			return true;
+		}
+	}
+	character->setLastMoveLeft(false);
+	character->setLastMoveRight(false);
+	return false;
+}
+
 void Scene::free()
 {
 	character->free();
 	
-	//need to destroy elements in the vector as they are pointers
+//	need to destroy elements in the vector as they are pointers
 //	while (sprites.size() < 0)
 //	{
 //		sprites.data();
@@ -164,17 +226,15 @@ void Scene::free()
 
 void Scene::update(SDL_Event& e)
 {
-	//presuming that the elements to a scene need to be rendered in a certain order
-	//they will be saved in the file in the correct order with an ID
-	//iterate through the vectors to fine the next elements to be rendered and call the correct render function
-
+	bool collision = checkCollision();
+	
 	character->handleEvent(e);
+
 	if (e.type == SDL_KEYDOWN)
 	{
-		character->move();
+		character->move(collision);
 	}
 
-	//check for collisions
 	//if there is a scene trigger it will flip the _changeScene boolean
 	//change scenes
 

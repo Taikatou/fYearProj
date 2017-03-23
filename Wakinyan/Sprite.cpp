@@ -3,6 +3,7 @@
 #include "main.h"
 
 int frameCount = 0;
+int spriteOffsets[] = {IDLE, PUNCH, WALK, TALK, KICK, JUMP, BACK};
 
 Sprite::Sprite()
 {
@@ -13,8 +14,7 @@ Sprite::Sprite()
 	_sHeight = 0;
 	_sWidth = 0;
 	_spriteSheetOffset = 0;
-	_animation = false;
-	_mainCharacter = false;
+	_flip = false;
 }
 Sprite::~Sprite()
 {
@@ -53,7 +53,6 @@ Sprite::~Sprite()
 bool Sprite::loadFromFile(std::string path, bool animate)
 {
 	bool success = false;
-	_animation = animate;
 	
 	//the texture that will become the sprite
 	SDL_Texture* tempTexture = nullptr;
@@ -62,9 +61,6 @@ bool Sprite::loadFromFile(std::string path, bool animate)
 	SDL_Surface* loadedSurface = IMG_Load(path.c_str());
 	if (loadedSurface != nullptr)
 	{
-		//consider handling transperancy here
-		//SDL_SetColorKey()
-
 		//converting the surface to a texture
 		tempTexture = SDL_CreateTextureFromSurface(g_renderer, loadedSurface);
 		if (tempTexture != nullptr)
@@ -80,89 +76,112 @@ bool Sprite::loadFromFile(std::string path, bool animate)
 
 			//Set sprite clips
 
-			//idling
-			_gSpriteClips[0].x = _sWidth * 0;
-			_gSpriteClips[0].y = _sHeight * 0;
-			_gSpriteClips[0].w = _sWidth;
-			_gSpriteClips[0].h = _sHeight;
+			for (int i = 0; i < 7; i++)
+			{
+				_gSpriteClips[0 + spriteOffsets[i]].x = _sWidth * 0;
+				_gSpriteClips[0 + spriteOffsets[i]].y = _sHeight * i;
+				_gSpriteClips[0 + spriteOffsets[i]].w = _sWidth;
+				_gSpriteClips[0 + spriteOffsets[i]].h = _sHeight;
 
-			_gSpriteClips[1].x = _sWidth * 1;
-			_gSpriteClips[1].y = _sHeight * 0;
-			_gSpriteClips[1].w = _sWidth;
-			_gSpriteClips[1].h = _sHeight;
+				_gSpriteClips[1 + spriteOffsets[i]].x = _sWidth * 1;
+				_gSpriteClips[1 + spriteOffsets[i]].y = _sHeight * i;
+				_gSpriteClips[1 + spriteOffsets[i]].w = _sWidth;
+				_gSpriteClips[1 + spriteOffsets[i]].h = _sHeight;
 
-			_gSpriteClips[2].x = _sWidth * 2;
-			_gSpriteClips[2].y = _sHeight * 0;
-			_gSpriteClips[2].w = _sWidth;
-			_gSpriteClips[2].h = _sHeight;
+				_gSpriteClips[2 + spriteOffsets[i]].x = _sWidth * 2;
+				_gSpriteClips[2 + spriteOffsets[i]].y = _sHeight * i;
+				_gSpriteClips[2 + spriteOffsets[i]].w = _sWidth;
+				_gSpriteClips[2 + spriteOffsets[i]].h = _sHeight;
 
-			_gSpriteClips[3].x = _sWidth * 3;
-			_gSpriteClips[3].y = _sHeight * 0;
-			_gSpriteClips[3].w = _sWidth;
-			_gSpriteClips[3].h = _sHeight;
+				_gSpriteClips[3 + spriteOffsets[i]].x = _sWidth * 3;
+				_gSpriteClips[3 + spriteOffsets[i]].y = _sHeight * i;
+				_gSpriteClips[3 + spriteOffsets[i]].w = _sWidth;
+				_gSpriteClips[3 + spriteOffsets[i]].h = _sHeight;
+			}
 
-			//punching
-			_gSpriteClips[0 + PUNCH].x = _sWidth * 0;
-			_gSpriteClips[0 + PUNCH].y = _sHeight * 1;
-			_gSpriteClips[0 + PUNCH].w = _sWidth;
-			_gSpriteClips[0 + PUNCH].h = _sHeight;
-
-			_gSpriteClips[1 + PUNCH].x = _sWidth * 1;
-			_gSpriteClips[1 + PUNCH].y = _sHeight * 1;
-			_gSpriteClips[1 + PUNCH].w = _sWidth;
-			_gSpriteClips[1 + PUNCH].h = _sHeight;
-
-			_gSpriteClips[2 + PUNCH].x = _sWidth * 2;
-			_gSpriteClips[2 + PUNCH].y = _sHeight * 1;
-			_gSpriteClips[2 + PUNCH].w = _sWidth;
-			_gSpriteClips[2 + PUNCH].h = _sHeight;
-
-			_gSpriteClips[3 + PUNCH].x = _sWidth * 3;
-			_gSpriteClips[3 + PUNCH].y = _sHeight * 1;
-			_gSpriteClips[3 + PUNCH].w = _sWidth;
-			_gSpriteClips[3 + PUNCH].h = _sHeight;
-
-			//walking
-			_gSpriteClips[0 + WALK].x = _sWidth * 0;
-			_gSpriteClips[0 + WALK].y = _sHeight * 2;
-			_gSpriteClips[0 + WALK].w = _sWidth;
-			_gSpriteClips[0 + WALK].h = _sHeight;
-
-			_gSpriteClips[1 + WALK].x = _sWidth * 1;
-			_gSpriteClips[1 + WALK].y = _sHeight * 2;
-			_gSpriteClips[1 + WALK].w = _sWidth;
-			_gSpriteClips[1 + WALK].h = _sHeight;
-
-			_gSpriteClips[2 + WALK].x = _sWidth * 2;
-			_gSpriteClips[2 + WALK].y = _sHeight * 2;
-			_gSpriteClips[2 + WALK].w = _sWidth;
-			_gSpriteClips[2 + WALK].h = _sHeight;
-
-			_gSpriteClips[3 + WALK].x = _sWidth * 3;
-			_gSpriteClips[3 + WALK].y = _sHeight * 2;
-			_gSpriteClips[3 + WALK].w = _sWidth;
-			_gSpriteClips[3 + WALK].h = _sHeight;
-
-			//jumping
-			_gSpriteClips[0 + JUMP].x = _sWidth * 0;
-			_gSpriteClips[0 + JUMP].y = _sHeight * 5;
-			_gSpriteClips[0 + JUMP].w = _sWidth;
-			_gSpriteClips[0 + JUMP].h = _sHeight;
-
-			_gSpriteClips[1 + JUMP].x = _sWidth * 1;
-			_gSpriteClips[1 + JUMP].y = _sHeight * 5;
-			_gSpriteClips[1 + JUMP].w = _sWidth;
-			_gSpriteClips[1 + JUMP].h = _sHeight;
-
-			_gSpriteClips[2 + JUMP].x = _sWidth * 2;
-			_gSpriteClips[2 + JUMP].y = _sHeight * 5;
-			_gSpriteClips[2 + JUMP].w = _sWidth;
-			_gSpriteClips[2 + JUMP].h = _sHeight;
-
-			_gSpriteClips[3 + JUMP].x = _sWidth * 3;
-			_gSpriteClips[3 + JUMP].y = _sHeight * 5;
-			_gSpriteClips[3 + JUMP].w = _sWidth;
-			_gSpriteClips[3 + JUMP].h = _sHeight;
+//			//idling
+//			_gSpriteClips[0].x = _sWidth * 0;
+//			_gSpriteClips[0].y = _sHeight * 0;
+//			_gSpriteClips[0].w = _sWidth;
+//			_gSpriteClips[0].h = _sHeight;
+//
+//			_gSpriteClips[1].x = _sWidth * 1;
+//			_gSpriteClips[1].y = _sHeight * 0;
+//			_gSpriteClips[1].w = _sWidth;
+//			_gSpriteClips[1].h = _sHeight;
+//
+//			_gSpriteClips[2].x = _sWidth * 2;
+//			_gSpriteClips[2].y = _sHeight * 0;
+//			_gSpriteClips[2].w = _sWidth;
+//			_gSpriteClips[2].h = _sHeight;
+//
+//			_gSpriteClips[3].x = _sWidth * 3;
+//			_gSpriteClips[3].y = _sHeight * 0;
+//			_gSpriteClips[3].w = _sWidth;
+//			_gSpriteClips[3].h = _sHeight;
+//
+//			//punching
+//			_gSpriteClips[0 + PUNCH].x = _sWidth * 0;
+//			_gSpriteClips[0 + PUNCH].y = _sHeight * 1;
+//			_gSpriteClips[0 + PUNCH].w = _sWidth;
+//			_gSpriteClips[0 + PUNCH].h = _sHeight;
+//
+//			_gSpriteClips[1 + PUNCH].x = _sWidth * 1;
+//			_gSpriteClips[1 + PUNCH].y = _sHeight * 1;
+//			_gSpriteClips[1 + PUNCH].w = _sWidth;
+//			_gSpriteClips[1 + PUNCH].h = _sHeight;
+//
+//			_gSpriteClips[2 + PUNCH].x = _sWidth * 2;
+//			_gSpriteClips[2 + PUNCH].y = _sHeight * 1;
+//			_gSpriteClips[2 + PUNCH].w = _sWidth;
+//			_gSpriteClips[2 + PUNCH].h = _sHeight;
+//
+//			_gSpriteClips[3 + PUNCH].x = _sWidth * 3;
+//			_gSpriteClips[3 + PUNCH].y = _sHeight * 1;
+//			_gSpriteClips[3 + PUNCH].w = _sWidth;
+//			_gSpriteClips[3 + PUNCH].h = _sHeight;
+//
+//			//walking
+//			_gSpriteClips[0 + WALK].x = _sWidth * 0;
+//			_gSpriteClips[0 + WALK].y = _sHeight * 2;
+//			_gSpriteClips[0 + WALK].w = _sWidth;
+//			_gSpriteClips[0 + WALK].h = _sHeight;
+//
+//			_gSpriteClips[1 + WALK].x = _sWidth * 1;
+//			_gSpriteClips[1 + WALK].y = _sHeight * 2;
+//			_gSpriteClips[1 + WALK].w = _sWidth;
+//			_gSpriteClips[1 + WALK].h = _sHeight;
+//
+//			_gSpriteClips[2 + WALK].x = _sWidth * 2;
+//			_gSpriteClips[2 + WALK].y = _sHeight * 2;
+//			_gSpriteClips[2 + WALK].w = _sWidth;
+//			_gSpriteClips[2 + WALK].h = _sHeight;
+//
+//			_gSpriteClips[3 + WALK].x = _sWidth * 3;
+//			_gSpriteClips[3 + WALK].y = _sHeight * 2;
+//			_gSpriteClips[3 + WALK].w = _sWidth;
+//			_gSpriteClips[3 + WALK].h = _sHeight;
+//
+//			//jumping
+//			_gSpriteClips[0 + JUMP].x = _sWidth * 0;
+//			_gSpriteClips[0 + JUMP].y = _sHeight * 5;
+//			_gSpriteClips[0 + JUMP].w = _sWidth;
+//			_gSpriteClips[0 + JUMP].h = _sHeight;
+//
+//			_gSpriteClips[1 + JUMP].x = _sWidth * 1;
+//			_gSpriteClips[1 + JUMP].y = _sHeight * 5;
+//			_gSpriteClips[1 + JUMP].w = _sWidth;
+//			_gSpriteClips[1 + JUMP].h = _sHeight;
+//
+//			_gSpriteClips[2 + JUMP].x = _sWidth * 2;
+//			_gSpriteClips[2 + JUMP].y = _sHeight * 5;
+//			_gSpriteClips[2 + JUMP].w = _sWidth;
+//			_gSpriteClips[2 + JUMP].h = _sHeight;
+//
+//			_gSpriteClips[3 + JUMP].x = _sWidth * 3;
+//			_gSpriteClips[3 + JUMP].y = _sHeight * 5;
+//			_gSpriteClips[3 + JUMP].w = _sWidth;
+//			_gSpriteClips[3 + JUMP].h = _sHeight;
 		}
 	}
 
@@ -182,7 +201,7 @@ void Sprite::render(int x, int y, SDL_Rect* clip, double angle, SDL_Point* cente
 {
 	SDL_Rect renderQuad = { x, y, _sWidth, _sHeight };
 
-	if (_mainCharacter)
+	if (type == 0)
 	{
 		renderQuad.w = _gSpriteClips[frameCount/WALKING_FRAMES].w;
 		renderQuad.h = _gSpriteClips[frameCount/WALKING_FRAMES].h;
@@ -193,7 +212,7 @@ void Sprite::render(int x, int y, SDL_Rect* clip, double angle, SDL_Point* cente
 		renderQuad.h = clip->h;
 	}
 
-	if (!_mainCharacter)
+	if (type > 0)
 	{
 		SDL_RenderCopyEx(g_renderer, _spriteTexture, clip, &renderQuad, angle, center, flip);
 	}
@@ -233,7 +252,7 @@ int Sprite::getHeight() const
 
 int Sprite::getWidth() const
 {
-	return _animation ? _sWidth / WALKING_FRAMES :_sWidth;
+	return (type == 0) ? _sWidth / WALKING_FRAMES :_sWidth;
 }
 
 int Sprite::getXPos()
@@ -259,11 +278,6 @@ void Sprite::setName(std::string name)
 void Sprite::setSpriteSheetOffset(int offset)
 {
 	_spriteSheetOffset = offset;
-}
-
-void Sprite::isMainChar()
-{
-	_mainCharacter = true;
 }
 
 std::string Sprite::getName()

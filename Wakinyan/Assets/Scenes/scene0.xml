@@ -4,7 +4,7 @@
 		<type>0</type>
 		<name>Emily</name>
 		<image>Assets/characters/emilyFullSpriteSheet.png</image>
-		<x>600</x>
+		<x>500</x>
 		<y>400</y>
 		<animation>true</animation>
 	</sprite>
@@ -22,5 +22,19 @@
     <image>Assets/Sprites/redIdling.png</image>
     <x>400</x>
     <y>400</y>
+  </sprite>
+  <sprite>
+    <type>2</type>
+    <x>400</x>
+    <y>0</y>
+    <w>10</w>
+    <h>400</h>
+  </sprite>
+  <sprite>
+    <type>2</type>
+    <x>620</x>
+    <y>0</y>
+    <w>10</w>
+    <h>400</h>
   </sprite>
 	</spriteList>

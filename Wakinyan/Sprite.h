@@ -19,7 +19,6 @@ public:
 	void sFlip(bool flip);
 	void setName(std::string name);
 	void setSpriteSheetOffset(int offset);
-	void isMainChar();
 	//bool loadFromFile(std::string path);
 	bool loadFromFile(std::string path, bool animiate = false);
 	std::string getName();
@@ -28,9 +27,7 @@ public:
 	int getXPos();
 	int getYPos();
 private:
-	bool _animation;
 	bool _flip;
-	bool _mainCharacter;
 	SDL_Rect _gSpriteClips[WALKING_FRAMES * SPRITE_SHEET_COUNT];
 	SDL_Texture* _spriteTexture;
 	SDL_RendererFlip _sFlip = SDL_FLIP_HORIZONTAL;

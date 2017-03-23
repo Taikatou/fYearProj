@@ -3,10 +3,12 @@
 
 Character::Character()
 {
+	lastMoveRight = false;
+	lastMoveLeft = false;
 	_cSprite = new Sprite;
 	_cPosX = 0;
 	_cPosY = 0;
-	_cVel = 0;
+	cVel = 0;
 }
 
 Character::~Character()
@@ -19,17 +21,22 @@ void Character::free()
 	_cSprite->free();
 	_cPosX = 0;
 	_cPosY = 0;
-	_cVel = 0;
+	cVel = 0;
 }
 
-void Character::move()
+void Character::move(bool collision)
 {
 	//moves Character
-	_cPosX += _cVel;
+	_cPosX += cVel;
 
-	if ((_cPosX < 0) || (_cPosX + _cSprite->getWidth() > SCREEN_WIDTH))
+	if ((_cPosX < 0) || (_cPosX + _cSprite->getWidth() > SCREEN_WIDTH) || collision)
 	{
-		_cPosX -= _cVel;
+		_cPosX -= cVel;
+	}
+
+	if ((lastMoveRight && cVel < 0) || (lastMoveLeft && cVel >0))
+	{
+		_cPosX += cVel;
 	}
 }
 
@@ -41,7 +48,6 @@ void Character::render(int camX, int camY)
 bool Character::setSprite(std::string path, bool animate) const
 {
 	//creates sprite object
-	_cSprite->isMainChar();
 	return _cSprite->loadFromFile(path, animate);
 }
 
@@ -52,8 +58,8 @@ void Character::handleEvent(SDL_Event& e)
 		//adjust velocity of charcter
 		switch (e.key.keysym.sym)
 		{
-			case SDLK_LEFT: _cVel -= vLimit; _cSprite->sFlip(true); _cSprite->setSpriteSheetOffset(WALK); break;
-			case SDLK_RIGHT: _cVel += vLimit; _cSprite->sFlip(false); _cSprite->setSpriteSheetOffset(WALK);  break;
+			case SDLK_LEFT: cVel -= vLimit; _cSprite->sFlip(true); _cSprite->setSpriteSheetOffset(WALK); break;
+			case SDLK_RIGHT: cVel += vLimit; _cSprite->sFlip(false); _cSprite->setSpriteSheetOffset(WALK);  break;
 			case SDLK_a: _cSprite->setSpriteSheetOffset(PUNCH); break;
 			case SDLK_SPACE: _cSprite->setSpriteSheetOffset(JUMP); break;
 			default:;
@@ -65,8 +71,8 @@ void Character::handleEvent(SDL_Event& e)
 		//Adjust the velocity
 		switch (e.key.keysym.sym)
 		{
-			case SDLK_LEFT: _cVel += vLimit; _cSprite->setSpriteSheetOffset(IDLE); break;
-			case SDLK_RIGHT: _cVel -= vLimit; _cSprite->setSpriteSheetOffset(IDLE); break;
+			case SDLK_LEFT: cVel += vLimit; _cSprite->setSpriteSheetOffset(IDLE); break;
+			case SDLK_RIGHT: cVel -= vLimit; _cSprite->setSpriteSheetOffset(IDLE); break;
 			case SDLK_a: _cSprite->setSpriteSheetOffset(IDLE); break;
 			case SDLK_SPACE: _cSprite->setSpriteSheetOffset(IDLE); break;
 			default:;
@@ -82,6 +88,21 @@ void Character::setX(int x)
 void Character::setY(int y)
 {
 	_cPosY = y;
+}
+
+void Character::setLastMoveLeft(bool move)
+{
+	lastMoveLeft = move;
+}
+
+void Character::setLastMoveRight(bool move)
+{
+	lastMoveRight = move;
+}
+
+void Character::setType(int type)
+{
+	_cSprite->type = type;
 }
 
 void Character::animate()
