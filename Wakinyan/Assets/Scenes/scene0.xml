@@ -14,8 +14,8 @@
 	</sprite>
 	<sprite>
 		<type>4</type>
-		<sceneWidth>720</sceneWidth>
-		<sceneHeight>480</sceneHeight>
+		<sceneWidth>160</sceneWidth>
+		<sceneHeight>100</sceneHeight>
 	</sprite>
   <sprite>
     <type>1</type>

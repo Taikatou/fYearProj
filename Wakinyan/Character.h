@@ -5,7 +5,7 @@
 class Character
 {
 public:
-	const int vLimit = 10;
+	const int vLimit = 5;
 	Character();
 	~Character();
 	void free();

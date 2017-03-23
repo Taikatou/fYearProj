@@ -2,15 +2,6 @@
 #include "main.h"
 #include "tinyxml.h"
 
-enum SceneElements
-{
-	CHARACTER = 0,
-	SPRITE = 1,
-	COLLISION_TRIGGER = 2,
-	BACKGROUND = 3,
-	CAMERA = 4
-};
-
 Scene::Scene()
 {
 	character = new Character;

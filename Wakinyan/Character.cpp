@@ -41,6 +41,7 @@ void Character::render(int camX, int camY)
 bool Character::setSprite(std::string path, bool animate) const
 {
 	//creates sprite object
+	_cSprite->isMainChar();
 	return _cSprite->loadFromFile(path, animate);
 }
 
@@ -51,9 +52,11 @@ void Character::handleEvent(SDL_Event& e)
 		//adjust velocity of charcter
 		switch (e.key.keysym.sym)
 		{
-		case SDLK_LEFT: _cVel -= vLimit; _cSprite->sFlip(true); break;
-		case SDLK_RIGHT: _cVel += vLimit; _cSprite->sFlip(false);  break;
-		default:; 
+			case SDLK_LEFT: _cVel -= vLimit; _cSprite->sFlip(true); _cSprite->setSpriteSheetOffset(WALK); break;
+			case SDLK_RIGHT: _cVel += vLimit; _cSprite->sFlip(false); _cSprite->setSpriteSheetOffset(WALK);  break;
+			case SDLK_a: _cSprite->setSpriteSheetOffset(PUNCH); break;
+			case SDLK_SPACE: _cSprite->setSpriteSheetOffset(JUMP); break;
+			default:;
 		}
 	}
 	//If a key was released
@@ -62,9 +65,11 @@ void Character::handleEvent(SDL_Event& e)
 		//Adjust the velocity
 		switch (e.key.keysym.sym)
 		{
-		case SDLK_LEFT: _cVel += vLimit; break;
-		case SDLK_RIGHT: _cVel -= vLimit; break;
-		default:;
+			case SDLK_LEFT: _cVel += vLimit; _cSprite->setSpriteSheetOffset(IDLE); break;
+			case SDLK_RIGHT: _cVel -= vLimit; _cSprite->setSpriteSheetOffset(IDLE); break;
+			case SDLK_a: _cSprite->setSpriteSheetOffset(IDLE); break;
+			case SDLK_SPACE: _cSprite->setSpriteSheetOffset(IDLE); break;
+			default:;
 		}
 	}
 }
@@ -101,6 +106,5 @@ int Character::getYPos()
 
 int Character::getWidth()
 {
-	//not implemented
 	return _cSprite->getWidth();
 }
