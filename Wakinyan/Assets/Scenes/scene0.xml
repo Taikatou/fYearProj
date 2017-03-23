@@ -3,7 +3,7 @@
 	<sprite>
 		<type>0</type>
 		<name>Emily</name>
-		<image>Assets/characters/emilyWalking.png</image>
+		<image>Assets/characters/emilyFullSpriteSheet.png</image>
 		<x>600</x>
 		<y>400</y>
 		<animation>true</animation>
