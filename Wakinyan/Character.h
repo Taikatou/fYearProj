@@ -16,8 +16,9 @@ public:
 	void handleEvent(SDL_Event &e);
 	void setX(int x);
 	void setY(int y);
-	void setLastMoveLeft(bool move);
-	void setLastMoveRight(bool move);
+	void setLastMoveLeft();
+	void setLastMoveRight();
+	void resetLastTouch();
 	void setType(int type);
 	void animate();
 	void setName(std::string name);

@@ -9,7 +9,9 @@ enum SpriteType
 	SPRITE = 1,
 	COLLISION_TRIGGER = 2,
 	BACKGROUND = 3,
-	CAMERA = 4
+	CAMERA = 4,
+	INTERACTION_TRIGGER = 5,
+	SCENELINK = 6
 };
 enum SpriteSheetOffset
 {
@@ -20,4 +22,9 @@ enum SpriteSheetOffset
 	KICK = 16,
 	JUMP = 20,
 	BACK = 24
+};
+enum Interactions
+{
+	CHANGESCENE,
+	CONVERSATION
 };

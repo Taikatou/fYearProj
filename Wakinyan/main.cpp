@@ -109,27 +109,35 @@ int main(int argc, char* args[])
 			//application loop
 			while (!quit)
 			{
-
-				//handle events in the queue
-				while (SDL_PollEvent(&e) != 0)
+				if (!scene.checkSceneChange())
 				{
-					if (e.type == SDL_QUIT || e.key.keysym.sym == SDLK_ESCAPE)
+					//handle events in the queue
+					while (SDL_PollEvent(&e) != 0)
 					{
-						quit = true;
+						if (e.type == SDL_QUIT || e.key.keysym.sym == SDLK_ESCAPE)
+						{
+							quit = true;
+						}
+
+						//consider checking for colision with scene change trigger here
+						scene.update(e);
 					}
 
-					//consider checking for colision with scene change trigger here
-					scene.update(e);
+					//clear screen
+					SDL_SetRenderDrawColor(g_renderer, 0x00, 0x00, 0x00, 0x00);
+					SDL_RenderClear(g_renderer);
+
+					scene.render();
+
+					//draws what is in the renderer to the window
+					SDL_RenderPresent(g_renderer);
 				}
-
-				//clear screen
-				SDL_SetRenderDrawColor(g_renderer, 0x00, 0x00, 0x00, 0x00);
-				SDL_RenderClear(g_renderer);
-
-				scene.render();
-
-				//draws what is in the renderer to the window
-				SDL_RenderPresent(g_renderer);
+				else
+				{
+					std::string path = scene.changeScene();
+					scene.free();
+					scene.loadFromFile(path.c_str());
+				}
 			}
 		}
 	}

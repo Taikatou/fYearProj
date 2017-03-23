@@ -1,6 +1,7 @@
 #include "Scene.h"
 #include "main.h"
 #include "tinyxml.h"
+#include "Interaction.h"
 
 Scene::Scene()
 {
@@ -80,7 +81,13 @@ bool Scene::loadFromFile(const char * path)
 				else if (type == SPRITE)
 				{
 					int x = 0, y = 0;
+					std::string name;
 
+					temp = temp->NextSiblingElement();
+					if (strcmp(temp->Value(), "name") == 0)
+					{
+						name = temp->FirstChild()->Value();
+					}
 					temp = temp->NextSiblingElement();
 					if (strcmp(temp->Value(), "image") == 0)
 					{
@@ -104,6 +111,7 @@ bool Scene::loadFromFile(const char * path)
 						success = false;
 					}
 
+					tempSprite->setName(name);
 					tempSprite->setXPos(x);
 					tempSprite->setYPos(y);
 					sprites.push_back(tempSprite);
@@ -162,6 +170,44 @@ bool Scene::loadFromFile(const char * path)
 
 					camera = { 0, 0, sceneWidth, sceneHeight };
 				}
+				else if (type == INTERACTION_TRIGGER)
+				{
+					Interaction tempInteraction;
+
+					temp = temp->NextSiblingElement();
+					if (strcmp(temp->Value(), "x") == 0)
+					{
+						tempInteraction.collider.x = std::stoi(temp->FirstChild()->Value());
+					}
+					temp = temp->NextSiblingElement();
+					if (strcmp(temp->Value(), "y") == 0)
+					{
+						tempInteraction.collider.y = std::stoi(temp->FirstChild()->Value());
+					}
+					temp = temp->NextSiblingElement();
+					if (strcmp(temp->Value(), "w") == 0)
+					{
+						tempInteraction.collider.w = std::stoi(temp->FirstChild()->Value());
+					}
+					temp = temp->NextSiblingElement();
+					if (strcmp(temp->Value(), "h") == 0)
+					{
+						tempInteraction.collider.h = std::stoi(temp->FirstChild()->Value());
+					}
+					temp = temp->NextSiblingElement();
+					if (strcmp(temp->Value(), "interaction") == 0)
+					{
+						int interactionType = std::stoi(temp->FirstChild()->Value());
+						tempInteraction.setType(interactionType);
+					}
+					temp = temp->NextSiblingElement();
+					if (strcmp(temp->Value(), "path") == 0)
+					{
+						tempInteraction.setPath(temp->FirstChild()->Value());
+					}
+
+					interactions.push_back(tempInteraction);
+				}
 			}
 		}
 	}
@@ -176,51 +222,83 @@ bool Scene::loadFromFile(const char * path)
 
 bool Scene::checkCollision()
 {
-	// loop through colliders vector
-	// check if the character is colliding with any of the colliders
 	for (std::vector<SDL_Rect>::iterator sCollider = colliders.begin(); sCollider != colliders.end(); ++sCollider)
 	{
 		if (character->getXPos() == (sCollider->x + sCollider->w))
 		{
+			//checks if the character is touching the right side of the collider
 			SDL_free(&sCollider);
-			character->setLastMoveLeft(true);
+			character->setLastMoveLeft();
 			return true;
 		}
 		else if ((character->getWidth() + character->getXPos()) == sCollider->w)
 		{
+			//checks if the character is touching the left side of the collider
 			SDL_free(&sCollider);
-			character->setLastMoveRight(true);
+			character->setLastMoveRight();
 			return true;
 		}
 		else if (((character->getXPos() + character->getWidth()) > (sCollider->x)) && ((character->getXPos() + character->getWidth()) < (sCollider->x + sCollider->w)))
 		{
-			character->setLastMoveRight(true);
+			//checks if the character has over lapped the collider from the left
+			character->setLastMoveRight();
 			SDL_free(&sCollider);
 			return true;
 		}
 		else if ((character->getXPos() < (sCollider->x + sCollider->w)) && (character->getXPos() > sCollider->x))
 		{
-			character->setLastMoveLeft(true);
+			//checks if the character has overlapped the collider from the right
+			character->setLastMoveLeft();
 			SDL_free(&sCollider);
 			return true;
 		}
 	}
-	character->setLastMoveLeft(false);
-	character->setLastMoveRight(false);
+
+	// if no collision detected, it resets the last move that touched
+	character->resetLastTouch();
 	return false;
+}
+
+bool Scene::checkSceneChange()
+{
+	return _changeScene;
+}
+
+void Scene::checkInteractions()
+{
+	// check for all forms of collision at once
+	for (std::vector<Interaction>::iterator sInteraction = interactions.begin(); sInteraction != interactions.end(); ++sInteraction)
+	{
+		if ((character->getXPos() == (sInteraction->collider.x + sInteraction->collider.w)) || ((character->getWidth() + character->getXPos()) == sInteraction->collider.w) || (((character->getXPos() + character->getWidth()) > (sInteraction->collider.x)) && ((character->getXPos() + character->getWidth()) < (sInteraction->collider.x + sInteraction->collider.w))) || ((character->getXPos() < (sInteraction->collider.x + sInteraction->collider.w)) && (character->getXPos() > sInteraction->collider.x)))
+		{
+			if (sInteraction->getType() == CHANGESCENE)
+			{
+				_changeScene = true;
+				_newScenePath = sInteraction->getPath();
+			}
+		}
+	}
 }
 
 void Scene::free()
 {
+	_changeScene = false;
+	_newScenePath = "";
 	character->free();
-	
-//	need to destroy elements in the vector as they are pointers
-//	while (sprites.size() < 0)
-//	{
-//		sprites.data();
-//	}
+	background.free();
+	SDL_free(&camera);
 
+	sceneWidth = 0;
+	sceneHeight = 0;
+
+	//!---- need to free memory for elements in the sprites vector before clearing it
+
+	colliders.clear();
+	interactions.clear();
 	sprites.clear();
+
+	colliders.erase(colliders.begin(), colliders.end());
+	interactions.erase(interactions.begin(), interactions.end());
 	sprites.erase(sprites.begin(), sprites.end());
 }
 
@@ -232,12 +310,15 @@ void Scene::update(SDL_Event& e)
 
 	if (e.type == SDL_KEYDOWN)
 	{
-		character->move(collision);
+		if (e.key.keysym.sym == SDLK_SPACE)
+		{
+			checkInteractions();
+		}
+		else
+		{
+			character->move(collision);
+		}
 	}
-
-	//if there is a scene trigger it will flip the _changeScene boolean
-	//change scenes
-
 }
 
 void Scene::render()
@@ -273,10 +354,10 @@ void Scene::render()
 	character->render(camera.x, camera.y);
 }
 
-std::string Scene::changeScene(Sprite* collisionTrigger)
+std::string Scene::changeScene()
 {
 	//dereferencing the pointer
-	std::string nextScene = collisionTrigger->getName();
+	std::string nextScene = _newScenePath;
 	free();
 	return nextScene;
 }

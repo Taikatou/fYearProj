@@ -61,7 +61,6 @@ void Character::handleEvent(SDL_Event& e)
 			case SDLK_LEFT: cVel -= vLimit; _cSprite->sFlip(true); _cSprite->setSpriteSheetOffset(WALK); break;
 			case SDLK_RIGHT: cVel += vLimit; _cSprite->sFlip(false); _cSprite->setSpriteSheetOffset(WALK);  break;
 			case SDLK_a: _cSprite->setSpriteSheetOffset(PUNCH); break;
-			case SDLK_SPACE: _cSprite->setSpriteSheetOffset(JUMP); break;
 			default:;
 		}
 	}
@@ -74,7 +73,6 @@ void Character::handleEvent(SDL_Event& e)
 			case SDLK_LEFT: cVel += vLimit; _cSprite->setSpriteSheetOffset(IDLE); break;
 			case SDLK_RIGHT: cVel -= vLimit; _cSprite->setSpriteSheetOffset(IDLE); break;
 			case SDLK_a: _cSprite->setSpriteSheetOffset(IDLE); break;
-			case SDLK_SPACE: _cSprite->setSpriteSheetOffset(IDLE); break;
 			default:;
 		}
 	}
@@ -90,14 +88,20 @@ void Character::setY(int y)
 	_cPosY = y;
 }
 
-void Character::setLastMoveLeft(bool move)
+void Character::setLastMoveLeft()
 {
-	lastMoveLeft = move;
+	lastMoveLeft = true;
 }
 
-void Character::setLastMoveRight(bool move)
+void Character::setLastMoveRight()
 {
-	lastMoveRight = move;
+	lastMoveRight = true;
+}
+
+void Character::resetLastTouch()
+{
+	lastMoveLeft = false;
+	lastMoveRight = false;
 }
 
 void Character::setType(int type)

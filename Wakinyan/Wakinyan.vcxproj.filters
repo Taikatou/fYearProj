@@ -42,6 +42,9 @@
     <ClCompile Include="tinyxmlparser.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="Interaction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sprite.h">
@@ -61,6 +64,9 @@
     </ClInclude>
     <ClInclude Include="tinyxml.h">
       <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Interaction.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
