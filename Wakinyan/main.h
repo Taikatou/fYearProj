@@ -1,8 +1,11 @@
 #pragma once
 #include <SDL.h>
+#include <SDL_ttf.h>
 extern SDL_Renderer* g_renderer;
+extern TTF_Font* g_font;
 extern int SCREEN_WIDTH;
 extern int SCREEN_HEIGHT;
+
 enum SpriteType
 {
 	CHARACTER = 0,
@@ -26,5 +29,6 @@ enum SpriteSheetOffset
 enum InteractionType
 {
 	CHANGESCENE,
-	CONVERSATION
+	CONVERSATION,
+	ENDEDCONVERSATION
 };

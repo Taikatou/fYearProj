@@ -40,11 +40,13 @@ bool Scene::loadFromFile(const char * path)
 
 				if (type == CHARACTER)
 				{
-					character->setType(type);
+					Character* tempChar = new Character;
+#pragma region 
+					tempChar->setType(type);
 					temp = temp->NextSiblingElement();
 					if (strcmp(temp->Value(), "name") == 0)
 					{
-						character->setName(temp->FirstChild()->Value());
+						tempChar->setName(temp->FirstChild()->Value());
 					}
 
 					temp = temp->NextSiblingElement();
@@ -56,13 +58,13 @@ bool Scene::loadFromFile(const char * path)
 					temp = temp->NextSiblingElement();
 					if (strcmp(temp->Value(), "x") == 0)
 					{
-						character->setX( std::stoi(temp->FirstChild()->Value()));
+						tempChar->setX(std::stoi(temp->FirstChild()->Value()));
 					}
 
 					temp = temp->NextSiblingElement();
 					if (strcmp(temp->Value(), "y") == 0)
 					{
-						character->setY( std::stoi(temp->FirstChild()->Value()));
+						tempChar->setY(std::stoi(temp->FirstChild()->Value()));
 					}
 
 					temp = temp->NextSiblingElement();
@@ -72,14 +74,18 @@ bool Scene::loadFromFile(const char * path)
 						{
 							animate = true;
 						}
-						if (!character->setSprite(std::string(spriteImagePath), animate))
+						if (!tempChar->setSprite(std::string(spriteImagePath), animate))
 						{
 							success = false;
 						}
 					}
+
+					character = tempChar;
+#pragma endregion //character load
 				}
 				else if (type == SPRITE)
 				{
+#pragma region
 					int x = 0, y = 0;
 					std::string name;
 
@@ -115,9 +121,11 @@ bool Scene::loadFromFile(const char * path)
 					tempSprite->setXPos(x);
 					tempSprite->setYPos(y);
 					sprites.push_back(tempSprite);
+#pragma endregion //sprite load
 				}
 				else if (type == COLLISION_TRIGGER)
 				{
+#pragma region
 					SDL_Rect collider;
 
 					temp = temp->NextSiblingElement();
@@ -142,9 +150,11 @@ bool Scene::loadFromFile(const char * path)
 					}
 
 					colliders.push_back(collider);
+#pragma endregion // collision box load
 				}
 				else if (type == BACKGROUND)
 				{
+#pragma region
 					temp = temp->NextSiblingElement();
 					if (strcmp(temp->Value(), "image") == 0)
 					{
@@ -154,9 +164,11 @@ bool Scene::loadFromFile(const char * path)
 					{
 						success = false;
 					}
+#pragma endregion //background load
 				}
 				else if (type == CAMERA)
 				{
+#pragma region
 					temp = temp->NextSiblingElement();
 					if (strcmp(temp->Value(), "sceneWidth") == 0)
 					{
@@ -169,9 +181,11 @@ bool Scene::loadFromFile(const char * path)
 					}
 
 					camera = { 0, 0, sceneWidth, sceneHeight };
+#pragma endregion //camera load
 				}
 				else if (type == INTERACTION_TRIGGER)
 				{
+#pragma region
 					Interaction tempInteraction;
 
 					temp = temp->NextSiblingElement();
@@ -195,18 +209,33 @@ bool Scene::loadFromFile(const char * path)
 						tempInteraction.collider.h = std::stoi(temp->FirstChild()->Value());
 					}
 					temp = temp->NextSiblingElement();
-					if (strcmp(temp->Value(), "interaction") == 0)
-					{
-						int interactionType = std::stoi(temp->FirstChild()->Value());
-						tempInteraction.setType(interactionType);
-					}
-					temp = temp->NextSiblingElement();
 					if (strcmp(temp->Value(), "path") == 0)
 					{
 						tempInteraction.setPath(temp->FirstChild()->Value());
 					}
+					temp = temp->NextSiblingElement();
+					if (strcmp(temp->Value(), "interaction") == 0)
+					{
+						int interactionType = std::stoi(temp->FirstChild()->Value());
+						tempInteraction.setType(interactionType);
 
+						if (interactionType == 1)
+						{
+							temp = temp->NextSiblingElement();
+							if (strcmp(temp->Value(), "dialog") == 0)
+							{
+								while (strcmp(temp->Value(), "null") != 0)
+								{
+									tempInteraction.setDialog(temp->FirstChild()->Value());
+									temp = temp->NextSiblingElement();
+								}
+							}
+						}
+					}
+					
+					
 					sInteractions.push_back(tempInteraction);
+#pragma endregion //load interactions
 				}
 			}
 		}
@@ -276,30 +305,40 @@ void Scene::checkInteractions()
 				_changeScene = true;
 				_newScenePath = sInteraction->getPath();
 			}
+			if (sInteraction->getType() == CONVERSATION)
+			{
+				sInteraction->createDialogSprite();
+  				sprites.push_back(sInteraction->getDialogSprite());
+			}
 		}
 	}
 }
 
 void Scene::free()
 {
-	_changeScene = false;
 	_newScenePath = "";
-	character->free();
-	background.free();
-	SDL_free(&camera);
-
+	_changeScene = false;
 	sceneWidth = 0;
 	sceneHeight = 0;
 
-	//!---- need to free memory for elements in the sprites vector before clearing it
+	character->free();
+	character = nullptr;
+	background.free();
+
+	for (std::vector<Sprite*>::iterator vSprite = sprites.begin(); vSprite != sprites.end(); ++vSprite)
+	{
+		(*vSprite)->free();
+		*vSprite = nullptr;
+	}
+
+	sprites.clear();
 
 	colliders.clear();
 	sInteractions.clear();
-	sprites.clear();
 
+	sprites.erase(sprites.begin(), sprites.end());
 	colliders.erase(colliders.begin(), colliders.end());
 	sInteractions.erase(sInteractions.begin(), sInteractions.end());
-	sprites.erase(sprites.begin(), sprites.end());
 }
 
 void Scene::update(SDL_Event& e)

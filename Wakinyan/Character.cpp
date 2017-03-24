@@ -21,6 +21,8 @@ void Character::free()
 	_cSprite->free();
 	_cPosX = 0;
 	_cPosY = 0;
+	lastMoveRight = false;
+	lastMoveLeft = false;
 	cVel = 0;
 }
 

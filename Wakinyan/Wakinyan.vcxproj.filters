@@ -73,5 +73,8 @@
     <Xml Include="Assets\Scenes\scene0.xml">
       <Filter>Resource Files</Filter>
     </Xml>
+    <Xml Include="Assets\Scenes\scene1.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
   </ItemGroup>
 </Project>

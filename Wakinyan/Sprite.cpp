@@ -21,35 +21,6 @@ Sprite::~Sprite()
 	free();
 }
 
-//possibly depricated
-//bool Sprite::loadFromFile(std::string path)
-//{
-//	bool success = false;
-//	_animation = false;
-//	//the texture that will become the sprite
-//	SDL_Texture* tempTexture = NULL;
-//
-//	//load the file into memory
-//	SDL_Surface* loadedSurface = IMG_Load(path.c_str());
-//	if (loadedSurface != NULL)
-//	{
-//		//consider how to handle wanted transparancy
-//		//SDL_SetColorKey()
-//
-//		//converting the surface to a texture
-//		tempTexture = SDL_CreateTextureFromSurface(g_renderer, loadedSurface);
-//		if (tempTexture != NULL)
-//		{
-//			_sHeight = loadedSurface->h;
-//			_sWidth = loadedSurface->w;
-//			success = true;
-//		}
-//	}
-//	
-//	_spriteTexture = tempTexture;
-//	return success;
-//}
-
 bool Sprite::loadFromFile(std::string path, bool animate)
 {
 	bool success = false;
@@ -107,9 +78,15 @@ bool Sprite::loadFromFile(std::string path, bool animate)
 
 void Sprite::free()
 {
+	_flip = false;
 	SDL_DestroyTexture(_spriteTexture);
+	_spriteTexture = nullptr;
+	_name = "";
 	_sHeight = 0;
 	_sWidth = 0;
+	_xPos = 0;
+	_yPos = 0;
+	_spriteSheetOffset = 0;
 }
 
 
@@ -161,6 +138,16 @@ void Sprite::setYPos(int y)
 	_yPos = y;
 }
 
+void Sprite::setWidth(int w)
+{
+	_sWidth = w;
+}
+
+void Sprite::setHeight(int h)
+{
+	_sHeight = h;
+}
+
 int Sprite::getHeight() const
 {
 	return _sHeight;
@@ -194,6 +181,11 @@ void Sprite::setName(std::string name)
 void Sprite::setSpriteSheetOffset(int offset)
 {
 	_spriteSheetOffset = offset;
+}
+
+void Sprite::setSpriteTexture(SDL_Texture *texture)
+{
+	_spriteTexture = texture;
 }
 
 std::string Sprite::getName() const

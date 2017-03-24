@@ -4,7 +4,7 @@
 #include "main.h"
 
 const int WALKING_FRAMES = 4;
-const int SPRITE_SHEET_COUNT = 21;
+const int SPRITE_SHEET_COUNT = 7;
 class Sprite
 {
 public:
@@ -16,10 +16,12 @@ public:
 	void render(int x, int y, SDL_Rect* clip = NULL, double angle = 0.0, SDL_Point* center = NULL, SDL_RendererFlip flip = SDL_FLIP_NONE) const;
 	void setXPos(int x);
 	void setYPos(int y);
+	void setWidth(int w);
+	void setHeight(int h);
 	void sFlip(bool flip);
 	void setName(std::string name);
 	void setSpriteSheetOffset(int offset);
-	//bool loadFromFile(std::string path);
+	void setSpriteTexture(SDL_Texture* texture);
 	bool loadFromFile(std::string path, bool animiate = false);
 	std::string getName() const;
 	int getHeight() const;

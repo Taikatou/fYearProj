@@ -13,6 +13,7 @@ bool init();
 int SCREEN_WIDTH = 1440;
 int SCREEN_HEIGHT = 900;
 SDL_Renderer* g_renderer = nullptr;
+TTF_Font* g_font = nullptr;
 
 //locals
 SDL_Window* g_window = nullptr;
@@ -30,35 +31,49 @@ bool init()
 	}
 	else
 	{
-		//create the window
-		g_window = SDL_CreateWindow("Wakinyan", SDL_WINDOWPOS_CENTERED,SDL_WINDOWPOS_CENTERED,SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_SHOWN); 
-		if (g_window == nullptr)
+		if (TTF_Init() == -1)
 		{
 			success = false;
 		}
 		else
 		{
-			SDL_SetWindowFullscreen(g_window, SDL_TRUE);
-
-			//create rendered
-			g_renderer = SDL_CreateRenderer(g_window, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
-			if (g_renderer == nullptr)
+			g_font = TTF_OpenFont("Assets/Other/pixelArt.ttf", 7);
+			if (g_font == nullptr)
 			{
 				success = false;
 			}
-			else
-			{
-				//initialise image loading
-				int imgFlag = IMG_INIT_PNG;
-				if (!(IMG_Init(imgFlag) & imgFlag))
+			else {
+				//create the window
+				g_window = SDL_CreateWindow("Wakinyan", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_SHOWN);
+				if (g_window == nullptr)
 				{
 					success = false;
 				}
-
-				imgFlag = IMG_INIT_JPG;
-				if (!(IMG_Init(imgFlag) & imgFlag))
+				else
 				{
-					success = false;
+					SDL_SetWindowFullscreen(g_window, SDL_TRUE);
+
+					//create rendered
+					g_renderer = SDL_CreateRenderer(g_window, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
+					if (g_renderer == nullptr)
+					{
+						success = false;
+					}
+					else
+					{
+						//initialise image loading
+						int imgFlag = IMG_INIT_PNG;
+						if (!(IMG_Init(imgFlag) & imgFlag))
+						{
+							success = false;
+						}
+
+						imgFlag = IMG_INIT_JPG;
+						if (!(IMG_Init(imgFlag) & imgFlag))
+						{
+							success = false;
+						}
+					}
 				}
 			}
 		}
@@ -79,6 +94,7 @@ void close()
 {
 	SDL_DestroyRenderer(g_renderer);
 	SDL_DestroyWindow(g_window);
+	TTF_CloseFont(g_font);
 
 	scene.free();
 
@@ -135,7 +151,6 @@ int main(int argc, char* args[])
 				else
 				{
 					std::string path = scene.changeScene();
-					scene.free();
 					scene.loadFromFile(path.c_str());
 				}
 			}
