@@ -45,24 +45,33 @@ void Interaction::setType(int type)
 
 void Interaction::createDialogSprite()
 {
-	if (_dPosition < _dialog.size())
+	if (_dPosition < _dialog.size() && _type == CONVERSATION)
 	{
-		SDL_Surface* textSurface = TTF_RenderText_Solid(g_font, _dialog.at(_dPosition).c_str(), _textColour);
+ 		SDL_Surface* textSurface = TTF_RenderText_Solid(g_font, _dialog.at(_dPosition).c_str(), _textColour);
 		if (textSurface != nullptr)
 		{
-			_dPosition++;
 			SDL_Texture* temp = SDL_CreateTextureFromSurface(g_renderer, textSurface);
+ 			_iDialog->setName(_dialog.at(_dPosition));
 			_iDialog->setSpriteTexture(temp);
 			_iDialog->setWidth(textSurface->w);
 			_iDialog->setHeight(textSurface->h);
 			_iDialog->setXPos(collider.x - (textSurface->w / 2));
 			_iDialog->setYPos(collider.y - textSurface->h);
+			_dPosition++;
 		}
 	}
 	else
 	{
 		_iDialog->setSpriteTexture(nullptr);
-		_type = CHANGESCENE;
+		if (_path != "null")
+		{
+ 			_type = CHANGESCENE;
+		}
+		else
+		{
+			_type = ENDEDCONVERSATION;
+		}
+
 	}
  }
 

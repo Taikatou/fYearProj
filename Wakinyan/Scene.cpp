@@ -219,7 +219,7 @@ bool Scene::loadFromFile(const char * path)
 						int interactionType = std::stoi(temp->FirstChild()->Value());
 						tempInteraction.setType(interactionType);
 
-						if (interactionType == 1)
+						if (interactionType == CONVERSATION)
 						{
 							temp = temp->NextSiblingElement();
 							if (strcmp(temp->Value(), "dialog") == 0)
@@ -296,7 +296,7 @@ bool Scene::checkSceneChange() const
 void Scene::checkInteractions()
 {
 	// check for all forms of collision at once
-	for (std::vector<Interaction>::iterator sInteraction = sInteractions.begin(); sInteraction != sInteractions.end(); ++sInteraction)
+ 	for (std::vector<Interaction>::iterator sInteraction = sInteractions.begin(); sInteraction != sInteractions.end(); ++sInteraction)
 	{
 		if ((character->getXPos() == (sInteraction->collider.x + sInteraction->collider.w)) || ((character->getWidth() + character->getXPos()) == sInteraction->collider.w) || (((character->getXPos() + character->getWidth()) > (sInteraction->collider.x)) && ((character->getXPos() + character->getWidth()) < (sInteraction->collider.x + sInteraction->collider.w))) || ((character->getXPos() < (sInteraction->collider.x + sInteraction->collider.w)) && (character->getXPos() > sInteraction->collider.x)))
 		{

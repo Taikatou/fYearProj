@@ -96,7 +96,9 @@ void close()
 	SDL_DestroyWindow(g_window);
 	TTF_CloseFont(g_font);
 
-	scene.free();
+	// no need to destroy scene, destructor is called when exiting anyway
+	// was throwing an exception for accessing a memory address already emptied
+//	scene.free();
 
 	g_renderer = nullptr;
 	g_renderer = nullptr;
@@ -134,8 +136,7 @@ int main(int argc, char* args[])
 						{
 							quit = true;
 						}
-
-						//consider checking for colision with scene change trigger here
+						
 						scene.update(e);
 					}
 

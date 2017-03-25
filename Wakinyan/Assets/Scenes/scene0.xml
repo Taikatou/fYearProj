@@ -1,4 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--SpriteType-->
+<!---->
+<!--CHARACTER = 0,-->
+<!--SPRITE = 1,-->
+<!--COLLISION_TRIGGER = 2,-->
+<!--BACKGROUND = 3,-->
+<!--CAMERA = 4,-->
+<!--INTERACTION_TRIGGER = 5,-->
+<!--SCENELINK = 6-->
+<!---->
+<!--InteractionType-->
+<!---->
+<!--CHANGESCENE = 0,-->
+<!--AUTOCHANGESCENE = 1,-->
+<!--CONVERSATION = 2,-->
+<!--ENDEDCONVERSATION = 3-->
+
 <spriteList>
 	<sprite>
 		<type>0</type>
@@ -24,15 +41,6 @@
     <x>400</x>
     <y>400</y>
   </sprite>
-<!--  <sprite>-->
-<!--    <type>5</type>-->
-<!--    <x>400</x>-->
-<!--    <y>400</y>-->
-<!--    <w>20</w>-->
-<!--    <h>30</h>-->
-<!--    <interaction>0</interaction>-->
-<!--    <path>Assets/Scenes/scene1.xml</path>-->
-<!--  </sprite>-->
   <sprite>
     <type>5</type>
     <x>400</x>
@@ -40,7 +48,7 @@
     <w>20</w>
     <h>30</h>
     <path>Assets/Scenes/scene1.xml</path>
-    <interaction>1</interaction>
+    <interaction>2</interaction>
     <dialog>Hi, my name is Red</dialog>
     <dialog>Emily, Where are you going?</dialog>
     <dialog>I love my sword</dialog>
@@ -55,10 +63,12 @@
     <h>400</h>
   </sprite>
   <sprite>
-    <type>2</type>
+    <type>6</type>
     <x>620</x>
     <y>0</y>
     <w>10</w>
     <h>400</h>
+    <path>Assets/Scenes/scene1.xml</path>
+    <interaction>1</interaction>
   </sprite>
 	</spriteList>
