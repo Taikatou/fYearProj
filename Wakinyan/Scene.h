@@ -13,6 +13,7 @@ public:
 	Sprite background;
 	SDL_Rect camera;
 	std::vector<Sprite*> sprites;
+	std::vector<Sprite*> screenOverlayText;
 	std::vector<SDL_Rect> colliders;
 	std::vector<Interaction> sInteractions;
 	std::vector<Interaction> sAutoSceneChange;
@@ -20,9 +21,9 @@ public:
 	~Scene();
 	bool loadFromFile(const char* path);
 	bool checkCollision();
+	bool checkThisCollision(SDL_Rect collider) const;
 	bool checkSceneChange();
 	void checkInteractions();
-	bool checkThisCollision(SDL_Rect collider);
 	void free();
 	void update(SDL_Event& e);
 	void render();

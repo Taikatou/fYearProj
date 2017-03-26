@@ -275,7 +275,7 @@ bool Scene::loadFromFile(const char * path)
 					}
 
 					sAutoSceneChange.push_back(tempInteraction);
-#pragma endregion 
+#pragma endregion //load the auto scene change interactions
 				}
 			}
 		}
@@ -291,34 +291,33 @@ bool Scene::loadFromFile(const char * path)
 
 bool Scene::checkCollision()
 {
+	// refactor this to use the checkThisCollision() function
+	// get the result, if it's true and the x of the character is less than the x of collider, setLastMoveRight true
+	// get the result, if it's true and the x of the character is greater than the x the collder, setLastMoveLeft true
 	for (std::vector<SDL_Rect>::iterator sCollider = colliders.begin(); sCollider != colliders.end(); ++sCollider)
 	{
-		if (character->getXPos() == (sCollider->x + sCollider->w))
+		if (character->getXPos() == sCollider->x + sCollider->w)
 		{
 			//checks if the character is touching the right side of the collider
-			SDL_free(&sCollider);
 			character->setLastMoveLeft();
 			return true;
 		}
-		else if ((character->getWidth() + character->getXPos()) == sCollider->w)
+		else if (character->getWidth() + character->getXPos() == sCollider->w)
 		{
 			//checks if the character is touching the left side of the collider
-			SDL_free(&sCollider);
 			character->setLastMoveRight();
 			return true;
 		}
-		else if (((character->getXPos() + character->getWidth()) > (sCollider->x)) && ((character->getXPos() + character->getWidth()) < (sCollider->x + sCollider->w)))
+		else if (character->getXPos() + character->getWidth() > sCollider->x && character->getXPos() + character->getWidth() < sCollider->x + sCollider->w)
 		{
 			//checks if the character has over lapped the collider from the left
 			character->setLastMoveRight();
-			SDL_free(&sCollider);
 			return true;
 		}
-		else if ((character->getXPos() < (sCollider->x + sCollider->w)) && (character->getXPos() > sCollider->x))
+		else if (character->getXPos() < sCollider->x + sCollider->w && character->getXPos() > sCollider->x)
 		{
 			//checks if the character has overlapped the collider from the right
 			character->setLastMoveLeft();
-			SDL_free(&sCollider);
 			return true;
 		}
 	}
@@ -328,26 +327,59 @@ bool Scene::checkCollision()
 	return false;
 }
 
+bool Scene::checkThisCollision(SDL_Rect collider) const
+{
+	// checks all forms of collision
+	// touch on the left or right of the collider
+	// encroach on the left or right of the collider
+	if (character->getXPos() == collider.x + collider.w
+
+		||
+
+		character->getWidth() + character->getXPos() == collider.w
+
+		||
+
+		character->getXPos() + character->getWidth() > collider.x && character->getXPos() + character->getWidth() < collider.x + collider.w
+
+		||
+
+		character->getXPos() < collider.x + collider.w && character->getXPos() > collider.x)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
+
 bool Scene::checkSceneChange()
 {
-	for (std::vector<Interaction>::iterator sAutochange = sAutoSceneChange.begin(); sAutochange != sAutoSceneChange.end(); ++sAutochange)
+	if (_changeScene)
 	{
-		if (checkThisCollision(sAutochange->collider))
+		return _changeScene;
+	}
+	else
+	{
+		for (std::vector<Interaction>::iterator sAutochange = sAutoSceneChange.begin(); sAutochange != sAutoSceneChange.end(); ++sAutochange)
 		{
-			if (sAutochange->getType() == AUTOCHANGESCENE)
+			if (checkThisCollision(sAutochange->collider))
 			{
-				_changeScene = true;
-				_newScenePath = sAutochange->getPath();
+				if (sAutochange->getType() == AUTOCHANGESCENE)
+				{
+					_changeScene = true;
+					_newScenePath = sAutochange->getPath();
+				}
 			}
 		}
-	}
 
-	return _changeScene;
+		return _changeScene;
+	}
 }
 
 void Scene::checkInteractions()
 {
-	// check for all forms of collision at once
  	for (std::vector<Interaction>::iterator sInteraction = sInteractions.begin(); sInteraction != sInteractions.end(); ++sInteraction)
 	{
 		if (checkThisCollision(sInteraction->collider))
@@ -366,40 +398,19 @@ void Scene::checkInteractions()
 	}
 }
 
-bool Scene::checkThisCollision(SDL_Rect collider)
-{
-	if ((character->getXPos() == (collider.x + collider.w))
-
-		||
-
-		((character->getWidth() + character->getXPos()) == collider.w)
-
-		||
-
-		(((character->getXPos() + character->getWidth()) > (collider.x)) && ((character->getXPos() + character->getWidth()) < (collider.x + collider.w)))
-
-		||
-
-		((character->getXPos() < (collider.x + collider.w)) && (character->getXPos() > collider.x)))
-	{
-		return true;
-	}
-	else
-	{
-		return false;
-	}
-}
-
 void Scene::free()
 {
 	_newScenePath = "";
 	_changeScene = false;
 	sceneWidth = 0;
 	sceneHeight = 0;
-
 	character->free();
 	character = nullptr;
 	background.free();
+	camera.x = 0;
+	camera.y = 0;
+	camera.w = 0;
+	camera.h = 0;
 
 	for (std::vector<Sprite*>::iterator vSprite = sprites.begin(); vSprite != sprites.end(); ++vSprite)
 	{
@@ -407,31 +418,53 @@ void Scene::free()
 		*vSprite = nullptr;
 	}
 
-	sprites.clear();
+	for (std::vector<Sprite*>::iterator vOverlay = screenOverlayText.begin(); vOverlay != screenOverlayText.end(); ++vOverlay)
+	{
+		(*vOverlay)->free();
+		*vOverlay = nullptr;
+	}
 
+	sprites.clear();
+	screenOverlayText.clear();
 	colliders.clear();
 	sInteractions.clear();
+	sAutoSceneChange.clear();
 
+	screenOverlayText.erase(screenOverlayText.begin(), screenOverlayText.end());
 	sprites.erase(sprites.begin(), sprites.end());
 	colliders.erase(colliders.begin(), colliders.end());
 	sInteractions.erase(sInteractions.begin(), sInteractions.end());
+	sAutoSceneChange.erase(sAutoSceneChange.begin(), sAutoSceneChange.end());
 }
 
 void Scene::update(SDL_Event& e)
 {
-	bool collision = checkCollision();
-	
-	character->handleEvent(e);
-
-	if (e.type == SDL_KEYDOWN)
+	if (checkSceneChange())
 	{
-		if (e.key.keysym.sym == SDLK_SPACE)
+		std::string path = changeScene();
+		loadFromFile(path.c_str());
+	}
+	else if (false)
+	{
+		// In here is where we see if there is an overlay text sprite to render. we block all movement from occuring
+		// mouse events will be passed to a new function
+	}
+	else
+	{
+		bool collision = checkCollision();
+
+		character->handleEvent(e);
+
+		if (e.type == SDL_KEYDOWN)
 		{
-			checkInteractions();
-		}
-		else
-		{
-			character->move(collision);
+			if (e.key.keysym.sym == SDLK_SPACE)
+			{
+				checkInteractions();
+			}
+			else
+			{
+				character->move(collision);
+			}
 		}
 	}
 }
@@ -439,7 +472,7 @@ void Scene::update(SDL_Event& e)
 void Scene::render()
 {
 	//centering camera over sprite
-	camera.x = (character->getXPos() + character->getWidth() / 2) - sceneWidth / 2;
+	camera.x = (character->getXPos() + character->getWidth() * 2) - sceneWidth / 2;
 	camera.y = character->getYPos() - sceneHeight / 2;
 
 	//Keep the camera in bounds
@@ -462,11 +495,18 @@ void Scene::render()
 
 	// renders all scene elements in order
 	background.render(0, 0, &camera);
+	
 	for (std::vector<Sprite*>::iterator vSprite = sprites.begin(); vSprite != sprites.end(); ++vSprite)
 	{
 		(*vSprite)->render((*vSprite)->getXPos() - camera.x, (*vSprite)->getYPos() - camera.y);
 	}
+	
 	character->render(camera.x, camera.y);
+
+	for (std::vector<Sprite*>::iterator vOverlay = screenOverlayText.begin(); vOverlay != screenOverlayText.end(); ++vOverlay)
+	{
+		(*vOverlay)->render((*vOverlay)->getXPos(), (*vOverlay)->getXPos());
+	}
 }
 
 std::string Scene::changeScene()

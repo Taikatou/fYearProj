@@ -10,8 +10,8 @@
 bool init();
 
 //externs
-int SCREEN_WIDTH = 1440;
-int SCREEN_HEIGHT = 900;
+int SCREEN_WIDTH = 1920;
+int SCREEN_HEIGHT = 1080;
 SDL_Renderer* g_renderer = nullptr;
 TTF_Font* g_font = nullptr;
 
@@ -127,34 +127,24 @@ int main(int argc, char* args[])
 			//application loop
 			while (!quit)
 			{
-				if (!scene.checkSceneChange())
+				//handle events in the queue
+				while (SDL_PollEvent(&e) != 0)
 				{
-					// if the scene is able to listen then start to handle events
-					
-					//handle events in the queue
-					while (SDL_PollEvent(&e) != 0)
+					if (e.type == SDL_QUIT || e.key.keysym.sym == SDLK_ESCAPE)
 					{
-						if (e.type == SDL_QUIT || e.key.keysym.sym == SDLK_ESCAPE)
-						{
-							quit = true;
-						}
-						
-						scene.update(e);
+						quit = true;
 					}
-
-					//clear screen
-					SDL_SetRenderDrawColor(g_renderer, 0x00, 0x00, 0x00, 0x00);
-					SDL_RenderClear(g_renderer);
-
-					scene.render();
-					//draws what is in the renderer to the window
-					SDL_RenderPresent(g_renderer);
+						
+					scene.update(e);
 				}
-				else
-				{
-					std::string path = scene.changeScene();
-					scene.loadFromFile(path.c_str());
-				}
+
+				//clear screen
+				SDL_SetRenderDrawColor(g_renderer, 0x00, 0x00, 0x00, 0x00);
+				SDL_RenderClear(g_renderer);
+
+				scene.render();
+				//draws what is in the renderer to the window
+				SDL_RenderPresent(g_renderer);
 			}
 		}
 	}
