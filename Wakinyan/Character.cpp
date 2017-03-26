@@ -5,6 +5,7 @@ Character::Character()
 {
 	lastMoveRight = false;
 	lastMoveLeft = false;
+	_listen = false;
 	_cSprite = new Sprite;
 	_cPosX = 0;
 	_cPosY = 0;
@@ -23,6 +24,7 @@ void Character::free()
 	_cPosY = 0;
 	lastMoveRight = false;
 	lastMoveLeft = false;
+	_listen = false;
 	cVel = 0;
 }
 
@@ -62,21 +64,39 @@ void Character::handleEvent(SDL_Event& e)
 		{
 			case SDLK_LEFT: cVel -= vLimit; _cSprite->sFlip(true); _cSprite->setSpriteSheetOffset(WALK); break;
 			case SDLK_RIGHT: cVel += vLimit; _cSprite->sFlip(false); _cSprite->setSpriteSheetOffset(WALK);  break;
+			case SDLK_UP: _cSprite->setSpriteSheetOffset(JUMP); break;
 			case SDLK_a: _cSprite->setSpriteSheetOffset(PUNCH); break;
 			default:;
 		}
 	}
 	//If a key was released
-	else if (e.type == SDL_KEYUP && e.key.repeat == 0 )
+	else if (e.type == SDL_KEYUP && e.key.repeat == 0 && _listen)
 	{
 		//Adjust the velocity
 		switch (e.key.keysym.sym)
 		{
 			case SDLK_LEFT: cVel += vLimit; _cSprite->setSpriteSheetOffset(IDLE); break;
 			case SDLK_RIGHT: cVel -= vLimit; _cSprite->setSpriteSheetOffset(IDLE); break;
+			case SDLK_UP: _cSprite->setSpriteSheetOffset(IDLE); break;
 			case SDLK_a: _cSprite->setSpriteSheetOffset(IDLE); break;
 			default:;
 		}
+	}
+	// hacked together way of making sure that the engine is only affecting velocity
+	// after a scene load AFTER the first key has been released
+	// when scenes were being auto changed, the key was still pressed down
+	// thus the first event to handle was a key up event
+	// When the key up was an directional arrow, after a scene load that key would no longer work and
+	// the other direction would affect the velocity twice as much
+	// the logic dictates that when a key up even occurs that the velocity limit for that direction is deducted from the active velocity
+	// if the right key was the last key up even that would have velocity constantly equal to -vLimit instead of zero
+	// so when the left arrow is pressed, velocity isn't set to -vLimit but is set to (-vLimit - vLimit)
+	//!-- only displays an animation bug after the first key up of the game's execution
+	//!-- ALL OTHER key presses work 100% as desired
+	else if (e.type == SDL_KEYUP && e.key.repeat == 0 && !_listen)
+	{
+		cVel = 0;
+		_listen = true;
 	}
 }
 

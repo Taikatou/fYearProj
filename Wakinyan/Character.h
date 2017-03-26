@@ -25,7 +25,6 @@ public:
 	int getXPos() const;
 	int getYPos() const;
 	int getWidth() const;
-	void listen(bool listen);
 private:
 	// Character position on x & y and their velocity
 	bool lastMoveRight, lastMoveLeft, _listen;
