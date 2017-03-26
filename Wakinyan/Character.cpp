@@ -91,10 +91,9 @@ void Character::handleEvent(SDL_Event& e)
 	// the logic dictates that when a key up even occurs that the velocity limit for that direction is deducted from the active velocity
 	// if the right key was the last key up even that would have velocity constantly equal to -vLimit instead of zero
 	// so when the left arrow is pressed, velocity isn't set to -vLimit but is set to (-vLimit - vLimit)
-	//!-- only displays an animation bug after the first key up of the game's execution
-	//!-- ALL OTHER key presses work 100% as desired
 	else if (e.type == SDL_KEYUP && e.key.repeat == 0 && !_listen)
 	{
+		_cSprite->setSpriteSheetOffset(IDLE);
 		cVel = 0;
 		_listen = true;
 	}

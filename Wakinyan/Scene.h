@@ -22,6 +22,7 @@ public:
 	bool checkCollision();
 	bool checkSceneChange();
 	void checkInteractions();
+	bool checkThisCollision(SDL_Rect collider);
 	void free();
 	void update(SDL_Event& e);
 	void render();

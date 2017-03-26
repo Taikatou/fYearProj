@@ -332,7 +332,7 @@ bool Scene::checkSceneChange()
 {
 	for (std::vector<Interaction>::iterator sAutochange = sAutoSceneChange.begin(); sAutochange != sAutoSceneChange.end(); ++sAutochange)
 	{
-		if ((character->getXPos() == (sAutochange->collider.x + sAutochange->collider.w)) || ((character->getWidth() + character->getXPos()) == sAutochange->collider.w) || (((character->getXPos() + character->getWidth()) > (sAutochange->collider.x)) && ((character->getXPos() + character->getWidth()) < (sAutochange->collider.x + sAutochange->collider.w))) || ((character->getXPos() < (sAutochange->collider.x + sAutochange->collider.w)) && (character->getXPos() > sAutochange->collider.x)))
+		if (checkThisCollision(sAutochange->collider))
 		{
 			if (sAutochange->getType() == AUTOCHANGESCENE)
 			{
@@ -350,7 +350,7 @@ void Scene::checkInteractions()
 	// check for all forms of collision at once
  	for (std::vector<Interaction>::iterator sInteraction = sInteractions.begin(); sInteraction != sInteractions.end(); ++sInteraction)
 	{
-		if ((character->getXPos() == (sInteraction->collider.x + sInteraction->collider.w)) || ((character->getWidth() + character->getXPos()) == sInteraction->collider.w) || (((character->getXPos() + character->getWidth()) > (sInteraction->collider.x)) && ((character->getXPos() + character->getWidth()) < (sInteraction->collider.x + sInteraction->collider.w))) || ((character->getXPos() < (sInteraction->collider.x + sInteraction->collider.w)) && (character->getXPos() > sInteraction->collider.x)))
+		if (checkThisCollision(sInteraction->collider))
 		{
 			if (sInteraction->getType() == CHANGESCENE)
 			{
@@ -363,6 +363,30 @@ void Scene::checkInteractions()
   				sprites.push_back(sInteraction->getDialogSprite());
 			}
 		}
+	}
+}
+
+bool Scene::checkThisCollision(SDL_Rect collider)
+{
+	if ((character->getXPos() == (collider.x + collider.w))
+
+		||
+
+		((character->getWidth() + character->getXPos()) == collider.w)
+
+		||
+
+		(((character->getXPos() + character->getWidth()) > (collider.x)) && ((character->getXPos() + character->getWidth()) < (collider.x + collider.w)))
+
+		||
+
+		((character->getXPos() < (collider.x + collider.w)) && (character->getXPos() > collider.x)))
+	{
+		return true;
+	}
+	else
+	{
+		return false;
 	}
 }
 
