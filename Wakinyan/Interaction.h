@@ -14,7 +14,9 @@ public:
 	void setPath(std::string path);
 	void setType(int type);
 	void createDialogSprite();
+	void resetType();
 	Sprite* getInteractionSprite() const;
+	bool hasRemainingDialong() const;
 	std::string getDialog() const;
 	std::string getPath() const;
 	int getType() const;

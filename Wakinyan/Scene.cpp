@@ -397,9 +397,17 @@ void Scene::checkInteractions()
 			}
 			if (sInteraction->getType() == ONSCREEN_INTERACTION)
 			{
-				screenOverlayText.erase(screenOverlayText.begin(), screenOverlayText.end());
-				sInteraction->createDialogSprite();
-				screenOverlayText.push_back(sInteraction->getInteractionSprite());
+				if (sInteraction->hasRemainingDialong())
+				{
+					screenOverlayText.erase(screenOverlayText.begin(), screenOverlayText.end());
+					sInteraction->createDialogSprite();
+					screenOverlayText.push_back(sInteraction->getInteractionSprite());
+				}
+				else
+				{
+					
+					sInteraction->resetType();
+				}
 			}
 		}
 	}
@@ -455,6 +463,8 @@ void Scene::update(SDL_Event& e)
 	{
 		if (e.type == SDL_MOUSEBUTTONUP)
 		{
+
+			screenOverlayText.erase(screenOverlayText.begin(), screenOverlayText.end());
 			checkInteractions();
 		}
 		// In here is where we see if there is an overlay text sprite to render. we block all movement from occuring

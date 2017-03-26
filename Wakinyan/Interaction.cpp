@@ -4,7 +4,7 @@
 Interaction::Interaction()
 {
 	_blackTextColour = { 0,0,0 };
-	_whiteTextColour = { 255, 255, 255 };
+	_whiteTextColour = { 255, 255, 255, 255 };
 	_iDialog = new Sprite;
 	_dPosition = 0;
 	_type = 0;
@@ -46,63 +46,77 @@ void Interaction::setType(int type)
 
 void Interaction::createDialogSprite()
 {
-	if (_dPosition < _dialog.size() && (_type == CONVERSATION || _type == ONSCREEN_INTERACTION))
+	if (_dialog.size() > 0 && (_type == CONVERSATION || _type == ONSCREEN_INTERACTION))
 	{
 		if (_type == ONSCREEN_INTERACTION)
 		{
-			SDL_Surface* textSurface = TTF_RenderText_Solid(g_font, _dialog.at(_dPosition).c_str(), _whiteTextColour);
-
-			//blit the textBackground with a rect the size of the sceen width and height
+			SDL_Surface* textSurface = TTF_RenderText_Solid(g_font, _dialog.at(0).c_str(), _whiteTextColour);
 			SDL_Surface* textBackground = IMG_Load("Assets/Other/onScreenOverlay.png");
+			SDL_Rect textHolder =
+			{
+				textBackground->w / 2 - textSurface->w / 2,
+				textBackground->h / 2 - textSurface->h / 2,
+				textSurface->w,
+				textSurface->h
+			};
+
 			if (textSurface != nullptr && textBackground != nullptr)
 			{
-				if (SDL_BlitSurface(textSurface, NULL, textBackground, NULL) == 0)
+				if (SDL_BlitSurface(textSurface, &textHolder, textBackground, &textHolder) == 0)
 				{
 					SDL_Texture* tempText = SDL_CreateTextureFromSurface(g_renderer, textBackground);
-					_iDialog->setName(_dialog.at(_dPosition));
+					_iDialog->setName(_dialog.at(0));
 					_iDialog->setSpriteTexture(tempText);
 					_iDialog->setWidth(textBackground->w);
 					_iDialog->setHeight(textBackground->h);
 					_iDialog->setXPos(sceneWidth / 2 - textBackground->w / 2);
 					_iDialog->setYPos(sceneHeight / 2 - textBackground->h / 2);
-					_dPosition++;
 				}
 			}
 		}
 		else {
-			SDL_Surface* textSurface = TTF_RenderText_Solid(g_font, _dialog.at(_dPosition).c_str(), _blackTextColour);
+			SDL_Surface* textSurface = TTF_RenderText_Solid(g_font, _dialog.at(0).c_str(), _blackTextColour);
 			if (textSurface != nullptr)
 			{
 				SDL_Texture* tempText = SDL_CreateTextureFromSurface(g_renderer, textSurface);
-				_iDialog->setName(_dialog.at(_dPosition));
+				_iDialog->setName(_dialog.at(0));
 				_iDialog->setSpriteTexture(tempText);
 				_iDialog->setWidth(textSurface->w);
 				_iDialog->setHeight(textSurface->h);
 				_iDialog->setXPos(collider.x - (textSurface->w / 2));
 				_iDialog->setYPos(collider.y - textSurface->h);
-				_dPosition++;
 			}
 		}
+		_dialog.erase(_dialog.begin());
 	}
 	else
 	{
 		_iDialog->setSpriteTexture(nullptr);
-		if (_path != "null")
-		{
- 			_type = CHANGESCENE;
-		}
-		else
-		{
-			_type = ENDEDCONVERSATION;
-		}
-
+		resetType();
 	}
  }
+
+void Interaction::resetType()
+{
+	if (_path != "null")
+	{
+		_type = CHANGESCENE;
+	}
+	else
+	{
+		_type = ENDEDCONVERSATION;
+	}
+}
 
 
 Sprite* Interaction::getInteractionSprite() const
 {
 	return _iDialog;
+}
+
+bool Interaction::hasRemainingDialong() const
+{
+	return _dialog.size() > 0;
 }
 
 std::string Interaction::getDialog() const
