@@ -12,7 +12,6 @@ public:
 	void free();
 	void move(bool collision);
 	void render(int camX, int camY) const;
-	bool setSprite(std::string path, bool animate = false) const;
 	void handleEvent(SDL_Event &e);
 	void setX(int x);
 	void setY(int y);
@@ -22,12 +21,13 @@ public:
 	void setType(int type) const;
 	void animate() const;
 	void setName(std::string name) const;
+	bool setSprite(std::string path, bool animate = false) const;
 	int getXPos() const;
 	int getYPos() const;
 	int getWidth() const;
 private:
 	// Character position on x & y and their velocity
-	bool lastMoveRight, lastMoveLeft, _listen;
 	Sprite* _cSprite;
+	bool lastMoveRight, lastMoveLeft, _listen;
 	int _cPosX, _cPosY;
 };

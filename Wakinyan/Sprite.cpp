@@ -1,6 +1,8 @@
 #include "Sprite.h"
 #include <string>
 #include "main.h"
+#include <vector>
+#include "Interaction.h"
 
 int frameCount = 0;
 int spriteOffsets[] = {IDLE, PUNCH, WALK, TALK, KICK, JUMP, BACK};

@@ -31,7 +31,11 @@
     <w>20</w>
     <h>100</h>
     <path>Assets/Scenes/scene0.xml</path>
-    <interaction>0</interaction>
+    <interaction>4</interaction>
+    <dialog>I should really keep working</dialog>
+    <dialog>But I'm running out of steam</dialog>
+    <dialog>I wish I could fly my drone</dialog>
+    <null></null>
   </sprite>
   <sprite>
     <type>1</type>

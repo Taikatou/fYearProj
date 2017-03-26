@@ -5,6 +5,8 @@ extern SDL_Renderer* g_renderer;
 extern TTF_Font* g_font;
 extern int SCREEN_WIDTH;
 extern int SCREEN_HEIGHT;
+extern int sceneWidth;
+extern int sceneHeight;
 
 enum SpriteType
 {
@@ -14,7 +16,7 @@ enum SpriteType
 	BACKGROUND,
 	CAMERA,
 	INTERACTION_TRIGGER,
-	SCENELINK 
+	SCENELINK
 };
 enum SpriteSheetOffset
 {
@@ -31,5 +33,6 @@ enum InteractionType
 	CHANGESCENE,
 	AUTOCHANGESCENE,
 	CONVERSATION,
-	ENDEDCONVERSATION
+	ENDEDCONVERSATION,
+	ONSCREEN_INTERACTION
 };

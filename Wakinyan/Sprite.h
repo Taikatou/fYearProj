@@ -30,10 +30,10 @@ public:
 	int getYPos() const;
 private:
 	bool _flip;
+	std::string _name;
+	int _sHeight, _sWidth, _xPos, _yPos, _spriteSheetOffset;
 	SDL_Rect _gSpriteClips[WALKING_FRAMES * SPRITE_SHEET_COUNT];
 	SDL_Texture* _spriteTexture;
 	SDL_RendererFlip _sFlip = SDL_FLIP_HORIZONTAL;
-	std::string _name;
-	int _sHeight, _sWidth, _xPos, _yPos, _spriteSheetOffset;
 };
 

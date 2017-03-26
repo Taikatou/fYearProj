@@ -12,6 +12,8 @@ bool init();
 //externs
 int SCREEN_WIDTH = 1920;
 int SCREEN_HEIGHT = 1080;
+int sceneWidth = 0;
+int sceneHeight = 0;
 SDL_Renderer* g_renderer = nullptr;
 TTF_Font* g_font = nullptr;
 

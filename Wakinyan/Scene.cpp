@@ -219,7 +219,7 @@ bool Scene::loadFromFile(const char * path)
 						int interactionType = std::stoi(temp->FirstChild()->Value());
 						tempInteraction.setType(interactionType);
 
-						if (interactionType == CONVERSATION)
+						if (interactionType == CONVERSATION || interactionType == ONSCREEN_INTERACTION)
 						{
 							temp = temp->NextSiblingElement();
 							if (strcmp(temp->Value(), "dialog") == 0)
@@ -234,7 +234,7 @@ bool Scene::loadFromFile(const char * path)
 					}
 					
 					
-					sInteractions.push_back(tempInteraction);
+					_sInteractions.push_back(tempInteraction);
 #pragma endregion //load interactions
 				}
 				else if (type == SCENELINK)
@@ -380,7 +380,7 @@ bool Scene::checkSceneChange()
 
 void Scene::checkInteractions()
 {
- 	for (std::vector<Interaction>::iterator sInteraction = sInteractions.begin(); sInteraction != sInteractions.end(); ++sInteraction)
+ 	for (std::vector<Interaction>::iterator sInteraction = _sInteractions.begin(); sInteraction != _sInteractions.end(); ++sInteraction)
 	{
 		if (checkThisCollision(sInteraction->collider))
 		{
@@ -391,8 +391,15 @@ void Scene::checkInteractions()
 			}
 			if (sInteraction->getType() == CONVERSATION)
 			{
+
 				sInteraction->createDialogSprite();
-  				sprites.push_back(sInteraction->getDialogSprite());
+  				sprites.push_back(sInteraction->getInteractionSprite());
+			}
+			if (sInteraction->getType() == ONSCREEN_INTERACTION)
+			{
+				screenOverlayText.erase(screenOverlayText.begin(), screenOverlayText.end());
+				sInteraction->createDialogSprite();
+				screenOverlayText.push_back(sInteraction->getInteractionSprite());
 			}
 		}
 	}
@@ -427,13 +434,13 @@ void Scene::free()
 	sprites.clear();
 	screenOverlayText.clear();
 	colliders.clear();
-	sInteractions.clear();
+	_sInteractions.clear();
 	sAutoSceneChange.clear();
 
 	screenOverlayText.erase(screenOverlayText.begin(), screenOverlayText.end());
 	sprites.erase(sprites.begin(), sprites.end());
 	colliders.erase(colliders.begin(), colliders.end());
-	sInteractions.erase(sInteractions.begin(), sInteractions.end());
+	_sInteractions.erase(_sInteractions.begin(), _sInteractions.end());
 	sAutoSceneChange.erase(sAutoSceneChange.begin(), sAutoSceneChange.end());
 }
 
@@ -444,8 +451,12 @@ void Scene::update(SDL_Event& e)
 		std::string path = changeScene();
 		loadFromFile(path.c_str());
 	}
-	else if (false)
+	else if (screenOverlayText.size() > 0)
 	{
+		if (e.type == SDL_MOUSEBUTTONUP)
+		{
+			checkInteractions();
+		}
 		// In here is where we see if there is an overlay text sprite to render. we block all movement from occuring
 		// mouse events will be passed to a new function
 	}
