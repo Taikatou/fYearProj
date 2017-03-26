@@ -67,7 +67,7 @@ void Character::handleEvent(SDL_Event& e)
 		}
 	}
 	//If a key was released
-	else if (e.type == SDL_KEYUP && e.key.repeat == 0)
+	else if (e.type == SDL_KEYUP && e.key.repeat == 0 )
 	{
 		//Adjust the velocity
 		switch (e.key.keysym.sym)

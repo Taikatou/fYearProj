@@ -237,6 +237,46 @@ bool Scene::loadFromFile(const char * path)
 					sInteractions.push_back(tempInteraction);
 #pragma endregion //load interactions
 				}
+				else if (type == SCENELINK)
+				{
+#pragma region
+					Interaction tempInteraction;
+
+					temp = temp->NextSiblingElement();
+					if (strcmp(temp->Value(), "x") == 0)
+					{
+						tempInteraction.collider.x = std::stoi(temp->FirstChild()->Value());
+					}
+					temp = temp->NextSiblingElement();
+					if (strcmp(temp->Value(), "y") == 0)
+					{
+						tempInteraction.collider.y = std::stoi(temp->FirstChild()->Value());
+					}
+					temp = temp->NextSiblingElement();
+					if (strcmp(temp->Value(), "w") == 0)
+					{
+						tempInteraction.collider.w = std::stoi(temp->FirstChild()->Value());
+					}
+					temp = temp->NextSiblingElement();
+					if (strcmp(temp->Value(), "h") == 0)
+					{
+						tempInteraction.collider.h = std::stoi(temp->FirstChild()->Value());
+					}
+					temp = temp->NextSiblingElement();
+					if (strcmp(temp->Value(), "path") == 0)
+					{
+						tempInteraction.setPath(temp->FirstChild()->Value());
+					}
+					temp = temp->NextSiblingElement();
+					if (strcmp(temp->Value(), "interaction") == 0)
+					{
+						int interactionType = std::stoi(temp->FirstChild()->Value());
+						tempInteraction.setType(interactionType);
+					}
+
+					sAutoSceneChange.push_back(tempInteraction);
+#pragma endregion 
+				}
 			}
 		}
 	}
@@ -288,8 +328,20 @@ bool Scene::checkCollision()
 	return false;
 }
 
-bool Scene::checkSceneChange() const
+bool Scene::checkSceneChange()
 {
+	for (std::vector<Interaction>::iterator sAutochange = sAutoSceneChange.begin(); sAutochange != sAutoSceneChange.end(); ++sAutochange)
+	{
+		if ((character->getXPos() == (sAutochange->collider.x + sAutochange->collider.w)) || ((character->getWidth() + character->getXPos()) == sAutochange->collider.w) || (((character->getXPos() + character->getWidth()) > (sAutochange->collider.x)) && ((character->getXPos() + character->getWidth()) < (sAutochange->collider.x + sAutochange->collider.w))) || ((character->getXPos() < (sAutochange->collider.x + sAutochange->collider.w)) && (character->getXPos() > sAutochange->collider.x)))
+		{
+			if (sAutochange->getType() == AUTOCHANGESCENE)
+			{
+				_changeScene = true;
+				_newScenePath = sAutochange->getPath();
+			}
+		}
+	}
+
 	return _changeScene;
 }
 

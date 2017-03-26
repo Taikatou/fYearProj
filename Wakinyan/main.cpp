@@ -129,6 +129,8 @@ int main(int argc, char* args[])
 			{
 				if (!scene.checkSceneChange())
 				{
+					// if the scene is able to listen then start to handle events
+					
 					//handle events in the queue
 					while (SDL_PollEvent(&e) != 0)
 					{
@@ -145,7 +147,6 @@ int main(int argc, char* args[])
 					SDL_RenderClear(g_renderer);
 
 					scene.render();
-
 					//draws what is in the renderer to the window
 					SDL_RenderPresent(g_renderer);
 				}

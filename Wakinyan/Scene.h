@@ -15,11 +15,12 @@ public:
 	std::vector<Sprite*> sprites;
 	std::vector<SDL_Rect> colliders;
 	std::vector<Interaction> sInteractions;
+	std::vector<Interaction> sAutoSceneChange;
 	Scene();
 	~Scene();
 	bool loadFromFile(const char* path);
 	bool checkCollision();
-	bool checkSceneChange() const;
+	bool checkSceneChange();
 	void checkInteractions();
 	void free();
 	void update(SDL_Event& e);
