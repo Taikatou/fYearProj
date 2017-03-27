@@ -77,4 +77,9 @@
       <Filter>Resource Files</Filter>
     </Xml>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="..\IncludeFileDependencies1.dgml">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
 </Project>

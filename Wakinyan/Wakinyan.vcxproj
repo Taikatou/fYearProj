@@ -103,6 +103,9 @@
       <SubType>Designer</SubType>
     </Xml>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="..\IncludeFileDependencies1.dgml" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

@@ -4,7 +4,7 @@
 Interaction::Interaction()
 {
 	_blackTextColour = { 0,0,0 };
-	_whiteTextColour = { 255, 255, 255, 255 };
+	_whiteTextColour = { 255, 255, 255 };
 	_iDialog = new Sprite;
 	_dPosition = 0;
 	_type = 0;
@@ -52,25 +52,29 @@ void Interaction::createDialogSprite()
 		{
 			SDL_Surface* textSurface = TTF_RenderText_Solid(g_font, _dialog.at(0).c_str(), _whiteTextColour);
 			SDL_Surface* textBackground = IMG_Load("Assets/Other/onScreenOverlay.png");
+
+			textBackground->w = sceneWidth;
+			textBackground->h = sceneHeight;
+
 			SDL_Rect textHolder =
 			{
 				textBackground->w / 2 - textSurface->w / 2,
-				textBackground->h / 2 - textSurface->h / 2,
-				textSurface->w,
-				textSurface->h
+				textBackground->h / 3,
+				textBackground->w,
+				textBackground->h
 			};
 
 			if (textSurface != nullptr && textBackground != nullptr)
 			{
-				if (SDL_BlitSurface(textSurface, &textHolder, textBackground, &textHolder) == 0)
+				if (SDL_BlitSurface(textSurface, &textSurface->clip_rect, textBackground, &textHolder) == 0)
 				{
 					SDL_Texture* tempText = SDL_CreateTextureFromSurface(g_renderer, textBackground);
 					_iDialog->setName(_dialog.at(0));
 					_iDialog->setSpriteTexture(tempText);
-					_iDialog->setWidth(textBackground->w);
-					_iDialog->setHeight(textBackground->h);
-					_iDialog->setXPos(sceneWidth / 2 - textBackground->w / 2);
-					_iDialog->setYPos(sceneHeight / 2 - textBackground->h / 2);
+					_iDialog->setWidth(sceneWidth);
+					_iDialog->setHeight(sceneHeight);
+					_iDialog->setXPos(0);
+					_iDialog->setYPos(0);
 				}
 			}
 		}
