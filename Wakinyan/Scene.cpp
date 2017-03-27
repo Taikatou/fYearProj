@@ -213,26 +213,49 @@ bool Scene::loadFromFile(const char * path)
 					{
 						tempInteraction.setPath(temp->FirstChild()->Value());
 					}
+//					temp = temp->NextSiblingElement();
+//					if (strcmp(temp->Value(), "interaction") == 0)
+//					{
+//						int interactionType = std::stoi(temp->FirstChild()->Value());
+//						tempInteraction.setType(interactionType);
+//
+//						if (interactionType == CONVERSATION || interactionType == ONSCREEN_INTERACTION)
+//						{
+//							temp = temp->NextSiblingElement();
+//							if (strcmp(temp->Value(), "dialog") == 0)
+//							{
+//								while (strcmp(temp->Value(), "null") != 0)
+//								{
+//									tempInteraction.setDialog(temp->FirstChild()->Value());
+//									temp = temp->NextSiblingElement();
+//								}
+//							}
+//						}
+//					}
+					
 					temp = temp->NextSiblingElement();
-					if (strcmp(temp->Value(), "interaction") == 0)
+ 					while (strcmp(temp->Value(), "interaction") == 0)
 					{
-						int interactionType = std::stoi(temp->FirstChild()->Value());
+						auto tempIterator = temp->FirstChild();
+						int interactionType = std::stoi(tempIterator->FirstChild()->Value());
 						tempInteraction.setType(interactionType);
 
 						if (interactionType == CONVERSATION || interactionType == ONSCREEN_INTERACTION)
 						{
-							temp = temp->NextSiblingElement();
-							if (strcmp(temp->Value(), "dialog") == 0)
+							tempIterator = tempIterator->NextSiblingElement();
+							if (strcmp(tempIterator->Value(), "dialog") == 0)
 							{
-								while (strcmp(temp->Value(), "null") != 0)
+								while (strcmp(tempIterator->Value(), "null") != 0)
 								{
-									tempInteraction.setDialog(temp->FirstChild()->Value());
-									temp = temp->NextSiblingElement();
+									tempInteraction.setDialog(interactionType, tempIterator->FirstChild()->Value());
+//									tempInteraction.setDialog(tempIterator->FirstChild()->Value());
+									tempIterator = tempIterator->NextSiblingElement();
 								}
 							}
 						}
+						temp = temp->NextSiblingElement();
 					}
-					
+
 					
 					_sInteractions.push_back(tempInteraction);
 #pragma endregion //load interactions
@@ -270,7 +293,8 @@ bool Scene::loadFromFile(const char * path)
 					temp = temp->NextSiblingElement();
 					if (strcmp(temp->Value(), "interaction") == 0)
 					{
-						int interactionType = std::stoi(temp->FirstChild()->Value());
+
+						int interactionType = std::stoi(temp->FirstChild()->FirstChild()->Value());
 						tempInteraction.setType(interactionType);
 					}
 
@@ -389,13 +413,12 @@ void Scene::checkInteractions()
 				_changeScene = true;
 				_newScenePath = sInteraction->getPath();
 			}
-			if (sInteraction->getType() == CONVERSATION)
+			else if (sInteraction->getDialogType() == CONVERSATION)
 			{
-
 				sInteraction->createDialogSprite();
   				sprites.push_back(sInteraction->getInteractionSprite());
 			}
-			if (sInteraction->getType() == ONSCREEN_INTERACTION)
+			else if (sInteraction->getDialogType() == ONSCREEN_INTERACTION)
 			{
 				if (sInteraction->hasRemainingDialong())
 				{
@@ -405,7 +428,6 @@ void Scene::checkInteractions()
 				}
 				else
 				{
-					
 					sInteraction->resetType();
 				}
 			}
@@ -478,9 +500,10 @@ void Scene::update(SDL_Event& e)
 			
 		if (e.type == SDL_KEYDOWN && e.key.keysym.sym == SDLK_SPACE)
 		{
-			checkInteractions();
+  			checkInteractions();
 		}
 	}
+	int x = 1 + 1;
 }
 
 void Scene::render()

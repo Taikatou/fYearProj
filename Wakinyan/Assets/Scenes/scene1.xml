@@ -31,11 +31,14 @@
     <w>20</w>
     <h>100</h>
     <path>Assets/Scenes/scene0.xml</path>
-    <interaction>4</interaction>
-    <dialog>I should really keep working</dialog>
-    <dialog>But I'm running out of steam</dialog>
-    <dialog>I wish I could fly my drone</dialog>
-    <null></null>
+    <interaction>
+      <type>4</type>
+      <dialog>I should really keep working</dialog>
+      <dialog>But I'm running out of steam</dialog>
+      <dialog>I wish I could fly my drone</dialog>
+      <null></null>
+    </interaction>
+    <end>0</end>
   </sprite>
   <sprite>
     <type>1</type>
@@ -51,11 +54,14 @@
     <w>20</w>
     <h>100</h>
     <path>null</path>
-    <interaction>2</interaction>
-    <dialog>Hey</dialog>
-    <dialog>This is the end of this little game</dialog>
-    <dialog>Press ESC to close the game</dialog>
-    <null></null>
+    <interaction>
+      <type>2</type>
+      <dialog>Hey</dialog>
+      <dialog>This is the end of this little game</dialog>
+      <dialog>Press ESC to close the game</dialog>
+      <null></null>
+    </interaction>
+    <end>0</end>
   </sprite>
   <sprite>
     <type>2</type>

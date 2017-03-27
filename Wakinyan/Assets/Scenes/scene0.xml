@@ -48,12 +48,26 @@
     <w>20</w>
     <h>30</h>
     <path>Assets/Scenes/scene1.xml</path>
-    <interaction>2</interaction>
-    <dialog>Hi, my name is Red</dialog>
-    <dialog>Emily, Where are you going?</dialog>
-    <dialog>I love my sword</dialog>
-    <dialog>It's a transister</dialog>
-    <null></null>
+    <interaction>
+      <type>2</type>
+      <dialog>Hi, my name is Red</dialog>
+      <dialog>I love my sword</dialog>
+      <dialog>It's a transister</dialog>
+      <null></null>
+    </interaction>
+    <interaction>
+      <type>4</type>
+      <dialog>Hi Red, I'm Emily</dialog>
+      <dialog>Your sword looks weird</dialog>
+      <null></null>
+    </interaction>
+    <interaction>
+      <type>2</type>
+      <dialog>...</dialog>
+      <dialog>That's mean</dialog>
+      <null></null>
+    </interaction>
+    <end>0</end>
   </sprite>
   <sprite>
     <type>2</type>
@@ -69,6 +83,9 @@
     <w>10</w>
     <h>400</h>
     <path>Assets/Scenes/scene1.xml</path>
-    <interaction>1</interaction>
+    <interaction>
+      <type>1</type>
+    </interaction>
+    <end>0</end>
   </sprite>
 	</spriteList>
