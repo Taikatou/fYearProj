@@ -26,7 +26,7 @@ enum SpriteSheetOffset
 	TALK = 12,
 	KICK = 16,
 	JUMP = 20,
-	BACK = 24
+	TURN = 24
 };
 enum InteractionType
 {
