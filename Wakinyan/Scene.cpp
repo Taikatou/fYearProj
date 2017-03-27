@@ -465,6 +465,7 @@ void Scene::update(SDL_Event& e)
 		// mouse events will be passed to a new function
 		if (e.type == SDL_MOUSEBUTTONUP)
 		{
+			character->talk();
 			screenOverlayText.erase(screenOverlayText.begin(), screenOverlayText.end());
 			checkInteractions();
 		}

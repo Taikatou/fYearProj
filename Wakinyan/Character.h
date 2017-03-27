@@ -21,10 +21,8 @@ public:
 	Character();
 	~Character();
 	void free();
-	void move(bool collision);
 	void update(bool collision);
 	void render(int camX, int camY) const;
-	void handleEvent(SDL_Event &e);
 	void handleEvent(SDL_Event& e, bool collision);
 	void setX(int x);
 	void setY(int y);
@@ -35,6 +33,7 @@ public:
 	void animate() const;
 	void setName(std::string name) const;
 	void resetKeys();
+	void talk();
 	bool setSprite(std::string path, bool animate = false) const;
 	int getXPos() const;
 	int getYPos() const;

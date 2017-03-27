@@ -116,6 +116,7 @@ void Character::handleEvent(SDL_Event& e, bool collision)
 		case SDLK_UP: _keys.jump = true; break;
 		case SDLK_a: _keys.leftMove = true; break;
 		case SDLK_d: _keys.rightMove = true; break;
+		case SDLK_SPACE: _keys.talk = true; break;
 			default:;
 		}
 		update(collision);
@@ -186,6 +187,11 @@ void Character::resetKeys()
 	_keys.kick = false;
 	_keys.jump = false;
 	_keys.turn = false;
+}
+
+void Character::talk()
+{
+	_keys.talk = true;
 }
 
 int Character::getXPos() const
