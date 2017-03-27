@@ -1,0 +1,769 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="(@1 @135)" Category="CodeSchema_ProjectItem" Bounds="-191.000003415423,290.989983115757,83.2913334104124,25.998000077079" FilePath="$(VsSolution)\wakinyan\tinystr.h" Label="tinystr.h" />
+    <Node Id="(@1 @184)" Category="CodeSchema_ProjectItem" Bounds="301.718656599982,292.858513389195,115.804666743746,25.998000077079" FilePath="$(VsSolution)\wakinyan\prototype.cpp" Label="prototype.cpp" />
+    <Node Id="(@1 @187)" Category="CodeSchema_ProjectItem" Bounds="167.150664860073,295.525230918492,101.568000077079,25.998000077079" FilePath="$(VsSolution)\wakinyan\tinyxml.cpp" Label="tinyxml.cpp" UseManualLocation="True" />
+    <Node Id="(@1 @192)" Category="CodeSchema_ProjectItem" Bounds="-32.6053122880411,354.523338828648,134.444666743746,25.998000077079" FilePath="$(VsSolution)\wakinyan\tinyxmlparser.cpp" Label="tinyxmlparser.cpp" />
+    <Node Id="(@1 @195)" Category="CodeSchema_ProjectItem" Bounds="-190.999997875697,346.990810247542,127.394666743746,25.998000077079" FilePath="$(VsSolution)\wakinyan\tinyxmlerror.cpp" Label="tinyxmlerror.cpp" />
+    <Node Id="(@1 @196)" Category="CodeSchema_ProjectItem" Bounds="40.9993314496606,298.525230918492,96.1513334104124,25.998000077079" FilePath="$(VsSolution)\wakinyan\tinystr.cpp" Label="tinystr.cpp" />
+    <Node Id="(@1 @68)" Category="CodeSchema_ProjectItem" Bounds="-77.7086686274184,290.992710170463,88.708000077079,25.998000077079" FilePath="$(VsSolution)\wakinyan\tinyxml.h" Label="tinyxml.h" />
+    <Node Id="@100" Category="CodeSchema_ProjectItem" FilePath="$(VsInstallDir)\vc\include\mmintrin.h" Label="mmintrin.h" />
+    <Node Id="@102" Category="CodeSchema_ProjectItem" FilePath="$(VsInstallDir)\vc\include\intrin.h" Label="intrin.h" />
+    <Node Id="@104" Category="CodeSchema_ProjectItem" FilePath="c:\sdl2-devel-2.0.5-vc\sdl2-2.0.5\include\sdl_version.h" Label="sdl_version.h" />
+    <Node Id="@106" Category="CodeSchema_ProjectItem" Bounds="-29.3055031182718,234.995987449253,107.044666743746,25.998000077079" FilePath="$(VsSolution)\wakinyan\interaction.h" Label="interaction.h" UseManualLocation="True" />
+    <Node Id="@108" Category="CodeSchema_ProjectItem" FilePath="$(VsInstallDir)\vc\include\crtwrn.h" Label="crtwrn.h" />
+    <Node Id="@11" Category="CodeSchema_ProjectItem" FilePath="c:\sdl2-devel-2.0.5-vc\sdl2-2.0.5\include\sdl_stdinc.h" Label="sdl_stdinc.h" />
+    <Node Id="@110" Category="CodeSchema_ProjectItem" FilePath="c:\sdl2-devel-2.0.5-vc\sdl2-2.0.5\include\sdl_video.h" Label="sdl_video.h" />
+    <Node Id="@112" Category="CodeSchema_ProjectItem" FilePath="c:\sdl2-devel-2.0.5-vc\sdl2-2.0.5\include\sdl_cpuinfo.h" Label="sdl_cpuinfo.h" />
+    <Node Id="@114" Category="CodeSchema_ProjectItem" FilePath="$(VsInstallDir)\vc\include\stdio.h" Label="stdio.h" />
+    <Node Id="@116" Category="CodeSchema_ProjectItem" FilePath="c:\sdl2-devel-2.0.5-vc\sdl2-2.0.5\include\sdl_audio.h" Label="sdl_audio.h" />
+    <Node Id="@118" Category="CodeSchema_ProjectItem" FilePath="c:\sdl2-devel-2.0.5-vc\sdl2-2.0.5\include\sdl_loadso.h" Label="sdl_loadso.h" />
+    <Node Id="@120" Category="CodeSchema_ProjectItem" FilePath="$(VsInstallDir)\vc\include\setjmp.h" Label="setjmp.h" />
+    <Node Id="@122" Category="CodeSchema_ProjectItem" FilePath="c:\sdl2-devel-2.0.5-vc\sdl2-2.0.5\include\sdl_render.h" Label="sdl_render.h" />
+    <Node Id="@124" Category="CodeSchema_ProjectItem" FilePath="c:\sdl2-devel-2.0.5-vc\sdl2-2.0.5\include\sdl_gamecontroller.h" Label="sdl_gamecontroller.h" />
+    <Node Id="@126" Category="CodeSchema_ProjectItem" FilePath="c:\sdl2-devel-2.0.5-vc\sdl2-2.0.5\include\sdl_timer.h" Label="sdl_timer.h" />
+    <Node Id="@128" Category="CodeSchema_ProjectItem" Bounds="124.723083091343,-7.75617667618909,99.1680000770791,25.998000077079" FilePath="$(VsSolution)\wakinyan\character.h" Label="character.h" UseManualLocation="True" />
+    <Node Id="@13" Category="CodeSchema_ProjectItem" FilePath="$(VsInstallDir)\vc\include\malloc.h" Label="malloc.h" />
+    <Node Id="@130" Category="CodeSchema_ProjectItem" FilePath="c:\sdl2-devel-2.0.5-vc\sdl2-2.0.5\include\sdl_power.h" Label="sdl_power.h" />
+    <Node Id="@132" Category="CodeSchema_ProjectItem" FilePath="c:\sdl2-devel-2.0.5-vc\sdl2-2.0.5\include\sdl_error.h" Label="sdl_error.h" />
+    <Node Id="@134" Category="CodeSchema_ProjectItem" FilePath="$(VsInstallDir)\vc\include\armintr.h" Label="armintr.h" />
+    <Node Id="@137" Category="CodeSchema_ProjectItem" FilePath="$(VsInstallDir)\vc\include\inttypes.h" Label="inttypes.h" />
+    <Node Id="@139" Category="CodeSchema_ProjectItem" FilePath="$(VsInstallDir)\vc\include\sys\types.h" Label="types.h" />
+    <Node Id="@141" Category="CodeSchema_ProjectItem" FilePath="$(VsInstallDir)\vc\include\vadefs.h" Label="vadefs.h" />
+    <Node Id="@143" Category="CodeSchema_ProjectItem" FilePath="$(VsInstallDir)\vc\include\crtdefs.h" Label="crtdefs.h" />
+    <Node Id="@145" Category="CodeSchema_ProjectItem" FilePath="c:\sdl2-devel-2.0.5-vc\sdl2-2.0.5\include\sdl_pixels.h" Label="sdl_pixels.h" />
+    <Node Id="@147" Category="CodeSchema_ProjectItem" FilePath="$(VsInstallDir)\vc\include\codeanalysis\sourceannotations.h" Label="sourceannotations.h" />
+    <Node Id="@149" Category="CodeSchema_ProjectItem" FilePath="c:\sdl2-devel-2.0.5-vc\sdl2-2.0.5\include\sdl_rwops.h" Label="sdl_rwops.h" />
+    <Node Id="@15" Category="CodeSchema_ProjectItem" FilePath="c:\sdl2-devel-2.0.5-vc\sdl2-2.0.5\include\sdl_thread.h" Label="sdl_thread.h" />
+    <Node Id="@151" Category="CodeSchema_ProjectItem" FilePath="$(VsInstallDir)\vc\include\process.h" Label="process.h" />
+    <Node Id="@153" Category="CodeSchema_ProjectItem" FilePath="$(VsInstallDir)\vc\include\limits.h" Label="limits.h" />
+    <Node Id="@155" Category="CodeSchema_ProjectItem" FilePath="c:\sdl2-devel-2.0.5-vc\sdl2-2.0.5\include\sdl_events.h" Label="sdl_events.h" />
+    <Node Id="@157" Category="CodeSchema_ProjectItem" FilePath="c:\sdl2-devel-2.0.5-vc\sdl2-2.0.5\include\sdl_hints.h" Label="sdl_hints.h" />
+    <Node Id="@159" Category="CodeSchema_ProjectItem" FilePath="$(VsInstallDir)\vc\include\float.h" Label="float.h" />
+    <Node Id="@161" Category="CodeSchema_ProjectItem" FilePath="c:\sdl2-devel-2.0.5-vc\sdl2-2.0.5\include\sdl_rect.h" Label="sdl_rect.h" />
+    <Node Id="@163" Category="CodeSchema_ProjectItem" FilePath="c:\sdl2-devel-2.0.5-vc\sdl2-2.0.5\include\sdl_quit.h" Label="sdl_quit.h" />
+    <Node Id="@165" Category="CodeSchema_ProjectItem" FilePath="$(VsInstallDir)\vc\include\stdint.h" Label="stdint.h" />
+    <Node Id="@167" Category="CodeSchema_ProjectItem" FilePath="c:\sdl2-devel-2.0.5-vc\sdl2-2.0.5\include\sdl_assert.h" Label="sdl_assert.h" />
+    <Node Id="@169" Category="CodeSchema_ProjectItem" FilePath="$(VsInstallDir)\vc\include\mm3dnow.h" Label="mm3dnow.h" />
+    <Node Id="@17" Category="CodeSchema_ProjectItem" FilePath="c:\sdl2-devel-2.0.5-vc\sdl2-2.0.5\include\sdl_clipboard.h" Label="sdl_clipboard.h" />
+    <Node Id="@171" Category="CodeSchema_ProjectItem" FilePath="$(VsInstallDir)\vc\include\setjmpex.h" Label="setjmpex.h" />
+    <Node Id="@173" Category="CodeSchema_ProjectItem" FilePath="c:\sdl2-devel-2.0.5-vc\sdl2-2.0.5\include\sdl_mutex.h" Label="sdl_mutex.h" />
+    <Node Id="@175" Category="CodeSchema_ProjectItem" FilePath="c:\sdl2-devel-2.0.5-vc\sdl2-2.0.5\include\sdl_messagebox.h" Label="sdl_messagebox.h" />
+    <Node Id="@177" Category="CodeSchema_ProjectItem" FilePath="$(ProgramFiles)\windows kits\8.1\include\shared\winapifamily.h" Label="winapifamily.h" />
+    <Node Id="@179" Category="CodeSchema_ProjectItem" FilePath="$(VsInstallDir)\vc\include\memory.h" Label="memory.h" />
+    <Node Id="@181" Category="CodeSchema_ProjectItem" FilePath="$(VsInstallDir)\vc\include\swprintf.inl" Label="swprintf.inl" />
+    <Node Id="@183" Category="CodeSchema_ProjectItem" Bounds="155.176298423375,234.951706443394,93.2280000770791,25.998000077079" FilePath="$(VsSolution)\wakinyan\scene.cpp" Label="scene.cpp" UseManualLocation="True" />
+    <Node Id="@186" Category="CodeSchema_ProjectItem" Bounds="96.2551540141949,148.994461570347,92.818000077079,25.998000077079" FilePath="$(VsSolution)\wakinyan\sprite.cpp" Label="sprite.cpp" UseManualLocation="True" />
+    <Node Id="@189" Category="CodeSchema_ProjectItem" Bounds="211.28387471732,51.5348611217388,89.388000077079,25.998000077079" FilePath="$(VsSolution)\wakinyan\main.cpp" Label="main.cpp" UseManualLocation="True" />
+    <Node Id="@19" Category="CodeSchema_ProjectItem" FilePath="c:\sdl2-devel-2.0.5-vc\sdl2-2.0.5\include\sdl_keyboard.h" Label="sdl_keyboard.h" />
+    <Node Id="@191" Category="CodeSchema_ProjectItem" Bounds="-179.181596677537,230.662582908238,119.904666743746,25.998000077079" FilePath="$(VsSolution)\wakinyan\interaction.cpp" Label="interaction.cpp" UseManualLocation="True" />
+    <Node Id="@194" Category="CodeSchema_ProjectItem" Bounds="313.67188252982,-4.46323796693005,112.028000077079,25.998000077079" FilePath="$(VsSolution)\wakinyan\character.cpp" Label="character.cpp" UseManualLocation="True" />
+    <Node Id="@2" Category="CodeSchema_PoundIncludeFile" Bounds="-211.000003415423,-47.7576540320585,656.699886022322,448.281819992491" FilePath="$(VsSolution)\wakinyan\wakinyan.vcxproj" Group="Expanded" Label="wakinyan.vcxproj" Language="{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}" UseManualLocation="True" />
+    <Node Id="@21" Category="CodeSchema_ProjectItem" FilePath="c:\sdl2-devel-2.0.5-vc\sdl2-2.0.5\include\sdl_surface.h" Label="sdl_surface.h" />
+    <Node Id="@23" Category="CodeSchema_ProjectItem" FilePath="c:\sdl2-devel-2.0.5-vc\sdl2-2.0.5\include\sdl_scancode.h" Label="sdl_scancode.h" />
+    <Node Id="@25" Category="CodeSchema_ProjectItem" FilePath="c:\sdl2-devel-2.0.5-vc\sdl2-2.0.5\include\sdl_keycode.h" Label="sdl_keycode.h" />
+    <Node Id="@27" Category="CodeSchema_ProjectItem" FilePath="c:\sdl2-devel-2.0.5-vc\sdl2-2.0.5\include\close_code.h" Label="close_code.h" />
+    <Node Id="@29" Category="CodeSchema_ProjectItem" FilePath="c:\sdl2-devel-2.0.5-vc\sdl2-2.0.5\include\begin_code.h" Label="begin_code.h" />
+    <Node Id="@31" Category="CodeSchema_ProjectItem" FilePath="c:\sdl2-devel-2.0.5-vc\sdl2-2.0.5\include\sdl_blendmode.h" Label="sdl_blendmode.h" />
+    <Node Id="@33" Category="CodeSchema_ProjectItem" Bounds="-154.926847481166,104.66446355399,80.368000077079,25.998000077079" FilePath="$(VsSolution)\wakinyan\scene.h" Label="scene.h" UseManualLocation="True" />
+    <Node Id="@35" Category="CodeSchema_ProjectItem" FilePath="$(VsInstallDir)\vc\include\ctype.h" Label="ctype.h" />
+    <Node Id="@37" Category="CodeSchema_ProjectItem" FilePath="c:\sdl2-devel-2.0.5-vc\sdl2-2.0.5\include\sdl_gesture.h" Label="sdl_gesture.h" />
+    <Node Id="@39" Category="CodeSchema_ProjectItem" FilePath="c:\sdl2-devel-2.0.5-vc\sdl2-2.0.5\include\sdl_mouse.h" Label="sdl_mouse.h" />
+    <Node Id="@41" Category="CodeSchema_ProjectItem" Bounds="-21.425073570644,-6.75600835267224,79.958000077079,25.998000077079" FilePath="$(VsSolution)\wakinyan\sprite.h" Label="sprite.h" UseManualLocation="True" />
+    <Node Id="@43" Category="CodeSchema_ProjectItem" FilePath="$(VsInstallDir)\vc\include\stddef.h" Label="stddef.h" />
+    <Node Id="@45" Category="CodeSchema_ProjectItem" FilePath="c:\sdl2_ttf-2.0.14\include\sdl_ttf.h" Label="sdl_ttf.h" />
+    <Node Id="@47" Category="CodeSchema_ProjectItem" FilePath="c:\sdl2-devel-2.0.5-vc\sdl2-2.0.5\include\sdl_config.h" Label="sdl_config.h" />
+    <Node Id="@49" Category="CodeSchema_ProjectItem" FilePath="$(VsInstallDir)\vc\include\string.h" Label="string.h" />
+    <Node Id="@5" Category="CodeSchema_ProjectItem" FilePath="$(VsInstallDir)\vc\include\stdlib.h" Label="stdlib.h" />
+    <Node Id="@51" Category="CodeSchema_ProjectItem" FilePath="c:\sdl2-devel-2.0.5-vc\sdl2-2.0.5\include\sdl_log.h" Label="sdl_log.h" />
+    <Node Id="@53" Category="CodeSchema_ProjectItem" FilePath="$(VsInstallDir)\vc\include\stdarg.h" Label="stdarg.h" />
+    <Node Id="@55" Category="CodeSchema_ProjectItem" FilePath="c:\sdl2-devel-2.0.5-vc\sdl2-2.0.5\include\sdl_touch.h" Label="sdl_touch.h" />
+    <Node Id="@57" Category="CodeSchema_ProjectItem" FilePath="$(VsInstallDir)\vc\include\math.h" Label="math.h" />
+    <Node Id="@59" Category="CodeSchema_ProjectItem" FilePath="c:\sdl2-devel-2.0.5-vc\sdl2-2.0.5\include\sdl_joystick.h" Label="sdl_joystick.h" />
+    <Node Id="@61" Category="CodeSchema_ProjectItem" FilePath="$(VsInstallDir)\vc\include\signal.h" Label="signal.h" />
+    <Node Id="@63" Category="CodeSchema_ProjectItem" FilePath="$(VsInstallDir)\vc\include\concurrencysal.h" Label="concurrencysal.h" />
+    <Node Id="@65" Category="CodeSchema_ProjectItem" FilePath="$(VsInstallDir)\vc\include\sal.h" Label="sal.h" />
+    <Node Id="@67" Category="CodeSchema_ProjectItem" FilePath="c:\sdl2-devel-2.0.5-vc\sdl2-2.0.5\include\sdl.h" Label="sdl.h" />
+    <Node Id="@7" Category="CodeSchema_ProjectItem" FilePath="c:\sdl2-devel-2.0.5-vc\sdl2-2.0.5\include\sdl_atomic.h" Label="sdl_atomic.h" />
+    <Node Id="@70" Category="CodeSchema_ProjectItem" FilePath="c:\sdl2-devel-2.0.5-vc\sdl2-2.0.5\include\sdl_filesystem.h" Label="sdl_filesystem.h" />
+    <Node Id="@72" Category="CodeSchema_ProjectItem" FilePath="c:\sdl2-devel-2.0.5-vc\sdl2-2.0.5\include\sdl_system.h" Label="sdl_system.h" />
+    <Node Id="@74" Category="CodeSchema_ProjectItem" FilePath="c:\sdl2-devel-2.0.5-vc\sdl2-2.0.5\include\sdl_platform.h" Label="sdl_platform.h" />
+    <Node Id="@76" Category="CodeSchema_ProjectItem" FilePath="c:\sdl2-devel-2.0.5-vc\sdl2-2.0.5\include\sdl_endian.h" Label="sdl_endian.h" />
+    <Node Id="@78" Category="CodeSchema_ProjectItem" Bounds="344.519172568882,235.991928611363,76.528000077079,25.998000077079" FilePath="$(VsSolution)\wakinyan\main.h" Label="main.h" UseManualLocation="True" />
+    <Node Id="@80" Category="CodeSchema_ProjectItem" FilePath="c:\sdl2-devel-2.0.5-vc\sdl2-2.0.5\include\sdl_main.h" Label="sdl_main.h" />
+    <Node Id="@82" Category="CodeSchema_ProjectItem" FilePath="$(VsInstallDir)\vc\include\ammintrin.h" Label="ammintrin.h" />
+    <Node Id="@84" Category="CodeSchema_ProjectItem" FilePath="$(VsInstallDir)\vc\include\emmintrin.h" Label="emmintrin.h" />
+    <Node Id="@86" Category="CodeSchema_ProjectItem" FilePath="$(VsInstallDir)\vc\include\immintrin.h" Label="immintrin.h" />
+    <Node Id="@88" Category="CodeSchema_ProjectItem" FilePath="$(VsInstallDir)\vc\include\nmmintrin.h" Label="nmmintrin.h" />
+    <Node Id="@9" Category="CodeSchema_ProjectItem" FilePath="c:\sdl2-devel-2.0.5-vc\sdl2-2.0.5\include\sdl_haptic.h" Label="sdl_haptic.h" />
+    <Node Id="@90" Category="CodeSchema_ProjectItem" FilePath="$(VsInstallDir)\vc\include\pmmintrin.h" Label="pmmintrin.h" />
+    <Node Id="@92" Category="CodeSchema_ProjectItem" FilePath="$(VsInstallDir)\vc\include\smmintrin.h" Label="smmintrin.h" />
+    <Node Id="@94" Category="CodeSchema_ProjectItem" FilePath="$(VsInstallDir)\vc\include\tmmintrin.h" Label="tmmintrin.h" />
+    <Node Id="@96" Category="CodeSchema_ProjectItem" FilePath="$(VsInstallDir)\vc\include\wmmintrin.h" Label="wmmintrin.h" />
+    <Node Id="@98" Category="CodeSchema_ProjectItem" FilePath="$(VsInstallDir)\vc\include\xmmintrin.h" Label="xmmintrin.h" />
+    <Node Id="C/C++ Standard Library Indirectly Included" Category="CodeSchema_PoundIncludeGroup" Group="Collapsed" Label="Indirectly Included" />
+    <Node Id="G2" Category="CodeSchema_PoundIncludeGroup" Group="Collapsed" Label="C/C++ Standard Library" />
+    <Node Id="G4" Category="CodeSchema_PoundIncludeGroup" Group="Collapsed" Label="Windows SDK" />
+    <Node Id="OthersGroup" Category="CodeSchema_PoundIncludeGroup" Group="Collapsed" Label="Others" />
+    <Node Id="PoundIncludeGraphExternalsGroup" Category="Externals" Bounds="81.0050000000001,485.653132008772,86.99,25" Group="Collapsed" Label="Externals" UseManualLocation="True" />
+  </Nodes>
+  <Links>
+    <Link Source="@100" Target="@143" Category="PoundInclude" />
+    <Link Source="@102" Target="@120" Category="PoundInclude" />
+    <Link Source="@102" Target="@134" Category="PoundInclude" />
+    <Link Source="@102" Target="@143" Category="PoundInclude" />
+    <Link Source="@102" Target="@169" Category="PoundInclude" />
+    <Link Source="@102" Target="@43" Category="PoundInclude" />
+    <Link Source="@102" Target="@82" Category="PoundInclude" />
+    <Link Source="@102" Target="@86" Category="PoundInclude" />
+    <Link Source="@104" Target="@11" Category="PoundInclude" />
+    <Link Source="@104" Target="@27" Category="PoundInclude" />
+    <Link Source="@104" Target="@29" Category="PoundInclude" />
+    <Link Source="@106" Target="@41" Category="PoundInclude" Bounds="19.0698335274731,28.2381397493022,4.84926243104441,206.756470344082" />
+    <Link Source="@108" Target="@143" Category="PoundInclude" />
+    <Link Source="@11" Target="@114" Category="PoundInclude" />
+    <Link Source="@11" Target="@13" Category="PoundInclude" />
+    <Link Source="@11" Target="@137" Category="PoundInclude" />
+    <Link Source="@11" Target="@139" Category="PoundInclude" />
+    <Link Source="@11" Target="@159" Category="PoundInclude" />
+    <Link Source="@11" Target="@165" Category="PoundInclude" />
+    <Link Source="@11" Target="@179" Category="PoundInclude" />
+    <Link Source="@11" Target="@27" Category="PoundInclude" />
+    <Link Source="@11" Target="@29" Category="PoundInclude" />
+    <Link Source="@11" Target="@35" Category="PoundInclude" />
+    <Link Source="@11" Target="@43" Category="PoundInclude" />
+    <Link Source="@11" Target="@47" Category="PoundInclude" />
+    <Link Source="@11" Target="@49" Category="PoundInclude" />
+    <Link Source="@11" Target="@5" Category="PoundInclude" />
+    <Link Source="@11" Target="@53" Category="PoundInclude" />
+    <Link Source="@11" Target="@57" Category="PoundInclude" />
+    <Link Source="@11" Target="@65" Category="PoundInclude" />
+    <Link Source="@110" Target="@11" Category="PoundInclude" />
+    <Link Source="@110" Target="@145" Category="PoundInclude" />
+    <Link Source="@110" Target="@161" Category="PoundInclude" />
+    <Link Source="@110" Target="@21" Category="PoundInclude" />
+    <Link Source="@110" Target="@27" Category="PoundInclude" />
+    <Link Source="@110" Target="@29" Category="PoundInclude" />
+    <Link Source="@112" Target="@100" Category="PoundInclude" />
+    <Link Source="@112" Target="@102" Category="PoundInclude" />
+    <Link Source="@112" Target="@11" Category="PoundInclude" />
+    <Link Source="@112" Target="@169" Category="PoundInclude" />
+    <Link Source="@112" Target="@27" Category="PoundInclude" />
+    <Link Source="@112" Target="@29" Category="PoundInclude" />
+    <Link Source="@112" Target="@84" Category="PoundInclude" />
+    <Link Source="@112" Target="@98" Category="PoundInclude" />
+    <Link Source="@114" Target="@143" Category="PoundInclude" />
+    <Link Source="@114" Target="@181" Category="PoundInclude" />
+    <Link Source="@116" Target="@11" Category="PoundInclude" />
+    <Link Source="@116" Target="@132" Category="PoundInclude" />
+    <Link Source="@116" Target="@149" Category="PoundInclude" />
+    <Link Source="@116" Target="@15" Category="PoundInclude" />
+    <Link Source="@116" Target="@173" Category="PoundInclude" />
+    <Link Source="@116" Target="@27" Category="PoundInclude" />
+    <Link Source="@116" Target="@29" Category="PoundInclude" />
+    <Link Source="@116" Target="@76" Category="PoundInclude" />
+    <Link Source="@118" Target="@11" Category="PoundInclude" />
+    <Link Source="@118" Target="@132" Category="PoundInclude" />
+    <Link Source="@118" Target="@27" Category="PoundInclude" />
+    <Link Source="@118" Target="@29" Category="PoundInclude" />
+    <Link Source="@120" Target="@143" Category="PoundInclude" />
+    <Link Source="@120" Target="@171" Category="PoundInclude" />
+    <Link Source="@122" Target="@11" Category="PoundInclude" />
+    <Link Source="@122" Target="@110" Category="PoundInclude" />
+    <Link Source="@122" Target="@161" Category="PoundInclude" />
+    <Link Source="@122" Target="@27" Category="PoundInclude" />
+    <Link Source="@122" Target="@29" Category="PoundInclude" />
+    <Link Source="@124" Target="@11" Category="PoundInclude" />
+    <Link Source="@124" Target="@132" Category="PoundInclude" />
+    <Link Source="@124" Target="@149" Category="PoundInclude" />
+    <Link Source="@124" Target="@27" Category="PoundInclude" />
+    <Link Source="@124" Target="@29" Category="PoundInclude" />
+    <Link Source="@124" Target="@59" Category="PoundInclude" />
+    <Link Source="@126" Target="@11" Category="PoundInclude" />
+    <Link Source="@126" Target="@132" Category="PoundInclude" />
+    <Link Source="@126" Target="@27" Category="PoundInclude" />
+    <Link Source="@126" Target="@29" Category="PoundInclude" />
+    <Link Source="@128" Target="@41" Category="PoundInclude" Bounds="67.5327419056663,5.55984940668521,57.190341185677,0.367247480602694" />
+    <Link Source="@13" Target="@143" Category="PoundInclude" />
+    <Link Source="@130" Target="@11" Category="PoundInclude" />
+    <Link Source="@130" Target="@27" Category="PoundInclude" />
+    <Link Source="@130" Target="@29" Category="PoundInclude" />
+    <Link Source="@132" Target="@11" Category="PoundInclude" />
+    <Link Source="@132" Target="@27" Category="PoundInclude" />
+    <Link Source="@132" Target="@29" Category="PoundInclude" />
+    <Link Source="@137" Target="@165" Category="PoundInclude" />
+    <Link Source="@139" Target="@108" Category="PoundInclude" />
+    <Link Source="@143" Target="@141" Category="PoundInclude" />
+    <Link Source="@143" Target="@177" Category="PoundInclude" />
+    <Link Source="@143" Target="@65" Category="PoundInclude" />
+    <Link Source="@145" Target="@11" Category="PoundInclude" />
+    <Link Source="@145" Target="@27" Category="PoundInclude" />
+    <Link Source="@145" Target="@29" Category="PoundInclude" />
+    <Link Source="@145" Target="@76" Category="PoundInclude" />
+    <Link Source="@149" Target="@11" Category="PoundInclude" />
+    <Link Source="@149" Target="@132" Category="PoundInclude" />
+    <Link Source="@149" Target="@27" Category="PoundInclude" />
+    <Link Source="@149" Target="@29" Category="PoundInclude" />
+    <Link Source="@15" Target="@11" Category="PoundInclude" />
+    <Link Source="@15" Target="@132" Category="PoundInclude" />
+    <Link Source="@15" Target="@151" Category="PoundInclude" />
+    <Link Source="@15" Target="@173" Category="PoundInclude" />
+    <Link Source="@15" Target="@27" Category="PoundInclude" />
+    <Link Source="@15" Target="@29" Category="PoundInclude" />
+    <Link Source="@15" Target="@7" Category="PoundInclude" />
+    <Link Source="@151" Target="@143" Category="PoundInclude" />
+    <Link Source="@153" Target="@143" Category="PoundInclude" />
+    <Link Source="@155" Target="@11" Category="PoundInclude" />
+    <Link Source="@155" Target="@110" Category="PoundInclude" />
+    <Link Source="@155" Target="@124" Category="PoundInclude" />
+    <Link Source="@155" Target="@132" Category="PoundInclude" />
+    <Link Source="@155" Target="@163" Category="PoundInclude" />
+    <Link Source="@155" Target="@19" Category="PoundInclude" />
+    <Link Source="@155" Target="@27" Category="PoundInclude" />
+    <Link Source="@155" Target="@29" Category="PoundInclude" />
+    <Link Source="@155" Target="@37" Category="PoundInclude" />
+    <Link Source="@155" Target="@39" Category="PoundInclude" />
+    <Link Source="@155" Target="@55" Category="PoundInclude" />
+    <Link Source="@155" Target="@59" Category="PoundInclude" />
+    <Link Source="@157" Target="@11" Category="PoundInclude" />
+    <Link Source="@157" Target="@27" Category="PoundInclude" />
+    <Link Source="@157" Target="@29" Category="PoundInclude" />
+    <Link Source="@159" Target="@108" Category="PoundInclude" />
+    <Link Source="@159" Target="@143" Category="PoundInclude" />
+    <Link Source="@161" Target="@11" Category="PoundInclude" />
+    <Link Source="@161" Target="@132" Category="PoundInclude" />
+    <Link Source="@161" Target="@145" Category="PoundInclude" />
+    <Link Source="@161" Target="@149" Category="PoundInclude" />
+    <Link Source="@161" Target="@27" Category="PoundInclude" />
+    <Link Source="@161" Target="@29" Category="PoundInclude" />
+    <Link Source="@163" Target="@11" Category="PoundInclude" />
+    <Link Source="@163" Target="@132" Category="PoundInclude" />
+    <Link Source="@165" Target="@143" Category="PoundInclude" />
+    <Link Source="@167" Target="@27" Category="PoundInclude" />
+    <Link Source="@167" Target="@29" Category="PoundInclude" />
+    <Link Source="@167" Target="@47" Category="PoundInclude" />
+    <Link Source="@167" Target="@61" Category="PoundInclude" />
+    <Link Source="@169" Target="@100" Category="PoundInclude" />
+    <Link Source="@169" Target="@143" Category="PoundInclude" />
+    <Link Source="@169" Target="@98" Category="PoundInclude" />
+    <Link Source="@17" Target="@11" Category="PoundInclude" />
+    <Link Source="@17" Target="@27" Category="PoundInclude" />
+    <Link Source="@17" Target="@29" Category="PoundInclude" />
+    <Link Source="@171" Target="@120" Category="PoundInclude" />
+    <Link Source="@173" Target="@11" Category="PoundInclude" />
+    <Link Source="@173" Target="@132" Category="PoundInclude" />
+    <Link Source="@173" Target="@27" Category="PoundInclude" />
+    <Link Source="@173" Target="@29" Category="PoundInclude" />
+    <Link Source="@175" Target="@11" Category="PoundInclude" />
+    <Link Source="@175" Target="@110" Category="PoundInclude" />
+    <Link Source="@175" Target="@27" Category="PoundInclude" />
+    <Link Source="@175" Target="@29" Category="PoundInclude" />
+    <Link Source="@179" Target="@143" Category="PoundInclude" />
+    <Link Source="@181" Target="@141" Category="PoundInclude" />
+    <Link Source="@183" Target="@106" Category="PoundInclude" Bounds="86.746307374159,247.961968923182,68.4371341069171,0.0165351439797519" />
+    <Link Source="@183" Target="@33" Category="PoundInclude" Bounds="-74.8384430447074,134.088023149208,245.054072430097,100.863683294186" />
+    <Link Source="@183" Target="@78" Category="PoundInclude" Bounds="248.411441558155,248.218611593705,87.1150227068251,0.500677047152067" />
+    <Link Source="@186" Target="@106" Category="PoundInclude" Bounds="49.4086510319666,174.991084291557,75.3534497037893,54.7154830934759" />
+    <Link Source="@186" Target="@41" Category="PoundInclude" Bounds="34.5209579281312,26.2792256243463,97.7849041779438,122.713858590132" />
+    <Link Source="@186" Target="@78" Category="PoundInclude" Bounds="178.542791357549,174.991084291557,160.022573285694,57.9769353734297" />
+    <Link Source="@189" Target="@128" Category="PoundInclude" Bounds="199.495747205901,23.5278125774094,38.5765778594327,28.00567118846" />
+    <Link Source="@189" Target="@33" Category="PoundInclude" Bounds="-65.6498777686391,70.9379417961165,276.933752485959,39.6896119502647" />
+    <Link Source="@189" Target="@78" Category="PoundInclude" Bounds="264.914494196881,77.5314838429484,103.840517426923,151.044016022267" />
+    <Link Source="@19" Target="@11" Category="PoundInclude" />
+    <Link Source="@19" Target="@110" Category="PoundInclude" />
+    <Link Source="@19" Target="@132" Category="PoundInclude" />
+    <Link Source="@19" Target="@25" Category="PoundInclude" />
+    <Link Source="@19" Target="@27" Category="PoundInclude" />
+    <Link Source="@19" Target="@29" Category="PoundInclude" />
+    <Link Source="@191" Target="@106" Category="PoundInclude" Bounds="-59.2983591068959,245.47176410192,21.0040996576264,0.634190918727654" />
+    <Link Source="@194" Target="@128" Category="PoundInclude" Bounds="232.889805164573,6.22880623047903,80.7820773652467,1.36151082148664" />
+    <Link Source="@194" Target="@78" Category="PoundInclude" Bounds="370.394303819213,21.5333837658694,11.1978341461964,205.471880357442" />
+    <Link Source="@2" Target="(@1 @135)" Category="Contains" />
+    <Link Source="@2" Target="(@1 @184)" Category="Contains" />
+    <Link Source="@2" Target="(@1 @187)" Category="Contains" />
+    <Link Source="@2" Target="(@1 @192)" Category="Contains" />
+    <Link Source="@2" Target="(@1 @195)" Category="Contains" />
+    <Link Source="@2" Target="(@1 @196)" Category="Contains" />
+    <Link Source="@2" Target="(@1 @68)" Category="Contains" />
+    <Link Source="@2" Target="@106" Category="Contains" />
+    <Link Source="@2" Target="@128" Category="Contains" />
+    <Link Source="@2" Target="@183" Category="Contains" />
+    <Link Source="@2" Target="@186" Category="Contains" />
+    <Link Source="@2" Target="@189" Category="Contains" />
+    <Link Source="@2" Target="@191" Category="Contains" />
+    <Link Source="@2" Target="@194" Category="Contains" />
+    <Link Source="@2" Target="@33" Category="Contains" />
+    <Link Source="@2" Target="@41" Category="Contains" />
+    <Link Source="@2" Target="@78" Category="Contains" />
+    <Link Source="@21" Target="@11" Category="PoundInclude" />
+    <Link Source="@21" Target="@145" Category="PoundInclude" />
+    <Link Source="@21" Target="@149" Category="PoundInclude" />
+    <Link Source="@21" Target="@161" Category="PoundInclude" />
+    <Link Source="@21" Target="@27" Category="PoundInclude" />
+    <Link Source="@21" Target="@29" Category="PoundInclude" />
+    <Link Source="@21" Target="@31" Category="PoundInclude" />
+    <Link Source="@23" Target="@11" Category="PoundInclude" />
+    <Link Source="@25" Target="@11" Category="PoundInclude" />
+    <Link Source="@25" Target="@23" Category="PoundInclude" />
+    <Link Source="@31" Target="@27" Category="PoundInclude" />
+    <Link Source="@31" Target="@29" Category="PoundInclude" />
+    <Link Source="@33" Target="@106" Category="PoundInclude" Bounds="-100.882433956582,130.662463631069,104.68130910302,98.1754507132524" />
+    <Link Source="@33" Target="@128" Category="PoundInclude" Bounds="-81.3209240567029,21.5028080088298,213.818176170204,83.1616555451599" />
+    <Link Source="@33" Target="@41" Category="PoundInclude" Bounds="-99.1918151329171,25.0126987188344,95.2894195556961,79.6517648351553" />
+    <Link Source="@35" Target="@143" Category="PoundInclude" />
+    <Link Source="@37" Target="@11" Category="PoundInclude" />
+    <Link Source="@37" Target="@110" Category="PoundInclude" />
+    <Link Source="@37" Target="@132" Category="PoundInclude" />
+    <Link Source="@37" Target="@27" Category="PoundInclude" />
+    <Link Source="@37" Target="@29" Category="PoundInclude" />
+    <Link Source="@37" Target="@55" Category="PoundInclude" />
+    <Link Source="@39" Target="@11" Category="PoundInclude" />
+    <Link Source="@39" Target="@110" Category="PoundInclude" />
+    <Link Source="@39" Target="@132" Category="PoundInclude" />
+    <Link Source="@39" Target="@27" Category="PoundInclude" />
+    <Link Source="@39" Target="@29" Category="PoundInclude" />
+    <Link Source="@41" Target="@78" Category="PoundInclude" Bounds="38.0584472733773,19.2406141301188,317.738184759379,211.76007957714" />
+    <Link Source="@43" Target="@143" Category="PoundInclude" />
+    <Link Source="@45" Target="@27" Category="PoundInclude" />
+    <Link Source="@45" Target="@29" Category="PoundInclude" />
+    <Link Source="@45" Target="@67" Category="PoundInclude" />
+    <Link Source="@47" Target="@74" Category="PoundInclude" />
+    <Link Source="@49" Target="@143" Category="PoundInclude" />
+    <Link Source="@5" Target="@143" Category="PoundInclude" />
+    <Link Source="@5" Target="@153" Category="PoundInclude" />
+    <Link Source="@51" Target="@11" Category="PoundInclude" />
+    <Link Source="@51" Target="@27" Category="PoundInclude" />
+    <Link Source="@51" Target="@29" Category="PoundInclude" />
+    <Link Source="@53" Target="@141" Category="PoundInclude" />
+    <Link Source="@53" Target="@143" Category="PoundInclude" />
+    <Link Source="@55" Target="@11" Category="PoundInclude" />
+    <Link Source="@55" Target="@110" Category="PoundInclude" />
+    <Link Source="@55" Target="@132" Category="PoundInclude" />
+    <Link Source="@55" Target="@27" Category="PoundInclude" />
+    <Link Source="@55" Target="@29" Category="PoundInclude" />
+    <Link Source="@57" Target="@143" Category="PoundInclude" />
+    <Link Source="@59" Target="@11" Category="PoundInclude" />
+    <Link Source="@59" Target="@132" Category="PoundInclude" />
+    <Link Source="@59" Target="@27" Category="PoundInclude" />
+    <Link Source="@59" Target="@29" Category="PoundInclude" />
+    <Link Source="@61" Target="@143" Category="PoundInclude" />
+    <Link Source="@65" Target="@147" Category="PoundInclude" />
+    <Link Source="@65" Target="@63" Category="PoundInclude" />
+    <Link Source="@67" Target="@104" Category="PoundInclude" />
+    <Link Source="@67" Target="@11" Category="PoundInclude" />
+    <Link Source="@67" Target="@110" Category="PoundInclude" />
+    <Link Source="@67" Target="@112" Category="PoundInclude" />
+    <Link Source="@67" Target="@116" Category="PoundInclude" />
+    <Link Source="@67" Target="@118" Category="PoundInclude" />
+    <Link Source="@67" Target="@122" Category="PoundInclude" />
+    <Link Source="@67" Target="@124" Category="PoundInclude" />
+    <Link Source="@67" Target="@126" Category="PoundInclude" />
+    <Link Source="@67" Target="@130" Category="PoundInclude" />
+    <Link Source="@67" Target="@132" Category="PoundInclude" />
+    <Link Source="@67" Target="@149" Category="PoundInclude" />
+    <Link Source="@67" Target="@15" Category="PoundInclude" />
+    <Link Source="@67" Target="@155" Category="PoundInclude" />
+    <Link Source="@67" Target="@157" Category="PoundInclude" />
+    <Link Source="@67" Target="@167" Category="PoundInclude" />
+    <Link Source="@67" Target="@17" Category="PoundInclude" />
+    <Link Source="@67" Target="@173" Category="PoundInclude" />
+    <Link Source="@67" Target="@175" Category="PoundInclude" />
+    <Link Source="@67" Target="@27" Category="PoundInclude" />
+    <Link Source="@67" Target="@29" Category="PoundInclude" />
+    <Link Source="@67" Target="@51" Category="PoundInclude" />
+    <Link Source="@67" Target="@59" Category="PoundInclude" />
+    <Link Source="@67" Target="@7" Category="PoundInclude" />
+    <Link Source="@67" Target="@70" Category="PoundInclude" />
+    <Link Source="@67" Target="@72" Category="PoundInclude" />
+    <Link Source="@67" Target="@76" Category="PoundInclude" />
+    <Link Source="@67" Target="@80" Category="PoundInclude" />
+    <Link Source="@67" Target="@9" Category="PoundInclude" />
+    <Link Source="@7" Target="@11" Category="PoundInclude" />
+    <Link Source="@7" Target="@27" Category="PoundInclude" />
+    <Link Source="@7" Target="@29" Category="PoundInclude" />
+    <Link Source="@7" Target="@74" Category="PoundInclude" />
+    <Link Source="@70" Target="@11" Category="PoundInclude" />
+    <Link Source="@70" Target="@27" Category="PoundInclude" />
+    <Link Source="@70" Target="@29" Category="PoundInclude" />
+    <Link Source="@72" Target="@11" Category="PoundInclude" />
+    <Link Source="@72" Target="@110" Category="PoundInclude" />
+    <Link Source="@72" Target="@122" Category="PoundInclude" />
+    <Link Source="@72" Target="@19" Category="PoundInclude" />
+    <Link Source="@72" Target="@27" Category="PoundInclude" />
+    <Link Source="@72" Target="@29" Category="PoundInclude" />
+    <Link Source="@74" Target="@177" Category="PoundInclude" />
+    <Link Source="@74" Target="@27" Category="PoundInclude" />
+    <Link Source="@74" Target="@29" Category="PoundInclude" />
+    <Link Source="@76" Target="@11" Category="PoundInclude" />
+    <Link Source="@76" Target="@27" Category="PoundInclude" />
+    <Link Source="@76" Target="@29" Category="PoundInclude" />
+    <Link Source="@78" Target="@45" Category="PoundInclude" />
+    <Link Source="@78" Target="@67" Category="PoundInclude" />
+    <Link Source="@80" Target="@11" Category="PoundInclude" />
+    <Link Source="@80" Target="@27" Category="PoundInclude" />
+    <Link Source="@80" Target="@29" Category="PoundInclude" />
+    <Link Source="@84" Target="@98" Category="PoundInclude" />
+    <Link Source="@86" Target="@96" Category="PoundInclude" />
+    <Link Source="@88" Target="@92" Category="PoundInclude" />
+    <Link Source="@9" Target="@11" Category="PoundInclude" />
+    <Link Source="@9" Target="@132" Category="PoundInclude" />
+    <Link Source="@9" Target="@27" Category="PoundInclude" />
+    <Link Source="@9" Target="@29" Category="PoundInclude" />
+    <Link Source="@9" Target="@59" Category="PoundInclude" />
+    <Link Source="@90" Target="@84" Category="PoundInclude" />
+    <Link Source="@92" Target="@94" Category="PoundInclude" />
+    <Link Source="@94" Target="@90" Category="PoundInclude" />
+    <Link Source="@96" Target="@88" Category="PoundInclude" />
+    <Link Source="@98" Target="@100" Category="PoundInclude" />
+    <Link Source="@98" Target="@13" Category="PoundInclude" />
+    <Link Source="C/C++ Standard Library Indirectly Included" Target="@108" Category="Contains" />
+    <Link Source="C/C++ Standard Library Indirectly Included" Target="@120" Category="Contains" />
+    <Link Source="C/C++ Standard Library Indirectly Included" Target="@134" Category="Contains" />
+    <Link Source="C/C++ Standard Library Indirectly Included" Target="@141" Category="Contains" />
+    <Link Source="C/C++ Standard Library Indirectly Included" Target="@143" Category="Contains" />
+    <Link Source="C/C++ Standard Library Indirectly Included" Target="@147" Category="Contains" />
+    <Link Source="C/C++ Standard Library Indirectly Included" Target="@153" Category="Contains" />
+    <Link Source="C/C++ Standard Library Indirectly Included" Target="@171" Category="Contains" />
+    <Link Source="C/C++ Standard Library Indirectly Included" Target="@181" Category="Contains" />
+    <Link Source="C/C++ Standard Library Indirectly Included" Target="@63" Category="Contains" />
+    <Link Source="C/C++ Standard Library Indirectly Included" Target="@82" Category="Contains" />
+    <Link Source="C/C++ Standard Library Indirectly Included" Target="@86" Category="Contains" />
+    <Link Source="C/C++ Standard Library Indirectly Included" Target="@88" Category="Contains" />
+    <Link Source="C/C++ Standard Library Indirectly Included" Target="@90" Category="Contains" />
+    <Link Source="C/C++ Standard Library Indirectly Included" Target="@92" Category="Contains" />
+    <Link Source="C/C++ Standard Library Indirectly Included" Target="@94" Category="Contains" />
+    <Link Source="C/C++ Standard Library Indirectly Included" Target="@96" Category="Contains" />
+    <Link Source="G2" Target="@100" Category="Contains" />
+    <Link Source="G2" Target="@102" Category="Contains" />
+    <Link Source="G2" Target="@114" Category="Contains" />
+    <Link Source="G2" Target="@13" Category="Contains" />
+    <Link Source="G2" Target="@137" Category="Contains" />
+    <Link Source="G2" Target="@139" Category="Contains" />
+    <Link Source="G2" Target="@151" Category="Contains" />
+    <Link Source="G2" Target="@159" Category="Contains" />
+    <Link Source="G2" Target="@165" Category="Contains" />
+    <Link Source="G2" Target="@169" Category="Contains" />
+    <Link Source="G2" Target="@179" Category="Contains" />
+    <Link Source="G2" Target="@35" Category="Contains" />
+    <Link Source="G2" Target="@43" Category="Contains" />
+    <Link Source="G2" Target="@49" Category="Contains" />
+    <Link Source="G2" Target="@5" Category="Contains" />
+    <Link Source="G2" Target="@53" Category="Contains" />
+    <Link Source="G2" Target="@57" Category="Contains" />
+    <Link Source="G2" Target="@61" Category="Contains" />
+    <Link Source="G2" Target="@65" Category="Contains" />
+    <Link Source="G2" Target="@84" Category="Contains" />
+    <Link Source="G2" Target="@98" Category="Contains" />
+    <Link Source="G2" Target="C/C++ Standard Library Indirectly Included" Category="Contains" />
+    <Link Source="G4" Target="@177" Category="Contains" />
+    <Link Source="OthersGroup" Target="@104" Category="Contains" />
+    <Link Source="OthersGroup" Target="@11" Category="Contains" />
+    <Link Source="OthersGroup" Target="@110" Category="Contains" />
+    <Link Source="OthersGroup" Target="@112" Category="Contains" />
+    <Link Source="OthersGroup" Target="@116" Category="Contains" />
+    <Link Source="OthersGroup" Target="@118" Category="Contains" />
+    <Link Source="OthersGroup" Target="@122" Category="Contains" />
+    <Link Source="OthersGroup" Target="@124" Category="Contains" />
+    <Link Source="OthersGroup" Target="@126" Category="Contains" />
+    <Link Source="OthersGroup" Target="@130" Category="Contains" />
+    <Link Source="OthersGroup" Target="@132" Category="Contains" />
+    <Link Source="OthersGroup" Target="@145" Category="Contains" />
+    <Link Source="OthersGroup" Target="@149" Category="Contains" />
+    <Link Source="OthersGroup" Target="@15" Category="Contains" />
+    <Link Source="OthersGroup" Target="@155" Category="Contains" />
+    <Link Source="OthersGroup" Target="@157" Category="Contains" />
+    <Link Source="OthersGroup" Target="@161" Category="Contains" />
+    <Link Source="OthersGroup" Target="@163" Category="Contains" />
+    <Link Source="OthersGroup" Target="@167" Category="Contains" />
+    <Link Source="OthersGroup" Target="@17" Category="Contains" />
+    <Link Source="OthersGroup" Target="@173" Category="Contains" />
+    <Link Source="OthersGroup" Target="@175" Category="Contains" />
+    <Link Source="OthersGroup" Target="@19" Category="Contains" />
+    <Link Source="OthersGroup" Target="@21" Category="Contains" />
+    <Link Source="OthersGroup" Target="@23" Category="Contains" />
+    <Link Source="OthersGroup" Target="@25" Category="Contains" />
+    <Link Source="OthersGroup" Target="@27" Category="Contains" />
+    <Link Source="OthersGroup" Target="@29" Category="Contains" />
+    <Link Source="OthersGroup" Target="@31" Category="Contains" />
+    <Link Source="OthersGroup" Target="@37" Category="Contains" />
+    <Link Source="OthersGroup" Target="@39" Category="Contains" />
+    <Link Source="OthersGroup" Target="@45" Category="Contains" />
+    <Link Source="OthersGroup" Target="@47" Category="Contains" />
+    <Link Source="OthersGroup" Target="@51" Category="Contains" />
+    <Link Source="OthersGroup" Target="@55" Category="Contains" />
+    <Link Source="OthersGroup" Target="@59" Category="Contains" />
+    <Link Source="OthersGroup" Target="@67" Category="Contains" />
+    <Link Source="OthersGroup" Target="@7" Category="Contains" />
+    <Link Source="OthersGroup" Target="@70" Category="Contains" />
+    <Link Source="OthersGroup" Target="@72" Category="Contains" />
+    <Link Source="OthersGroup" Target="@74" Category="Contains" />
+    <Link Source="OthersGroup" Target="@76" Category="Contains" />
+    <Link Source="OthersGroup" Target="@80" Category="Contains" />
+    <Link Source="OthersGroup" Target="@9" Category="Contains" />
+    <Link Source="PoundIncludeGraphExternalsGroup" Target="G2" Category="Contains" />
+    <Link Source="PoundIncludeGraphExternalsGroup" Target="G4" Category="Contains" />
+    <Link Source="PoundIncludeGraphExternalsGroup" Target="OthersGroup" Category="Contains" />
+  </Links>
+  <Categories>
+    <Category Id="CodeSchema_PoundIncludeFile" Label="C++ Project File" BasedOn="File" CanBeDataDriven="True" IsProviderRoot="False" NavigationActionLabel="C++ Project File" />
+    <Category Id="CodeSchema_PoundIncludeGroup" Label="#include Group" BasedOn="Group" CanBeDataDriven="True" IsProviderRoot="False" NavigationActionLabel="#include Group" />
+    <Category Id="CodeSchema_ProjectItem" Label="Project Item" BasedOn="File" CanBeDataDriven="True" DefaultAction="Node:Both:CodeSchema_Type" Icon="File" NavigationActionLabel="Project Items" />
+    <Category Id="Contains" Label="Contains" Description="Whether the source of the link contains the target object" CanBeDataDriven="False" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Contained By" IsContainment="True" OutgoingActionLabel="Contains" />
+    <Category Id="Externals" Label="Externals" CanBeDataDriven="True" IsProviderRoot="False" NavigationActionLabel="Externals" />
+    <Category Id="File" Label="File" CanBeDataDriven="True" DefaultAction="Microsoft.Contains" Icon="File" NavigationActionLabel="Files" />
+    <Category Id="Group" Label="Group" CanBeDataDriven="True" DefaultAction="Microsoft.Contains" IsProviderRoot="False" NavigationActionLabel="Groups" />
+    <Category Id="PoundInclude" Label="#include" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="#include By" OutgoingActionLabel="#include" />
+  </Categories>
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CanLinkedNodesBeDataDriven" Label="CanLinkedNodesBeDataDriven" Description="CanLinkedNodesBeDataDriven" DataType="System.Boolean" />
+    <Property Id="DefaultAction" Label="DefaultAction" Description="DefaultAction" DataType="System.String" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="FilePath" Label="File Path" Description="File Path" DataType="System.String" />
+    <Property Id="Group" Label="Group" Description="Display the node as a group" DataType="Microsoft.VisualStudio.GraphModel.GraphGroupStyle" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="Icon" DataType="System.String" />
+    <Property Id="IncomingActionLabel" Label="IncomingActionLabel" Description="IncomingActionLabel" DataType="System.String" />
+    <Property Id="IsContainment" DataType="System.Boolean" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="IsProviderRoot" Label="IsProviderRoot" Description="IsProviderRoot" DataType="System.Boolean" />
+    <Property Id="Label" Label="Label" Description="Displayable label of an Annotatable object" DataType="System.String" />
+    <Property Id="Language" Label="Language" Description="Language" DataType="System.String" />
+    <Property Id="NavigationActionLabel" Label="NavigationActionLabel" Description="NavigationActionLabel" DataType="System.String" />
+    <Property Id="OutgoingActionLabel" Label="OutgoingActionLabel" Description="OutgoingActionLabel" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+  </Properties>
+  <QualifiedNames>
+    <Name Id="Assembly" Label="Assembly" ValueType="Uri" />
+    <Name Id="File" Label="File" ValueType="Uri" />
+  </QualifiedNames>
+  <IdentifierAliases>
+    <Alias n="1" Uri="Assembly=$(VsSolutionUri)/Wakinyan/Wakinyan.vcxproj" />
+    <Alias n="2" Id="(@1)" />
+    <Alias n="3" Uri="Assembly=" />
+    <Alias n="4" Uri="File=$(VsInstallDirUri)/vc/include/stdlib.h" />
+    <Alias n="5" Id="(@3 @4)" />
+    <Alias n="6" Uri="File=file:///c:/sdl2-devel-2.0.5-vc/sdl2-2.0.5/include/sdl_atomic.h" />
+    <Alias n="7" Id="(@3 @6)" />
+    <Alias n="8" Uri="File=file:///c:/sdl2-devel-2.0.5-vc/sdl2-2.0.5/include/sdl_haptic.h" />
+    <Alias n="9" Id="(@3 @8)" />
+    <Alias n="10" Uri="File=file:///c:/sdl2-devel-2.0.5-vc/sdl2-2.0.5/include/sdl_stdinc.h" />
+    <Alias n="11" Id="(@3 @10)" />
+    <Alias n="12" Uri="File=$(VsInstallDirUri)/vc/include/malloc.h" />
+    <Alias n="13" Id="(@3 @12)" />
+    <Alias n="14" Uri="File=file:///c:/sdl2-devel-2.0.5-vc/sdl2-2.0.5/include/sdl_thread.h" />
+    <Alias n="15" Id="(@3 @14)" />
+    <Alias n="16" Uri="File=file:///c:/sdl2-devel-2.0.5-vc/sdl2-2.0.5/include/sdl_clipboard.h" />
+    <Alias n="17" Id="(@3 @16)" />
+    <Alias n="18" Uri="File=file:///c:/sdl2-devel-2.0.5-vc/sdl2-2.0.5/include/sdl_keyboard.h" />
+    <Alias n="19" Id="(@3 @18)" />
+    <Alias n="20" Uri="File=file:///c:/sdl2-devel-2.0.5-vc/sdl2-2.0.5/include/sdl_surface.h" />
+    <Alias n="21" Id="(@3 @20)" />
+    <Alias n="22" Uri="File=file:///c:/sdl2-devel-2.0.5-vc/sdl2-2.0.5/include/sdl_scancode.h" />
+    <Alias n="23" Id="(@3 @22)" />
+    <Alias n="24" Uri="File=file:///c:/sdl2-devel-2.0.5-vc/sdl2-2.0.5/include/sdl_keycode.h" />
+    <Alias n="25" Id="(@3 @24)" />
+    <Alias n="26" Uri="File=file:///c:/sdl2-devel-2.0.5-vc/sdl2-2.0.5/include/close_code.h" />
+    <Alias n="27" Id="(@3 @26)" />
+    <Alias n="28" Uri="File=file:///c:/sdl2-devel-2.0.5-vc/sdl2-2.0.5/include/begin_code.h" />
+    <Alias n="29" Id="(@3 @28)" />
+    <Alias n="30" Uri="File=file:///c:/sdl2-devel-2.0.5-vc/sdl2-2.0.5/include/sdl_blendmode.h" />
+    <Alias n="31" Id="(@3 @30)" />
+    <Alias n="32" Uri="File=$(VsSolutionUri)/Wakinyan/Scene.h" />
+    <Alias n="33" Id="(@1 @32)" />
+    <Alias n="34" Uri="File=$(VsInstallDirUri)/vc/include/ctype.h" />
+    <Alias n="35" Id="(@3 @34)" />
+    <Alias n="36" Uri="File=file:///c:/sdl2-devel-2.0.5-vc/sdl2-2.0.5/include/sdl_gesture.h" />
+    <Alias n="37" Id="(@3 @36)" />
+    <Alias n="38" Uri="File=file:///c:/sdl2-devel-2.0.5-vc/sdl2-2.0.5/include/sdl_mouse.h" />
+    <Alias n="39" Id="(@3 @38)" />
+    <Alias n="40" Uri="File=$(VsSolutionUri)/Wakinyan/Sprite.h" />
+    <Alias n="41" Id="(@1 @40)" />
+    <Alias n="42" Uri="File=$(VsInstallDirUri)/vc/include/stddef.h" />
+    <Alias n="43" Id="(@3 @42)" />
+    <Alias n="44" Uri="File=file:///c:/sdl2_ttf-2.0.14/include/sdl_ttf.h" />
+    <Alias n="45" Id="(@3 @44)" />
+    <Alias n="46" Uri="File=file:///c:/sdl2-devel-2.0.5-vc/sdl2-2.0.5/include/sdl_config.h" />
+    <Alias n="47" Id="(@3 @46)" />
+    <Alias n="48" Uri="File=$(VsInstallDirUri)/vc/include/string.h" />
+    <Alias n="49" Id="(@3 @48)" />
+    <Alias n="50" Uri="File=file:///c:/sdl2-devel-2.0.5-vc/sdl2-2.0.5/include/sdl_log.h" />
+    <Alias n="51" Id="(@3 @50)" />
+    <Alias n="52" Uri="File=$(VsInstallDirUri)/vc/include/stdarg.h" />
+    <Alias n="53" Id="(@3 @52)" />
+    <Alias n="54" Uri="File=file:///c:/sdl2-devel-2.0.5-vc/sdl2-2.0.5/include/sdl_touch.h" />
+    <Alias n="55" Id="(@3 @54)" />
+    <Alias n="56" Uri="File=$(VsInstallDirUri)/vc/include/math.h" />
+    <Alias n="57" Id="(@3 @56)" />
+    <Alias n="58" Uri="File=file:///c:/sdl2-devel-2.0.5-vc/sdl2-2.0.5/include/sdl_joystick.h" />
+    <Alias n="59" Id="(@3 @58)" />
+    <Alias n="60" Uri="File=$(VsInstallDirUri)/vc/include/signal.h" />
+    <Alias n="61" Id="(@3 @60)" />
+    <Alias n="62" Uri="File=$(VsInstallDirUri)/vc/include/concurrencysal.h" />
+    <Alias n="63" Id="(@3 @62)" />
+    <Alias n="64" Uri="File=$(VsInstallDirUri)/vc/include/sal.h" />
+    <Alias n="65" Id="(@3 @64)" />
+    <Alias n="66" Uri="File=file:///c:/sdl2-devel-2.0.5-vc/sdl2-2.0.5/include/sdl.h" />
+    <Alias n="67" Id="(@3 @66)" />
+    <Alias n="68" Uri="File=$(VsSolutionUri)/Wakinyan/tinyxml.h" />
+    <Alias n="69" Uri="File=file:///c:/sdl2-devel-2.0.5-vc/sdl2-2.0.5/include/sdl_filesystem.h" />
+    <Alias n="70" Id="(@3 @69)" />
+    <Alias n="71" Uri="File=file:///c:/sdl2-devel-2.0.5-vc/sdl2-2.0.5/include/sdl_system.h" />
+    <Alias n="72" Id="(@3 @71)" />
+    <Alias n="73" Uri="File=file:///c:/sdl2-devel-2.0.5-vc/sdl2-2.0.5/include/sdl_platform.h" />
+    <Alias n="74" Id="(@3 @73)" />
+    <Alias n="75" Uri="File=file:///c:/sdl2-devel-2.0.5-vc/sdl2-2.0.5/include/sdl_endian.h" />
+    <Alias n="76" Id="(@3 @75)" />
+    <Alias n="77" Uri="File=$(VsSolutionUri)/Wakinyan/main.h" />
+    <Alias n="78" Id="(@1 @77)" />
+    <Alias n="79" Uri="File=file:///c:/sdl2-devel-2.0.5-vc/sdl2-2.0.5/include/sdl_main.h" />
+    <Alias n="80" Id="(@3 @79)" />
+    <Alias n="81" Uri="File=$(VsInstallDirUri)/vc/include/ammintrin.h" />
+    <Alias n="82" Id="(@3 @81)" />
+    <Alias n="83" Uri="File=$(VsInstallDirUri)/vc/include/emmintrin.h" />
+    <Alias n="84" Id="(@3 @83)" />
+    <Alias n="85" Uri="File=$(VsInstallDirUri)/vc/include/immintrin.h" />
+    <Alias n="86" Id="(@3 @85)" />
+    <Alias n="87" Uri="File=$(VsInstallDirUri)/vc/include/nmmintrin.h" />
+    <Alias n="88" Id="(@3 @87)" />
+    <Alias n="89" Uri="File=$(VsInstallDirUri)/vc/include/pmmintrin.h" />
+    <Alias n="90" Id="(@3 @89)" />
+    <Alias n="91" Uri="File=$(VsInstallDirUri)/vc/include/smmintrin.h" />
+    <Alias n="92" Id="(@3 @91)" />
+    <Alias n="93" Uri="File=$(VsInstallDirUri)/vc/include/tmmintrin.h" />
+    <Alias n="94" Id="(@3 @93)" />
+    <Alias n="95" Uri="File=$(VsInstallDirUri)/vc/include/wmmintrin.h" />
+    <Alias n="96" Id="(@3 @95)" />
+    <Alias n="97" Uri="File=$(VsInstallDirUri)/vc/include/xmmintrin.h" />
+    <Alias n="98" Id="(@3 @97)" />
+    <Alias n="99" Uri="File=$(VsInstallDirUri)/vc/include/mmintrin.h" />
+    <Alias n="100" Id="(@3 @99)" />
+    <Alias n="101" Uri="File=$(VsInstallDirUri)/vc/include/intrin.h" />
+    <Alias n="102" Id="(@3 @101)" />
+    <Alias n="103" Uri="File=file:///c:/sdl2-devel-2.0.5-vc/sdl2-2.0.5/include/sdl_version.h" />
+    <Alias n="104" Id="(@3 @103)" />
+    <Alias n="105" Uri="File=$(VsSolutionUri)/Wakinyan/Interaction.h" />
+    <Alias n="106" Id="(@1 @105)" />
+    <Alias n="107" Uri="File=$(VsInstallDirUri)/vc/include/crtwrn.h" />
+    <Alias n="108" Id="(@3 @107)" />
+    <Alias n="109" Uri="File=file:///c:/sdl2-devel-2.0.5-vc/sdl2-2.0.5/include/sdl_video.h" />
+    <Alias n="110" Id="(@3 @109)" />
+    <Alias n="111" Uri="File=file:///c:/sdl2-devel-2.0.5-vc/sdl2-2.0.5/include/sdl_cpuinfo.h" />
+    <Alias n="112" Id="(@3 @111)" />
+    <Alias n="113" Uri="File=$(VsInstallDirUri)/vc/include/stdio.h" />
+    <Alias n="114" Id="(@3 @113)" />
+    <Alias n="115" Uri="File=file:///c:/sdl2-devel-2.0.5-vc/sdl2-2.0.5/include/sdl_audio.h" />
+    <Alias n="116" Id="(@3 @115)" />
+    <Alias n="117" Uri="File=file:///c:/sdl2-devel-2.0.5-vc/sdl2-2.0.5/include/sdl_loadso.h" />
+    <Alias n="118" Id="(@3 @117)" />
+    <Alias n="119" Uri="File=$(VsInstallDirUri)/vc/include/setjmp.h" />
+    <Alias n="120" Id="(@3 @119)" />
+    <Alias n="121" Uri="File=file:///c:/sdl2-devel-2.0.5-vc/sdl2-2.0.5/include/sdl_render.h" />
+    <Alias n="122" Id="(@3 @121)" />
+    <Alias n="123" Uri="File=file:///c:/sdl2-devel-2.0.5-vc/sdl2-2.0.5/include/sdl_gamecontroller.h" />
+    <Alias n="124" Id="(@3 @123)" />
+    <Alias n="125" Uri="File=file:///c:/sdl2-devel-2.0.5-vc/sdl2-2.0.5/include/sdl_timer.h" />
+    <Alias n="126" Id="(@3 @125)" />
+    <Alias n="127" Uri="File=$(VsSolutionUri)/Wakinyan/Character.h" />
+    <Alias n="128" Id="(@1 @127)" />
+    <Alias n="129" Uri="File=file:///c:/sdl2-devel-2.0.5-vc/sdl2-2.0.5/include/sdl_power.h" />
+    <Alias n="130" Id="(@3 @129)" />
+    <Alias n="131" Uri="File=file:///c:/sdl2-devel-2.0.5-vc/sdl2-2.0.5/include/sdl_error.h" />
+    <Alias n="132" Id="(@3 @131)" />
+    <Alias n="133" Uri="File=$(VsInstallDirUri)/vc/include/armintr.h" />
+    <Alias n="134" Id="(@3 @133)" />
+    <Alias n="135" Uri="File=$(VsSolutionUri)/Wakinyan/tinystr.h" />
+    <Alias n="136" Uri="File=$(VsInstallDirUri)/vc/include/inttypes.h" />
+    <Alias n="137" Id="(@3 @136)" />
+    <Alias n="138" Uri="File=$(VsInstallDirUri)/vc/include/sys/types.h" />
+    <Alias n="139" Id="(@3 @138)" />
+    <Alias n="140" Uri="File=$(VsInstallDirUri)/vc/include/vadefs.h" />
+    <Alias n="141" Id="(@3 @140)" />
+    <Alias n="142" Uri="File=$(VsInstallDirUri)/vc/include/crtdefs.h" />
+    <Alias n="143" Id="(@3 @142)" />
+    <Alias n="144" Uri="File=file:///c:/sdl2-devel-2.0.5-vc/sdl2-2.0.5/include/sdl_pixels.h" />
+    <Alias n="145" Id="(@3 @144)" />
+    <Alias n="146" Uri="File=$(VsInstallDirUri)/vc/include/codeanalysis/sourceannotations.h" />
+    <Alias n="147" Id="(@3 @146)" />
+    <Alias n="148" Uri="File=file:///c:/sdl2-devel-2.0.5-vc/sdl2-2.0.5/include/sdl_rwops.h" />
+    <Alias n="149" Id="(@3 @148)" />
+    <Alias n="150" Uri="File=$(VsInstallDirUri)/vc/include/process.h" />
+    <Alias n="151" Id="(@3 @150)" />
+    <Alias n="152" Uri="File=$(VsInstallDirUri)/vc/include/limits.h" />
+    <Alias n="153" Id="(@3 @152)" />
+    <Alias n="154" Uri="File=file:///c:/sdl2-devel-2.0.5-vc/sdl2-2.0.5/include/sdl_events.h" />
+    <Alias n="155" Id="(@3 @154)" />
+    <Alias n="156" Uri="File=file:///c:/sdl2-devel-2.0.5-vc/sdl2-2.0.5/include/sdl_hints.h" />
+    <Alias n="157" Id="(@3 @156)" />
+    <Alias n="158" Uri="File=$(VsInstallDirUri)/vc/include/float.h" />
+    <Alias n="159" Id="(@3 @158)" />
+    <Alias n="160" Uri="File=file:///c:/sdl2-devel-2.0.5-vc/sdl2-2.0.5/include/sdl_rect.h" />
+    <Alias n="161" Id="(@3 @160)" />
+    <Alias n="162" Uri="File=file:///c:/sdl2-devel-2.0.5-vc/sdl2-2.0.5/include/sdl_quit.h" />
+    <Alias n="163" Id="(@3 @162)" />
+    <Alias n="164" Uri="File=$(VsInstallDirUri)/vc/include/stdint.h" />
+    <Alias n="165" Id="(@3 @164)" />
+    <Alias n="166" Uri="File=file:///c:/sdl2-devel-2.0.5-vc/sdl2-2.0.5/include/sdl_assert.h" />
+    <Alias n="167" Id="(@3 @166)" />
+    <Alias n="168" Uri="File=$(VsInstallDirUri)/vc/include/mm3dnow.h" />
+    <Alias n="169" Id="(@3 @168)" />
+    <Alias n="170" Uri="File=$(VsInstallDirUri)/vc/include/setjmpex.h" />
+    <Alias n="171" Id="(@3 @170)" />
+    <Alias n="172" Uri="File=file:///c:/sdl2-devel-2.0.5-vc/sdl2-2.0.5/include/sdl_mutex.h" />
+    <Alias n="173" Id="(@3 @172)" />
+    <Alias n="174" Uri="File=file:///c:/sdl2-devel-2.0.5-vc/sdl2-2.0.5/include/sdl_messagebox.h" />
+    <Alias n="175" Id="(@3 @174)" />
+    <Alias n="176" Uri="File=$(ProgramFilesUri)/windows kits/8.1/include/shared/winapifamily.h" />
+    <Alias n="177" Id="(@3 @176)" />
+    <Alias n="178" Uri="File=$(VsInstallDirUri)/vc/include/memory.h" />
+    <Alias n="179" Id="(@3 @178)" />
+    <Alias n="180" Uri="File=$(VsInstallDirUri)/vc/include/swprintf.inl" />
+    <Alias n="181" Id="(@3 @180)" />
+    <Alias n="182" Uri="File=$(VsSolutionUri)/Wakinyan/Scene.cpp" />
+    <Alias n="183" Id="(@1 @182)" />
+    <Alias n="184" Uri="File=$(VsSolutionUri)/Wakinyan/prototype.cpp" />
+    <Alias n="185" Uri="File=$(VsSolutionUri)/Wakinyan/Sprite.cpp" />
+    <Alias n="186" Id="(@1 @185)" />
+    <Alias n="187" Uri="File=$(VsSolutionUri)/Wakinyan/tinyxml.cpp" />
+    <Alias n="188" Uri="File=$(VsSolutionUri)/Wakinyan/main.cpp" />
+    <Alias n="189" Id="(@1 @188)" />
+    <Alias n="190" Uri="File=$(VsSolutionUri)/Wakinyan/Interaction.cpp" />
+    <Alias n="191" Id="(@1 @190)" />
+    <Alias n="192" Uri="File=$(VsSolutionUri)/Wakinyan/tinyxmlparser.cpp" />
+    <Alias n="193" Uri="File=$(VsSolutionUri)/Wakinyan/Character.cpp" />
+    <Alias n="194" Id="(@1 @193)" />
+    <Alias n="195" Uri="File=$(VsSolutionUri)/Wakinyan/tinyxmlerror.cpp" />
+    <Alias n="196" Uri="File=$(VsSolutionUri)/Wakinyan/tinystr.cpp" />
+  </IdentifierAliases>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="C++ Project File" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_PoundIncludeFile')" />
+      <Setter Property="Background" Value="#FFEFEFEF" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Externals" ValueLabel="Has category">
+      <Condition Expression="HasCategory('Externals')" />
+      <Setter Property="Background" Value="#FFA08080" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Source File" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_ProjectItem')" />
+      <Setter Property="Background" Value="#FFC0C0C0" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="#include Group" ValueLabel="Has category">
+      <Condition Expression="HasCategory('CodeSchema_PoundIncludeGroup')" />
+      <Setter Property="Background" Value="#FFEFEFEF" />
+    </Style>
+  </Styles>
+  <Paths>
+    <Path Id="ProgramFiles" Value="C:\Program Files (x86)" />
+    <Path Id="ProgramFilesUri" Value="file:///C:/Program Files (x86)" />
+    <Path Id="VsInstallDir" Value="C:\Program Files (x86)\Microsoft Visual Studio 12.0" />
+    <Path Id="VsInstallDirUri" Value="file:///C:/Program Files (x86)/Microsoft Visual Studio 12.0" />
+    <Path Id="VsSolution" Value="C:\WakinyanRepo\Wakinyan" />
+    <Path Id="VsSolutionUri" Value="file:///C:/WakinyanRepo/Wakinyan" />
+  </Paths>
+</DirectedGraph>
