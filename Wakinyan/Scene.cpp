@@ -461,31 +461,23 @@ void Scene::update(SDL_Event& e)
 	}
 	else if (screenOverlayText.size() > 0)
 	{
+		// In here is where we see if there is an overlay text sprite to render. we block all movement from occuring
+		// mouse events will be passed to a new function
 		if (e.type == SDL_MOUSEBUTTONUP)
 		{
-
 			screenOverlayText.erase(screenOverlayText.begin(), screenOverlayText.end());
 			checkInteractions();
 		}
-		// In here is where we see if there is an overlay text sprite to render. we block all movement from occuring
-		// mouse events will be passed to a new function
 	}
 	else
 	{
 		bool collision = checkCollision();
-
-		character->handleEvent(e);
-
-		if (e.type == SDL_KEYDOWN)
+			
+		character->handleEvent(e, collision);
+			
+		if (e.type == SDL_KEYDOWN && e.key.keysym.sym == SDLK_SPACE)
 		{
-			if (e.key.keysym.sym == SDLK_SPACE)
-			{
-				checkInteractions();
-			}
-			else
-			{
-				character->move(collision);
-			}
+			checkInteractions();
 		}
 	}
 }

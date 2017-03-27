@@ -5,7 +5,7 @@
 #include "Interaction.h"
 
 int frameCount = 0;
-int spriteOffsets[] = {IDLE, PUNCH, WALK, TALK, KICK, JUMP, BACK};
+int spriteOffsets[] = {IDLE, PUNCH, WALK, TALK, KICK, JUMP, TURN};
 
 Sprite::Sprite()
 {

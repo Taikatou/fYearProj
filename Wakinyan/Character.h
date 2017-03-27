@@ -2,6 +2,17 @@
 #include <SDL.h>
 #include "Sprite.h"
 
+struct KEYPRESS
+{
+	bool leftMove = false;
+	bool rightMove = false;
+	bool punch = false;
+	bool talk = false;
+	bool kick = false;
+	bool jump = false;
+	bool turn = false;
+};
+
 class Character
 {
 public:
@@ -11,8 +22,10 @@ public:
 	~Character();
 	void free();
 	void move(bool collision);
+	void update(bool collision);
 	void render(int camX, int camY) const;
 	void handleEvent(SDL_Event &e);
+	void handleEvent(SDL_Event& e, bool collision);
 	void setX(int x);
 	void setY(int y);
 	void setLastMoveLeft();
@@ -21,12 +34,14 @@ public:
 	void setType(int type) const;
 	void animate() const;
 	void setName(std::string name) const;
+	void resetKeys();
 	bool setSprite(std::string path, bool animate = false) const;
 	int getXPos() const;
 	int getYPos() const;
 	int getWidth() const;
 private:
 	// Character position on x & y and their velocity
+	KEYPRESS _keys;
 	Sprite* _cSprite;
 	bool lastMoveRight, lastMoveLeft, _listen;
 	int _cPosX, _cPosY;
