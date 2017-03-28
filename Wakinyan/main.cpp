@@ -87,7 +87,7 @@ bool init()
 bool loadMedia()
 {
 	//here is where the first scene needs to be created
-	return scene.loadFromFile("Assets/Scenes/scene0.xml");
+	return scene.loadFromFile("Assets/Scenes/titleScreen.xml");
 //	return scene.loadFromFile("Assets/Scenes/tempScene.xml");
 //	return scene.loadFromFile("Assets/Characters/emilyWalking.png");
 }

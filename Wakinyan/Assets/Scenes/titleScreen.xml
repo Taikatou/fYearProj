@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<spriteList>
+  <sprite>
+    <type>0</type>
+    <name>null</name>
+    <image>Assets/characters/dialogSceneCharacterSprite.png</image>
+    <x>0</x>
+    <y>0</y>
+    <animation>false</animation>
+  </sprite>
+  <sprite>
+    <type>3</type>
+    <image>Assets/Backgrounds/titleScreen.png</image>
+  </sprite>
+  <sprite>
+    <type>4</type>
+    <sceneWidth>1920</sceneWidth>
+    <sceneHeight>1080</sceneHeight>
+  </sprite>
+  <sprite>
+    <type>5</type>
+    <x>-10</x>
+    <y>-10</y>
+    <w>1930</w>
+    <h>1090</h>
+    <path>Assets/Scenes/scene0.xml</path>
+    <interaction>
+      <type>0</type>
+    </interaction>
+    <end>0</end>
+  </sprite>
+  
+  
+</spriteList>
