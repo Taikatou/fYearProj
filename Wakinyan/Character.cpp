@@ -39,12 +39,12 @@ void Character::update(bool collision)
 		_cSprite->sFlip(true);
 		_cSprite->setSpriteSheetOffset(WALK); _cPosX += cVel;
 
-		if ((_cPosX < 0) || (_cPosX + _cSprite->getWidth() > SCREEN_WIDTH) || collision)
+		if (_cPosX < 0 || collision)
 		{
 			_cPosX -= cVel;
 		}
 
-		if ((lastMoveRight && cVel < 0) || (lastMoveLeft && cVel >0))
+		if (lastMoveRight && cVel < 0 || lastMoveLeft && cVel >0)
 		{
 			_cPosX += cVel;
 		}
@@ -56,12 +56,12 @@ void Character::update(bool collision)
 		_cSprite->sFlip(false);
 		_cSprite->setSpriteSheetOffset(WALK); _cPosX += cVel;
 
-		if ((_cPosX < 0) || (_cPosX + _cSprite->getWidth() > SCREEN_WIDTH) || collision)
+		if (_cPosX + _cSprite->getWidth() >= BACKGROUND_WIDTH || collision)
 		{
 			_cPosX -= cVel;
 		}
 
-		if ((lastMoveRight && cVel < 0) || (lastMoveLeft && cVel >0))
+		if (lastMoveRight && cVel < 0 || lastMoveLeft && cVel >0)
 		{
 			_cPosX += cVel;
 		}

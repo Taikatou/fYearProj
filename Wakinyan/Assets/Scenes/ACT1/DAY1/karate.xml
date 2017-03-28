@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<spriteList>
+  <sprite>
+    <type>0</type>
+    <name>Emily</name>
+    <image>Assets/characters/emilyKarateUniform.png</image>
+    <x>140</x>
+    <y>100</y>
+    <animation>true</animation>
+  </sprite>
+  <!--  sprite-->
+  <sprite>
+    <type>1</type>
+    <name>Opponent</name>
+    <image>Assets/Sprites/karateOpponent0001.png</image>
+    <x>160</x>
+    <y>103</y>
+  </sprite>
+  <!--  collider-->
+  <!--    background-->
+  <sprite>
+    <type>3</type>
+    <image>Assets/Backgrounds/dojoInside.png</image>
+  </sprite>
+  <!--  camera-->
+  <sprite>
+    <type>4</type>
+    <sceneWidth>192</sceneWidth>
+    <sceneHeight>108</sceneHeight>
+  </sprite>
+  <!--  Interaction-->
+  <sprite>
+    <type>5</type>
+    <x>150</x>
+    <y>100</y>
+    <w>30</w>
+    <h>20</h>
+    <path>Assets/Scenes/ACT1/DAY1/afterKarate.xml</path>
+<!--    <path>Assets/Scenes/scene1.xml</path>-->
+    <interaction>
+      <type>4</type>
+      <dialog>They Punch you</dialog>
+      <dialog>You see them go to punch again</dialog>
+      <dialog>You raise to block</dialog>
+      <dialog>0_0</dialog>
+      <dialog>It was a fake</dialog>
+      <dialog>You take a kick to the stomach</dialog>
+      <null></null>
+    </interaction>
+    <interaction>
+      <type>1</type>
+      <null></null>
+    </interaction>
+    <end>0</end>
+  </sprite>
+  <!--  auto scene  change collision-->
+</spriteList>

@@ -9,6 +9,13 @@
     <animation>false</animation>
   </sprite>
   <sprite>
+    <type>2</type>
+    <x>0</x>
+    <y>0</y>
+    <w>10</w>
+    <h>10</h>
+  </sprite>
+  <sprite>
     <type>3</type>
     <image>Assets/Backgrounds/titleScreen.png</image>
   </sprite>
@@ -23,7 +30,7 @@
     <y>-10</y>
     <w>1930</w>
     <h>1090</h>
-    <path>Assets/Scenes/scene0.xml</path>
+    <path>Assets/Scenes/INTRO/intro.xml</path>
     <interaction>
       <type>0</type>
     </interaction>

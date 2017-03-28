@@ -164,6 +164,7 @@ bool Scene::loadFromFile(const char * path)
 					{
 						success = false;
 					}
+					BACKGROUND_WIDTH = background.getWidth();
 #pragma endregion //background load
 				}
 				else if (type == CAMERA)
@@ -503,7 +504,6 @@ void Scene::update(SDL_Event& e)
   			checkInteractions();
 		}
 	}
-	int x = 1 + 1;
 }
 
 void Scene::render()
@@ -521,9 +521,9 @@ void Scene::render()
 	{
 		camera.y = 0;
 	}
-	if (camera.x > SCREEN_WIDTH - camera.w)
+	if (camera.x > background.getWidth() - camera.w)
 	{
-		camera.x = SCREEN_WIDTH - camera.w;
+		camera.x = background.getWidth() - camera.w;
 	}
 	if (camera.y > SCREEN_HEIGHT - camera.h)
 	{

@@ -9,6 +9,9 @@
 <!--INTERACTION_TRIGGER = 5,-->
 <!--SCENELINK = 6-->
 <!---->
+<!---->
+<!---->
+<!---->
 <!--InteractionType-->
 <!---->
 <!--CHANGESCENE = 0,-->
@@ -29,6 +32,7 @@
 		<type>3</type>
 		<image>Assets/Backgrounds/backgroundBig.png</image>
 	</sprite>
+<!--  camera-->
 	<sprite>
 		<type>4</type>
 		<sceneWidth>160</sceneWidth>

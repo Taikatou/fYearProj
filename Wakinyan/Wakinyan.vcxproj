@@ -96,12 +96,17 @@
     <ClInclude Include="tinyxml.h" />
   </ItemGroup>
   <ItemGroup>
+    <Xml Include="Assets\Scenes\ACT1\DAY1\karate.xml" />
+    <Xml Include="Assets\Scenes\INTRO\intro.xml" />
+    <Xml Include="Assets\Scenes\INTRO\scene0001.xml" />
+    <Xml Include="Assets\Scenes\INTRO\scene0002.xml" />
     <Xml Include="Assets\Scenes\scene0.xml">
       <SubType>Designer</SubType>
     </Xml>
     <Xml Include="Assets\Scenes\scene1.xml">
       <SubType>Designer</SubType>
     </Xml>
+    <Xml Include="Assets\Scenes\titleScreen.xml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\IncludeFileDependencies1.dgml" />

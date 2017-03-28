@@ -76,6 +76,21 @@
     <Xml Include="Assets\Scenes\scene1.xml">
       <Filter>Resource Files</Filter>
     </Xml>
+    <Xml Include="Assets\Scenes\INTRO\intro.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="Assets\Scenes\INTRO\scene0001.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="Assets\Scenes\INTRO\scene0002.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="Assets\Scenes\ACT1\DAY1\karate.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="Assets\Scenes\titleScreen.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\IncludeFileDependencies1.dgml">

@@ -11,6 +11,7 @@ bool init();
 //externs
 int SCREEN_WIDTH = 1920;
 int SCREEN_HEIGHT = 1080;
+int BACKGROUND_WIDTH = 0;
 int sceneWidth = 0;
 int sceneHeight = 0;
 SDL_Renderer* g_renderer = nullptr;
