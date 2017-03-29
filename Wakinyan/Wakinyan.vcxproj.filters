@@ -157,6 +157,42 @@
     <Xml Include="Assets\Scenes\ACT1\DAY2\afternoonOutsideSchool.xml">
       <Filter>Resource Files\ACT1\DAY2</Filter>
     </Xml>
+    <Xml Include="Assets\Scenes\ACT1\DAY2\karateBeforeKnockout.xml">
+      <Filter>Resource Files\ACT1\DAY2</Filter>
+    </Xml>
+    <Xml Include="Assets\Scenes\ACT1\DAY2\knockout001.xml">
+      <Filter>Resource Files\ACT1\DAY2</Filter>
+    </Xml>
+    <Xml Include="Assets\Scenes\ACT1\DAY2\afterKarate.xml">
+      <Filter>Resource Files\ACT1\DAY2</Filter>
+    </Xml>
+    <Xml Include="Assets\Scenes\ACT1\DAY2\afterKnockout.xml">
+      <Filter>Resource Files\ACT1\DAY2</Filter>
+    </Xml>
+    <Xml Include="Assets\Scenes\ACT1\DAY2\knockout002.xml">
+      <Filter>Resource Files\ACT1\DAY2</Filter>
+    </Xml>
+    <Xml Include="Assets\Scenes\ACT1\DAY2\knockout003.xml">
+      <Filter>Resource Files\ACT1\DAY2</Filter>
+    </Xml>
+    <Xml Include="Assets\Scenes\ACT1\DAY2\knockout004.xml">
+      <Filter>Resource Files\ACT1\DAY2</Filter>
+    </Xml>
+    <Xml Include="Assets\Scenes\ACT1\DAY2\knockout005.xml">
+      <Filter>Resource Files\ACT1\DAY2</Filter>
+    </Xml>
+    <Xml Include="Assets\Scenes\ACT1\DAY2\knockout006.xml">
+      <Filter>Resource Files\ACT1\DAY2</Filter>
+    </Xml>
+    <Xml Include="Assets\Scenes\ACT1\DAY2\knockout007.xml">
+      <Filter>Resource Files\ACT1\DAY2</Filter>
+    </Xml>
+    <Xml Include="Assets\Scenes\ACT1\DAY2\bedTime.xml">
+      <Filter>Resource Files\ACT1\DAY2</Filter>
+    </Xml>
+    <Xml Include="Assets\Scenes\ACT1\DAY2\iceCreamParlorDay2.xml">
+      <Filter>Resource Files\ACT1\DAY2</Filter>
+    </Xml>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\IncludeFileDependencies1.dgml">

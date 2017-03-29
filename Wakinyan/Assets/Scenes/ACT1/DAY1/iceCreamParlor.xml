@@ -12,14 +12,14 @@
   <sprite>
     <type>1</type>
     <name>Emily</name>
-    <image>Assets/Sprites/emilyNormalOutfit.png</image>
+    <image>Assets/Sprites/emilyNormalOutfitRight.png</image>
     <x>117</x>
     <y>110</y>
   </sprite>
   <sprite>
     <type>1</type>
     <name>Dad</name>
-    <image>Assets/Sprites/karateOpponent0001.png</image>
+    <image>Assets/Sprites/dadLeft.png</image>
     <x>135</x>
     <y>110</y>
   </sprite>
