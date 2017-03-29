@@ -229,14 +229,12 @@ bool Scene::loadFromFile(const char * path)
 								while (strcmp(tempIterator->Value(), "null") != 0)
 								{
 									tempInteraction.setDialog(interactionType, tempIterator->FirstChild()->Value());
-//									tempInteraction.setDialog(tempIterator->FirstChild()->Value());
 									tempIterator = tempIterator->NextSiblingElement();
 								}
 							}
 						}
 						temp = temp->NextSiblingElement();
 					}
-
 					
 					_sInteractions.push_back(tempInteraction);
 #pragma endregion //load interactions

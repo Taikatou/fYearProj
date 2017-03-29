@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<spriteList>
+  <sprite>
+    <type>0</type>
+    <name>Emily</name>
+    <image>Assets/characters/emilyNormalOutfit.png</image>
+    <x>140</x>
+    <y>210</y>
+    <animation>true</animation>
+  </sprite>
+  <!--  collider-->
+  <sprite>
+    <type>2</type>
+    <x>437</x>
+    <y>0</y>
+    <w>10</w>
+    <h>400</h>
+  </sprite>
+  <sprite>
+    <type>2</type>
+    <x>0</x>
+    <y>0</y>
+    <w>5</w>
+    <h>300</h>
+  </sprite>
+  <!--    background-->
+  <sprite>
+    <type>3</type>
+    <image>Assets/Backgrounds/schoolOutside.png</image>
+  </sprite>
+  <!--  camera-->
+  <sprite>
+    <type>4</type>
+    <sceneWidth>256</sceneWidth>
+    <sceneHeight>144</sceneHeight>
+  </sprite>
+  <!--  Interaction-->
+  <!--  auto scene  change collision-->
+  <sprite>
+    <type>6</type>
+    <x>10</x>
+    <y>0</y>
+    <w>5</w>
+    <h>100</h>
+    <path>Assets/Scenes/ACT1/DAY2/afternoonCity.xml</path>
+    <interaction>
+      <type>1</type>
+    </interaction>
+    <end>0</end>
+  </sprite>
+</spriteList>

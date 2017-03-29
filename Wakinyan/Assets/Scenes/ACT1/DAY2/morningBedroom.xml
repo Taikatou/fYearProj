@@ -41,7 +41,7 @@
     <type>6</type>
     <x>60</x>
     <y>0</y>
-    <w>70</w>
+    <w>5</w>
     <h>100</h>
     <path>Assets/Scenes/ACT1/DAY2/morningKitchen.xml</path>
     <interaction>

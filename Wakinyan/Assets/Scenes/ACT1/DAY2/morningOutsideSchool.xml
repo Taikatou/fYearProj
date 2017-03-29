@@ -41,7 +41,7 @@
     <y>0</y>
     <w>20</w>
     <h>200</h>
-    <path>Assets/Scenes/titleScreen.xml</path>
+    <path>Assets/Scenes/ACT1/DAY2/morningSchool.xml</path>
     <interaction>
       <type>0</type>
     </interaction>

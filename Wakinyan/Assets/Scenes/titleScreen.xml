@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <spriteList>
+<!--  character-->
   <sprite>
     <type>0</type>
     <name>null</name>
@@ -8,6 +9,7 @@
     <y>0</y>
     <animation>false</animation>
   </sprite>
+<!--  collider-->
   <sprite>
     <type>2</type>
     <x>0</x>
@@ -15,15 +17,18 @@
     <w>10</w>
     <h>10</h>
   </sprite>
+<!--  background-->
   <sprite>
     <type>3</type>
     <image>Assets/Backgrounds/titleScreen.png</image>
   </sprite>
+<!--  camera-->
   <sprite>
     <type>4</type>
     <sceneWidth>1920</sceneWidth>
     <sceneHeight>1080</sceneHeight>
   </sprite>
+<!--  interaction-->
   <sprite>
     <type>5</type>
     <x>-10</x>
@@ -31,12 +36,11 @@
     <w>1930</w>
     <h>1090</h>
     <path>Assets/Scenes/INTRO/intro.xml</path>
-<!--    <path>Assets/Scenes/ACT1/DAY1/kitchen.xml</path>-->
+<!--    <path>Assets/Scenes/ACT1/DAY2/afternoonCity.xml</path>-->
     <interaction>
       <type>0</type>
     </interaction>
     <end>0</end>
   </sprite>
-  
-  
+<!--  auto interaction-->
 </spriteList>

@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<spriteList>
+  <sprite>
+    <type>0</type>
+    <name>Emily</name>
+    <image>Assets/characters/emilyKarateUniform.png</image>
+    <x>140</x>
+    <y>120</y>
+    <animation>true</animation>
+  </sprite>
+  <!--  sprite-->
+  <sprite>
+    <type>1</type>
+    <name>Opponent</name>
+    <image>Assets/Sprites/karateOpponent0001.png</image>
+    <x>155</x>
+    <y>120</y>
+  </sprite>
+  <!--  collider-->
+  <sprite>
+    <type>2</type>
+    <x>100</x>
+    <y>0</y>
+    <w>5</w>
+    <h>100</h>
+  </sprite>
+  <sprite>
+    <type>2</type>
+    <x>180</x>
+    <y>0</y>
+    <w>5</w>
+    <h>100</h>
+  </sprite>
+  <!--    background-->
+  <sprite>
+    <type>3</type>
+    <image>Assets/Backgrounds/dojoInside.png</image>
+  </sprite>
+  <!--  camera-->
+  <sprite>
+    <type>4</type>
+    <sceneWidth>192</sceneWidth>
+    <sceneHeight>108</sceneHeight>
+  </sprite>
+  <!--  Interaction-->
+  <sprite>
+    <type>5</type>
+    <x>150</x>
+    <y>100</y>
+    <w>30</w>
+    <h>20</h>
+    <path>Assets/Scenes/ACT1/DAY2/knockout001.xml</path>
+    <interaction>
+      <type>4</type>
+      <dialog>YOU FIGHT</dialog>
+      <dialog>FOCUSED</dialog>
+      <dialog>YOU FEEL YOUR OPPONENT MOVE TO KICK</dialog>
+      <dialog>TURN YOUR SHOULDER TO THEM</dialog>
+      <dialog>BRACE A LOW GUARD</dialog>
+      <dialog>GO!</dialog>
+      <dialog>TOO LATE</dialog>
+      <dialog>THE KICK WAS A WIND UP</dialog>
+      <dialog>YOU SEE A FIST FLOAT OVER YOUR HANDS</dialog>
+      <dialog>AS THEY DIVE INTO A USELESS GUARD</dialog>
+      <null></null>
+    </interaction>
+    <interaction>
+      <type>3</type>
+      <null></null>
+    </interaction>
+    <end>0</end>
+  </sprite>
+  <!--  auto scene  change collision-->
+</spriteList>

@@ -197,7 +197,7 @@ void Character::talk()
 
 int Character::getXPos() const
 {
-	return _cPosX;
+ 	return _cPosX;
 }
 
 int Character::getYPos() const

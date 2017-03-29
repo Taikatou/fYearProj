@@ -94,7 +94,9 @@ void Interaction::createDialogSprite()
 		}
 		else if (_dialogPairs.at(0).type == CONVERSATION)
 		{
- 			SDL_Surface* textSurface = TTF_RenderText_Solid(g_font, _dialogPairs.at(0).text.c_str(), _blackTextColour);
+			
+			SDL_Surface* textSurface = TTF_RenderText_Solid(g_font, _dialogPairs.at(0).text.c_str(), _whiteTextColour);
+// 			SDL_Surface* textSurface = TTF_RenderText_Solid(g_font, _dialogPairs.at(0).text.c_str(), _blackTextColour);
 			if (textSurface != nullptr)
 			{
 				SDL_Texture* tempText = SDL_CreateTextureFromSurface(g_renderer, textSurface);
@@ -105,6 +107,8 @@ void Interaction::createDialogSprite()
 				_iDialog->setXPos(collider.x - (collider.w / 2));
  				_iDialog->setYPos(collider.y - textSurface->h);
 			}
+
+			SDL_FreeSurface(textSurface);
 		}
 		_dialogPairs.erase(_dialogPairs.begin());
 		if (_dialogPairs.size() > 0)

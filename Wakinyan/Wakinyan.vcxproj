@@ -101,6 +101,7 @@
       <SubType>Designer</SubType>
     </Xml>
     <Xml Include="Assets\Scenes\ACT1\DAY1\afterKarate.xml" />
+    <Xml Include="Assets\Scenes\ACT1\DAY1\endOfDay1.xml" />
     <Xml Include="Assets\Scenes\ACT1\DAY1\iceCreamParlor.xml" />
     <Xml Include="Assets\Scenes\ACT1\DAY1\karate.xml">
       <SubType>Designer</SubType>
@@ -108,6 +109,18 @@
     <Xml Include="Assets\Scenes\ACT1\DAY1\kitchen.xml">
       <SubType>Designer</SubType>
     </Xml>
+    <Xml Include="Assets\Scenes\ACT1\DAY2\afternoonCity.xml" />
+    <Xml Include="Assets\Scenes\ACT1\DAY2\afternoonOutsideDojo.xml" />
+    <Xml Include="Assets\Scenes\ACT1\DAY2\afternoonOutsideSchool.xml" />
+    <Xml Include="Assets\Scenes\ACT1\DAY2\afternoonSchool.xml" />
+    <Xml Include="Assets\Scenes\ACT1\DAY2\bridge.xml" />
+    <Xml Include="Assets\Scenes\ACT1\DAY2\class.xml" />
+    <Xml Include="Assets\Scenes\ACT1\DAY2\morningBedroom.xml" />
+    <Xml Include="Assets\Scenes\ACT1\DAY2\morningBus.xml" />
+    <Xml Include="Assets\Scenes\ACT1\DAY2\morningKitchen.xml" />
+    <Xml Include="Assets\Scenes\ACT1\DAY2\morningOutsideSchool.xml" />
+    <Xml Include="Assets\Scenes\ACT1\DAY2\morningSchool.xml" />
+    <Xml Include="Assets\Scenes\ACT1\DAY2\start.xml" />
     <Xml Include="Assets\Scenes\INTRO\intro.xml">
       <SubType>Designer</SubType>
     </Xml>

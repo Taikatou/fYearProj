@@ -1,21 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <spriteList>
+<!--  character-->
   <sprite>
     <type>0</type>
     <name>Emily</name>
-    <image>Assets/characters/emilyKarateUniform.png</image>
+    <image>Assets/characters/emilyNormalOutfit.png</image>
     <x>290</x>
-    <y>160</y>
+    <y>140</y>
     <animation>true</animation>
   </sprite>
   <!--  sprite-->
-  <sprite>
-    <type>1</type>
-    <name>Opponent</name>
-    <image>Assets/Sprites/karateOpponent0001.png</image>
-    <x>155</x>
-    <y>120</y>
-  </sprite>
   <!--  collider-->
   <sprite>
     <type>2</type>
@@ -45,24 +39,13 @@
   <!--  Interaction-->
   <sprite>
     <type>5</type>
-    <x>150</x>
+    <x>115</x>
     <y>100</y>
-    <w>30</w>
-    <h>20</h>
-    <path>Assets/Scenes/ACT1/DAY1/afterKarate.xml</path>
+    <w>35</w>
+    <h>200</h>
+    <path>Assets/Scenes/ACT1/DAY2/class.xml</path>
     <interaction>
-      <type>4</type>
-      <dialog>They Punch you</dialog>
-      <dialog>You see them go to punch again</dialog>
-      <dialog>You raise to block</dialog>
-      <dialog>0_0</dialog>
-      <dialog>It was a fake</dialog>
-      <dialog>You take a kick to the stomach</dialog>
-      <null></null>
-    </interaction>
-    <interaction>
-      <type>3</type>
-      <null></null>
+      <type>0</type>
     </interaction>
     <end>0</end>
   </sprite>

@@ -118,6 +118,45 @@
     <Xml Include="Assets\Scenes\ACT1\DAY1\afterDinner.xml">
       <Filter>Resource Files\ACT1\DAY1</Filter>
     </Xml>
+    <Xml Include="Assets\Scenes\ACT1\DAY2\morningBedroom.xml">
+      <Filter>Resource Files\ACT1\DAY2</Filter>
+    </Xml>
+    <Xml Include="Assets\Scenes\ACT1\DAY2\morningBus.xml">
+      <Filter>Resource Files\ACT1\DAY2</Filter>
+    </Xml>
+    <Xml Include="Assets\Scenes\ACT1\DAY2\morningKitchen.xml">
+      <Filter>Resource Files\ACT1\DAY2</Filter>
+    </Xml>
+    <Xml Include="Assets\Scenes\ACT1\DAY2\morningOutsideSchool.xml">
+      <Filter>Resource Files\ACT1\DAY2</Filter>
+    </Xml>
+    <Xml Include="Assets\Scenes\ACT1\DAY2\start.xml">
+      <Filter>Resource Files\ACT1\DAY2</Filter>
+    </Xml>
+    <Xml Include="Assets\Scenes\ACT1\DAY1\endOfDay1.xml">
+      <Filter>Resource Files\ACT1\DAY1</Filter>
+    </Xml>
+    <Xml Include="Assets\Scenes\ACT1\DAY2\morningSchool.xml">
+      <Filter>Resource Files\ACT1\DAY2</Filter>
+    </Xml>
+    <Xml Include="Assets\Scenes\ACT1\DAY2\afternoonSchool.xml">
+      <Filter>Resource Files\ACT1\DAY2</Filter>
+    </Xml>
+    <Xml Include="Assets\Scenes\ACT1\DAY2\class.xml">
+      <Filter>Resource Files\ACT1\DAY2</Filter>
+    </Xml>
+    <Xml Include="Assets\Scenes\ACT1\DAY2\afternoonCity.xml">
+      <Filter>Resource Files\ACT1\DAY2</Filter>
+    </Xml>
+    <Xml Include="Assets\Scenes\ACT1\DAY2\bridge.xml">
+      <Filter>Resource Files\ACT1\DAY2</Filter>
+    </Xml>
+    <Xml Include="Assets\Scenes\ACT1\DAY2\afternoonOutsideDojo.xml">
+      <Filter>Resource Files\ACT1\DAY2</Filter>
+    </Xml>
+    <Xml Include="Assets\Scenes\ACT1\DAY2\afternoonOutsideSchool.xml">
+      <Filter>Resource Files\ACT1\DAY2</Filter>
+    </Xml>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\IncludeFileDependencies1.dgml">
