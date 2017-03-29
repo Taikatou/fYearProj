@@ -43,7 +43,7 @@
     <y>0</y>
     <w>70</w>
     <h>100</h>
-    <path>Assets/Scenes/titleScreen.xml</path>
+    <path>Assets/Scenes/ACT1/DAY1/endOfDay1.xml</path>
     <interaction>
       <type>1</type>
     </interaction>

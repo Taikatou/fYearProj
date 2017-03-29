@@ -9,6 +9,7 @@
     <y>0</y>
     <animation>false</animation>
   </sprite>
+  <!--  sprite-->
 <!--  colider-->
   <sprite>
     <type>2</type>

@@ -22,6 +22,9 @@
     <Filter Include="Resource Files\ACT1\DAY1">
       <UniqueIdentifier>{69614dc4-3dbf-45eb-9e93-798e7c737144}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Resource Files\ACT1\DAY2">
+      <UniqueIdentifier>{38ace81a-e22f-4670-bfb0-f414b663e31c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="prototype.cpp">
