@@ -109,6 +109,12 @@
     <Xml Include="Assets\Scenes\ACT1\DAY1\kitchen.xml">
       <Filter>Resource Files\ACT1\DAY1</Filter>
     </Xml>
+    <Xml Include="Assets\Scenes\ACT1\DAY1\afterIceCream.xml">
+      <Filter>Resource Files\ACT1\DAY1</Filter>
+    </Xml>
+    <Xml Include="Assets\Scenes\ACT1\DAY1\afterDinner.xml">
+      <Filter>Resource Files\ACT1\DAY1</Filter>
+    </Xml>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\IncludeFileDependencies1.dgml">

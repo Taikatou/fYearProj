@@ -102,8 +102,8 @@ void Interaction::createDialogSprite()
 				_iDialog->setSpriteTexture(tempText);
 				_iDialog->setWidth(textSurface->w);
 				_iDialog->setHeight(textSurface->h);
-				_iDialog->setXPos(collider.x - (textSurface->w / 2));
-				_iDialog->setYPos(collider.y - textSurface->h);
+				_iDialog->setXPos(collider.x - (collider.w / 2));
+ 				_iDialog->setYPos(collider.y - textSurface->h);
 			}
 		}
 		_dialogPairs.erase(_dialogPairs.begin());

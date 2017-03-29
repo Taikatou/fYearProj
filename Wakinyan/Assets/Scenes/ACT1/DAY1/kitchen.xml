@@ -13,15 +13,15 @@
     <type>1</type>
     <name>Emily</name>
     <image>Assets/Sprites/emilyNormalOutfit.png</image>
-    <x>117</x>
-    <y>110</y>
+    <x>180</x>
+    <y>105</y>
   </sprite>
   <sprite>
     <type>1</type>
-    <name>Dad</name>
+    <name>Mom</name>
     <image>Assets/Sprites/karateOpponent0001.png</image>
-    <x>135</x>
-    <y>110</y>
+    <x>150</x>
+    <y>105</y>
   </sprite>
   <!--  collider-->
   <sprite>
@@ -45,42 +45,48 @@
   <!--  Interaction-->
   <sprite>
     <type>5</type>
-    <x>135</x>
-    <y>110</y>
-    <w>20</w>
-    <h>20</h>
-    <path>Assets/Scenes/ACT1/DAY1/afterIceCream.xml</path>
+    <x>140</x>
+    <y>105</y>
+    <w>30</w>
+    <h>100</h>
+    <path>Assets/Scenes/ACT1/DAY1/afterDinner.xml</path>
     <!--    <path>Assets/Scenes/scene1.xml</path>-->
     <interaction>
-      <type>4</type>
-      <dialog>Dad...</dialog>
-      <dialog>If I always lose</dialog>
-      <dialog>Why am I still going?</dialog>
-      <dialog>I'm no good</dialog>
-      <null></null>
-    </interaction>
-    <interaction>
       <type>2</type>
-      <dialog>Sweetheart</dialog>
-      <dialog>It's not always about winning</dialog>
-      <dialog>Me and your mom thought</dialog>
-      <dialog>It would be good exercise</dialog>
-      <dialog>And if something was to happen</dialog>
-      <dialog>You'd be able to defend yourself</dialog>
-      <dialog>And you are good</dialog>
-      <dialog>You did great in your kata right?</dialog>
+      <dialog>HI MY LITTLE NINJA</dialog>
+      <dialog>HOW WAS KARATE?</dialog>
       <null></null>
     </interaction>
     <interaction>
       <type>4</type>
-      <dialog>... Yeah</dialog>
-      <dialog>... I guess</dialog>
+      <dialog>....</dialog>
+      <dialog>HI MOM</dialog>
+      <dialog>I LOST A FIGHT</dialog>
       <null></null>
     </interaction>
     <interaction>
       <type>2</type>
-      <dialog>Come on</dialog>
-      <dialog>Enjoy your ice cream</dialog>
+      <dialog>MY BEAUIFUL CHUNKSHI</dialog>
+      <dialog>THAT IS OK</dialog>
+      <dialog>LIFE ISN'T ABOUT WINNING OR LOSING</dialog>
+      <dialog>IT'S ABOUT LEARNING</dialog>
+      <dialog>THECHIHILA</dialog>
+      <null></null>
+    </interaction>
+    <interaction>
+      <type>4</type>
+      <dialog>THECHIHILA</dialog>
+      <dialog>SO HOWS WORK BEEN?</dialog>
+      <null></null>
+    </interaction>
+    <interaction>
+      <type>2</type>
+      <dialog>IT'S BEEN INTERESTING</dialog>
+      <dialog>OUR TAKE ON A UNIFIED FIELD THEORY</dialog>
+      <dialog>HAS COULD POSE A NEW COUNTER THEORY</dialog>
+      <dialog>TO M-THEORY AND</dialog>
+      <dialog>...</dialog>
+      <dialog>IT'S GOOD SWEETIE</dialog>
       <null></null>
     </interaction>
     <interaction>

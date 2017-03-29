@@ -214,26 +214,6 @@ bool Scene::loadFromFile(const char * path)
 					{
 						tempInteraction.setPath(temp->FirstChild()->Value());
 					}
-//					temp = temp->NextSiblingElement();
-//					if (strcmp(temp->Value(), "interaction") == 0)
-//					{
-//						int interactionType = std::stoi(temp->FirstChild()->Value());
-//						tempInteraction.setType(interactionType);
-//
-//						if (interactionType == CONVERSATION || interactionType == ONSCREEN_INTERACTION)
-//						{
-//							temp = temp->NextSiblingElement();
-//							if (strcmp(temp->Value(), "dialog") == 0)
-//							{
-//								while (strcmp(temp->Value(), "null") != 0)
-//								{
-//									tempInteraction.setDialog(temp->FirstChild()->Value());
-//									temp = temp->NextSiblingElement();
-//								}
-//							}
-//						}
-//					}
-					
 					temp = temp->NextSiblingElement();
  					while (strcmp(temp->Value(), "interaction") == 0)
 					{
@@ -331,7 +311,7 @@ bool Scene::checkCollision()
 			character->setLastMoveLeft();
 			return true;
 		}
-		if (character->getWidth() + character->getXPos() == sCollider->w)
+		if (character->getWidth() + character->getXPos() == sCollider->x)
 		{
 			//checks if the character is touching the left side of the collider
 			character->setLastMoveRight();
@@ -361,23 +341,23 @@ bool Scene::checkThisCollision(SDL_Rect collider) const
 	// checks all forms of collision
 	// touch on the left or right of the collider
 	// encroach on the left or right of the collider
-	if (character->getXPos() == collider.x + collider.w
-
-		||
-
-		character->getWidth() + character->getXPos() == collider.w
-
-		||
-
-		character->getXPos() + character->getWidth() > collider.x && character->getXPos() + character->getWidth() < collider.x + collider.w
-
-		||
-
-		character->getXPos() < collider.x + collider.w && character->getXPos() > collider.x
+	if ((character->getXPos() == collider.x + collider.w)
 		
 		||
 		
-		character->getXPos() > collider.x && character->getXPos() + character->getWidth() < collider.x + collider.w)
+		(character->getWidth() + character->getXPos() == collider.x)
+		
+		||
+		
+		(character->getXPos() + character->getWidth() > collider.x && character->getXPos() + character->getWidth() < collider.x + collider.w)
+		
+		||
+		
+		(character->getXPos() < collider.x + collider.w && character->getXPos() > collider.x)
+		
+		||
+		
+		(character->getXPos() > collider.x && character->getXPos() + character->getWidth() < collider.x + collider.w))
 	{
 		return true;
 	}
@@ -421,8 +401,8 @@ void Scene::checkInteractions()
 			}
 			else if (sInteraction->getDialogType() == CONVERSATION)
 			{
-				sInteraction->createDialogSprite();
-  				sprites.push_back(sInteraction->getInteractionSprite());
+					sInteraction->createDialogSprite();
+  					npcDialog.push_back(sInteraction->getInteractionSprite());
 			}
 			else if (sInteraction->getDialogType() == ONSCREEN_INTERACTION)
 			{
@@ -461,6 +441,12 @@ void Scene::free()
 		*vSprite = nullptr;
 	}
 
+	for (std::vector<Sprite*>::iterator sDialog = npcDialog.begin(); sDialog != npcDialog.end(); ++sDialog)
+	{
+		(*sDialog)->free();
+		*sDialog = nullptr;
+	}
+
 	for (std::vector<Sprite*>::iterator vOverlay = screenOverlayText.begin(); vOverlay != screenOverlayText.end(); ++vOverlay)
 	{
 		(*vOverlay)->free();
@@ -468,11 +454,13 @@ void Scene::free()
 	}
 
 	sprites.clear();
+	npcDialog.clear();
 	screenOverlayText.clear();
 	colliders.clear();
 	_sInteractions.clear();
 	sAutoSceneChange.clear();
 
+	npcDialog.erase(npcDialog.begin(), npcDialog.end());
 	screenOverlayText.erase(screenOverlayText.begin(), screenOverlayText.end());
 	sprites.erase(sprites.begin(), sprites.end());
 	colliders.erase(colliders.begin(), colliders.end());
@@ -486,10 +474,11 @@ void Scene::update(SDL_Event& e)
 	{
 		std::string path = changeScene();
 		loadFromFile(path.c_str());
+		_changeScene = false;
 	}
 	else if (screenOverlayText.size() > 0)
 	{
-		if (e.type == SDL_MOUSEBUTTONUP || (e.type == SDL_KEYDOWN && e.key.keysym.sym == SDLK_SPACE))
+		if (e.type == SDL_MOUSEBUTTONUP || (e.type == SDL_KEYDOWN && e.key.keysym.sym == SDLK_SPACE && e.key.repeat == 0))
 		{
 			character->talk();
 			screenOverlayText.erase(screenOverlayText.begin(), screenOverlayText.end());
@@ -541,6 +530,11 @@ void Scene::render()
 		(*vSprite)->render((*vSprite)->getXPos() - camera.x, (*vSprite)->getYPos() - camera.y);
 	}
 	
+//	for (std::vector<Sprite*>::iterator sDialog = npcDialog.begin(); sDialog != npcDialog.end(); ++sDialog)
+//	{
+//		(*sDialog)->render((*sDialog)->getXPos() - camera.x, (*sDialog)->getYPos() - camera.y);
+//	}
+
 	character->render(camera.x, camera.y);
 
 	if (screenOverlayText.size() > 0)
@@ -549,6 +543,17 @@ void Scene::render()
 		{
 			(*vOverlay)->render((*vOverlay)->getXPos(), (*vOverlay)->getXPos());
 		}
+	}
+	else if (npcDialog.size() > 0)
+	{
+		//npc dialog is getting populated with the sprite that is being pushed onto screenOverlayText WITHOUT my code explicitly pushing
+		//it is pushed on AND it overrides all the previous values in the vector
+		//this work around will render the first sprite in the vector
+		//I see this as safe based off the fact that ALL sprites in the vector at any given time are identical
+		//a smarted but longer to implement fix would be to just have 2 sprite pointers in the scene and if they aren't nullptr then render
+		// and if they render, set them to nullptr immedietly after rendering
+		Sprite* sText = npcDialog.at(0);
+		sText->render(sText->getXPos() - camera.x, sText->getYPos() - camera.y);
 	}
 }
 

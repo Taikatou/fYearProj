@@ -27,6 +27,7 @@
     <sceneWidth>256</sceneWidth>
     <sceneHeight>144</sceneHeight>
   </sprite>
+  <!--  Interaction-->
 <!--  auto scene  change collision-->
   <sprite>
     <type>6</type>

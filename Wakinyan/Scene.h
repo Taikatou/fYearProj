@@ -13,6 +13,7 @@ public:
 	Sprite background;
 	SDL_Rect camera;
 	std::vector<Sprite*> sprites;
+	std::vector<Sprite*> npcDialog;
 	std::vector<Sprite*> screenOverlayText;
 	std::vector<SDL_Rect> colliders;
 	std::vector<Interaction> sAutoSceneChange;

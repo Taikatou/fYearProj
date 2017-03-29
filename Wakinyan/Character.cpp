@@ -4,6 +4,7 @@
 
 Character::Character()
 {
+	resetKeys();
 	lastMoveRight = false;
 	lastMoveLeft = false;
 	_listen = false;
