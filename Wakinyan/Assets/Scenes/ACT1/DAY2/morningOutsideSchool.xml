@@ -35,7 +35,6 @@
     <sceneHeight>144</sceneHeight>
   </sprite>
   <!--  Interaction-->
-  <!--  auto scene  change collision-->
   <sprite>
     <type>5</type>
     <x>140</x>
@@ -48,4 +47,5 @@
     </interaction>
     <end>0</end>
   </sprite>
+  <!--  auto scene  change collision-->
 </spriteList>

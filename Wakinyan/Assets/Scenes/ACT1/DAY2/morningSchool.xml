@@ -4,8 +4,8 @@
     <type>0</type>
     <name>Emily</name>
     <image>Assets/characters/emilyKarateUniform.png</image>
-    <x>140</x>
-    <y>120</y>
+    <x>290</x>
+    <y>160</y>
     <animation>true</animation>
   </sprite>
   <!--  sprite-->
@@ -19,14 +19,14 @@
   <!--  collider-->
   <sprite>
     <type>2</type>
-    <x>100</x>
+    <x>90</x>
     <y>0</y>
     <w>5</w>
     <h>100</h>
   </sprite>
   <sprite>
     <type>2</type>
-    <x>180</x>
+    <x>320</x>
     <y>0</y>
     <w>5</w>
     <h>100</h>
@@ -34,7 +34,7 @@
   <!--    background-->
   <sprite>
     <type>3</type>
-    <image>Assets/Backgrounds/dojoInside.png</image>
+    <image>Assets/Backgrounds/classroomNotEmpty.png</image>
   </sprite>
   <!--  camera-->
   <sprite>
