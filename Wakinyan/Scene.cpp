@@ -321,28 +321,32 @@ bool Scene::checkCollision()
 	// get the result, if it's true and the x of the character is greater than the x the collder, setLastMoveLeft true
 	for (std::vector<SDL_Rect>::iterator sCollider = colliders.begin(); sCollider != colliders.end(); ++sCollider)
 	{
+		if (character->getXPos() > sCollider->x && character->getXPos() + character->getWidth() < sCollider->x + sCollider->w)
+		{
+			return true;
+		}
 		if (character->getXPos() == sCollider->x + sCollider->w)
 		{
 			//checks if the character is touching the right side of the collider
 			character->setLastMoveLeft();
 			return true;
 		}
-		else if (character->getWidth() + character->getXPos() == sCollider->w)
+		if (character->getWidth() + character->getXPos() == sCollider->w)
 		{
 			//checks if the character is touching the left side of the collider
 			character->setLastMoveRight();
 			return true;
 		}
-		else if (character->getXPos() + character->getWidth() > sCollider->x && character->getXPos() + character->getWidth() < sCollider->x + sCollider->w)
-		{
-			//checks if the character has over lapped the collider from the left
-			character->setLastMoveRight();
-			return true;
-		}
-		else if (character->getXPos() < sCollider->x + sCollider->w && character->getXPos() > sCollider->x)
+		if (character->getXPos() < sCollider->x + sCollider->w && character->getXPos() > sCollider->x)
 		{
 			//checks if the character has overlapped the collider from the right
 			character->setLastMoveLeft();
+			return true;
+		}
+		if (character->getXPos() + character->getWidth() > sCollider->x && character->getXPos() + character->getWidth() < sCollider->x + sCollider->w)
+		{
+			//checks if the character has over lapped the collider from the left
+			character->setLastMoveRight();
 			return true;
 		}
 	}
@@ -369,14 +373,15 @@ bool Scene::checkThisCollision(SDL_Rect collider) const
 
 		||
 
-		character->getXPos() < collider.x + collider.w && character->getXPos() > collider.x)
+		character->getXPos() < collider.x + collider.w && character->getXPos() > collider.x
+		
+		||
+		
+		character->getXPos() > collider.x && character->getXPos() + character->getWidth() < collider.x + collider.w)
 	{
 		return true;
 	}
-	else
-	{
-		return false;
-	}
+	return false;
 }
 
 bool Scene::checkSceneChange()
@@ -484,9 +489,7 @@ void Scene::update(SDL_Event& e)
 	}
 	else if (screenOverlayText.size() > 0)
 	{
-		// In here is where we see if there is an overlay text sprite to render. we block all movement from occuring
-		// mouse events will be passed to a new function
-		if (e.type == SDL_MOUSEBUTTONUP)
+		if (e.type == SDL_MOUSEBUTTONUP || (e.type == SDL_KEYDOWN && e.key.keysym.sym == SDLK_SPACE))
 		{
 			character->talk();
 			screenOverlayText.erase(screenOverlayText.begin(), screenOverlayText.end());
@@ -521,9 +524,9 @@ void Scene::render()
 	{
 		camera.y = 0;
 	}
-	if (camera.x > background.getWidth() - camera.w)
+	if (camera.x > BACKGROUND_WIDTH - camera.w)
 	{
-		camera.x = background.getWidth() - camera.w;
+		camera.x = BACKGROUND_WIDTH - camera.w;
 	}
 	if (camera.y > SCREEN_HEIGHT - camera.h)
 	{
@@ -540,9 +543,12 @@ void Scene::render()
 	
 	character->render(camera.x, camera.y);
 
-	for (std::vector<Sprite*>::iterator vOverlay = screenOverlayText.begin(); vOverlay != screenOverlayText.end(); ++vOverlay)
+	if (screenOverlayText.size() > 0)
 	{
-		(*vOverlay)->render((*vOverlay)->getXPos(), (*vOverlay)->getXPos());
+		for (std::vector<Sprite*>::iterator vOverlay = screenOverlayText.begin(); vOverlay != screenOverlayText.end(); ++vOverlay)
+		{
+			(*vOverlay)->render((*vOverlay)->getXPos(), (*vOverlay)->getXPos());
+		}
 	}
 }
 

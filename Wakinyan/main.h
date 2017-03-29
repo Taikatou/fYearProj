@@ -3,7 +3,6 @@
 #include <SDL_ttf.h>
 extern SDL_Renderer* g_renderer;
 extern TTF_Font* g_font;
-
 extern int SCREEN_WIDTH;
 extern int SCREEN_HEIGHT;
 extern int BACKGROUND_WIDTH;

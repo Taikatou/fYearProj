@@ -42,19 +42,19 @@
     <y>-10</y>
     <w>200</w>
     <h>200</h>
-    <path>Assets/Scenes/titleScreen.xml</path>
+    <path>Assets/Scenes/ACT1/DAY1/iceCreamParlor.xml</path>
     <interaction>
       <type>4</type>
-      <dialog>Dad: Hey sweetie</dialog>
-      <dialog>Emily: Hi Dad</dialog>
-      <dialog>Dad: How was Karate?</dialog>
-      <dialog>EMily: ...</dialog>
-      <dialog>Dad: Not good?</dialog>
-      <dialog>Emily: I lost again</dialog>
-      <dialog>Dad: Hmm...</dialog>
-      <dialog>;_;</dialog>
-      <dialog>Dad: Ice cream?</dialog>
-      <dialog>Emily: Ok</dialog>
+      <dialog>Dad:_Hey_sweetie</dialog>
+      <dialog>Emily:_Hi_Dad</dialog>
+      <dialog>Dad:_How_was_Karate?</dialog>
+      <dialog>EMily:...</dialog>
+      <dialog>Dad:_Not_good?</dialog>
+      <dialog>Emily:_I_lost_again</dialog>
+      <dialog>Dad:_Hmm...</dialog>
+      <dialog>:(</dialog>
+      <dialog>Dad:_Ice_cream?</dialog>
+      <dialog>Emily:_Ok</dialog>
       <null></null>
     </interaction>
     <interaction>
