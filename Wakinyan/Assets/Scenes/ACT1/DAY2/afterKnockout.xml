@@ -12,7 +12,7 @@
   <sprite>
     <type>1</type>
     <name>Emily</name>
-    <image>Assets/Sprites/emilyNormalOutfitLeft.png</image>
+    <image>Assets/Sprites/emilyNormalOutfitRight.png</image>
     <x>140</x>
     <y>120</y>
   </sprite>
@@ -68,6 +68,12 @@
       <dialog>...</dialog>
       <dialog>I THINK SO SENSEI</dialog>
       <dialog>I'M GOING TO GO SIT DOWN</dialog>
+      <null></null>
+    </interaction>
+    <interaction>
+      <type>2</type>
+      <dialog>SLOWLY NOW</dialog>
+      <dialog>i'LL GET YOU SOME WATER</dialog>
       <null></null>
     </interaction>
     <interaction>

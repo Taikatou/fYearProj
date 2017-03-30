@@ -4,8 +4,8 @@
     <type>0</type>
     <name>Emily</name>
     <image>Assets/characters/emilyNormalOutfit.png</image>
-    <x>200</x>
-    <y>100</y>
+    <x>125</x>
+    <y>60</y>
     <animation>true</animation>
   </sprite>
   <!--  sprite-->
@@ -13,13 +13,13 @@
     <type>1</type>
     <name>Dad</name>
     <image>Assets/Sprites/dadRight.png</image>
-    <x>100</x>
-    <y>105</y>
+    <x>90</x>
+    <y>60</y>
   </sprite>
   <!--  collider-->
   <sprite>
     <type>2</type>
-    <x>40</x>
+    <x>50</x>
     <y>0</y>
     <w>12</w>
     <h>200</h>
@@ -45,11 +45,11 @@
   <!--  Interaction-->
   <sprite>
     <type>5</type>
-    <x>100</x>
-    <y>105</y>
+    <x>90</x>
+    <y>60</y>
     <w>30</w>
     <h>105</h>
-    <path>Assets/Scenes/ACT1/DAY3/morningBus.xml</path>
+    <path>null</path>
     <interaction>
       <type>2</type>
       <dialog>MORNING EMILY</dialog>
@@ -59,6 +59,7 @@
     <interaction>
       <type>4</type>
       <dialog>DAD SEEMS IN A BETTER MOOD</dialog>
+      <null></null>
     </interaction>
     <interaction>
       <type>1</type>
@@ -67,4 +68,16 @@
     <end>0</end>
   </sprite>
   <!--  auto scene  change collision-->
+  <sprite>
+    <type>6</type>
+    <x>145</x>
+    <y>0</y>
+    <w>10</w>
+    <h>100</h>
+    <path>Assets/Scenes/ACT1/DAY3/morningBus.xml</path>
+    <interaction>
+      <type>1</type>
+    </interaction>
+    <end>0</end>
+  </sprite>
 </spriteList>

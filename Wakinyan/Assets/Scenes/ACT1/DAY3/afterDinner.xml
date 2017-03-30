@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<spriteList>
+  <sprite>
+    <type>0</type>
+    <name>Emily</name>
+    <image>Assets/characters/emilyNormalOutfit.png</image>
+    <x>60</x>
+    <y>130</y>
+    <animation>true</animation>
+  </sprite>
+  <!--  sprite-->
+  <!--  collider-->
+  <sprite>
+    <type>2</type>
+    <x>40</x>
+    <y>0</y>
+    <w>11</w>
+    <h>200</h>
+  </sprite>
+  <sprite>
+    <type>2</type>
+    <x>241</x>
+    <y>0</y>
+    <w>10</w>
+    <h>200</h>
+  </sprite>
+  <!--    background-->
+  <sprite>
+    <type>3</type>
+    <image>Assets/Backgrounds/bedroom.png</image>
+  </sprite>
+  <!--  camera-->
+  <sprite>
+    <type>4</type>
+    <sceneWidth>192</sceneWidth>
+    <sceneHeight>108</sceneHeight>
+  </sprite>
+  <!--  Interaction-->
+  <!--  auto scene  change collision-->
+  <sprite>
+    <type>6</type>
+    <x>170</x>
+    <y>0</y>
+    <w>70</w>
+    <h>100</h>
+    <path>Assets/Scenes/ACT1/DAY3/endOfDay3.xml</path>
+    <interaction>
+      <type>1</type>
+    </interaction>
+    <end>0</end>
+  </sprite>
+</spriteList>

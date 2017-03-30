@@ -13,20 +13,23 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Resource Files\ACT1">
+    <Filter Include="Resource Files\Scenes">
+      <UniqueIdentifier>{ba6eff76-537f-4951-b55e-e9a27ffba581}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Scenes\ACT1">
       <UniqueIdentifier>{39138162-aa39-43ff-b140-80e473703e59}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Resource Files\INTRO">
-      <UniqueIdentifier>{dafe52cd-4dfa-4fe6-8be7-353142cf3477}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Resource Files\ACT1\DAY1">
+    <Filter Include="Resource Files\Scenes\ACT1\DAY1">
       <UniqueIdentifier>{69614dc4-3dbf-45eb-9e93-798e7c737144}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Resource Files\ACT1\DAY2">
+    <Filter Include="Resource Files\Scenes\ACT1\DAY2">
       <UniqueIdentifier>{38ace81a-e22f-4670-bfb0-f414b663e31c}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Resource Files\ACT1\DAY3">
+    <Filter Include="Resource Files\Scenes\ACT1\DAY3">
       <UniqueIdentifier>{c85aad52-1ddf-4952-bea6-a9e9da6cfbc9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Scenes\INTRO">
+      <UniqueIdentifier>{dafe52cd-4dfa-4fe6-8be7-353142cf3477}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -85,119 +88,152 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Xml Include="Assets\Scenes\scene0.xml">
-      <Filter>Resource Files</Filter>
-    </Xml>
-    <Xml Include="Assets\Scenes\scene1.xml">
-      <Filter>Resource Files</Filter>
-    </Xml>
-    <Xml Include="Assets\Scenes\titleScreen.xml">
-      <Filter>Resource Files</Filter>
-    </Xml>
     <Xml Include="Assets\Scenes\INTRO\intro.xml">
-      <Filter>Resource Files\INTRO</Filter>
+      <Filter>Resource Files\Scenes\INTRO</Filter>
     </Xml>
     <Xml Include="Assets\Scenes\INTRO\scene0001.xml">
-      <Filter>Resource Files\INTRO</Filter>
+      <Filter>Resource Files\Scenes\INTRO</Filter>
     </Xml>
     <Xml Include="Assets\Scenes\INTRO\scene0002.xml">
-      <Filter>Resource Files\INTRO</Filter>
+      <Filter>Resource Files\Scenes\INTRO</Filter>
     </Xml>
     <Xml Include="Assets\Scenes\ACT1\DAY1\karate.xml">
-      <Filter>Resource Files\ACT1\DAY1</Filter>
+      <Filter>Resource Files\Scenes\ACT1\DAY1</Filter>
     </Xml>
     <Xml Include="Assets\Scenes\ACT1\DAY1\afterKarate.xml">
-      <Filter>Resource Files\ACT1\DAY1</Filter>
+      <Filter>Resource Files\Scenes\ACT1\DAY1</Filter>
     </Xml>
     <Xml Include="Assets\Scenes\ACT1\DAY1\iceCreamParlor.xml">
-      <Filter>Resource Files\ACT1\DAY1</Filter>
+      <Filter>Resource Files\Scenes\ACT1\DAY1</Filter>
     </Xml>
     <Xml Include="Assets\Scenes\ACT1\DAY1\kitchen.xml">
-      <Filter>Resource Files\ACT1\DAY1</Filter>
+      <Filter>Resource Files\Scenes\ACT1\DAY1</Filter>
     </Xml>
     <Xml Include="Assets\Scenes\ACT1\DAY1\afterIceCream.xml">
-      <Filter>Resource Files\ACT1\DAY1</Filter>
+      <Filter>Resource Files\Scenes\ACT1\DAY1</Filter>
     </Xml>
     <Xml Include="Assets\Scenes\ACT1\DAY1\afterDinner.xml">
-      <Filter>Resource Files\ACT1\DAY1</Filter>
+      <Filter>Resource Files\Scenes\ACT1\DAY1</Filter>
     </Xml>
     <Xml Include="Assets\Scenes\ACT1\DAY2\morningBedroom.xml">
-      <Filter>Resource Files\ACT1\DAY2</Filter>
+      <Filter>Resource Files\Scenes\ACT1\DAY2</Filter>
     </Xml>
     <Xml Include="Assets\Scenes\ACT1\DAY2\morningBus.xml">
-      <Filter>Resource Files\ACT1\DAY2</Filter>
+      <Filter>Resource Files\Scenes\ACT1\DAY2</Filter>
     </Xml>
     <Xml Include="Assets\Scenes\ACT1\DAY2\morningKitchen.xml">
-      <Filter>Resource Files\ACT1\DAY2</Filter>
+      <Filter>Resource Files\Scenes\ACT1\DAY2</Filter>
     </Xml>
     <Xml Include="Assets\Scenes\ACT1\DAY2\morningOutsideSchool.xml">
-      <Filter>Resource Files\ACT1\DAY2</Filter>
+      <Filter>Resource Files\Scenes\ACT1\DAY2</Filter>
     </Xml>
     <Xml Include="Assets\Scenes\ACT1\DAY2\start.xml">
-      <Filter>Resource Files\ACT1\DAY2</Filter>
+      <Filter>Resource Files\Scenes\ACT1\DAY2</Filter>
     </Xml>
     <Xml Include="Assets\Scenes\ACT1\DAY1\endOfDay1.xml">
-      <Filter>Resource Files\ACT1\DAY1</Filter>
+      <Filter>Resource Files\Scenes\ACT1\DAY1</Filter>
     </Xml>
     <Xml Include="Assets\Scenes\ACT1\DAY2\morningSchool.xml">
-      <Filter>Resource Files\ACT1\DAY2</Filter>
+      <Filter>Resource Files\Scenes\ACT1\DAY2</Filter>
     </Xml>
     <Xml Include="Assets\Scenes\ACT1\DAY2\afternoonSchool.xml">
-      <Filter>Resource Files\ACT1\DAY2</Filter>
+      <Filter>Resource Files\Scenes\ACT1\DAY2</Filter>
     </Xml>
     <Xml Include="Assets\Scenes\ACT1\DAY2\class.xml">
-      <Filter>Resource Files\ACT1\DAY2</Filter>
+      <Filter>Resource Files\Scenes\ACT1\DAY2</Filter>
     </Xml>
     <Xml Include="Assets\Scenes\ACT1\DAY2\afternoonCity.xml">
-      <Filter>Resource Files\ACT1\DAY2</Filter>
+      <Filter>Resource Files\Scenes\ACT1\DAY2</Filter>
     </Xml>
     <Xml Include="Assets\Scenes\ACT1\DAY2\bridge.xml">
-      <Filter>Resource Files\ACT1\DAY2</Filter>
+      <Filter>Resource Files\Scenes\ACT1\DAY2</Filter>
     </Xml>
     <Xml Include="Assets\Scenes\ACT1\DAY2\afternoonOutsideDojo.xml">
-      <Filter>Resource Files\ACT1\DAY2</Filter>
+      <Filter>Resource Files\Scenes\ACT1\DAY2</Filter>
     </Xml>
     <Xml Include="Assets\Scenes\ACT1\DAY2\afternoonOutsideSchool.xml">
-      <Filter>Resource Files\ACT1\DAY2</Filter>
+      <Filter>Resource Files\Scenes\ACT1\DAY2</Filter>
     </Xml>
     <Xml Include="Assets\Scenes\ACT1\DAY2\karateBeforeKnockout.xml">
-      <Filter>Resource Files\ACT1\DAY2</Filter>
+      <Filter>Resource Files\Scenes\ACT1\DAY2</Filter>
     </Xml>
     <Xml Include="Assets\Scenes\ACT1\DAY2\knockout001.xml">
-      <Filter>Resource Files\ACT1\DAY2</Filter>
+      <Filter>Resource Files\Scenes\ACT1\DAY2</Filter>
     </Xml>
     <Xml Include="Assets\Scenes\ACT1\DAY2\afterKarate.xml">
-      <Filter>Resource Files\ACT1\DAY2</Filter>
+      <Filter>Resource Files\Scenes\ACT1\DAY2</Filter>
     </Xml>
     <Xml Include="Assets\Scenes\ACT1\DAY2\afterKnockout.xml">
-      <Filter>Resource Files\ACT1\DAY2</Filter>
+      <Filter>Resource Files\Scenes\ACT1\DAY2</Filter>
     </Xml>
     <Xml Include="Assets\Scenes\ACT1\DAY2\knockout002.xml">
-      <Filter>Resource Files\ACT1\DAY2</Filter>
+      <Filter>Resource Files\Scenes\ACT1\DAY2</Filter>
     </Xml>
     <Xml Include="Assets\Scenes\ACT1\DAY2\knockout003.xml">
-      <Filter>Resource Files\ACT1\DAY2</Filter>
+      <Filter>Resource Files\Scenes\ACT1\DAY2</Filter>
     </Xml>
     <Xml Include="Assets\Scenes\ACT1\DAY2\knockout004.xml">
-      <Filter>Resource Files\ACT1\DAY2</Filter>
+      <Filter>Resource Files\Scenes\ACT1\DAY2</Filter>
     </Xml>
     <Xml Include="Assets\Scenes\ACT1\DAY2\knockout005.xml">
-      <Filter>Resource Files\ACT1\DAY2</Filter>
+      <Filter>Resource Files\Scenes\ACT1\DAY2</Filter>
     </Xml>
     <Xml Include="Assets\Scenes\ACT1\DAY2\knockout006.xml">
-      <Filter>Resource Files\ACT1\DAY2</Filter>
+      <Filter>Resource Files\Scenes\ACT1\DAY2</Filter>
     </Xml>
     <Xml Include="Assets\Scenes\ACT1\DAY2\knockout007.xml">
-      <Filter>Resource Files\ACT1\DAY2</Filter>
+      <Filter>Resource Files\Scenes\ACT1\DAY2</Filter>
     </Xml>
     <Xml Include="Assets\Scenes\ACT1\DAY2\bedTime.xml">
-      <Filter>Resource Files\ACT1\DAY2</Filter>
+      <Filter>Resource Files\Scenes\ACT1\DAY2</Filter>
     </Xml>
     <Xml Include="Assets\Scenes\ACT1\DAY2\iceCreamParlorDay2.xml">
-      <Filter>Resource Files\ACT1\DAY2</Filter>
+      <Filter>Resource Files\Scenes\ACT1\DAY2</Filter>
     </Xml>
     <Xml Include="Assets\Scenes\ACT1\DAY3\start.xml">
-      <Filter>Resource Files\ACT1\DAY3</Filter>
+      <Filter>Resource Files\Scenes\ACT1\DAY3</Filter>
+    </Xml>
+    <Xml Include="Assets\Scenes\ACT1\DAY3\afternoonSchool.xml">
+      <Filter>Resource Files\Scenes\ACT1\DAY3</Filter>
+    </Xml>
+    <Xml Include="Assets\Scenes\ACT1\DAY3\class.xml">
+      <Filter>Resource Files\Scenes\ACT1\DAY3</Filter>
+    </Xml>
+    <Xml Include="Assets\Scenes\ACT1\DAY3\morningBedroom.xml">
+      <Filter>Resource Files\Scenes\ACT1\DAY3</Filter>
+    </Xml>
+    <Xml Include="Assets\Scenes\ACT1\DAY3\morningBus.xml">
+      <Filter>Resource Files\Scenes\ACT1\DAY3</Filter>
+    </Xml>
+    <Xml Include="Assets\Scenes\ACT1\DAY3\morningKitchen.xml">
+      <Filter>Resource Files\Scenes\ACT1\DAY3</Filter>
+    </Xml>
+    <Xml Include="Assets\Scenes\ACT1\DAY3\morningOutsideSchool.xml">
+      <Filter>Resource Files\Scenes\ACT1\DAY3</Filter>
+    </Xml>
+    <Xml Include="Assets\Scenes\ACT1\DAY3\morningSchool.xml">
+      <Filter>Resource Files\Scenes\ACT1\DAY3</Filter>
+    </Xml>
+    <Xml Include="Assets\Scenes\ACT1\DAY3\afternoonBus.xml">
+      <Filter>Resource Files\Scenes\ACT1\DAY3</Filter>
+    </Xml>
+    <Xml Include="Assets\Scenes\ACT1\DAY3\dinner.xml">
+      <Filter>Resource Files\Scenes\ACT1\DAY3</Filter>
+    </Xml>
+    <Xml Include="Assets\Scenes\scene1.xml">
+      <Filter>Resource Files\Scenes</Filter>
+    </Xml>
+    <Xml Include="Assets\Scenes\scene0.xml">
+      <Filter>Resource Files\Scenes</Filter>
+    </Xml>
+    <Xml Include="Assets\Scenes\titleScreen.xml">
+      <Filter>Resource Files\Scenes</Filter>
+    </Xml>
+    <Xml Include="Assets\Scenes\ACT1\DAY3\endOfDay3.xml">
+      <Filter>Resource Files\Scenes\ACT1\DAY3</Filter>
+    </Xml>
+    <Xml Include="Assets\Scenes\ACT1\DAY3\afterDinner.xml">
+      <Filter>Resource Files\Scenes\ACT1\DAY3</Filter>
     </Xml>
   </ItemGroup>
   <ItemGroup>

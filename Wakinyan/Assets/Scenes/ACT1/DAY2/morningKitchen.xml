@@ -4,8 +4,8 @@
     <type>0</type>
     <name>Emily</name>
     <image>Assets/characters/emilyNormalOutfit.png</image>
-    <x>200</x>
-    <y>100</y>
+    <x>130</x>
+    <y>60</y>
     <animation>true</animation>
   </sprite>
   <!--  sprite-->
@@ -14,7 +14,7 @@
     <name>Dad</name>
     <image>Assets/Sprites/dadRight.png</image>
     <x>100</x>
-    <y>105</y>
+    <y>60</y>
   </sprite>
   <!--  collider-->
   <sprite>
@@ -87,7 +87,7 @@
   <!--  auto scene  change collision-->
   <sprite>
     <type>6</type>
-    <x>235</x>
+    <x>155</x>
     <y>0</y>
     <w>10</w>
     <h>100</h>

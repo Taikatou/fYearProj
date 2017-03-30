@@ -71,6 +71,11 @@
       <dialog>*groan*</dialog>
       <null></null>
     </interaction>
+    <interaction>
+      <type>2</type>
+      <dialog>HA HA HA</dialog>
+      <null></null>
+    </interaction>
     <end>0</end>
   </sprite>
   <!--  auto scene  change collision-->

@@ -143,6 +143,17 @@
     <Xml Include="Assets\Scenes\ACT1\DAY2\morningOutsideSchool.xml" />
     <Xml Include="Assets\Scenes\ACT1\DAY2\morningSchool.xml" />
     <Xml Include="Assets\Scenes\ACT1\DAY2\start.xml" />
+    <Xml Include="Assets\Scenes\ACT1\DAY3\afterDinner.xml" />
+    <Xml Include="Assets\Scenes\ACT1\DAY3\afternoonBus.xml" />
+    <Xml Include="Assets\Scenes\ACT1\DAY3\afternoonSchool.xml" />
+    <Xml Include="Assets\Scenes\ACT1\DAY3\class.xml" />
+    <Xml Include="Assets\Scenes\ACT1\DAY3\dinner.xml" />
+    <Xml Include="Assets\Scenes\ACT1\DAY3\endOfDay3.xml" />
+    <Xml Include="Assets\Scenes\ACT1\DAY3\morningBedroom.xml" />
+    <Xml Include="Assets\Scenes\ACT1\DAY3\morningBus.xml" />
+    <Xml Include="Assets\Scenes\ACT1\DAY3\morningKitchen.xml" />
+    <Xml Include="Assets\Scenes\ACT1\DAY3\morningOutsideSchool.xml" />
+    <Xml Include="Assets\Scenes\ACT1\DAY3\morningSchool.xml" />
     <Xml Include="Assets\Scenes\ACT1\DAY3\start.xml" />
     <Xml Include="Assets\Scenes\INTRO\intro.xml">
       <SubType>Designer</SubType>

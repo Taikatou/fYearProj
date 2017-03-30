@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<spriteList>
+  <sprite>
+    <type>0</type>
+    <name>null</name>
+    <image>Assets/characters/dialogSceneCharacterSprite.png</image>
+    <x>105</x>
+    <y>60</y>
+    <animation>false</animation>
+  </sprite>
+  <!--  sprite-->
+  <sprite>
+    <type>1</type>
+    <name>Emily</name>
+    <image>Assets/Sprites/emilyNormalOutfitLeft.png</image>
+    <x>125</x>
+    <y>60</y>
+  </sprite>
+  <sprite>
+    <type>1</type>
+    <name>Dad</name>
+    <image>Assets/Sprites/dadRight.png</image>
+    <x>105</x>
+    <y>60</y>
+  </sprite>
+  <sprite>
+    <type>1</type>
+    <name>Mom</name>
+    <image>Assets/Sprites/momLeft.png</image>
+    <x>135</x>
+    <y>60</y>
+  </sprite>
+  <!--  collider-->
+  <sprite>
+    <type>2</type>
+    <x>100</x>
+    <y>0</y>
+    <w>40</w>
+    <h>200</h>
+  </sprite>
+  <!--    background-->
+  <sprite>
+    <type>3</type>
+    <image>Assets/Backgrounds/kitchenSmall.png</image>
+  </sprite>
+  <!--  camera-->
+  <sprite>
+    <type>4</type>
+    <sceneWidth>192</sceneWidth>
+    <sceneHeight>108</sceneHeight>
+  </sprite>
+  <!--  Interaction-->
+  <sprite>
+    <type>5</type>
+    <x>105</x>
+    <y>60</y>
+    <w>30</w>
+    <h>100</h>
+    <path>Assets/Scenes/ACT1/DAY3/afterDinner.xml</path>
+    <interaction>
+      <type>4</type>
+      <dialog>YUM</dialog>
+      <dialog>MOM MADE WOHANPI</dialog>
+      <dialog>IT'S YOUR FAVOURITE</dialog>
+      <dialog>YOU DON'T TELL DAD</dialog>
+      <dialog>HE MIGHT TAKE IT THE WRONG WAY</dialog>
+      <dialog>AND MIGHT STOP MAKING TACOS</dialog>
+      <null></null>
+    </interaction>
+    <interaction>
+      <type>2</type>
+      <dialog>SO YOUR DAD TOLD ME</dialog>
+      <dialog>THAT SOMETHING HAPPENED</dialog>
+      <dialog>AT KARATE ON MONDAY</dialog>
+      <null></null>
+    </interaction>
+    <interaction>
+      <type>4</type>
+      <dialog>YEAH</dialog>
+      <dialog>I GUESS I GOT KNOCKED OUT</dialog>
+      <dialog>DIDN'T HAVE MY GUARD UP</dialog>
+      <null></null>
+    </interaction>
+    <interaction>
+      <type>2</type>
+      <dialog>DAD TOLD ME YOU HAD A DREAM</dialog>
+      <dialog>WHAT WAS IT?</dialog>
+      <null></null>
+    </interaction>
+    <interaction>
+      <type>4</type>
+      <dialog>I SAW LIGHTNING IN THE SKY</dialog>
+      <dialog>AND THEN I THINK I SAW</dialog>
+      <dialog>SOME KIND OF CREATURE</dialog>
+      <dialog>IT'S A LITTLE HAZY NOW</dialog>
+      <dialog>IT HAD 4 WINGS</dialog>
+      <null></null>
+    </interaction>
+    <interaction>
+      <type>2</type>
+      <dialog>THATS REALLY INTERESTING</dialog>
+      <dialog>HMM...</dialog>
+      <null></null>
+    </interaction>
+    <end>0</end>
+  </sprite>
+  <!--  auto scene  change collision-->
+</spriteList>
