@@ -169,6 +169,11 @@
     <Xml Include="Assets\Scenes\ACT1\DAY4\morningBus.xml" />
     <Xml Include="Assets\Scenes\ACT1\DAY4\start.xml" />
     <Xml Include="Assets\Scenes\ACT1\DAY4\start2.xml" />
+    <Xml Include="Assets\Scenes\ACT1\DAY5\morningBedroom.xml" />
+    <Xml Include="Assets\Scenes\ACT1\DAY5\morningBus.xml" />
+    <Xml Include="Assets\Scenes\ACT1\DAY5\morningKitchen.xml" />
+    <Xml Include="Assets\Scenes\ACT1\DAY5\morningOutsideSchool.xml" />
+    <Xml Include="Assets\Scenes\ACT1\DAY5\start.xml" />
     <Xml Include="Assets\Scenes\INTRO\intro.xml">
       <SubType>Designer</SubType>
     </Xml>

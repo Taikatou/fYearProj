@@ -34,6 +34,9 @@
     <Filter Include="Resource Files\Scenes\ACT1\DAY4">
       <UniqueIdentifier>{979e3c1a-ddae-4b45-a917-93e5933006a7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Resource Files\Scenes\ACT1\DAY5">
+      <UniqueIdentifier>{99bf5153-6ee9-4d76-8914-3c211f5b32aa}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="prototype.cpp">
@@ -279,6 +282,21 @@
     </Xml>
     <Xml Include="Assets\Scenes\ACT1\DAY4\iceCreamParlor.xml">
       <Filter>Resource Files\Scenes\ACT1\DAY4</Filter>
+    </Xml>
+    <Xml Include="Assets\Scenes\ACT1\DAY5\morningBedroom.xml">
+      <Filter>Resource Files\Scenes\ACT1\DAY5</Filter>
+    </Xml>
+    <Xml Include="Assets\Scenes\ACT1\DAY5\morningBus.xml">
+      <Filter>Resource Files\Scenes\ACT1\DAY5</Filter>
+    </Xml>
+    <Xml Include="Assets\Scenes\ACT1\DAY5\morningKitchen.xml">
+      <Filter>Resource Files\Scenes\ACT1\DAY5</Filter>
+    </Xml>
+    <Xml Include="Assets\Scenes\ACT1\DAY5\morningOutsideSchool.xml">
+      <Filter>Resource Files\Scenes\ACT1\DAY5</Filter>
+    </Xml>
+    <Xml Include="Assets\Scenes\ACT1\DAY5\start.xml">
+      <Filter>Resource Files\Scenes\ACT1\DAY5</Filter>
     </Xml>
   </ItemGroup>
   <ItemGroup>

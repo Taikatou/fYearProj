@@ -39,7 +39,10 @@
     <path>Assets/Scenes/ACT1/DAY5/start.xml</path>
     <interaction>
       <type>4</type>
-      <dialog>I HOPE THE WEEKEND IS NICE</dialog>
+      <dialog>I HOPE MAX ISN'T MAD AT ME</dialog>
+      <dialog>THOUGH...</dialog>
+      <dialog>IT FELT PRETTY GOOD FOR A CHANGE</dialog>
+      <dialog>TO WIN</dialog>
       <null></null>
     </interaction>
     <end>0</end>
