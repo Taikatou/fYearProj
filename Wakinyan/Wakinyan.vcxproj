@@ -96,7 +96,9 @@
     <ClInclude Include="tinyxml.h" />
   </ItemGroup>
   <ItemGroup>
-    <Xml Include="Assets\Scenes\ACT1\DAY1\afterDinner.xml" />
+    <Xml Include="Assets\Scenes\ACT1\DAY1\afterDinner.xml">
+      <SubType>Designer</SubType>
+    </Xml>
     <Xml Include="Assets\Scenes\ACT1\DAY1\afterIceCream.xml">
       <SubType>Designer</SubType>
     </Xml>
@@ -113,8 +115,12 @@
     <Xml Include="Assets\Scenes\ACT1\DAY2\afterKnockout.xml" />
     <Xml Include="Assets\Scenes\ACT1\DAY2\afternoonCity.xml" />
     <Xml Include="Assets\Scenes\ACT1\DAY2\afternoonOutsideDojo.xml" />
-    <Xml Include="Assets\Scenes\ACT1\DAY2\afternoonOutsideSchool.xml" />
-    <Xml Include="Assets\Scenes\ACT1\DAY2\afternoonSchool.xml" />
+    <Xml Include="Assets\Scenes\ACT1\DAY2\afternoonOutsideSchool.xml">
+      <SubType>Designer</SubType>
+    </Xml>
+    <Xml Include="Assets\Scenes\ACT1\DAY2\afternoonSchool.xml">
+      <SubType>Designer</SubType>
+    </Xml>
     <Xml Include="Assets\Scenes\ACT1\DAY2\bedTime.xml" />
     <Xml Include="Assets\Scenes\ACT1\DAY2\bridge.xml" />
     <Xml Include="Assets\Scenes\ACT1\DAY2\class.xml" />
@@ -137,6 +143,7 @@
     <Xml Include="Assets\Scenes\ACT1\DAY2\morningOutsideSchool.xml" />
     <Xml Include="Assets\Scenes\ACT1\DAY2\morningSchool.xml" />
     <Xml Include="Assets\Scenes\ACT1\DAY2\start.xml" />
+    <Xml Include="Assets\Scenes\ACT1\DAY3\start.xml" />
     <Xml Include="Assets\Scenes\INTRO\intro.xml">
       <SubType>Designer</SubType>
     </Xml>

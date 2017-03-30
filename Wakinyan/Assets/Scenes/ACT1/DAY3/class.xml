@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<spriteList>
+  <!--  charcter-->
+  <sprite>
+    <type>0</type>
+    <name>null</name>
+    <image>Assets/characters/dialogSceneCharacterSprite.png</image>
+    <x>150</x>
+    <y>145</y>
+    <animation>true</animation>
+  </sprite>
+  <!--  sprite-->
+  <!--  colider-->
+  <sprite>
+    <type>2</type>
+    <x>140</x>
+    <y>0</y>
+    <w>50</w>
+    <h>10</h>
+  </sprite>
+  <!--  background-->
+  <sprite>
+    <type>3</type>
+    <image>Assets/Backgrounds/classroomEmilySitting.png</image>
+  </sprite>
+  <!--  camera-->
+  <sprite>
+    <type>4</type>
+    <sceneWidth>192</sceneWidth>
+    <sceneHeight>108</sceneHeight>
+  </sprite>
+  <!--  Interaction-->
+  <sprite>
+    <type>5</type>
+    <x>140</x>
+    <y>140</y>
+    <w>30</w>
+    <h>30</h>
+    <path>Assets/Scenes/ACT1/DAY3/afternoonSchool.xml</path>
+    <interaction>
+      <type>2</type>
+      <dialog>PSSST</dialog>
+      <null></null>
+    </interaction>
+    <interaction>
+      <type>4</type>
+      <dialog>WHAT JESSIE?</dialog>
+      <null></null>
+    </interaction>
+    <interaction>
+      <type>2</type>
+      <dialog>EMILY IS IT TRUE?</dialog>
+      <dialog>MAX SAID YOU GOT KNOCKED OUT</dialog>
+      <dialog>AT KARATE</dialog>
+      <null></null>
+    </interaction>
+    <interaction>
+      <type>4</type>
+      <dialog>-_-</dialog>
+      <dialog>... YEAH I THINK SO</dialog>
+      <null></null>
+    </interaction>
+    <interaction>
+      <type>2</type>
+      <dialog>HA</dialog>
+      <dialog>YOU'RE REALLY NOT A FIGHTER</dialog>
+      <null></null>
+    </interaction>
+    <interaction>
+      <type>4</type>
+      <dialog>*groan*</dialog>
+      <null></null>
+    </interaction>
+    <end>0</end>
+  </sprite>
+  <!--  auto scene  change collision-->
+</spriteList>

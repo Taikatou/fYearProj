@@ -12,7 +12,7 @@
   <sprite>
     <type>1</type>
     <name>Dad</name>
-    <image>Assets/Sprites/karateOpponent0001.png</image>
+    <image>Assets/Sprites/dadRight.png</image>
     <x>100</x>
     <y>105</y>
   </sprite>
@@ -34,7 +34,7 @@
   <!--    background-->
   <sprite>
     <type>3</type>
-    <image>Assets/Backgrounds/kitchen.png</image>
+    <image>Assets/Backgrounds/kitchenSmall.png</image>
   </sprite>
   <!--  camera-->
   <sprite>

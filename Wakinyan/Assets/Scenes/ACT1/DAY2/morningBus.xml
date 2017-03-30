@@ -12,7 +12,7 @@
   <sprite>
     <type>1</type>
     <name>Car</name>
-    <image>Assets/Sprites/carLeft.png</image>
+    <image>Assets/Sprites/bus.png</image>
     <x>60</x>
     <y>50</y>
   </sprite>

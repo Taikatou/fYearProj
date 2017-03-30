@@ -12,15 +12,15 @@
   <sprite>
     <type>1</type>
     <name>Emily</name>
-    <image>Assets/Sprites/emilyNormalOutfitRight.png</image>
-    <x>117</x>
+    <image>Assets/Sprites/emilyNormalOutfitLeft.png</image>
+    <x>135</x>
     <y>110</y>
   </sprite>
   <sprite>
     <type>1</type>
     <name>Dad</name>
-    <image>Assets/Sprites/dadLeft.png</image>
-    <x>135</x>
+    <image>Assets/Sprites/dadRight.png</image>
+    <x>117</x>
     <y>110</y>
   </sprite>
   <!--  collider-->

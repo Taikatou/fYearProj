@@ -25,6 +25,9 @@
     <Filter Include="Resource Files\ACT1\DAY2">
       <UniqueIdentifier>{38ace81a-e22f-4670-bfb0-f414b663e31c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Resource Files\ACT1\DAY3">
+      <UniqueIdentifier>{c85aad52-1ddf-4952-bea6-a9e9da6cfbc9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="prototype.cpp">
@@ -192,6 +195,9 @@
     </Xml>
     <Xml Include="Assets\Scenes\ACT1\DAY2\iceCreamParlorDay2.xml">
       <Filter>Resource Files\ACT1\DAY2</Filter>
+    </Xml>
+    <Xml Include="Assets\Scenes\ACT1\DAY3\start.xml">
+      <Filter>Resource Files\ACT1\DAY3</Filter>
     </Xml>
   </ItemGroup>
   <ItemGroup>

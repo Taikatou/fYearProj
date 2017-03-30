@@ -36,7 +36,7 @@
     <w>1930</w>
     <h>1090</h>
 <!--    <path>Assets/Scenes/INTRO/intro.xml</path>-->
-    <path>Assets/Scenes/ACT1/DAY2/bedTime.xml</path>
+    <path>Assets/Scenes/ACT1/DAY1/kitchen.xml</path>
     <interaction>
       <type>0</type>
     </interaction>

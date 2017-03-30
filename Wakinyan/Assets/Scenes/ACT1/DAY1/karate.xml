@@ -16,6 +16,13 @@
     <x>155</x>
     <y>120</y>
   </sprite>
+  <sprite>
+    <type>1</type>
+    <name>Sensei</name>
+    <image>Assets/Sprites/karateInstructorRight.png</image>
+    <x>130</x>
+    <y>110</y>
+  </sprite>
   <!--  collider-->
   <sprite>
     <type>2</type>

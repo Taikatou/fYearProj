@@ -19,7 +19,7 @@
   <sprite>
     <type>1</type>
     <name>Opponent</name>
-    <image>Assets/Sprites/karateOpponent0001.png</image>
+    <image>Assets/Sprites/karateInstructorLeft.png</image>
     <x>155</x>
     <y>120</y>
   </sprite>
@@ -66,7 +66,7 @@
     <interaction>
       <type>4</type>
       <dialog>...</dialog>
-      <dialog>I THINK SO</dialog>
+      <dialog>I THINK SO SENSEI</dialog>
       <dialog>I'M GOING TO GO SIT DOWN</dialog>
       <null></null>
     </interaction>
