@@ -31,6 +31,9 @@
     <Filter Include="Resource Files\Scenes\INTRO">
       <UniqueIdentifier>{dafe52cd-4dfa-4fe6-8be7-353142cf3477}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Resource Files\Scenes\ACT1\DAY4">
+      <UniqueIdentifier>{979e3c1a-ddae-4b45-a917-93e5933006a7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="prototype.cpp">
@@ -234,6 +237,48 @@
     </Xml>
     <Xml Include="Assets\Scenes\ACT1\DAY3\afterDinner.xml">
       <Filter>Resource Files\Scenes\ACT1\DAY3</Filter>
+    </Xml>
+    <Xml Include="Assets\Scenes\ACT1\DAY4\start.xml">
+      <Filter>Resource Files\Scenes\ACT1\DAY4</Filter>
+    </Xml>
+    <Xml Include="Assets\Scenes\ACT1\DAY4\afternoonCity.xml">
+      <Filter>Resource Files\Scenes\ACT1\DAY4</Filter>
+    </Xml>
+    <Xml Include="Assets\Scenes\ACT1\DAY4\afternoonOutsideDojo.xml">
+      <Filter>Resource Files\Scenes\ACT1\DAY4</Filter>
+    </Xml>
+    <Xml Include="Assets\Scenes\ACT1\DAY4\afternoonOutsideSchool.xml">
+      <Filter>Resource Files\Scenes\ACT1\DAY4</Filter>
+    </Xml>
+    <Xml Include="Assets\Scenes\ACT1\DAY4\bridge.xml">
+      <Filter>Resource Files\Scenes\ACT1\DAY4</Filter>
+    </Xml>
+    <Xml Include="Assets\Scenes\ACT1\DAY4\class.xml">
+      <Filter>Resource Files\Scenes\ACT1\DAY4</Filter>
+    </Xml>
+    <Xml Include="Assets\Scenes\ACT1\DAY4\morningBus.xml">
+      <Filter>Resource Files\Scenes\ACT1\DAY4</Filter>
+    </Xml>
+    <Xml Include="Assets\Scenes\ACT1\DAY4\start2.xml">
+      <Filter>Resource Files\Scenes\ACT1\DAY4</Filter>
+    </Xml>
+    <Xml Include="Assets\Scenes\ACT1\DAY4\afterFight.xml">
+      <Filter>Resource Files\Scenes\ACT1\DAY4</Filter>
+    </Xml>
+    <Xml Include="Assets\Scenes\ACT1\DAY4\beforeKarate.xml">
+      <Filter>Resource Files\Scenes\ACT1\DAY4</Filter>
+    </Xml>
+    <Xml Include="Assets\Scenes\ACT1\DAY4\karate.xml">
+      <Filter>Resource Files\Scenes\ACT1\DAY4</Filter>
+    </Xml>
+    <Xml Include="Assets\Scenes\ACT1\DAY4\karateFight.xml">
+      <Filter>Resource Files\Scenes\ACT1\DAY4</Filter>
+    </Xml>
+    <Xml Include="Assets\Scenes\ACT1\DAY4\afterKarate.xml">
+      <Filter>Resource Files\Scenes\ACT1\DAY4</Filter>
+    </Xml>
+    <Xml Include="Assets\Scenes\ACT1\DAY4\iceCreamParlor.xml">
+      <Filter>Resource Files\Scenes\ACT1\DAY4</Filter>
     </Xml>
   </ItemGroup>
   <ItemGroup>

@@ -44,7 +44,7 @@
     <y>0</y>
     <w>5</w>
     <h>100</h>
-    <path>Assets/Scenes/ACT1/DAY2/bridge.xml</path>
+    <path>Assets/Scenes/ACT1/DAY4/bridge.xml</path>
     <interaction>
       <type>1</type>
     </interaction>

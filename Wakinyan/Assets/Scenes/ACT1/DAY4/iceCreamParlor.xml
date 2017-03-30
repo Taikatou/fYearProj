@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<spriteList>
+  <sprite>
+    <type>0</type>
+    <name>null</name>
+    <image>Assets/characters/dialogSceneCharacterSprite.png</image>
+    <x>140</x>
+    <y>90</y>
+    <animation>false</animation>
+  </sprite>
+  <!--  sprite-->
+  <sprite>
+    <type>1</type>
+    <name>Emily</name>
+    <image>Assets/Sprites/emilyNormalOutfitRight.png</image>
+    <x>117</x>
+    <y>110</y>
+  </sprite>
+  <sprite>
+    <type>1</type>
+    <name>Dad</name>
+    <image>Assets/Sprites/dadLeft.png</image>
+    <x>135</x>
+    <y>110</y>
+  </sprite>
+  <!--  collider-->
+  <sprite>
+    <type>2</type>
+    <x>130</x>
+    <y>0</y>
+    <w>40</w>
+    <h>200</h>
+  </sprite>
+  <!--    background-->
+  <sprite>
+    <type>3</type>
+    <image>Assets/Backgrounds/iceCreamParlor.png</image>
+  </sprite>
+  <!--  camera-->
+  <sprite>
+    <type>4</type>
+    <sceneWidth>192</sceneWidth>
+    <sceneHeight>108</sceneHeight>
+  </sprite>
+  <!--  Interaction-->
+  <sprite>
+    <type>5</type>
+    <x>135</x>
+    <y>110</y>
+    <w>20</w>
+    <h>20</h>
+    <path>Assets/Scenes/ACT1/DAY4/afterIceCream.xml</path>
+    <interaction>
+      <type>4</type>
+      <dialog>Dad...</dialog>
+      <dialog>If I always lose</dialog>
+      <dialog>Why am I still going?</dialog>
+      <dialog>I'm no good</dialog>
+      <null></null>
+    </interaction>
+    <interaction>
+      <type>2</type>
+      <dialog>SO TELL ME ABOUT YOUR MATCH</dialog>
+      <null></null>
+    </interaction>
+    <interaction>
+      <type>4</type>
+      <dialog>WELL</dialog>
+      <dialog>IT WAS KIND OF STRANGE</dialog>
+      <dialog>I FELT DIFFERENT</dialog>
+      <dialog>LIKE MY BODY KNEW HOW TO RESPOND</dialog>
+      <dialog>OR HOW TO RESPOND IN THE RIGHT WAY</dialog>
+      <dialog>NOT LIKE NORMAL</dialog>
+      <null></null>
+    </interaction>
+    <interaction>
+      <type>2</type>
+      <dialog>...</dialog>
+      <dialog>YOU DIDN'T DO ANYTHING</dialog>
+      <dialog>STRANGE</dialog>
+      <dialog>DID YOU?</dialog>
+      <null></null>
+    </interaction>
+    <interaction>
+      <type>4</type>
+      <dialog>YOU MEAN BESIDES WINNING DAD?</dialog>
+      <dialog>I DON'T THINK SO</dialog>
+      <dialog>I DID...</dialog>
+      <dialog>KICK MAX CAULFIELD...</dialog>
+      <dialog>IN THE FACE</dialog>
+      <null></null>
+    </interaction>
+    <interaction>
+      <type>2</type>
+      <dialog>...</dialog>
+      <dialog>OK SWEETIE</dialog>
+      <dialog></dialog>
+      <null></null>
+    </interaction>
+    <interaction>
+      <type>1</type>
+      <null></null>
+    </interaction>
+    <end>0</end>
+  </sprite>
+  <!--  auto scene  change collision-->
+</spriteList>

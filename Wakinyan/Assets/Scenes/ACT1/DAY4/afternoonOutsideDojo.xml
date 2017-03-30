@@ -23,7 +23,7 @@
     <w>5</w>
     <h>300</h>
   </sprite>
-  <!--    background-->
+  <!--  background-->
   <sprite>
     <type>3</type>
     <image>Assets/Backgrounds/outsideDojo.png</image>
@@ -41,11 +41,11 @@
     <y>0</y>
     <w>40</w>
     <h>200</h>
-    <path>Assets/Scenes/ACT1/DAY2/karateBeforeKnockout.xml</path>
+    <path>Assets/Scenes/ACT1/DAY4/beforeKarate.xml</path>
     <interaction>
       <type>0</type>
     </interaction>
     <end>0</end>
   </sprite>
-  <!--  auto scene  change collision-->
+  <!--  auto scene change collision-->
 </spriteList>

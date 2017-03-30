@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<spriteList>
+  <sprite>
+    <type>0</type>
+    <name>null</name>
+    <image>Assets/characters/dialogSceneCharacterSprite.png</image>
+    <x>80</x>
+    <y>50</y>
+    <animation>false</animation>
+  </sprite>
+  <!--  sprite-->
+  <sprite>
+    <type>1</type>
+    <name>Mom</name>
+    <image>Assets/Sprites/momLeft.png</image>
+    <x>75</x>
+    <y>50</y>
+  </sprite>
+  <sprite>
+    <type>1</type>
+    <name>Mom</name>
+    <image>Assets/Sprites/dadRight.png</image>
+    <x>45</x>
+    <y>50</y>
+  </sprite>
+  <!--  collider-->
+  <sprite>
+    <type>2</type>
+    <x>0</x>
+    <y>0</y>
+    <w>192</w>
+    <h>10</h>
+  </sprite>
+  <!--  background-->
+  <sprite>
+    <type>3</type>
+    <image>Assets/Backgrounds/blackBackground.png</image>
+  </sprite>
+  <!--  camera-->
+  <sprite>
+    <type>4</type>
+    <sceneWidth>192</sceneWidth>
+    <sceneHeight>108</sceneHeight>
+  </sprite>
+  <!--  Interaction-->
+  <sprite>
+    <type>5</type>
+    <x>0</x>
+    <y>0</y>
+    <w>192</w>
+    <h>108</h>
+    <path>Assets/Scenes/ACT1/DAY4/karate.xml</path>
+    <interaction>
+      <type>4</type>
+      <dialog>MOM AND DAD WERE MORE INTERESTED</dialog>
+      <dialog>IN MY DREAM THAN ME BEING KNOCKED OUT</dialog>
+      <dialog>WHAT'S THAT ABOUT?</dialog>
+      <dialog>I'M GOING TO ASK MOM TOMORROW</dialog>
+      <null></null>
+    </interaction>
+    <end>0</end>
+  </sprite>
+  <!--  auto scene change collision-->
+</spriteList>

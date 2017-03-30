@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<spriteList>
+  <sprite>
+    <type>0</type>
+    <name>Emily</name>
+    <image>Assets/characters/emilyKarateUniform.png</image>
+    <x>140</x>
+    <y>60</y>
+    <animation>true</animation>
+  </sprite>
+  <!--  sprite-->
+  <sprite>
+    <type>1</type>
+    <name>Sensei</name>
+    <image>Assets/Sprites/karateInstructorRight.png</image>
+    <x>110</x>
+    <y>120</y>
+  </sprite>
+  <sprite>
+    <type>1</type>
+    <name>Max</name>
+    <image>Assets/Sprites/karateOpponent0001.png</image>
+    <x>155</x>
+    <y>120</y>
+  </sprite>
+  <!--  collider-->
+  <sprite>
+    <type>2</type>
+    <x>100</x>
+    <y>0</y>
+    <w>5</w>
+    <h>100</h>
+  </sprite>
+  <sprite>
+    <type>2</type>
+    <x>180</x>
+    <y>0</y>
+    <w>5</w>
+    <h>100</h>
+  </sprite>
+  <!--  background-->
+  <sprite>
+    <type>3</type>
+    <image>Assets/Backgrounds/dojoInside.png</image>
+  </sprite>
+  <!--  camera-->
+  <sprite>
+    <type>4</type>
+    <sceneWidth>192</sceneWidth>
+    <sceneHeight>108</sceneHeight>
+  </sprite>
+  <!--  Interaction-->
+  <sprite>
+    <type>5</type>
+    <x>155</x>
+    <y>60</y>
+    <w>30</w>
+    <h>105</h>
+    <path>Assets/Scenes/ACT1/DAY4/afterFight.xml</path>
+    <interaction>
+      <type>4</type>
+      <dialog>BREATHE DEEP</dialog>
+      <dialog>FOCUS</dialog>
+      <dialog>YOU FEEL LIGHT</dialog>
+      <dialog>MAX STARES YOU RIGHT IN THE EYES</dialog>
+      <dialog>YOU DASH IN CLOSE</dialog>
+      <dialog>RIGHT JAB</dialog>
+      <dialog>BLOCKED</dialog>
+      <dialog>BREATHE</dialog>
+      <dialog>CHAMBER YOUR LEFT LEG</dialog>
+      <dialog>MAX MOVES TO GUARD HER CENTRE</dialog>
+      <dialog>YOU EXHALE AND RELEASE YOUR LEG</dialog>
+      <dialog>IT CONNECTS HARD</dialog>
+      <dialog>MAX IS DRIVEN BACK</dialog>
+      <dialog>INHALE</dialog>
+      <dialog>YOU CLOSE THE DISTANCE</dialog>
+      <dialog>AND LEAP</dialog>
+      <dialog>AND CHAMBER</dialog>
+      <dialog>MAX'S STARE IS MET WITH YOUR FOOT</dialog>
+      <dialog>THEY TUMBLE BACK</dialog>
+      <dialog>AND OUT OF THE RING</dialog>
+      <null></null>
+    </interaction>
+    <interaction>
+      <type>1</type>
+      <null></null>
+    </interaction>
+    <end>0</end>
+  </sprite>
+  <!--  auto scene change collision-->
+</spriteList>
