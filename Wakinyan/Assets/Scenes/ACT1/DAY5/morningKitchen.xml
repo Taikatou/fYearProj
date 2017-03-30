@@ -13,7 +13,7 @@
     <type>1</type>
     <name>Dad</name>
     <image>Assets/Sprites/dadRight.png</image>
-    <x>90</x>
+    <x>95</x>
     <y>60</y>
   </sprite>
   <!--  collider-->
@@ -52,13 +52,14 @@
     <path>null</path>
     <interaction>
       <type>2</type>
-      <dialog>MORNING EMILY</dialog>
-      <dialog>READY FOR SCHOOL?</dialog>
+      <dialog>OH</dialog>
+      <dialog>MORNING</dialog>
       <null></null>
     </interaction>
     <interaction>
       <type>4</type>
-      <dialog>DAD SEEMS IN A BETTER MOOD</dialog>
+      <dialog>DAD SEEMS WEIRD</dialog>
+      <dialog>BETTER GET TO THE BUS</dialog>
       <null></null>
     </interaction>
     <interaction>
@@ -74,7 +75,7 @@
     <y>0</y>
     <w>10</w>
     <h>100</h>
-    <path>Assets/Scenes/ACT1/DAY3/morningBus.xml</path>
+    <path>Assets/Scenes/ACT1/DAY5/morningBus.xml</path>
     <interaction>
       <type>1</type>
     </interaction>

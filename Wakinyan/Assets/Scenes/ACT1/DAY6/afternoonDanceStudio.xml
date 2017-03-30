@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<spriteList>
+  <sprite>
+    <type>0</type>
+    <name>Emily</name>
+    <image>Assets/characters/emilyDancingOutfit.png</image>
+    <x>90</x>
+    <y>120</y>
+    <animation>true</animation>
+  </sprite>
+  <!--  sprite-->
+  <sprite>
+    <type>1</type>
+    <name>Instructor</name>
+    <image>Assets/Sprites/danceInstructorLeft.png</image>
+    <x>110</x>
+    <y>120</y>
+  </sprite>
+  <!--  collider-->
+  <sprite>
+    <type>2</type>
+    <x>50</x>
+    <y>0</y>
+    <w>12</w>
+    <h>200</h>
+  </sprite>
+  <sprite>
+    <type>2</type>
+    <x>240</x>
+    <y>0</y>
+    <w>12</w>
+    <h>200</h>
+  </sprite>
+  <!--  background-->
+  <sprite>
+    <type>3</type>
+    <image>Assets/Backgrounds/danceStudio.png</image>
+  </sprite>
+  <!--  camera-->
+  <sprite>
+    <type>4</type>
+    <sceneWidth>192</sceneWidth>
+    <sceneHeight>108</sceneHeight>
+  </sprite>
+  <!--  Interaction-->
+  <sprite>
+    <type>5</type>
+    <x>110</x>
+    <y>60</y>
+    <w>15</w>
+    <h>105</h>
+    <path>Assets/Scenes/ACT1/DAY6/afternoonCar.xml</path>
+    <interaction>
+      <type>4</type>
+      <dialog>COULD I ASK YOU SOMETHING?</dialog>
+      <null></null>
+    </interaction>
+    <interaction>
+      <type>2</type>
+      <dialog>OFCOURSE EMILY</dialog>
+      <dialog>WHAT'S THE MATTER?</dialog>
+      <null></null>
+    </interaction>
+    <interaction>
+      <type>4</type>
+      <dialog>HAVE YOU HEARD OF WAKINYAN?</dialog>
+      <null></null>
+    </interaction>
+    <interaction>
+      <type>2</type>
+      <dialog>YES I HAVE EMILY</dialog>
+      <dialog>THUNDERBIRD</dialog>
+      <dialog>WAKINYAN IS COMPLEX</dialog>
+      <dialog>YOU SEE THERE IS WAKINYAN</dialog>
+      <dialog>THERE ARE THEN DIFFERENT WAKINYAN</dialog>
+      <dialog>THERE ARE ALSO WAKINYAN WHO ARE PEOPLE</dialog>
+      <dialog>THUNDER BEINGS</dialog>
+      <dialog>THERE IS SAID TO BE FOUR KINDS OF THUNDERBIRD</dialog>
+      <null></null>
+    </interaction>
+    <interaction>
+      <type>4</type>
+      <dialog>HMM...</dialog>
+      <dialog>IS THERE A THUNDERBIRD WITH FOUR WINGS?</dialog>
+      <null></null>
+    </interaction>
+    <interaction>
+      <type>2</type>
+      <dialog>YEAH THERE IS</dialog>
+      <dialog>WAKINYAN TANKA</dialog>
+      <dialog>THE GREAT THUNDERBIRD</dialog>
+      <dialog>THE THUNDERBIRD OF THE WEST</dialog>
+      <dialog>IT'S SAID ITS BODY IS MADE OF CLOUD</dialog>
+      <null></null>
+    </interaction>
+    <interaction>
+      <type>4</type>
+      <dialog>THAT SOUNDS JUST LIKE</dialog>
+      <dialog>...</dialog>
+      <null></null>
+    </interaction>
+    <interaction>
+      <type>2</type>
+      <dialog>LIKE WHAT?</dialog>
+      <null></null>
+    </interaction>
+    <interaction>
+      <type>4</type>
+      <dialog>LIKE A STORY MY MOTHER TOLD ME</dialog>
+      <dialog>ANYWAY, I'D BETTER GET GOING</dialog>
+      <dialog>BYE!</dialog>
+      <null></null>
+    </interaction>
+    <end>0</end>
+  </sprite>
+  <!--  auto scene change collision-->
+</spriteList>

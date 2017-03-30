@@ -36,13 +36,13 @@
     <y>-10</y>
     <w>1920</w>
     <h>1080</h>
-    <path>Assets/Scenes/ACT1/DAY4/start2.xml</path>
+    <path>Assets/Scenes/ACT1/DAY5/morningBedroom.xml</path>
     <interaction>
       <type>4</type>
-      <dialog>THURSDAY</dialog>
+      <dialog>FRIDAY</dialog>
       <null></null>
     </interaction>
     <end>0</end>
   </sprite>
-  <!--  auto scene  change collision-->
+  <!--  auto scene change collision-->
 </spriteList>

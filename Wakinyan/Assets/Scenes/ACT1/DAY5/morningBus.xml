@@ -42,13 +42,12 @@
     <y>0</y>
     <w>192</w>
     <h>108</h>
-    <path>Assets/Scenes/ACT1/DAY4/class.xml</path>
+    <path>Assets/Scenes/ACT1/DAY5/morningClassroom.xml</path>
     <interaction>
       <type>4</type>
-      <dialog>SCHOOL THEN KARATE</dialog>
-      <dialog>THEN ICE CREAM</dialog>
-      <dialog>I HOPE I DON'T EMBARRASS MYSELF</dialog>
-      <dialog>PLEASE GO SLOWLY DAY</dialog>
+      <dialog>OK SCHOOL</dialog>
+      <dialog>LETS GET YOU OVER WITH</dialog>
+      <dialog>MOM IS HOME TONIGHT</dialog>
       <null></null>
     </interaction>
     <end>0</end>

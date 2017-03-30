@@ -75,7 +75,8 @@
       <type>2</type>
       <dialog>MY BEAUIFUL CHUNKSHI</dialog>
       <dialog>THAT IS OK</dialog>
-      <dialog>LIFE ISN'T ABOUT WINNING OR LOSING</dialog>
+      <dialog>LIFE ISN'T ABOUT WINNING</dialog>
+      <dialog>OR LOSING</dialog>
       <dialog>IT'S ABOUT LEARNING</dialog>
       <dialog>THECHIHILA</dialog>
       <null></null>
@@ -89,9 +90,10 @@
     <interaction>
       <type>2</type>
       <dialog>IT'S BEEN INTERESTING</dialog>
-      <dialog>OUR TAKE ON A UNIFIED FIELD THEORY</dialog>
-      <dialog>HAS COULD POSE A NEW COUNTER THEORY</dialog>
-      <dialog>TO M-THEORY AND</dialog>
+      <dialog>OUR TAKE ON A UNIFIED</dialog>
+      <dialog>FIELD THEORY</dialog>
+      <dialog>COULD POSE A NEW COUNTER</dialog>
+      <dialog>TO THAT OF M-THEORY AND</dialog>
       <dialog>...</dialog>
       <dialog>IT'S GOOD SWEETIE</dialog>
       <null></null>

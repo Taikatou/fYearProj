@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<spriteList>
+  <sprite>
+    <type>0</type>
+    <name>Emily</name>
+    <image>Assets/characters/emilyNormalOutfit.png</image>
+    <x>125</x>
+    <y>60</y>
+    <animation>true</animation>
+  </sprite>
+  <!--  sprite-->
+  <sprite>
+    <type>1</type>
+    <name>Dad</name>
+    <image>Assets/Sprites/dadRight.png</image>
+    <x>105</x>
+    <y>60</y>
+  </sprite>
+  <!--  collider-->
+  <sprite>
+    <type>2</type>
+    <x>50</x>
+    <y>0</y>
+    <w>12</w>
+    <h>200</h>
+  </sprite>
+  <sprite>
+    <type>2</type>
+    <x>145</x>
+    <y>0</y>
+    <w>12</w>
+    <h>200</h>
+  </sprite>
+  <!--   background-->
+  <sprite>
+    <type>3</type>
+    <image>Assets/Backgrounds/kitchenSmall.png</image>
+  </sprite>
+  <!--  camera-->
+  <sprite>
+    <type>4</type>
+    <sceneWidth>192</sceneWidth>
+    <sceneHeight>108</sceneHeight>
+  </sprite>
+  <!--  Interaction-->
+  <sprite>
+    <type>5</type>
+    <x>90</x>
+    <y>60</y>
+    <w>30</w>
+    <h>105</h>
+    <path>Assets/Scenes/titleScreen.xml</path>
+    <interaction>
+      <type>4</type>
+      <dialog>HI DAD</dialog>
+      <dialog>IS MOM TALKING MORE STUFF TO THE UNIVERSITY?</dialog>
+      <null></null>
+    </interaction>
+    <interaction>
+      <type>2</type>
+      <dialog>HEY SWEETIE</dialog>
+      <dialog>NO, THOSE CASES ARE MINE AND HER'S</dialog>
+      <null></null>
+    </interaction>
+    <interaction>
+      <type>4</type>
+      <dialog>WHERE ARE YOU GOING?</dialog>
+      <dialog>WHERE AM i GOING?</dialog>
+      <null></null>
+    </interaction>
+    <interaction>
+      <type>2</type>
+      <dialog>WE'RE ALL GOING TO NORTH EAGLE BUTTE</dialog>
+      <dialog>MOM AND I THINK WE NEED</dialog>
+      <dialog>TO TALK WITH THE MEDICINE MAN</dialog>
+      <dialog>AND YOU SHOULD BE THERE</dialog>
+      <null></null>
+    </interaction>
+    <interaction>
+      <type>4</type>
+      <dialog>REALLY?</dialog>
+      <dialog>WE'RE GOING TO SOUTH DAKOTA?</dialog>
+      <null></null>
+    </interaction>
+    <interaction>
+      <type>2</type>
+      <dialog>YES</dialog>
+      <dialog>NOW, WHY DON'T YOU GO AND PACK?</dialog>
+      <dialog>WE NEED TO GET ON THE ROAD</dialog>
+      <null></null>
+    </interaction>
+    <interaction>
+      <type>0</type>
+    </interaction>
+    <end>0</end>
+  </sprite>
+  <!--  auto scene change collision-->
+</spriteList>

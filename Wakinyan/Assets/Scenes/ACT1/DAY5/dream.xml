@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<spriteList>
+  <!--  charcter-->
+  <sprite>
+    <type>0</type>
+    <name>null</name>
+    <image>Assets/characters/dialogSceneCharacterSprite.png</image>
+    <x>0</x>
+    <y>0</y>
+    <animation>false</animation>
+  </sprite>
+  <!--  sprite-->
+  <!--  colider-->
+  <sprite>
+    <type>2</type>
+    <x>0</x>
+    <y>0</y>
+    <w>10</w>
+    <h>10</h>
+  </sprite>
+  <!--  background-->
+  <sprite>
+    <type>3</type>
+    <image>Assets/Backgrounds/blackBackground.png</image>
+  </sprite>
+  <!--  camera-->
+  <sprite>
+    <type>4</type>
+    <sceneWidth>192</sceneWidth>
+    <sceneHeight>108</sceneHeight>
+  </sprite>
+  <!--  Interaction-->
+  <sprite>
+    <type>5</type>
+    <x>-10</x>
+    <y>-10</y>
+    <w>1920</w>
+    <h>1080</h>
+    <path>Assets/Scenes/ACT1/DAY6/start.xml</path>
+    <interaction>
+      <type>4</type>
+      <dialog>YOU'RE FLOATING</dialog>
+      <dialog>YOU'RE HIGH ABOVE THE CLOUDS</dialog>
+      <dialog>LOOKING DOWN YOU SEE THAT YOU</dialog>
+      <dialog>ARE OVER NORTH DAKOTA</dialog>
+      <dialog>YOU CAN SEE A LINE STARTING TO FLOW DOWN THE STATE</dialog>
+      <dialog>IT'S DARK AND THE EARTH AROUND IT IS DYING</dialog>
+      <dialog>FLOWING ISN'T THE RIGHT WORD</dialog>
+      <dialog>SLITHERING</dialog>
+      <dialog>THE LAND IS STARTING TO FLOOD</dialog>
+      <dialog>IT TRAVELS BENEATH YOU</dialog>
+      <dialog>YOU FOLLOW IT ACROSS NORTH DAKOTA</dialog>
+      <dialog>INTO SOUTH DAKOTA</dialog>
+      <dialog>IT CIRCLES AROUND A HUGE AREA OF LAND</dialog>
+      <dialog>THE LINE STARTS CLOSING IN TO THE CENTRE</dialog>
+      <dialog>GETTING FASTER AND FASTER</dialog>
+      <dialog>IT REACHES A BUTTE AND COILS AROUND IT</dialog>
+      <dialog>THE LINE REACHES INTO THE SKY</dialog>
+      <dialog>A LONG MOUTH OPENS AND IT SCREAMS</dialog>
+      <dialog>INTO THE SKY</dialog>
+      <dialog>AT YOU</dialog>
+      <null></null>
+    </interaction>
+    <end>0</end>
+  </sprite>
+  <!--  auto scene change collision-->
+</spriteList>

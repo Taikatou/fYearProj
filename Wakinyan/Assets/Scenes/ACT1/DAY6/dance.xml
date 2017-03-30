@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<spriteList>
+  <!--  charcter-->
+  <sprite>
+    <type>0</type>
+    <name>null</name>
+    <image>Assets/characters/dialogSceneCharacterSprite.png</image>
+    <x>0</x>
+    <y>0</y>
+    <animation>false</animation>
+  </sprite>
+  <!--  sprite-->
+  <!--  colider-->
+  <sprite>
+    <type>2</type>
+    <x>0</x>
+    <y>0</y>
+    <w>10</w>
+    <h>10</h>
+  </sprite>
+  <!--  background-->
+  <sprite>
+    <type>3</type>
+    <image>Assets/Backgrounds/blackBackground.png</image>
+  </sprite>
+  <!--  camera-->
+  <sprite>
+    <type>4</type>
+    <sceneWidth>192</sceneWidth>
+    <sceneHeight>108</sceneHeight>
+  </sprite>
+  <!--  Interaction-->
+  <sprite>
+    <type>5</type>
+    <x>-10</x>
+    <y>-10</y>
+    <w>1920</w>
+    <h>1080</h>
+    <path>Assets/Scenes/ACT1/DAY6/afternoonDanceStudio.xml</path>
+    <interaction>
+      <type>4</type>
+      <dialog>YOU PRACTICE TRADITIONAL JINGLE DRESS DANCING</dialog>
+      <dialog>THE INSTRUCTOR IS VERY STRICT</dialog>
+      <dialog>ON THE FOOT PLACEMENT</dialog>
+      <dialog>IN TRADITIONAL JINGLE DRESS DANCING</dialog>
+      <dialog>THE FEET NEVER CROSS OVER EACH OTHER</dialog>
+      <dialog>AND YOU CAN'T MOVE BACKWARDS</dialog>
+      <dialog>IT'S CHALLENGING</dialog>
+      <dialog>BUT FUN</dialog>
+      <null></null>
+    </interaction>
+    <end>0</end>
+  </sprite>
+  <!--  auto scene change collision-->
+</spriteList>
