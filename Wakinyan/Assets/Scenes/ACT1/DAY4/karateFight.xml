@@ -5,7 +5,7 @@
     <name>Emily</name>
     <image>Assets/characters/emilyKarateUniform.png</image>
     <x>140</x>
-    <y>60</y>
+    <y>120</y>
     <animation>true</animation>
   </sprite>
   <!--  sprite-->

@@ -45,9 +45,9 @@
   <!--  Interaction-->
   <sprite>
     <type>5</type>
-    <x>110</x>
-    <y>60</y>
-    <w>15</w>
+    <x>100</x>
+    <y>120</y>
+    <w>50</w>
     <h>105</h>
     <path>Assets/Scenes/ACT1/DAY6/afternoonCar.xml</path>
     <interaction>
@@ -73,15 +73,18 @@
       <dialog>WAKINYAN IS COMPLEX</dialog>
       <dialog>YOU SEE THERE IS WAKINYAN</dialog>
       <dialog>THERE ARE THEN DIFFERENT WAKINYAN</dialog>
-      <dialog>THERE ARE ALSO WAKINYAN WHO ARE PEOPLE</dialog>
+      <dialog>THERE ARE ALSO WAKINYAN</dialog>
+      <dialog>WHO ARE PEOPLE</dialog>
       <dialog>THUNDER BEINGS</dialog>
-      <dialog>THERE IS SAID TO BE FOUR KINDS OF THUNDERBIRD</dialog>
+      <dialog>THERE IS SAID TO BE</dialog>
+      <dialog>FOUR KINDS OF THUNDERBIRD</dialog>
       <null></null>
     </interaction>
     <interaction>
       <type>4</type>
       <dialog>HMM...</dialog>
-      <dialog>IS THERE A THUNDERBIRD WITH FOUR WINGS?</dialog>
+      <dialog>IS THERE A THUNDERBIRD...</dialog>
+      <dialog>WITH FOUR WINGS?</dialog>
       <null></null>
     </interaction>
     <interaction>

@@ -49,7 +49,7 @@
     <y>110</y>
     <w>20</w>
     <h>20</h>
-    <path>Assets/Scenes/ACT1/DAY4/afterIceCream.xml</path>
+    <path>Assets/Scenes/ACT1/DAY5/start.xml</path>
     <interaction>
       <type>4</type>
       <dialog>Dad...</dialog>
@@ -94,12 +94,10 @@
       <type>2</type>
       <dialog>...</dialog>
       <dialog>OK SWEETIE</dialog>
-      <dialog></dialog>
       <null></null>
     </interaction>
     <interaction>
       <type>1</type>
-      <null></null>
     </interaction>
     <end>0</end>
   </sprite>

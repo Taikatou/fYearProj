@@ -52,9 +52,6 @@
       <dialog>DAD:TELL ME ALL ABOUT IT</dialog>
       <null></null>
     </interaction>
-    <interaction>
-      <type>1</type>
-    </interaction>
     <end>0</end>
   </sprite>
   <!--  auto scene  change collision-->

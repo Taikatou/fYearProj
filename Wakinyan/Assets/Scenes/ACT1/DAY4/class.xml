@@ -36,7 +36,7 @@
     <y>-10</y>
     <w>1920</w>
     <h>1080</h>
-    <path>Assets/Scenes/ACT1/DAY4/afternoonSchool.xml</path>
+    <path>Assets/Scenes/ACT1/DAY4/afternoonOutsideSchool.xml</path>
     <interaction>
       <type>4</type>
       <dialog>GOOD MORNING CLASS</dialog>

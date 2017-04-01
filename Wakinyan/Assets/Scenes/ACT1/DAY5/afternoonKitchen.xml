@@ -52,7 +52,7 @@
   <!--  Interaction-->
   <sprite>
     <type>5</type>
-    <x>105</x>
+    <x>110</x>
     <y>60</y>
     <w>30</w>
     <h>100</h>
@@ -101,9 +101,6 @@
       <dialog>EMILY: NO WAY</dialog>
       <dialog>YOU RUN TO BED</dialog>
       <null></null>
-    </interaction>
-    <interaction>
-      <type>0</type>
     </interaction>
     <end>0</end>
   </sprite>

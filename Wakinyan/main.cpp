@@ -41,6 +41,7 @@ bool init()
 		{
 //			g_font = TTF_OpenFont("Assets/Other/pixelArt.ttf", 7);
 			g_font = TTF_OpenFont("Assets/Other/pixelmix_micro.ttf", 8);
+			//TTF_SetFontOutline(g_font, 1);
 			if (g_font == nullptr)
 			{
 				success = false;

@@ -35,8 +35,8 @@
     <y>-10</y>
     <w>1930</w>
     <h>1090</h>
-<!--    <path>Assets/Scenes/INTRO/intro.xml</path>-->
-    <path>Assets/Scenes/ACT1/DAY3/afternoonSchool.xml</path>
+    <path>Assets/Scenes/INTRO/intro.xml</path>
+    <!--<path>Assets/Scenes/ACT1/DAY6/afternoonDanceStudio.xml</path>-->
     <interaction>
       <type>0</type>
     </interaction>

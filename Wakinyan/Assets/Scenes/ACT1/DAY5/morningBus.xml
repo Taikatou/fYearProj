@@ -42,7 +42,7 @@
     <y>0</y>
     <w>192</w>
     <h>108</h>
-    <path>Assets/Scenes/ACT1/DAY5/morningClassroom.xml</path>
+    <path>Assets/Scenes/ACT1/DAY5/morningClass.xml</path>
     <interaction>
       <type>4</type>
       <dialog>OK SCHOOL</dialog>

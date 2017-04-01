@@ -78,7 +78,6 @@
     <ClCompile Include="Character.cpp" />
     <ClCompile Include="Interaction.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="prototype.cpp" />
     <ClCompile Include="Scene.cpp" />
     <ClCompile Include="Sprite.cpp" />
     <ClCompile Include="tinystr.cpp" />

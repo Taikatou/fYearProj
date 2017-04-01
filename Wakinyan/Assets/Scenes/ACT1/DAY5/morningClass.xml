@@ -4,7 +4,7 @@
   <sprite>
     <type>0</type>
     <name>Emily</name>
-    <image>Assets/characters/emilyNormalOutfit.png</image>
+    <image>Assets/Characters/emilyNormalOutfit.png</image>
     <x>290</x>
     <y>140</y>
     <animation>true</animation>
