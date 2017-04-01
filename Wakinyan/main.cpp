@@ -16,6 +16,7 @@ int sceneWidth = 0;
 int sceneHeight = 0;
 SDL_Renderer* g_renderer = nullptr;
 TTF_Font* g_font = nullptr;
+TTF_Font* outline_font = nullptr;
 
 //locals
 SDL_Window* g_window = nullptr;
@@ -39,9 +40,10 @@ bool init()
 		}
 		else
 		{
-//			g_font = TTF_OpenFont("Assets/Other/pixelArt.ttf", 7);
 			g_font = TTF_OpenFont("Assets/Other/pixelmix_micro.ttf", 8);
-			//TTF_SetFontOutline(g_font, 1);
+			outline_font = TTF_OpenFont("Assets/Other/pixelmix_micro.ttf", 8);
+			TTF_SetFontOutline(outline_font, 1);
+
 			if (g_font == nullptr)
 			{
 				success = false;
@@ -138,7 +140,7 @@ int main(int argc, char* args[])
 					{
 						quit = true;
 					}
-						
+					
 					scene.update(e);
 				}
 

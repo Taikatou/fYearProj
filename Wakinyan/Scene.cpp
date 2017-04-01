@@ -399,8 +399,9 @@ void Scene::checkInteractions()
 			}
 			else if (sInteraction->getDialogType() == CONVERSATION)
 			{
-					sInteraction->createDialogSprite();
-  					npcDialog.push_back(sInteraction->getInteractionSprite());
+				npcDialog.erase(npcDialog.begin(), npcDialog.end());
+				sInteraction->createDialogSprite();
+  				npcDialog.push_back(sInteraction->getInteractionSprite());
 			}
 			else if (sInteraction->getDialogType() == ONSCREEN_INTERACTION)
 			{
@@ -478,13 +479,21 @@ void Scene::update(SDL_Event& e)
 	{
 		if (e.type == SDL_MOUSEBUTTONUP || (e.type == SDL_KEYDOWN && e.key.keysym.sym == SDLK_SPACE && e.key.repeat == 0))
 		{
-			character->talk();
+			character->talk(true);
+
+			for (std::vector<Sprite*>::iterator vOverlay = screenOverlayText.begin(); vOverlay != screenOverlayText.end(); ++vOverlay)
+			{
+				(*vOverlay)->free();
+				*vOverlay = nullptr;
+			}
 			screenOverlayText.erase(screenOverlayText.begin(), screenOverlayText.end());
+			
 			checkInteractions();
 		}
 	}
 	else
 	{
+		character->talk(false);
 		bool collision = checkCollision();
 			
 		character->handleEvent(e, collision);
@@ -527,11 +536,6 @@ void Scene::render()
 	{
 		(*vSprite)->render((*vSprite)->getXPos() - camera.x, (*vSprite)->getYPos() - camera.y);
 	}
-	
-//	for (std::vector<Sprite*>::iterator sDialog = npcDialog.begin(); sDialog != npcDialog.end(); ++sDialog)
-//	{
-//		(*sDialog)->render((*sDialog)->getXPos() - camera.x, (*sDialog)->getYPos() - camera.y);
-//	}
 
 	character->render(camera.x, camera.y);
 
@@ -539,7 +543,7 @@ void Scene::render()
 	{
 		for (std::vector<Sprite*>::iterator vOverlay = screenOverlayText.begin(); vOverlay != screenOverlayText.end(); ++vOverlay)
 		{
-			(*vOverlay)->render((*vOverlay)->getXPos(), (*vOverlay)->getXPos());
+ 			(*vOverlay)->render((*vOverlay)->getXPos(), (*vOverlay)->getXPos());
 		}
 	}
 	else if (npcDialog.size() > 0)

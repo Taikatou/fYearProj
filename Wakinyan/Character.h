@@ -33,7 +33,7 @@ public:
 	void animate() const;
 	void setName(std::string name) const;
 	void resetKeys();
-	void talk();
+	void talk(bool talk);
 	bool setSprite(std::string path, bool animate = false) const;
 	int getXPos() const;
 	int getYPos() const;

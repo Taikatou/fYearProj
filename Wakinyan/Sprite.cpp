@@ -1,5 +1,4 @@
 #include "Sprite.h"
-#include <string>
 #include "main.h"
 #include <vector>
 #include "Interaction.h"

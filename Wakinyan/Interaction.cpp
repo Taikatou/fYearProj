@@ -22,6 +22,9 @@ void Interaction::free()
 
 	_dialog.clear();
 	_dialog.erase(_dialog.begin(), _dialog.end());
+
+	_dialogPairs.clear();
+	_dialogPairs.erase(_dialogPairs.begin(), _dialogPairs.end());
 	
 	_path = "";
 	_type = 0;
@@ -56,6 +59,7 @@ void Interaction::createDialogSprite()
 	{
 		if (_dialogPairs.at(0).type == ONSCREEN_INTERACTION)
 		{
+#pragma region
 			SDL_Surface* textSurface = TTF_RenderText_Solid(g_font, (_dialogPairs.at(0).text).c_str(), _whiteTextColour);
 			SDL_Surface* textBackground = IMG_Load("Assets/Other/onScreenOverlay.png");
 
@@ -91,24 +95,44 @@ void Interaction::createDialogSprite()
 			}
 			SDL_FreeSurface(textSurface);
 			SDL_FreeSurface(textBackground);
+#pragma endregion //overlay text
 		}
 		else if (_dialogPairs.at(0).type == CONVERSATION)
 		{
-			
+#pragma region
 			SDL_Surface* textSurface = TTF_RenderText_Solid(g_font, _dialogPairs.at(0).text.c_str(), _whiteTextColour);
-// 			SDL_Surface* textSurface = TTF_RenderText_Solid(g_font, _dialogPairs.at(0).text.c_str(), _blackTextColour);
-			if (textSurface != nullptr)
+			SDL_Surface* textOutline = TTF_RenderText_Solid(outline_font, _dialogPairs.at(0).text.c_str(), _blackTextColour);
+
+			// SDL_Surface* textSurface = TTF_RenderText_Solid(g_font, _dialogPairs.at(0).text.c_str(), _blackTextColour);
+			if (textSurface != nullptr && textOutline != nullptr)
 			{
-				SDL_Texture* tempText = SDL_CreateTextureFromSurface(g_renderer, textSurface);
-				_iDialog->setName(_dialogPairs.at(0).text);
-				_iDialog->setSpriteTexture(tempText);
-				_iDialog->setWidth(textSurface->w);
-				_iDialog->setHeight(textSurface->h);
-				_iDialog->setXPos(collider.x - (collider.w / 2));
- 				_iDialog->setYPos(collider.y - textSurface->h);
+				SDL_Rect outlineRect;
+				outlineRect.w = textSurface->w;
+				outlineRect.h = textSurface->h;
+				outlineRect.x = 1;
+				outlineRect.y = 1;
+				// the two 1's here are to offset the actual text into the outline.
+				// the thickness of the outline is 1 pixel as defined when the font was declared in main.cpp
+				// this accounts for that and centres the white text over the black outline
+
+				if (SDL_BlitSurface(textSurface, NULL, textOutline, &outlineRect) == 0)
+				{
+					SDL_Texture* tempText = SDL_CreateTextureFromSurface(g_renderer, textOutline);
+					_iDialog->setName(_dialogPairs.at(0).text);
+					_iDialog->setSpriteTexture(tempText);
+					_iDialog->setWidth(textOutline->w);
+					_iDialog->setHeight(textOutline->h);
+					_iDialog->setXPos(collider.x - (collider.w / 2));
+					_iDialog->setYPos(collider.y - textOutline->h);
+				}
 			}
 
 			SDL_FreeSurface(textSurface);
+			SDL_FreeSurface(textOutline);
+
+			textSurface = nullptr;
+			textOutline = nullptr;
+#pragma endregion //conversation text
 		}
 		_dialogPairs.erase(_dialogPairs.begin());
 		if (_dialogPairs.size() > 0)
@@ -118,7 +142,7 @@ void Interaction::createDialogSprite()
 	}
 	else
 	{
-		_iDialog->setSpriteTexture(nullptr);
+		_iDialog->free();
 		resetType();
 	}
  }

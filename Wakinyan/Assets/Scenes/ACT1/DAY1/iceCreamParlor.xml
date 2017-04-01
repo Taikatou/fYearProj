@@ -50,7 +50,6 @@
     <w>20</w>
     <h>20</h>
     <path>Assets/Scenes/ACT1/DAY1/afterIceCream.xml</path>
-    <!--    <path>Assets/Scenes/scene1.xml</path>-->
     <interaction>
       <type>4</type>
       <dialog>Dad...</dialog>

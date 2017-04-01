@@ -190,9 +190,9 @@ void Character::resetKeys()
 	_keys.turn = false;
 }
 
-void Character::talk()
+void Character::talk(bool talk)
 {
-	_keys.talk = true;
+	_keys.talk = talk;
 }
 
 int Character::getXPos() const
