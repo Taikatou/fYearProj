@@ -52,34 +52,34 @@
     <path>Assets/Scenes/ACT1/DAY1/afterIceCream.xml</path>
     <interaction>
       <type>4</type>
-      <dialog>Dad...</dialog>
-      <dialog>If I always lose</dialog>
-      <dialog>Why am I still going?</dialog>
-      <dialog>I'm no good</dialog>
+      <dialog>DAD...</dialog>
+      <dialog>IF I ALWAYS LOSE</dialog>
+      <dialog>WHY AM I STILL GOING?</dialog>
+      <dialog>I'M NO GOOD</dialog>
       <null></null>
     </interaction>
     <interaction>
       <type>2</type>
-      <dialog>Sweetheart</dialog>
-      <dialog>It's not always about winning</dialog>
-      <dialog>Me and your mom thought</dialog>
-      <dialog>It would be good exercise</dialog>
-      <dialog>And if something was to happen</dialog>
-      <dialog>You'd be able to defend yourself</dialog>
-      <dialog>And you are good</dialog>
-      <dialog>You did great in your kata right?</dialog>
+      <dialog>SWEETHEART</dialog>
+      <dialog>IT'S NOT ALWAYS ABOUT WINNING</dialog>
+      <dialog>ME AND YOUR MOM THOUGHT</dialog>
+      <dialog>IT WOULD BE GOOD EXERCISE</dialog>
+      <dialog>AND IF SOMETHING WAS TO HAPPEN</dialog>
+      <dialog>YOU'D BE ABLE TO DEFEND YOURSELF</dialog>
+      <dialog>AND YOU ARE GOOD</dialog>
+      <dialog>YOU DID GREAT IN YOUR KATA RIGHT?</dialog>
       <null></null>
     </interaction>
     <interaction>
       <type>4</type>
-      <dialog>... Yeah</dialog>
-      <dialog>... I guess</dialog>
+      <dialog>... YEAH</dialog>
+      <dialog>... I GUESS</dialog>
       <null></null>
     </interaction>
     <interaction>
       <type>2</type>
-      <dialog>Come on</dialog>
-      <dialog>Enjoy your ice cream</dialog>
+      <dialog>COME ON</dialog>
+      <dialog>ENJOY YOUR ICE CREAM</dialog>
       <null></null>
     </interaction>
     <interaction>

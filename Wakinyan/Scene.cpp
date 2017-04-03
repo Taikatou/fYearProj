@@ -2,6 +2,8 @@
 #include "main.h"
 #include "tinyxml.h"
 #include "Interaction.h"
+#include <iostream>
+#include <fstream>
 
 Scene::Scene()
 {
@@ -288,7 +290,7 @@ bool Scene::loadFromFile(const char * path)
 	{
 		success = false;
 	}
-		
+
 	return success;
 }
 

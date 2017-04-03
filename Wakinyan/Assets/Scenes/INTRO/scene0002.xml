@@ -45,7 +45,11 @@
     <path>Assets/Scenes/ACT1/DAY1/karate.xml</path>
     <interaction>
       <type>4</type>
-      <dialog>Nine Years Later...</dialog>
+      <dialog>2017</dialog>
+      <dialog>BISMARK, NORTH DAKOTA</dialog>
+      <dialog>MANDAN CITY COMMUNITY CENTRE</dialog>
+      <dialog>KARATE CLASS</dialog>
+      <dialog>EMILY ORTEGA IS READY TO FIGHT</dialog>
       <null></null>
     </interaction>
     <end>0</end>

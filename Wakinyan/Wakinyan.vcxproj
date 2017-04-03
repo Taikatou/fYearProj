@@ -39,12 +39,12 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>C:\SDL2-devel-2.0.5-VC\SDL2-2.0.5\include;C:\SDL2_ttf-2.0.14\include;C:\SDL2_image-2.0.1\include;C:\SDL2_ttf-2.0.14\include;C:\SDL2_mixer-2.0.1\include;C:\SDL2_image-2.0.1\include;C:\SDL2-devel-2.0.5-VC\SDL2-2.0.5\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\SDL2-devel-2.0.5-VC\SDL2-2.0.5\lib\x86;C:\SDL2_ttf-2.0.14\lib\x86;C:\SDL2_image-2.0.1\lib\x86;C:\SDL2_ttf-2.0.14\lib\x86;C:\SDL2_mixer-2.0.1\lib\x86;C:\SDL2_image-2.0.1\lib\x86;C:\SDL2-devel-2.0.5-VC\SDL2-2.0.5\lib\x86;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\SDL2-devel-2.0.5-VC\SDL2-2.0.5\include;C:\SDL2_ttf-2.0.14\include;C:\SDL2_mixer-2.0.1\include;C:\SDL2_image-2.0.1\include;C:\SDL2-devel-2.0.5-VC\SDL2-2.0.5\include;C:\SDL2_ttf-2.0.14\include;C:\SDL2_image-2.0.1\include;C:\SDL2_ttf-2.0.14\include;C:\SDL2_mixer-2.0.1\include;C:\SDL2_image-2.0.1\include;C:\SDL2-devel-2.0.5-VC\SDL2-2.0.5\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\SDL2-devel-2.0.5-VC\SDL2-2.0.5\lib\x86;C:\SDL2_ttf-2.0.14\lib\x86;C:\SDL2_mixer-2.0.1\lib\x86;C:\SDL2_image-2.0.1\lib\x86;C:\SDL2-devel-2.0.5-VC\SDL2-2.0.5\lib\x86;C:\SDL2_ttf-2.0.14\lib\x86;C:\SDL2_image-2.0.1\lib\x86;C:\SDL2_ttf-2.0.14\lib\x86;C:\SDL2_mixer-2.0.1\lib\x86;C:\SDL2_image-2.0.1\lib\x86;C:\SDL2-devel-2.0.5-VC\SDL2-2.0.5\lib\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <IncludePath>C:\SDL2_mixer-2.0.1\include;C:\SDL2-devel-2.0.5-VC\SDL2-2.0.5\include;C:\SDL2_ttf-2.0.14\include;C:\SDL2_image-2.0.1\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\SDL2_mixer-2.0.1\lib\x86;C:\SDL2-devel-2.0.5-VC\SDL2-2.0.5\lib\x86;C:\SDL2_ttf-2.0.14\lib\x86;C:\SDL2_image-2.0.1\lib\x86;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\WakinyanRepo\Wakinyan\Wakinyan\Assets;C:\SDL2-devel-2.0.5-VC\SDL2-2.0.5\include;C:\SDL2_ttf-2.0.14\include;C:\SDL2_mixer-2.0.1\include;C:\SDL2_image-2.0.1\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\SDL2-devel-2.0.5-VC\SDL2-2.0.5\lib\x86;C:\SDL2_ttf-2.0.14\lib\x86;C:\SDL2_mixer-2.0.1\lib\x86;C:\SDL2_image-2.0.1\lib\x86;C:\SDL2_mixer-2.0.1\lib\x86;C:\SDL2-devel-2.0.5-VC\SDL2-2.0.5\lib\x86;C:\SDL2_ttf-2.0.14\lib\x86;C:\SDL2_image-2.0.1\lib\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -73,6 +73,9 @@
       <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_mixer.lib;SDL2_ttf.lib</AdditionalDependencies>
       <SubSystem>Windows</SubSystem>
     </Link>
+    <PostBuildEvent>
+      <Command>xcopy /E /C /Y C:\WakinyanRepo\Wakinyan\Wakinyan\Assets C:\WakinyanRepo\Wakinyan\Release\Assets\</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Character.cpp" />
@@ -140,7 +143,9 @@
     <Xml Include="Assets\Scenes\ACT1\DAY2\knockout007.xml" />
     <Xml Include="Assets\Scenes\ACT1\DAY2\morningBedroom.xml" />
     <Xml Include="Assets\Scenes\ACT1\DAY2\morningBus.xml" />
-    <Xml Include="Assets\Scenes\ACT1\DAY2\morningKitchen.xml" />
+    <Xml Include="Assets\Scenes\ACT1\DAY2\morningKitchen.xml">
+      <SubType>Designer</SubType>
+    </Xml>
     <Xml Include="Assets\Scenes\ACT1\DAY2\morningOutsideSchool.xml" />
     <Xml Include="Assets\Scenes\ACT1\DAY2\morningSchool.xml" />
     <Xml Include="Assets\Scenes\ACT1\DAY2\start.xml" />

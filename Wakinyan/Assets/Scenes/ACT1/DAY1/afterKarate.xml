@@ -45,16 +45,16 @@
     <path>Assets/Scenes/ACT1/DAY1/iceCreamParlor.xml</path>
     <interaction>
       <type>4</type>
-      <dialog>Dad:_Hey_sweetie</dialog>
-      <dialog>Emily:_Hi_Dad</dialog>
-      <dialog>Dad:_How_was_Karate?</dialog>
-      <dialog>EMily:...</dialog>
-      <dialog>Dad:_Not_good?</dialog>
-      <dialog>Emily:_I_lost_again</dialog>
-      <dialog>Dad:_Hmm...</dialog>
+      <dialog>DAD: HEY SWEETIE</dialog>
+      <dialog>EMILY: HI DADY</dialog>
+      <dialog>DAD: HOW WAS KARATE</dialog>
+      <dialog>EMILY: ...</dialog>
+      <dialog>DAD: NOT GOOD?</dialog>
+      <dialog>EMILY: I LOST AGAIN</dialog>
+      <dialog>DAD: HMM...</dialog>
       <dialog>:(</dialog>
-      <dialog>Dad:_Ice_cream?</dialog>
-      <dialog>Emily:_Ok</dialog>
+      <dialog>DAD: SPECIAL ICE CREA?</dialog>
+      <dialog>EMILY: OK</dialog>
       <null></null>
     </interaction>
     <interaction>

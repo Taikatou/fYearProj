@@ -38,9 +38,9 @@
   <path>Assets/Scenes/INTRO/scene0001.xml</path>
   <interaction>
     <type>4</type>
-    <dialog>Nine years ago</dialog>
-    <dialog>Thunder Butte</dialog>
-    <dialog>A thunder storm struck</dialog>
+    <dialog>Nine Years Ago</dialog>
+    <dialog>Thunder Butte, South Dakota</dialog>
+    <dialog>A THUNDER STORM STRUCK</dialog>
     <null></null>
   </interaction>
   <end>0</end>

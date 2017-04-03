@@ -45,10 +45,10 @@
     <path>Assets/Scenes/ACT1/DAY1/kitchen.xml</path>
     <interaction>
       <type>4</type>
-      <dialog>Emily: I WONDER WHAT MOM WILL THINK?</dialog>
-      <dialog>Dad: OF WHAT?</dialog>
-      <dialog>Emily: ABOUT ME LOSING</dialog>
-      <dialog>Dad: ...</dialog>
+      <dialog>EMILY: I WONDER WHAT MOM WILL THINK?</dialog>
+      <dialog>DAD: OF WHAT?</dialog>
+      <dialog>EMILY: ABOUT ME LOSING</dialog>
+      <dialog>DAD: ...</dialog>
       <null></null>
     </interaction>
     <interaction>

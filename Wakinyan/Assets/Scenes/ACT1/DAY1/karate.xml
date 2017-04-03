@@ -59,12 +59,15 @@
     <path>Assets/Scenes/ACT1/DAY1/afterKarate.xml</path>
     <interaction>
       <type>4</type>
-      <dialog>They Punch you</dialog>
-      <dialog>You see them go to punch again</dialog>
-      <dialog>You raise to block</dialog>
+      <dialog>THEY PUNCH YOU</dialog>
+      <dialog>YOU SEE THEM GO TO PUNCH AGAIN</dialog>
+      <dialog>YOU RAISE TO BLOCK</dialog>
+      <dialog>IT WAS A FAKE</dialog>
       <dialog>0_0</dialog>
-      <dialog>It was a fake</dialog>
-      <dialog>You take a kick to the stomach</dialog>
+      <dialog>YOU TAKE A KICK TO THE STOMACH</dialog>
+      <dialog>YOU FEEL YOUR BREATHE LEAVE</dialog>
+      <dialog>YOU FALL TO THE GROUND</dialog>
+      <dialog>...</dialog>
       <null></null>
     </interaction>
     <interaction>

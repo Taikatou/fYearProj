@@ -42,13 +42,18 @@ bool init()
 		{
 			g_font = TTF_OpenFont("Assets/Other/pixelmix_micro.ttf", 8);
 			outline_font = TTF_OpenFont("Assets/Other/pixelmix_micro.ttf", 8);
-			TTF_SetFontOutline(outline_font, 1);
 
 			if (g_font == nullptr)
 			{
 				success = false;
 			}
-			else {
+			if (outline_font == nullptr)
+			{
+				success = false;
+			}
+			else
+			{
+				TTF_SetFontOutline(outline_font, 1);
 				//create the window
 				g_window = SDL_CreateWindow("Wakinyan", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_SHOWN);
 				if (g_window == nullptr)
@@ -58,7 +63,6 @@ bool init()
 				else
 				{
 					SDL_SetWindowFullscreen(g_window, SDL_TRUE);
-
 					//create rendered
 					g_renderer = SDL_CreateRenderer(g_window, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
 					if (g_renderer == nullptr)
@@ -92,8 +96,6 @@ bool loadMedia()
 {
 	//here is where the first scene needs to be created
 	return scene.loadFromFile("Assets/Scenes/titleScreen.xml");
-//	return scene.loadFromFile("Assets/Scenes/tempScene.xml");
-//	return scene.loadFromFile("Assets/Characters/emilyWalking.png");
 }
 
 void close()
