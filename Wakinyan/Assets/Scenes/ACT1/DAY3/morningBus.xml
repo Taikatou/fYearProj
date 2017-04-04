@@ -45,9 +45,9 @@
     <path>Assets/Scenes/ACT1/DAY3/morningOutsideSchool.xml</path>
     <interaction>
       <type>4</type>
-      <dialog>I'VE GOT TO FIND OUT</dialog>
-      <dialog>WHAAT DAD WAS TALING ABOUT</dialog>
-      <dialog>WITH MOM LASTNIGHT</dialog>
+      <dialog>I've Got To Find Out</dialog>
+      <dialog>What Dad Was Talking About</dialog>
+      <dialog>With Mom Lastnight</dialog>
       <null></null>
     </interaction>
     <end>0</end>

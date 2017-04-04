@@ -59,47 +59,47 @@
     <path>Assets/Scenes/ACT1/DAY3/afterDinner.xml</path>
     <interaction>
       <type>4</type>
-      <dialog>YUM</dialog>
-      <dialog>MOM MADE WOHANPI</dialog>
-      <dialog>IT'S YOUR FAVOURITE</dialog>
-      <dialog>YOU DON'T TELL DAD</dialog>
-      <dialog>HE MIGHT TAKE IT THE WRONG WAY</dialog>
-      <dialog>AND MIGHT STOP MAKING TACOS</dialog>
+      <dialog>Yum</dialog>
+      <dialog>Mom Made Wohanpi</dialog>
+      <dialog>It's Your Favourite</dialog>
+      <dialog>You Don't Tell Dad</dialog>
+      <dialog>He Might Take It The Wrong Way</dialog>
+      <dialog>And Might Stop Making Tacos</dialog>
       <null></null>
     </interaction>
     <interaction>
       <type>2</type>
-      <dialog>SO YOUR DAD TOLD ME</dialog>
-      <dialog>THAT SOMETHING HAPPENED</dialog>
-      <dialog>AT KARATE ON MONDAY</dialog>
+      <dialog>So Your Dad Told Me</dialog>
+      <dialog>That Something Happened</dialog>
+      <dialog>At Karate On Monday</dialog>
       <null></null>
     </interaction>
     <interaction>
       <type>4</type>
-      <dialog>YEAH</dialog>
-      <dialog>I GUESS I GOT KNOCKED OUT</dialog>
-      <dialog>DIDN'T HAVE MY GUARD UP</dialog>
+      <dialog>Yeah</dialog>
+      <dialog>I Guess I Got Knocked Out</dialog>
+      <dialog>Didn't Have My Guard Up</dialog>
       <null></null>
     </interaction>
     <interaction>
       <type>2</type>
-      <dialog>DAD TOLD ME YOU HAD A DREAM</dialog>
-      <dialog>WHAT WAS IT?</dialog>
+      <dialog>Dad Told Me You Had A Dream</dialog>
+      <dialog>What Was It?</dialog>
       <null></null>
     </interaction>
     <interaction>
       <type>4</type>
-      <dialog>I SAW LIGHTNING IN THE SKY</dialog>
-      <dialog>AND THEN I THINK I SAW</dialog>
-      <dialog>SOME KIND OF CREATURE</dialog>
-      <dialog>IT'S A LITTLE HAZY NOW</dialog>
-      <dialog>IT HAD 4 WINGS</dialog>
+      <dialog>I Saw Lightning In The Sky</dialog>
+      <dialog>And Then I Think I Saw</dialog>
+      <dialog>Some Kind Of Creature</dialog>
+      <dialog>It's A Little Hazy Now</dialog>
+      <dialog>It Had 4 Wings</dialog>
       <null></null>
     </interaction>
     <interaction>
       <type>2</type>
-      <dialog>THATS REALLY INTERESTING</dialog>
-      <dialog>HMM...</dialog>
+      <dialog>That's Really Interesting</dialog>
+      <dialog>Hmm...</dialog>
       <null></null>
     </interaction>
     <end>0</end>

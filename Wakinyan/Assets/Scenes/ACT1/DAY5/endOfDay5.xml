@@ -39,9 +39,9 @@
     <path>Assets/Scenes/Act1/Day5/dream.xml</path>
     <interaction>
       <type>4</type>
-      <dialog>THIS MAKES NO SENSE</dialog>
+      <dialog>This Makes No Sense</dialog>
       <dialog>LIGHTING?!</dialog>
-      <dialog>YOU LIE IN BED ANNOYED UNTIL YOU FALL ASLEEP</dialog>
+      <dialog>You Lie In Bed Annoyed Until You Fall Asleep</dialog>
       <null></null>
     </interaction>
     <end>0</end>

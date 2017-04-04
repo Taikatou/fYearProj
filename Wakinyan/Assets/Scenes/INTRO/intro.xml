@@ -38,9 +38,13 @@
   <path>Assets/Scenes/INTRO/scene0001.xml</path>
   <interaction>
     <type>4</type>
+    <dialog>Use A and D or LEFT and RIGHT Arrow Keys To Move</dialog>
+    <dialog>Press SPACE To Interact</dialog>
+    <dialog>You Can Interact With Characters and Buildings</dialog>
+    <dialog>Let's Begin</dialog>
     <dialog>Nine Years Ago</dialog>
     <dialog>Thunder Butte, South Dakota</dialog>
-    <dialog>A THUNDER STORM STRUCK</dialog>
+    <dialog>A Thunder Storm Struck</dialog>
     <null></null>
   </interaction>
   <end>0</end>

@@ -59,20 +59,20 @@
     <path>null</path>
     <interaction>
       <type>2</type>
-      <dialog>HELLO EMILY</dialog>
-      <dialog>HOW ARE YOU FEELING?</dialog>
+      <dialog>Hello Emily</dialog>
+      <dialog>How Are You Feeling?</dialog>
       <null></null>
     </interaction>
     <interaction>
       <type>4</type>
-      <dialog>I'M ALRIGHT SENSEI</dialog>
-      <dialog>I JUST NEED TO BE BETTER AT BLOCKING</dialog>
+      <dialog>I'm Alright Sensei</dialog>
+      <dialog>I Just Need To Be Better At Blocking</dialog>
       <null></null>
     </interaction>
     <interaction>
       <type>2</type>
-      <dialog>A WISH OBSERVATION</dialog>
-      <dialog>WHY DON'T YOU TRAIN WITH MAX?</dialog>
+      <dialog>A Wish Observation</dialog>
+      <dialog>Why Don't You Train With Max?</dialog>
       <null></null>
     </interaction>
     <interaction>

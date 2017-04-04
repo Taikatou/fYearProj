@@ -39,7 +39,7 @@
     <path>Assets/Scenes/ACT1/DAY4/morningBus.xml</path>
     <interaction>
       <type>4</type>
-      <dialog>BETTER GET TO SCHOOL</dialog>
+      <dialog>Better Get To School</dialog>
       <null></null>
     </interaction>
     <end>0</end>

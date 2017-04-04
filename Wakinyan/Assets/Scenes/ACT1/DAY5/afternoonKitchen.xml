@@ -59,47 +59,47 @@
     <path>Assets/Scenes/ACT1/DAY5/endOfDay5.xml</path>
     <interaction>
       <type>4</type>
-      <dialog>EMILY: DAD YOU MADE CARNE ASADA!</dialog>
-      <dialog>DAD: I KNOW ITS YOUR FAVOURITE</dialog>
-      <dialog>DAD: I THOUGHT IT WOULD BE A NICE SURPRISE</dialog>
-      <dialog>MOM: SO WE NEED TO HAVE A TALK</dialog>
-      <dialog>YOU NOD AS YOU START TO CHEW</dialog>
-      <dialog>MOM: CHUNKSHI, DO YOU REMEMBER</dialog>
-      <dialog>MOM: WHY WE MOVED TO BISMARK?</dialog>
-      <dialog>YOU DON'T. YOU WERE ONLY FIVE</dialog>
-      <dialog>MOM: WELL, WE LEFT LAND TO COME TO BISMARK</dialog>
-      <dialog>MOM: WE LEFT OUR COMMUNITY</dialog>
-      <dialog>MOM: OR WE WERE SENT AWAY</dialog>
-      <dialog>MOM: YOU WERE STRUCK MY LIGHTNING ONE NIGHT</dialog>
-      <dialog>MOM: YOU WANDERED OUT OF THE HOUSE</dialog>
-      <dialog>MOM: AND WE COULDN'T FIND YOU</dialog>
-      <dialog>MOM: A STORM CAME FROM NOWHERE...</dialog>
-      <dialog>DAD: IT WAS FRIGHTNING</dialog>
-      <dialog>DAD: YOU JUST SEEMED TO VANISH</dialog>
-      <dialog>DAD: WE SEARCHED BUT HAD TO MOVE LOW</dialog>
-      <dialog>MOM: AT ONE POINT LIGHTNING STRUCK</dialog>
-      <dialog>MOM: THE GROUND CLOSE BY</dialog>
-      <dialog>MOM: WHEN WE COULD SEE AGAIN</dialog>
-      <dialog>MOM: YOU WERE LYING DOWN ON THE GRASS</dialog>
-      <dialog>DAD: WE THOUGHT...</dialog>
-      <dialog>MOM: YOU WERE FAST ASLEEP</dialog>
-      <dialog>DAD: WE BROUGHT YOU TO A MEDICINE MAN</dialog>
-      <dialog>DAD: THEY TOLD US YOU WERE WAKINYAN</dialog>
-      <dialog>MOM: A THUNDER BEING</dialog>
-      <dialog>MOM: THAT THE STORM THAT NIGHT</dialog>
-      <dialog>MOM: WAS A WAKINYAN COMING TO GRANT YOU POWER</dialog>
-      <dialog>MOM: I THINK THAT YOU HAD A VISION</dialog>
-      <dialog>MOM: OF WAKINYAN</dialog>
-      <dialog>MOM: WHEN YOU WERE HURT AT KARATE</dialog>
-      <dialog>MOM: I SPOKE WITH SOME OTHER PHYSICISTS</dialog>
-      <dialog>MOM: THEY SHARE MY HYPOTHISYS</dialog>
-      <dialog>THIS SOUNDS RIDICULOUS</dialog>
-      <dialog>INFACT</dialog>
-      <dialog>EMILY: THIS SOUNDS RIDICULOUS MOM</dialog>
-      <dialog>EMILY: HOW COULD I SURVIVE</dialog>
-      <dialog>EMILY: GETTING HIT BY LIGHTNING</dialog>
-      <dialog>EMILY: NO WAY</dialog>
-      <dialog>YOU RUN TO BED</dialog>
+      <dialog>Emily: Dad You Made Carne Asada!</dialog>
+      <dialog>Dad: I Know It's Your Favourite</dialog>
+      <dialog>Dad: I Thought It Would Be A Nice Surprise</dialog>
+      <dialog>Mom: SO We Need To Have A Talk</dialog>
+      <dialog>You Nod As You Start To Chew</dialog>
+      <dialog>Mom: Chunkshi, Do You Remember</dialog>
+      <dialog>Mom: Why We Moved To Bismark?</dialog>
+      <dialog>You don't. You Were Only Five</dialog>
+      <dialog>Mom: Well, We Left Land To Come To Bismark</dialog>
+      <dialog>Mom: We Left Our Community</dialog>
+      <dialog>Mom: Or We Were Sent Away</dialog>
+      <dialog>Mom: You Were struck My Lightning One Night</dialog>
+      <dialog>Mom: You Wandered Out Of The House</dialog>
+      <dialog>Mom: And We Couldn't Find You</dialog>
+      <dialog>Mom: A Storm Came From Nowhere...</dialog>
+      <dialog>Dad: It Was Frightning</dialog>
+      <dialog>Dad: You Just Seemed To Vanish</dialog>
+      <dialog>Dad: We Searched But Had To Move Low</dialog>
+      <dialog>Mom: At One Point Lightning Struck</dialog>
+      <dialog>Mom: The Ground Close By</dialog>
+      <dialog>Mom: When We Could See Again</dialog>
+      <dialog>Mom: You Were Lying Down On The Grass</dialog>
+      <dialog>Dad: We Thought...</dialog>
+      <dialog>Mom: You Were Fast Asleep</dialog>
+      <dialog>Dad: We Brought You To A Medicine Man</dialog>
+      <dialog>Dad: They Told Us You Were Wakinyan</dialog>
+      <dialog>Mom: A Thunder Being</dialog>
+      <dialog>Mom: That The Storm That Night</dialog>
+      <dialog>Mom: Was A Wakinyan Coming To Grant You Power</dialog>
+      <dialog>Mom: I Think That You Had A Vision</dialog>
+      <dialog>Mom: Of Wakinyan</dialog>
+      <dialog>Mom: When You Were Hurt At Karate</dialog>
+      <dialog>Mom: I Spoke With Some Other Physicists</dialog>
+      <dialog>Mom: They Share My Hypothisys</dialog>
+      <dialog>This Sounds Ridiculous</dialog>
+      <dialog>Infact</dialog>
+      <dialog>Emily: This Sounds Ridiculous Mom</dialog>
+      <dialog>Emily: How Could I Survive</dialog>
+      <dialog>Emily: Getting Hit By Lightning</dialog>
+      <dialog>Emily: No Way</dialog>
+      <dialog>You Run To Bed</dialog>
       <null></null>
     </interaction>
     <end>0</end>

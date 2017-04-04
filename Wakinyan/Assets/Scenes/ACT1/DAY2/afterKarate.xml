@@ -45,13 +45,13 @@
     <path>Assets/Scenes/ACT1/DAY2/iceCreamParlorDay2.xml</path>
     <interaction>
       <type>4</type>
-      <dialog>DAD: ...</dialog>
-      <dialog>DAD: MI AMOR</dialog>
-      <dialog>DAD: IS EVERYTHING OK?</dialog>
-      <dialog>EMILY: yeah</dialog>
-      <dialog>DAD: YOU'RE NOT USUALLY SO QUIET</dialog>
-      <dialog>DAD: DID SOMETHING HAPPEN?</dialog>
-      <dialog>EMILY: ...</dialog>
+      <dialog>Dad: ...</dialog>
+      <dialog>Dad: Mi Amor</dialog>
+      <dialog>Dad: Is Everything Okay?</dialog>
+      <dialog>Emily: yeah</dialog>
+      <dialog>Dad: You're Not Usually So Quiet</dialog>
+      <dialog>Dad: Did Something Happen?</dialog>
+      <dialog>Emily: ...</dialog>
       <null></null>
     </interaction>
     <interaction>

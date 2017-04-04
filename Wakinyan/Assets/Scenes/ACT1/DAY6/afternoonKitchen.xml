@@ -31,7 +31,7 @@
     <w>12</w>
     <h>200</h>
   </sprite>
-  <!--   background-->
+  <!--  background-->
   <sprite>
     <type>3</type>
     <image>Assets/Backgrounds/kitchenSmall.png</image>
@@ -49,44 +49,44 @@
     <y>60</y>
     <w>30</w>
     <h>105</h>
-    <path>Assets/Scenes/titleScreen.xml</path>
+    <path>Assets/Scenes/ACT1/DAY6/endOfAct1.xml</path>
     <interaction>
       <type>4</type>
-      <dialog>HI DAD</dialog>
-      <dialog>IS MOM TALKING MORE STUFF TO THE UNIVERSITY?</dialog>
+      <dialog>Hi Dad</dialog>
+      <dialog>Is Mom Talking More Stuff To The University?</dialog>
       <null></null>
     </interaction>
     <interaction>
       <type>2</type>
-      <dialog>HEY SWEETIE</dialog>
-      <dialog>NO, THOSE CASES ARE MINE AND HER'S</dialog>
+      <dialog>Hey Sweetie</dialog>
+      <dialog>No, Those Cases Are Mine And Her's</dialog>
       <null></null>
     </interaction>
     <interaction>
       <type>4</type>
-      <dialog>WHERE ARE YOU GOING?</dialog>
-      <dialog>WHERE AM i GOING?</dialog>
+      <dialog>Where Are You Going?</dialog>
+      <dialog>Where Am I Going?</dialog>
       <null></null>
     </interaction>
     <interaction>
       <type>2</type>
-      <dialog>WE'RE ALL GOING TO NORTH EAGLE BUTTE</dialog>
-      <dialog>MOM AND I THINK WE NEED</dialog>
-      <dialog>TO TALK WITH THE MEDICINE MAN</dialog>
-      <dialog>AND YOU SHOULD BE THERE</dialog>
+      <dialog>We're All Going To North Eagle Butte</dialog>
+      <dialog>Mom And I Think We Need</dialog>
+      <dialog>To Talk With The Medicine Man</dialog>
+      <dialog>And You Should Be There</dialog>
       <null></null>
     </interaction>
     <interaction>
       <type>4</type>
-      <dialog>REALLY?</dialog>
-      <dialog>WE'RE GOING TO SOUTH DAKOTA?</dialog>
+      <dialog>Really?</dialog>
+      <dialog>We're Going To South Dakota?</dialog>
       <null></null>
     </interaction>
     <interaction>
       <type>2</type>
-      <dialog>YES</dialog>
-      <dialog>NOW, WHY DON'T YOU GO AND PACK?</dialog>
-      <dialog>WE NEED TO GET ON THE ROAD</dialog>
+      <dialog>Yes</dialog>
+      <dialog>Now, Why Don't You Go And Pack?</dialog>
+      <dialog>We Need To Get On The Road</dialog>
       <null></null>
     </interaction>
     <interaction>

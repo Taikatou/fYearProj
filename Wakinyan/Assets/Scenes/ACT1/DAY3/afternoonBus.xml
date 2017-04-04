@@ -45,10 +45,10 @@
     <path>Assets/Scenes/ACT1/DAY3/dinner.xml</path>
     <interaction>
       <type>4</type>
-      <dialog>SO NOT ONLY ARE MOM AND DAD</dialog>
-      <dialog>TALKING ABOUT ME AT KARATE</dialog>
-      <dialog>BUT PEOPLE ARE SCHOOL ARE TOO</dialog>
-      <dialog>THIS SUCKS</dialog>
+      <dialog>So Not Only Are Mom And Dad</dialog>
+      <dialog>Talking About Me At Karate</dialog>
+      <dialog>But People Are School Are Too</dialog>
+      <dialog>This Sucks</dialog>
       <null></null>
     </interaction>
     <end>0</end>

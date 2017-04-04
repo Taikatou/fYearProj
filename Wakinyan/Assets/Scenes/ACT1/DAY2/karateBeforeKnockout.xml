@@ -52,16 +52,16 @@
     <path>Assets/Scenes/ACT1/DAY2/knockout001.xml</path>
     <interaction>
       <type>4</type>
-      <dialog>YOU FIGHT</dialog>
-      <dialog>FOCUSED</dialog>
-      <dialog>YOU FEEL YOUR OPPONENT MOVE TO KICK</dialog>
-      <dialog>TURN YOUR SHOULDER TO THEM</dialog>
-      <dialog>BRACE A LOW GUARD</dialog>
+      <dialog>You Fight</dialog>
+      <dialog>Focused</dialog>
+      <dialog>You Feel Your Opponent Move To Kick</dialog>
+      <dialog>Turn Your Shoulder To Them</dialog>
+      <dialog>Brace A Low Guard</dialog>
       <dialog>GO!</dialog>
-      <dialog>TOO LATE</dialog>
-      <dialog>THE KICK WAS A WIND UP</dialog>
-      <dialog>YOU SEE A FIST FLOAT OVER YOUR HANDS</dialog>
-      <dialog>AS THEY DIVE INTO A USELESS GUARD</dialog>
+      <dialog>Too Late</dialog>
+      <dialog>The Kick Was A Wind Up</dialog>
+      <dialog>You See A Fist Float Over Your Hands</dialog>
+      <dialog>As They Dive Into A Useless Guard</dialog>
       <null></null>
     </interaction>
     <interaction>

@@ -46,10 +46,10 @@
     <interaction>
       <type>4</type>
       <dialog>2017</dialog>
-      <dialog>BISMARK, NORTH DAKOTA</dialog>
-      <dialog>MANDAN CITY COMMUNITY CENTRE</dialog>
-      <dialog>KARATE CLASS</dialog>
-      <dialog>EMILY ORTEGA IS READY TO FIGHT</dialog>
+      <dialog>Bismark, North Dakota</dialog>
+      <dialog>Mandan City Community Centre</dialog>
+      <dialog>Karate Class</dialog>
+      <dialog>Emily Ortega Is Ready To Fight</dialog>
       <null></null>
     </interaction>
     <end>0</end>

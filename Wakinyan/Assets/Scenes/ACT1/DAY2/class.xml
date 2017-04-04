@@ -39,10 +39,10 @@
     <path>Assets/Scenes/ACT1/DAY2/afternoonSchool.xml</path>
     <interaction>
       <type>4</type>
-      <dialog>WHY CAN'T I BE GOOD AT MATH?</dialog>
-      <dialog>LIKE MOM</dialog>
+      <dialog>Why Can't I Be Good At Math?</dialog>
+      <dialog>Like Mom</dialog>
       <dialog>*sigh*</dialog>
-      <dialog>ALRIGHT TIME FOR KARATE</dialog>
+      <dialog>Alright Time For Karate</dialog>
       <null></null>
     </interaction>
     <end>0</end>

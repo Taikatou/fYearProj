@@ -52,14 +52,14 @@
     <path>null</path>
     <interaction>
       <type>2</type>
-      <dialog>OH</dialog>
-      <dialog>MORNING</dialog>
+      <dialog>Oh</dialog>
+      <dialog>Morning</dialog>
       <null></null>
     </interaction>
     <interaction>
       <type>4</type>
-      <dialog>DAD SEEMS WEIRD</dialog>
-      <dialog>BETTER GET TO THE BUS</dialog>
+      <dialog>Dad Seems Weird</dialog>
+      <dialog>Better Get To The Bus</dialog>
       <null></null>
     </interaction>
     <interaction>

@@ -39,12 +39,12 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>C:\SDL2-devel-2.0.5-VC\SDL2-2.0.5\include;C:\SDL2_ttf-2.0.14\include;C:\SDL2_mixer-2.0.1\include;C:\SDL2_image-2.0.1\include;C:\SDL2-devel-2.0.5-VC\SDL2-2.0.5\include;C:\SDL2_ttf-2.0.14\include;C:\SDL2_image-2.0.1\include;C:\SDL2_ttf-2.0.14\include;C:\SDL2_mixer-2.0.1\include;C:\SDL2_image-2.0.1\include;C:\SDL2-devel-2.0.5-VC\SDL2-2.0.5\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\SDL2-devel-2.0.5-VC\SDL2-2.0.5\lib\x86;C:\SDL2_ttf-2.0.14\lib\x86;C:\SDL2_mixer-2.0.1\lib\x86;C:\SDL2_image-2.0.1\lib\x86;C:\SDL2-devel-2.0.5-VC\SDL2-2.0.5\lib\x86;C:\SDL2_ttf-2.0.14\lib\x86;C:\SDL2_image-2.0.1\lib\x86;C:\SDL2_ttf-2.0.14\lib\x86;C:\SDL2_mixer-2.0.1\lib\x86;C:\SDL2_image-2.0.1\lib\x86;C:\SDL2-devel-2.0.5-VC\SDL2-2.0.5\lib\x86;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)\Runtimes\SDL2_image-2.0.1\include;$(SolutionDir)\Runtimes\SDL2_mixer-2.0.1\include;$(SolutionDir)\Runtimes\SDL2_ttf-2.0.14\include;$(SolutionDir)\Runtimes\SDL2-2.0.5\include;C:\SDL2-devel-2.0.5-VC\SDL2-2.0.5\include;C:\SDL2_ttf-2.0.14\include;C:\SDL2_mixer-2.0.1\include;C:\SDL2_image-2.0.1\include;C:\SDL2-devel-2.0.5-VC\SDL2-2.0.5\include;C:\SDL2_ttf-2.0.14\include;C:\SDL2_image-2.0.1\include;C:\SDL2_ttf-2.0.14\include;C:\SDL2_mixer-2.0.1\include;C:\SDL2_image-2.0.1\include;C:\SDL2-devel-2.0.5-VC\SDL2-2.0.5\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)\Runtimes\SDL2-2.0.5\lib\x86;$(SolutionDir)\Runtimes\SDL2_ttf-2.0.14\lib\x86;$(SolutionDir)\Runtimes\SDL2_mixer-2.0.1\lib\x86;$(SolutionDir)\Runtimes\SDL2_image-2.0.1\lib\x86;C:\SDL2-devel-2.0.5-VC\SDL2-2.0.5\lib\x86;C:\SDL2_ttf-2.0.14\lib\x86;C:\SDL2_image-2.0.1\lib\x86;C:\SDL2_ttf-2.0.14\lib\x86;C:\SDL2_mixer-2.0.1\lib\x86;C:\SDL2_image-2.0.1\lib\x86;C:\SDL2-devel-2.0.5-VC\SDL2-2.0.5\lib\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <IncludePath>C:\WakinyanRepo\Wakinyan\Wakinyan\Assets;C:\SDL2-devel-2.0.5-VC\SDL2-2.0.5\include;C:\SDL2_ttf-2.0.14\include;C:\SDL2_mixer-2.0.1\include;C:\SDL2_image-2.0.1\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\SDL2-devel-2.0.5-VC\SDL2-2.0.5\lib\x86;C:\SDL2_ttf-2.0.14\lib\x86;C:\SDL2_mixer-2.0.1\lib\x86;C:\SDL2_image-2.0.1\lib\x86;C:\SDL2_mixer-2.0.1\lib\x86;C:\SDL2-devel-2.0.5-VC\SDL2-2.0.5\lib\x86;C:\SDL2_ttf-2.0.14\lib\x86;C:\SDL2_image-2.0.1\lib\x86;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)\Runtimes\SDL2_image-2.0.1\include;$(SolutionDir)\Runtimes\SDL2_mixer-2.0.1\include;$(SolutionDir)\Runtimes\SDL2_ttf-2.0.14\include;$(SolutionDir)\Runtimes\SDL2-2.0.5\include;C:\WakinyanRepo\Wakinyan\Wakinyan\Assets;C:\SDL2-devel-2.0.5-VC\SDL2-2.0.5\include;C:\SDL2_ttf-2.0.14\include;C:\SDL2_mixer-2.0.1\include;C:\SDL2_image-2.0.1\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)\Runtimes\SDL2-2.0.5\lib\x86;$(SolutionDir)\Runtimes\SDL2_ttf-2.0.14\lib\x86;$(SolutionDir)\Runtimes\SDL2_mixer-2.0.1\lib\x86;$(SolutionDir)\Runtimes\SDL2_image-2.0.1\lib\x86;C:\SDL2_mixer-2.0.1\lib\x86;C:\SDL2-devel-2.0.5-VC\SDL2-2.0.5\lib\x86;C:\SDL2_ttf-2.0.14\lib\x86;C:\SDL2_image-2.0.1\lib\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -74,7 +74,7 @@
       <SubSystem>Windows</SubSystem>
     </Link>
     <PostBuildEvent>
-      <Command>xcopy /E /C /Y C:\WakinyanRepo\Wakinyan\Wakinyan\Assets C:\WakinyanRepo\Wakinyan\Release\Assets\</Command>
+      <Command>xcopy /E /C /Y $(SolutionDir)\Wakinyan\Assets $(SolutionDir)\Release\Assets\</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>

@@ -52,30 +52,30 @@
     <path>null</path>
     <interaction>
       <type>2</type>
-      <dialog>MORNING EMILY</dialog>
-      <dialog>READY FOR SCHOOL?</dialog>
+      <dialog>Morning Emily</dialog>
+      <dialog>Ready For School?</dialog>
       <null></null>
     </interaction>
     <interaction>
       <type>4</type>
-      <dialog>YEAH DAD</dialog>
+      <dialog>Yeah Dad</dialog>
       <null></null>
     </interaction>
     <interaction>
       <type>2</type>
-      <dialog>OK SWEETIE</dialog>
-      <dialog>YOU BETTER RUNN AND GET YOUR BUS</dialog>
-      <dialog>LOVE YOU</dialog>
+      <dialog>Ok Sweetie</dialog>
+      <dialog>You Better Run And Get Your Bus</dialog>
+      <dialog>Love You</dialog>
       <null></null>
     </interaction>
     <interaction>
       <type>4</type>
-      <dialog>LOVE YOU</dialog>
+      <dialog>Love You</dialog>
       <null></null>
     </interaction>
     <interaction>
       <type>2</type>
-      <dialog>BYE</dialog>
+      <dialog>Bye</dialog>
       <null></null>
     </interaction>
     <interaction>

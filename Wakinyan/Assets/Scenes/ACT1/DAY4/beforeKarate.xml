@@ -52,10 +52,10 @@
     <path>Assets/Scenes/ACT1/DAY4/karate.xml</path>
     <interaction>
       <type>4</type>
-      <dialog>MOM AND DAD WERE MORE INTERESTED</dialog>
-      <dialog>IN MY DREAM THAN ME BEING KNOCKED OUT</dialog>
-      <dialog>WHAT'S THAT ABOUT?</dialog>
-      <dialog>I'M GOING TO ASK MOM TOMORROW</dialog>
+      <dialog>Mom And Dad Were More Interested</dialog>
+      <dialog>In My Dream Than Me Being Knocked Out</dialog>
+      <dialog>What's That About?</dialog>
+      <dialog>I'm Going To Ask Mom Tomorrow</dialog>
       <null></null>
     </interaction>
     <end>0</end>

@@ -52,21 +52,21 @@
     <path>Assets/Scenes/ACT1/DAY6/dance.xml</path>
     <interaction>
       <type>2</type>
-      <dialog>HAU KOLA EMILY</dialog>
-      <dialog>HOW ARE YOU?</dialog>
+      <dialog>Hau Kola Emily</dialog>
+      <dialog>How Are You?</dialog>
       <null></null>
     </interaction>
     <interaction>
       <type>4</type>
-      <dialog>HAU KOLA</dialog>
-      <dialog>I'M GOOD</dialog>
-      <dialog>AND YOU?</dialog>
+      <dialog>Hau Kola</dialog>
+      <dialog>I'm Good</dialog>
+      <dialog>And You?</dialog>
       <null></null>
     </interaction>
     <interaction>
       <type>2</type>
-      <dialog>WONDERFUL</dialog>
-      <dialog>SHALE WE BEGIN</dialog>
+      <dialog>Wonderful</dialog>
+      <dialog>Shale We Begin</dialog>
       <null></null>
     </interaction>
     <end>0</end>

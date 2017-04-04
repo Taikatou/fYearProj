@@ -52,43 +52,43 @@
     <path>Assets/Scenes/ACT1/DAY2/bedTime.xml</path>
     <interaction>
       <type>2</type>
-      <dialog>SO</dialog>
-      <dialog>YOU'VE BARELY TOUCHED</dialog>
-      <dialog>YOUR ICE CREAM</dialog>
-      <dialog>WANT TO TALK?</dialog>
+      <dialog>So</dialog>
+      <dialog>You've Barely Touched</dialog>
+      <dialog>Your Ice Cream</dialog>
+      <dialog>Want To Talk?</dialog>
       <null></null>
     </interaction>
     <interaction>
       <type>4</type>
-      <dialog>... YEAH</dialog>
-      <dialog>SO I WAS IN A SPARING MATCH</dialog>
-      <dialog>AND I GOT HIT IN THE HEAD</dialog>
-      <dialog>I THINK I GOT KNOCKED OUT</dialog>
-      <dialog>I HAD A WEIRD DREAM</dialog>
-      <dialog>I WAS IN A HUGE FIELD</dialog>
-      <dialog>AND THERE WAS LIGHTNING ABOVE ME</dialog>
-      <dialog>IT FLASHED AND I SAW AN OUTLINE</dialog>
-      <dialog>IT WAS HUGE</dialog>
-      <dialog>AND HAD FOUR WINGS</dialog>
+      <dialog>... Yeah</dialog>
+      <dialog>So I Was In A Sparing Match</dialog>
+      <dialog>And I Got Hit In The Head</dialog>
+      <dialog>I Think I Got Knocked Out</dialog>
+      <dialog>I Had A Weird Dream</dialog>
+      <dialog>I Was In A Huge Field</dialog>
+      <dialog>And There Was Lightning Above Me</dialog>
+      <dialog>It Flashed And I Saw An Outline</dialog>
+      <dialog>It Was Huge</dialog>
+      <dialog>And Had Four Wings</dialog>
       <null></null>
     </interaction>
     <interaction>
       <type>2</type>
-      <dialog>THAT IS SOME DREAM</dialog>
-      <dialog>ANY IDEA WHERE YOU WERE?</dialog>
+      <dialog>That Is Some Dream</dialog>
+      <dialog>Any Idea Where You Were?</dialog>
       <null></null>
     </interaction>
     <interaction>
       <type>4</type>
-      <dialog>NO</dialog>
-      <dialog>I JUST SAW THE SKY REALLY</dialog>
+      <dialog>No</dialog>
+      <dialog>I Just Saw The Sky Really</dialog>
       <null></null>
     </interaction>
     <interaction>
       <type>2</type>
-      <dialog>HMM</dialog>
-      <dialog>ARE YOU NEARLY FINISHED?</dialog>
-      <dialog>WE SHOULD GET GOING SOON</dialog>
+      <dialog>Hmm</dialog>
+      <dialog>Are You Nearly Finished?</dialog>
+      <dialog>We Should Get Going Soon</dialog>
       <null></null>
     </interaction>
     <interaction>

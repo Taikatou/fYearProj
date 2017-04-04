@@ -39,14 +39,14 @@
     <path>Assets/Scenes/ACT1/DAY6/afternoonDanceStudio.xml</path>
     <interaction>
       <type>4</type>
-      <dialog>YOU PRACTICE TRADITIONAL JINGLE DRESS DANCING</dialog>
-      <dialog>THE INSTRUCTOR IS VERY STRICT</dialog>
-      <dialog>ON THE FOOT PLACEMENT</dialog>
-      <dialog>IN TRADITIONAL JINGLE DRESS DANCING</dialog>
-      <dialog>THE FEET NEVER CROSS OVER EACH OTHER</dialog>
-      <dialog>AND YOU CAN'T MOVE BACKWARDS</dialog>
-      <dialog>IT'S CHALLENGING</dialog>
-      <dialog>BUT FUN</dialog>
+      <dialog>You Practice Traditional Jingle Dress Dancing</dialog>
+      <dialog>The Instructor Is Very Strict</dialog>
+      <dialog>On The Foot Placement</dialog>
+      <dialog>In Traditional Jingle Dress Dancing</dialog>
+      <dialog>The Feet Never Cross Over Each Other</dialog>
+      <dialog>And You Can't Move Backwards</dialog>
+      <dialog>It's Challenging</dialog>
+      <dialog>But Fun</dialog>
       <null></null>
     </interaction>
     <end>0</end>

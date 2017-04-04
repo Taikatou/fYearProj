@@ -39,13 +39,13 @@
     <path>Assets/Scenes/Act1/Day4/start.xml</path>
     <interaction>
       <type>4</type>
-      <dialog>THAT WAS A LITTLE WEIRD</dialog>
+      <dialog>That Was A Little Weird</dialog>
       <dialog>...</dialog>
-      <dialog>I WONDER WHAT THAT WAS THOUGH</dialog>
-      <dialog>A DREAM</dialog>
-      <dialog>A VISION</dialog>
-      <dialog>AND THAT CREATURE</dialog>
-      <dialog>IT WAS HUGE</dialog>
+      <dialog>I Wonder What That Was Though</dialog>
+      <dialog>A Dream</dialog>
+      <dialog>A Vision</dialog>
+      <dialog>And That Creature</dialog>
+      <dialog>It Was Huge</dialog>
       <null></null>
     </interaction>
     <end>0</end>

@@ -39,26 +39,26 @@
     <path>Assets/Scenes/ACT1/DAY6/start.xml</path>
     <interaction>
       <type>4</type>
-      <dialog>YOU'RE FLOATING</dialog>
-      <dialog>YOU'RE HIGH ABOVE THE CLOUDS</dialog>
-      <dialog>LOOKING DOWN YOU SEE THAT YOU</dialog>
-      <dialog>ARE OVER NORTH DAKOTA</dialog>
-      <dialog>YOU CAN SEE A LINE STARTING TO FLOW DOWN THE STATE</dialog>
-      <dialog>IT'S DARK AND THE EARTH AROUND IT IS DYING</dialog>
-      <dialog>FLOWING ISN'T THE RIGHT WORD</dialog>
-      <dialog>SLITHERING</dialog>
-      <dialog>THE LAND IS STARTING TO FLOOD</dialog>
-      <dialog>IT TRAVELS BENEATH YOU</dialog>
-      <dialog>YOU FOLLOW IT ACROSS NORTH DAKOTA</dialog>
-      <dialog>INTO SOUTH DAKOTA</dialog>
-      <dialog>IT CIRCLES AROUND A HUGE AREA OF LAND</dialog>
-      <dialog>THE LINE STARTS CLOSING IN TO THE CENTRE</dialog>
-      <dialog>GETTING FASTER AND FASTER</dialog>
-      <dialog>IT REACHES A BUTTE AND COILS AROUND IT</dialog>
-      <dialog>THE LINE REACHES INTO THE SKY</dialog>
-      <dialog>A LONG MOUTH OPENS AND IT SCREAMS</dialog>
-      <dialog>INTO THE SKY</dialog>
-      <dialog>AT YOU</dialog>
+      <dialog>You're Floating</dialog>
+      <dialog>You're high Above The Clouds</dialog>
+      <dialog>Looking Down You See That You</dialog>
+      <dialog>Are Over North Dakota</dialog>
+      <dialog>You Can See A Line Starting To Flow Down The State</dialog>
+      <dialog>It's Dark And The Earth Around It Is Dying</dialog>
+      <dialog>Flowing Isn't The Right Word</dialog>
+      <dialog>Slithering</dialog>
+      <dialog>The Land Is Starting To Flood</dialog>
+      <dialog>It Travels Beneath You</dialog>
+      <dialog>You Follow It Across North Dakota</dialog>
+      <dialog>Into South Dakota</dialog>
+      <dialog>It Circles Around A Huge Area Of Land</dialog>
+      <dialog>The Line Starts Closing In To The Centre</dialog>
+      <dialog>Getting Faster And Faster</dialog>
+      <dialog>It Reaches A Butte And Coils Around It</dialog>
+      <dialog>The Line Reaches Into The Sky</dialog>
+      <dialog>A Long Mouth Opens And It Screams</dialog>
+      <dialog>Into The Sky</dialog>
+      <dialog>At You</dialog>
       <null></null>
     </interaction>
     <end>0</end>

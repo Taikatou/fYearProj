@@ -60,40 +60,40 @@
     </interaction>
     <interaction>
       <type>2</type>
-      <dialog>SO TELL ME ABOUT YOUR MATCH</dialog>
+      <dialog>So Tell Me About Your Match</dialog>
       <null></null>
     </interaction>
     <interaction>
       <type>4</type>
       <dialog>WELL</dialog>
-      <dialog>IT WAS KIND OF STRANGE</dialog>
-      <dialog>I FELT DIFFERENT</dialog>
-      <dialog>LIKE MY BODY KNEW HOW TO RESPOND</dialog>
-      <dialog>OR HOW TO RESPOND IN THE RIGHT WAY</dialog>
-      <dialog>NOT LIKE NORMAL</dialog>
+      <dialog>It Was Kind Of Strange</dialog>
+      <dialog>I Felt Different</dialog>
+      <dialog>Like My Body Knew How To Respond</dialog>
+      <dialog>Or How To Respond In The Right Way</dialog>
+      <dialog>Not Like Normal</dialog>
       <null></null>
     </interaction>
     <interaction>
       <type>2</type>
       <dialog>...</dialog>
-      <dialog>YOU DIDN'T DO ANYTHING</dialog>
-      <dialog>STRANGE</dialog>
-      <dialog>DID YOU?</dialog>
+      <dialog>You Didn't Do Anything</dialog>
+      <dialog>Strange</dialog>
+      <dialog>Did You?</dialog>
       <null></null>
     </interaction>
     <interaction>
       <type>4</type>
-      <dialog>YOU MEAN BESIDES WINNING DAD?</dialog>
-      <dialog>I DON'T THINK SO</dialog>
-      <dialog>I DID...</dialog>
-      <dialog>KICK MAX CAULFIELD...</dialog>
-      <dialog>IN THE FACE</dialog>
+      <dialog>You Mean Besides Winning Dad?</dialog>
+      <dialog>I Don't Think So</dialog>
+      <dialog>I Did...</dialog>
+      <dialog>Kick Max Caulfield...</dialog>
+      <dialog>In The Face</dialog>
       <null></null>
     </interaction>
     <interaction>
       <type>2</type>
       <dialog>...</dialog>
-      <dialog>OK SWEETIE</dialog>
+      <dialog>Okay Sweetie</dialog>
       <null></null>
     </interaction>
     <interaction>

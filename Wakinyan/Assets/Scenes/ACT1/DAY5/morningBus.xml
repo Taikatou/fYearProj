@@ -45,9 +45,9 @@
     <path>Assets/Scenes/ACT1/DAY5/morningClass.xml</path>
     <interaction>
       <type>4</type>
-      <dialog>OK SCHOOL</dialog>
-      <dialog>LETS GET YOU OVER WITH</dialog>
-      <dialog>MOM IS HOME TONIGHT</dialog>
+      <dialog>Ok School</dialog>
+      <dialog>Let's Get You Over With</dialog>
+      <dialog>Mom Is Home Tonight</dialog>
       <null></null>
     </interaction>
     <end>0</end>

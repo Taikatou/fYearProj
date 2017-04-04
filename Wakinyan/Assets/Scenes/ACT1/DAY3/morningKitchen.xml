@@ -52,18 +52,18 @@
     <path>null</path>
     <interaction>
       <type>2</type>
-      <dialog>MORNING EMILY</dialog>
-      <dialog>READY FOR SCHOOL?</dialog>
+      <dialog>Morning Emily</dialog>
+      <dialog>Ready For School?</dialog>
       <null></null>
     </interaction>
     <interaction>
       <type>4</type>
-      <dialog>DAD SEEMS IN A BETTER MOOD</dialog>
+      <dialog>Dad Seems In A Better Mood</dialog>
       <null></null>
     </interaction>
     <interaction>
       <type>2</type>
-      <dialog>HAVE A GOOD DAY</dialog>
+      <dialog>Have A Good Day</dialog>
       <null></null>
     </interaction>
     <interaction>

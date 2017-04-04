@@ -53,27 +53,27 @@
     <interaction>
       <type>4</type>
       <dialog>...</dialog>
-      <dialog>WHAT JUST HAPPENED?</dialog>
-      <dialog>WHAT WAS THAT THING?</dialog>
+      <dialog>What Just Happened?</dialog>
+      <dialog>What Was That Thing?</dialog>
       <null></null>
     </interaction>
     <interaction>
       <type>2</type>
-      <dialog>EMILY</dialog>
-      <dialog>ARE YOU OK?</dialog>
+      <dialog>Emily</dialog>
+      <dialog>Are You Okay?</dialog>
       <null></null>
     </interaction>
     <interaction>
       <type>4</type>
       <dialog>...</dialog>
-      <dialog>I THINK SO SENSEI</dialog>
-      <dialog>I'M GOING TO GO SIT DOWN</dialog>
+      <dialog>I Think So Sensei</dialog>
+      <dialog>I'm Going To Go Sit Down</dialog>
       <null></null>
     </interaction>
     <interaction>
       <type>2</type>
-      <dialog>SLOWLY NOW</dialog>
-      <dialog>i'LL GET YOU SOME WATER</dialog>
+      <dialog>Slowly Now</dialog>
+      <dialog>I'll Get You Some Water</dialog>
       <null></null>
     </interaction>
     <interaction>

@@ -52,10 +52,10 @@
     <path>Assets/Scenes/ACT1/DAY4/afterKarate.xml</path>
     <interaction>
       <type>2</type>
-      <dialog>EMILY!</dialog>
-      <dialog>EXCELLENT WORK</dialog>
-      <dialog>KEEP UP THE INTENSITY</dialog>
-      <dialog>LET'S CONTINUE CLASS</dialog>
+      <dialog>Emily!</dialog>
+      <dialog>Excellent Work</dialog>
+      <dialog>Keep Up The Intensity</dialog>
+      <dialog>Let's Continue Class</dialog>
       <null></null>
     </interaction>
     <interaction>

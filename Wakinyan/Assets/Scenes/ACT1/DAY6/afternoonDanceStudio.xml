@@ -52,66 +52,66 @@
     <path>Assets/Scenes/ACT1/DAY6/afternoonCar.xml</path>
     <interaction>
       <type>4</type>
-      <dialog>COULD I ASK YOU SOMETHING?</dialog>
+      <dialog>Could I Ask You Something?</dialog>
       <null></null>
     </interaction>
     <interaction>
       <type>2</type>
-      <dialog>OFCOURSE EMILY</dialog>
-      <dialog>WHAT'S THE MATTER?</dialog>
+      <dialog>Of Course Emily</dialog>
+      <dialog>What's The Matter?</dialog>
       <null></null>
     </interaction>
     <interaction>
       <type>4</type>
-      <dialog>HAVE YOU HEARD OF WAKINYAN?</dialog>
+      <dialog>Have You Heard Of Wakinyan?</dialog>
       <null></null>
     </interaction>
     <interaction>
       <type>2</type>
-      <dialog>YES I HAVE EMILY</dialog>
-      <dialog>THUNDERBIRD</dialog>
-      <dialog>WAKINYAN IS COMPLEX</dialog>
-      <dialog>YOU SEE THERE IS WAKINYAN</dialog>
-      <dialog>THERE ARE THEN DIFFERENT WAKINYAN</dialog>
-      <dialog>THERE ARE ALSO WAKINYAN</dialog>
-      <dialog>WHO ARE PEOPLE</dialog>
-      <dialog>THUNDER BEINGS</dialog>
-      <dialog>THERE IS SAID TO BE</dialog>
-      <dialog>FOUR KINDS OF THUNDERBIRD</dialog>
+      <dialog>Yes I Have Emily</dialog>
+      <dialog>Thunderbird</dialog>
+      <dialog>Wakinyan Is Complex</dialog>
+      <dialog>You See There Is Wakinyan</dialog>
+      <dialog>There Are Then Different Wakinyan</dialog>
+      <dialog>There Are Also Wakinyan</dialog>
+      <dialog>Who Are People</dialog>
+      <dialog>Thunder Beings</dialog>
+      <dialog>There Is Said To Be</dialog>
+      <dialog>Four Kinds Of Thunderbird</dialog>
       <null></null>
     </interaction>
     <interaction>
       <type>4</type>
-      <dialog>HMM...</dialog>
-      <dialog>IS THERE A THUNDERBIRD...</dialog>
-      <dialog>WITH FOUR WINGS?</dialog>
+      <dialog>Hmm...</dialog>
+      <dialog>Is There A Thunderbird...</dialog>
+      <dialog>With Four Wings?</dialog>
       <null></null>
     </interaction>
     <interaction>
       <type>2</type>
-      <dialog>YEAH THERE IS</dialog>
-      <dialog>WAKINYAN TANKA</dialog>
-      <dialog>THE GREAT THUNDERBIRD</dialog>
-      <dialog>THE THUNDERBIRD OF THE WEST</dialog>
-      <dialog>IT'S SAID ITS BODY IS MADE OF CLOUD</dialog>
+      <dialog>Yeah There Is</dialog>
+      <dialog>Wakinyan Tanka</dialog>
+      <dialog>The Great Thunderbird</dialog>
+      <dialog>The Thunderbird Of The West</dialog>
+      <dialog>It's Said Its Body Is Made Of Cloud</dialog>
       <null></null>
     </interaction>
     <interaction>
       <type>4</type>
-      <dialog>THAT SOUNDS JUST LIKE</dialog>
+      <dialog>That Sounds Just Like</dialog>
       <dialog>...</dialog>
       <null></null>
     </interaction>
     <interaction>
       <type>2</type>
-      <dialog>LIKE WHAT?</dialog>
+      <dialog>Like What?</dialog>
       <null></null>
     </interaction>
     <interaction>
       <type>4</type>
-      <dialog>LIKE A STORY MY MOTHER TOLD ME</dialog>
-      <dialog>ANYWAY, I'D BETTER GET GOING</dialog>
-      <dialog>BYE!</dialog>
+      <dialog>Like A Story My Mother Told Me</dialog>
+      <dialog>Anyway, I'd Better Get Going</dialog>
+      <dialog>Bye!</dialog>
       <null></null>
     </interaction>
     <end>0</end>

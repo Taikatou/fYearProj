@@ -39,7 +39,7 @@
     <path>Assets/Scenes/Act1/Day2/start.xml</path>
     <interaction>
       <type>4</type>
-      <dialog>I HOPE THIS WEEK IS NICE</dialog>
+      <dialog>I Hope This Week Is Nice</dialog>
       <null></null>
     </interaction>
     <end>0</end>

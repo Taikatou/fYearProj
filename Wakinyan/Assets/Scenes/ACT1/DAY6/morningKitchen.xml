@@ -52,30 +52,30 @@
     <path>Assets/Scenes/ACT1/DAY6/morningCar.xml</path>
     <interaction>
       <type>2</type>
-      <dialog>GOOD MORNING</dialog>
+      <dialog>Good Morning</dialog>
       <null></null>
     </interaction>
     <interaction>
       <type>4</type>
-      <dialog>MOM SEEMS TO BE CALM</dialog>
-      <dialog>YOU THOUGHT SHE'D BE ANGRY</dialog>
-      <dialog>ABOUT LASTNIGHT</dialog>
+      <dialog>Mom Seems To Be Calm</dialog>
+      <dialog>You Thought She'd Be Angry</dialog>
+      <dialog>About Lastnight</dialog>
       <null></null>
     </interaction>
     <interaction>
       <type>2</type>
-      <dialog>ARE YOU READY FOR DANCE CLASS?</dialog>
+      <dialog>Are You Ready For Dance Class?</dialog>
       <null></null>
     </interaction>
     <interaction>
       <type>4</type>
-      <dialog>YEAH MOM</dialog>
-      <dialog>MY DRESS IS PACKED</dialog>
+      <dialog>Yeah Mom</dialog>
+      <dialog>My Dress Is Packed</dialog>
       <null></null>
     </interaction>
     <interaction>
       <type>2</type>
-      <dialog>ALRIGHT, LETS GO</dialog>
+      <dialog>Alright, Let's Go</dialog>
       <null></null>
     </interaction>
     <interaction>

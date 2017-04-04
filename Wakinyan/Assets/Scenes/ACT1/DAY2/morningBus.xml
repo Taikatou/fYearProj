@@ -46,7 +46,7 @@
     <interaction>
       <type>4</type>
       <dialog>...</dialog>
-      <dialog>DID I DO MY MATH HOMEWORK?</dialog>
+      <dialog>Did I Do My Math Homework?</dialog>
       <null></null>
     </interaction>
     <end>0</end>

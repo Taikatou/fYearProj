@@ -45,10 +45,10 @@
     <path>Assets/Scenes/ACT1/DAY4/class.xml</path>
     <interaction>
       <type>4</type>
-      <dialog>SCHOOL THEN KARATE</dialog>
-      <dialog>THEN ICE CREAM</dialog>
-      <dialog>I HOPE I DON'T EMBARRASS MYSELF</dialog>
-      <dialog>PLEASE GO SLOWLY DAY</dialog>
+      <dialog>School Then Karate</dialog>
+      <dialog>Then Ice Cream</dialog>
+      <dialog>I Hope I Don't Embarrass Myself</dialog>
+      <dialog>Please Go Slowly Day</dialog>
       <null></null>
     </interaction>
     <end>0</end>

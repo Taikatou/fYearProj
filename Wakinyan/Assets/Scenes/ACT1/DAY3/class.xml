@@ -44,26 +44,26 @@
     </interaction>
     <interaction>
       <type>4</type>
-      <dialog>WHAT JESSIE?</dialog>
+      <dialog>What Jessie?</dialog>
       <null></null>
     </interaction>
     <interaction>
       <type>2</type>
-      <dialog>EMILY IS IT TRUE?</dialog>
-      <dialog>MAX SAID YOU GOT KNOCKED OUT</dialog>
-      <dialog>AT KARATE</dialog>
+      <dialog>Emily Is It True?</dialog>
+      <dialog>Max Said You Got Knocked Out</dialog>
+      <dialog>At Karate</dialog>
       <null></null>
     </interaction>
     <interaction>
       <type>4</type>
       <dialog>-_-</dialog>
-      <dialog>... YEAH I THINK SO</dialog>
+      <dialog>... Yeah I Think So</dialog>
       <null></null>
     </interaction>
     <interaction>
       <type>2</type>
-      <dialog>HA</dialog>
-      <dialog>YOU'RE REALLY NOT A FIGHTER</dialog>
+      <dialog>Ha</dialog>
+      <dialog>You're Really Not A Fighter</dialog>
       <null></null>
     </interaction>
     <interaction>
@@ -73,7 +73,7 @@
     </interaction>
     <interaction>
       <type>2</type>
-      <dialog>HA HA HA</dialog>
+      <dialog>Ha Ha Ha</dialog>
       <null></null>
     </interaction>
     <end>0</end>

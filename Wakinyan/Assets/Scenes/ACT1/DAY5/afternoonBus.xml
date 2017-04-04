@@ -45,9 +45,9 @@
     <path>Assets/Scenes/ACT1/DAY5/afternoonKitchen.xml</path>
     <interaction>
       <type>4</type>
-      <dialog>IS MY DRESS OK FOR DANCE CLASS?</dialog>
-      <dialog>I NEED TO CHECK THAT</dialog>
-      <dialog>HOPEFULLY MOM WILL BRING ME TOMORROW</dialog>
+      <dialog>Is My Dress Oka For Dance Class?</dialog>
+      <dialog>I Need To Check That</dialog>
+      <dialog>Hopefully Mom Will Bring Me Tomorrow</dialog>
       <null></null>
     </interaction>
     <end>0</end>

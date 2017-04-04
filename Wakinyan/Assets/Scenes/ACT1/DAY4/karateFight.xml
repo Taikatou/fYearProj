@@ -59,26 +59,26 @@
     <path>Assets/Scenes/ACT1/DAY4/afterFight.xml</path>
     <interaction>
       <type>4</type>
-      <dialog>BREATHE DEEP</dialog>
-      <dialog>FOCUS</dialog>
-      <dialog>YOU FEEL LIGHT</dialog>
-      <dialog>MAX STARES YOU RIGHT IN THE EYES</dialog>
-      <dialog>YOU DASH IN CLOSE</dialog>
-      <dialog>RIGHT JAB</dialog>
-      <dialog>BLOCKED</dialog>
-      <dialog>BREATHE</dialog>
-      <dialog>CHAMBER YOUR LEFT LEG</dialog>
-      <dialog>MAX MOVES TO GUARD HER CENTRE</dialog>
-      <dialog>YOU EXHALE AND RELEASE YOUR LEG</dialog>
-      <dialog>IT CONNECTS HARD</dialog>
-      <dialog>MAX IS DRIVEN BACK</dialog>
-      <dialog>INHALE</dialog>
-      <dialog>YOU CLOSE THE DISTANCE</dialog>
-      <dialog>AND LEAP</dialog>
-      <dialog>AND CHAMBER</dialog>
-      <dialog>MAX'S STARE IS MET WITH YOUR FOOT</dialog>
-      <dialog>THEY TUMBLE BACK</dialog>
-      <dialog>AND OUT OF THE RING</dialog>
+      <dialog>Breathe Deep</dialog>
+      <dialog>Focus</dialog>
+      <dialog>You Feel Light</dialog>
+      <dialog>Max Stares You Right In The Eyes</dialog>
+      <dialog>You Dash In Close</dialog>
+      <dialog>Right Jab</dialog>
+      <dialog>Blocked</dialog>
+      <dialog>Breathe</dialog>
+      <dialog>Chamber Your Left Leg</dialog>
+      <dialog>Max Moves To Guard Her Centre</dialog>
+      <dialog>You Exhale And Release Your Leg</dialog>
+      <dialog>It Connects Hard</dialog>
+      <dialog>Max Is Driven Back</dialog>
+      <dialog>Inhale</dialog>
+      <dialog>You Close The Distance</dialog>
+      <dialog>And Leap</dialog>
+      <dialog>And Chamber</dialog>
+      <dialog>Max's Stare Is Met With Your Foot</dialog>
+      <dialog>They Tumble Back</dialog>
+      <dialog>And Out Of The Ring</dialog>
       <null></null>
     </interaction>
     <interaction>

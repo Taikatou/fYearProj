@@ -39,12 +39,12 @@
     <path>Assets/Scenes/ACT1/DAY4/afternoonOutsideSchool.xml</path>
     <interaction>
       <type>4</type>
-      <dialog>GOOD MORNING CLASS</dialog>
-      <dialog>TODAY WE'LL BE LEARNING ABOUT ...</dialog>
-      <dialog>... TIME FOR RECESS EVERYONE ...</dialog>
-      <dialog>OK LET TURN TO PAGE 42...</dialog>
-      <dialog>... ALRIGHT CLASS DISMISSED</dialog>`
-      <dialog>BYE EVERYBODY</dialog>
+      <dialog>Good Morning Class</dialog>
+      <dialog>Today We'll Be Learning About ...</dialog>
+      <dialog>... Time For Recess Everyone ...</dialog>
+      <dialog>Okay Let Turn TO Page 42...</dialog>
+      <dialog>... Alright Class Dismissed</dialog>`
+      <dialog>Bye Everybody</dialog>
       <null></null>
     </interaction>
     <end>0</end>

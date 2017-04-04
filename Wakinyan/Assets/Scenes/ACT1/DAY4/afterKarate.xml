@@ -45,11 +45,11 @@
     <path>Assets/Scenes/ACT1/DAY4/iceCreamParlor.xml</path>
     <interaction>
       <type>4</type>
-      <dialog>DAD: HEY SWEETIE</dialog>
-      <dialog>EMILY: DAD!!!</dialog>
-      <dialog>EMILY: I WON A SPARING MATCH</dialog>
-      <dialog>DAD: MI AMOR THATS WONDERFUL</dialog>
-      <dialog>DAD:TELL ME ALL ABOUT IT</dialog>
+      <dialog>Dad: Hey Sweetie</dialog>
+      <dialog>Emily: Dad!!!</dialog>
+      <dialog>Emily: I Won A Sparing Match</dialog>
+      <dialog>Dad: Mi AMOR That's Wonderful</dialog>
+      <dialog>Dad: Tell Me All About It</dialog>
       <null></null>
     </interaction>
     <end>0</end>

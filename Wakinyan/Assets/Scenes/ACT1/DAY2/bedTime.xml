@@ -45,19 +45,19 @@
     <path>Assets/Scenes/ACT1/DAY3/start.xml</path>
     <interaction>
       <type>4</type>
-      <dialog>YOU WAKE UP</dialog>
-      <dialog>IT'S 12:25 IN THE MORNING</dialog>
-      <dialog>YOU CAN HEAR DAD</dialog>
-      <dialog>HE'S ON THE PHONE</dialog>
-      <dialog>DAD: I'M JUST TELLING YOU</dialog>
-      <dialog>DAD: WHAT SHE TOLD ME</dialog>
-      <dialog>WHO IS HE TALKING TO?</dialog>=
-      <dialog>DAD: COULD THIS BE...?</dialog>
-      <dialog>BE WHAT???</dialog>
-      <dialog>DAD: OK I'LL SEE YOU TOMORROW MI AMOR</dialog>
-      <dialog>IT'S MOM!</dialog>
-      <dialog>WERE THEY TALKING ABOUT ME?</dialog>
-      <dialog>I BETTER GO BACK TO BED</dialog>
+      <dialog>You Wake Up</dialog>
+      <dialog>It's 12:25 In The Morning</dialog>
+      <dialog>You Can Hear Dad</dialog>
+      <dialog>He's On The Phone</dialog>
+      <dialog>Dad: I'm Just Telling You</dialog>
+      <dialog>Dad: What She Told Me</dialog>
+      <dialog>Who Is He Talking To?</dialog>=
+      <dialog>Dad: Could This Be...?</dialog>
+      <dialog>Be What???</dialog>
+      <dialog>Dad: Okay, I'll See You Tomorrow Mi Amor</dialog>
+      <dialog>It's Mom!</dialog>
+      <dialog>Were They Talking About Me?</dialog>
+      <dialog>I Better Go Back To Bed</dialog>
       <null></null>
     </interaction>
     <interaction>

@@ -39,13 +39,13 @@
     <path>Assets/Scenes/ACT1/DAY5/afternoonSchool.xml</path>
     <interaction>
       <type>4</type>
-      <dialog>GOOD MORNING CLASS</dialog>
-      <dialog>TODAY WE'LL BE STUDYING</dialog>
-      <dialog>GEOGRAPHY</dialog>
-      <dialog>GEOLOGY</dialog>
-      <dialog>AND FORE-SHADOWING</dialog>
-      <dialog>SO OPEN YOUR BOOKS TO PAGE 4</dialog>
-      <dialog>LETS LEARN ABOUT ROCKY OUTCROPS</dialog>
+      <dialog>Good Morning Class</dialog>
+      <dialog>Today We'll Be Studying</dialog>
+      <dialog>Geography</dialog>
+      <dialog>Geology</dialog>
+      <dialog>And Fore-Shadowing</dialog>
+      <dialog>So Open Your Books To Page 4</dialog>
+      <dialog>Let's Learn About Rocky Outcrops</dialog>
       <null></null>
     </interaction>
     <end>0</end>
